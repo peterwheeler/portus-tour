@@ -1,0 +1,506 @@
+{
+     "storymap": {
+		"slides": [
+            {
+                "text": {
+                    "headline": "The Fifth to Seventh Century Period",
+                    "text": "This tour introduces you to Portus as it was in the period between the fifth and sixth centuries AD, with the character of the port changing, as it had several times before. Although the population of Rome would have been lower than it had been under the hey-day of Empire, we know from the content of Imperial Edicts dating to the 4th and earlier 5th centuries AD, and contemporary comments by writers like Sidonius Apollinaris, that Portus continued to play a significant role in supplying Rome during the 4th and the middle 5th century AD. From the last quarter of the 5th century AD, however, the scope and intensity of this activity began to dwindle. The ceramics from the archaeological excavations provide good evidence for this."
+                },
+                "location": {
+                    "name": "location",
+                    "image": "images/tiny_icon.png",
+                    "icon_size": 1,
+                    "lat": 57.5,
+                    "lon": -90.5,
+                    "zoom": 3,
+                    "line": false
+                },
+                "media": {
+                    "url": "images/images_4/fifth-seventh.jpg",
+                    "credit": "Simon Keay / University of Southampton",
+                    "caption": "View to the north of the remains of the Basilica Portuense (<i>view facing north-west</i>)"
+                }
+            },
+            {
+                "text": {
+                    "headline": "Portus in the 5<sup>th</sup> to 7<sup>th</sup> Centuries",
+                    "text": "At this point, a <a onclick='goTo(16)' title='Mura Constantiniane'>wall circuit</a> was established to enclose all of the buildings that clustered around the Trajanic basin and the maritime façade on the western side of the Darsena. The intention was clearly to ensure that this innermost area of the port, which remained the scene of commercial activity crucial to Rome, was protected from external threats. It is unclear who was responsible for this, although the Skirian King, Odovacar, and the Ostrogothic King, Theoderic the Great, are possible candidates.<br/><br/>While the overall extent of the port had thus begun to contract, Christian churches had been established, most notably the Basilica Portuense. By the 6th century AD, the Claudian basin had largely silted up and even though the port was the focus of a struggle between Byzantines and Ostrogoths during the Gothic wars (AD 535-553), <a onclick='goTo(23)' title='Burials'>burials</a> began to appear within the ruins of warehouses and other structures. After the conclusion of the wars, the Palazzo Imperiale and other buildings were abandoned as the area of the port contracted even further, and being focused around the area of the <a onclick='goTo(9)' title='Basilica Portuense'>Basilica Portuense</a> and Episcopio."
+                },
+                "location": {
+                    "name": "location",
+                    "image": "images/tiny_icon.png",
+                    "icon_size": 1,
+                    "lat": 57.5,
+                    "lon": -90.5,
+                    "zoom": 3,
+                    "line": false
+                },
+                "media": {
+                    "url": "",
+                    "credit": "",
+                    "caption": ""
+                }
+            },
+            {
+                "text": {
+                    "headline": "Pharos",
+                    "text": "The Pharos, constructed during the reign of Claudius, continues to dominate the approach to Portus in the Trajanic phase. But the view from the Pharos would have been markedly different. In the Claudian period the view would have shown, presumably, warehouses and other buildings set back from the Claudian quayside. These would have been demolished in the massive bulding programme initiated by Trajan, leading to the excavation of the huge Trajanic basin, surrounded by some very large buildings on a scale that invites comparison with Imperial Rome itself."
+                },
+                "location": {
+                    "name": "location",
+                    "image": "images/wc_icon.png",
+                    "icon_size": 30,
+                    "lat": 49,
+                    "lon": -137,
+                    "zoom": 4,
+                    "line": false
+                },
+                "media": {
+                    "url": "images/images_1/mosaic_ostia.jpg",
+                    "credit": "Simon Keay / University of Southampton",
+                    "caption": "Mosaic at Ostia showing the Pharos"
+                }
+            },
+            {
+                "text": {
+                    "headline": "Claudian Basin",
+                    "text": "Excavations by the Portus Project have revealed evidence that by the later 5th century AD, the southern side of the Claudian basin had filled up with sediment. One imagines that this is symptomatic of the disuse of the basin as a whole, and ensured that the Palazzo Imperiale had become land-locked. By contrast, the hexagonal basin continued to function well into the Byzantine period."
+                },
+                "location": {
+                    "name": "location",
+                    "image": "images/wc_icon.png",
+                    "icon_size": 30,
+                    "lat": 54,
+                    "lon": -115,
+                    "zoom": 4,
+                    "line": false
+                },
+                "media": {
+                    "url": "images/images_1/northern_mole.jpg",
+                    "credit": "Simon Keay / University of Southampton",
+                    "caption": "View to the north of Portus, showing the surviving northern mole"
+                }
+            },
+			{
+                "text": {
+                    "headline": "Porticus Placidiana",
+                    "text": "A colonnaded portico of 5th century AD date that is only known to us from epigraphic evidence. It seems likely that it would have been situated on the southern mole of the Claudian quay, between the modern Via Portuense and the Fossa Traiana."
+                },
+                "location": {
+                    "name": "location",
+                    "image": "images/wc_icon.png",
+                    "icon_size": 30,
+                    "lat": 45,
+                    "lon": -98,
+                    "zoom": 4,
+                    "line": false
+                },
+                "media": {
+                    "url": "images/images_4/porticus.jpg",
+                    "credit": "Simon Keay / University of Southampton",
+                    "caption": "Base of a statue from Portus, set up by Flavius Alexander Cresconius which mentions the construction of the Porticus Placidiana"
+                }
+            },
+			{
+                "text": {
+                    "headline": "Antemurale",
+                    "text": "The main activity here was the construction of the seaward walls in the later 5th century AD. These comprised a series of towers and doorways that blocked off and protected earlier structures lying between them and the Portico di Claudio."
+                },
+                "location": {
+                    "name": "location",
+                    "image": "images/wc_icon.png",
+                    "icon_size": 30,
+                    "lat": 54,
+                    "lon": -103,
+                    "zoom": 4,
+                    "line": true
+                },
+                "media": {
+                    "url": "images/images_4/antemurale.jpg",
+                    "credit": "Lidia Paroli / Soprintendenza Speciale per il Colosseo, Museo Nazionale Romano e Area Archeologica di Roma",
+                    "caption": "View looking over antemurale, late antique walls and Portico di Claudio"
+                }
+            },
+			{
+                "text": {
+                    "headline": "Portico di Claudio",
+                    "text": "This was now blocked off from the Claudian basin by later structures and, finally, the late antique walls of the Antemurale."
+                },
+                "location": {
+                    "name": "location",
+                    "image": "images/wc_icon.png",
+                    "icon_size": 30,
+                    "lat": 49,
+                    "lon": -98,
+                    "zoom": 4,
+                    "line": false
+                },
+                "media": {
+                    "url": "images/images_1/portico_di_claudia.jpg",
+                    "credit": "Tim Sly / University of Southampton",
+                    "caption": "View to the north of Portus, showing the surviving northern mole"
+                }
+            },
+			{
+                "text": {
+                    "headline": "Grandi Magazzini di Traiano",
+                    "text": "Available evidence suggests that these great warehouses continued to be used until at least the 6th century AD. At some stage shortly afterwards, however, occasional burials were placed within different storerooms – a clear index of the diminishing commercial role of the port in the Byzantine period."
+                },
+                "location": {
+                    "name": "location",
+                    "image": "images/wc_icon.png",
+                    "icon_size": 30,
+                    "lat": 51.5,
+                    "lon": -94.5,
+                    "zoom": 4,
+                    "line": false
+                },
+                "media": {
+                    "url": "images/images_4/magazzini_traiano.jpg",
+                    "credit": "Simon Keay / University of Southampton",
+                    "caption": "Grandi Magazzini di Traiano showing the late antique walls blocking the entrances"
+                }
+            },
+			{
+                "text": {
+                    "headline": "Molo della Lanterna",
+                    "text": "This quay was constructed from brick faced at some stage in the late pre-Trajanic period. It ran from west to east and separated the central part of the Claudian basin from the Canale di imbocco al porto di Traiano. A lantern stood at its western end."
+                },
+                "location": {
+                    "name": "location",
+                    "image": "images/wc_icon.png",
+                    "icon_size": 30,
+                    "lat": 54,
+                    "lon": -98,
+                    "zoom": 4,
+                    "line": false
+                },
+                "media": {
+                    "url": "images/images_1/mollo_della_lanterna.jpg",
+                    "credit": "Simon Keay / University of Southampton",
+                    "caption": "View from the east of the remains of the Mollo della Lanterna"
+                }
+            },
+			{
+                "text": {
+                    "headline": "Darsena",
+                    "text": "This basin continued to play an important role in the enlarged Trajanic port, not least with the construction of the Grandi Magazzini di Traiano."
+                },
+                "location": {
+                    "name": "location",
+                    "image": "images/wc_icon.png",
+                    "icon_size": 30,
+                    "lat": 50.5,
+                    "lon": -94.5,
+                    "zoom": 4,
+                    "line": false
+                },
+                "media": {
+                    "url": "<iframe src='http://www.thesphere.com/direct_embed/406063' width='640px' height='auto' class='sphere-direct_embed' type='text/html' frameborder=0 scrolling='no'>",
+                    "credit": "Stephen Kay / BSR & Portus Project",
+                    "caption": "360° panorama from the entrance to the Darsena"
+                }
+            },
+			{
+                "text": {
+                    "headline": "Basilica Portuense",
+                    "text": "The significant change came some time in the later 4th century AD and early 5th century AD, when this residence was converted into an early Christian church (basilica) c. 37m long by c. 20m wide. It comprised a large hall oriented from north to south and consisting of a nave and two flanking aisles with geometric and figured mosaic floors; it was approached through an east-west hall. This building was almost certainly under the jurisdiction of the Bishop of Portus – an individual who is first attested in AD 314."
+                },
+                "location": {
+                    "name": "location",
+                    "image": "images/wc_icon.png",
+                    "icon_size": 30,
+                    "lat": 49.5,
+                    "lon": -87,
+                    "zoom": 4,
+                    "line": false
+                },
+                "media": {
+                    "url": "images/images_4/basilica.jpg",
+                    "credit": "Lidia Paroli / Soprintendenza Speciale per il Colosseo, Museo Nazionale Romano e Area Archeologica di Roma",
+                    "caption": "Aerial photo of the Early Christian Basilica after being excavated"
+                }
+            },
+			{
+                "text": {
+                    "headline": "Terme della Lanterna",
+                    "text": "There is good evidence to suggest continued use of this building well into the late antique period."
+                },
+                "location": {
+                    "name": "location",
+                    "image": "images/wc_icon.png",
+                    "icon_size": 30,
+                    "lat": 54,
+                    "lon": -93,
+                    "zoom": 4,
+                    "line": false
+                },
+                "media": {
+                    "url": "images/images_4/terme_della_lanterna.jpg",
+                    "credit": "Stephen Keay / BSR & Portus Project",
+                    "caption": "View of the Lanterna Baths from the air"
+                }
+            },
+			{
+                "text": {
+                    "headline": "Grandi Magazzini di Settimio Severo",
+                    "text": "The Grandi Magazzini di Settimio Severo was a large complex traditionally identified as a warehouse consisting of at least two storeys and situated in such way as to overlook the pool of the port to the south, the Trajanic Basin to the east and the Claudian basin to the north.<br/><br/>It was a large, L-shaped, brick-faced, concrete structure with two wings of rooms facing onto an open area which fronted the canal leading to the Trajanic basin.<br/><br/>The building had been identified as a Severan period warehouse (horreum) but a later study of the brickstamps indicated an earlier Antonine date for the structure.<br/><br/>Sometime after its construction, a vaulted passageway was built on its northeast corner connecting it to the northwest corner of the Palazzo Imperiale."
+                },
+                "location": {
+                    "name": "location",
+                    "image": "images/wc_icon.png",
+                    "icon_size": 30,
+                    "lat": 55,
+                    "lon": -90,
+                    "zoom": 4,
+                    "line": false
+                },
+                "media": {
+                    "url": "<iframe width='100%' height='400px' src='https://www.thesphere.com/direct_embed/402719' class='sphere-direct_embed' type='text/html' frameborder=0 scrolling='no'  allowfullscreen='true' mozallowfullscreen='true' webkitallowfullscreen='true'></iframe>",
+                    "credit": "Stephen Kay / BSR & Portus Project",
+                    "caption": "360° panorama within the remains of the Grandi Magazzini di Settimio Severo"
+                }
+            },
+			{
+                "text": {
+                    "headline": "Palazzo Imperiale",
+                    "text": "<strong>a. New Rooms</strong><br/>Sometime in the early 5th century AD the ludus was demolished. A row of rooms, that represent an eastward extension of the main body of the Palazzo Imperiale were constructed, running from  north to south across its site. The rooms, including a three-seater latrine, were lavishly decorated with marble and painted stucco and fronted onto a garden to the west.<br/><br/><strong>b. Northern Facade</strong><br/>Recent excavations in the range of rooms that ran along the northern façade of the Palazzo Imperiale reveal that the earlier 5th century AD underwent a major phase of renovation. This included the establishment of high quality opus sectile marble floors and wall paintings. All of these rooms and, one assumes, much of the rest of the complex were demolished after the end of the Gothic Wars."
+                },
+                "location": {
+                    "name": "location",
+                    "image": "images/wc_icon.png",
+                    "icon_size": 30,
+                    "lat": 57,
+                    "lon": -89,
+                    "zoom": 4,
+                    "line": false
+                },
+                "media": {
+                    "url": "images/images_4/pi_rooms.jpg",
+                    "credit": "Simon Keay / University of Southampton",
+                    "caption": "View over rooms in the Palazzo Imperiale occupied in the 5th and 6th centuries AD"
+                }
+            },
+			{
+                "text": {
+                    "headline": "Shipyard",
+                    "text": "This building continued in use until the Byzantine period. However, there was a first change in use in the earlier 5thc AD, when the function of the rooms that had been built within one of the original narrow bays of the Trajanic complex was changed and they were converted into storerooms with raised floors, probably used to store grain. Subsequently in the later 5th century AD, burials began to appear within the building, with the complex probably being demolished by the Byzantines after the conclusion of the Gothic Wars in the mid 6th century AD."
+                },
+                "location": {
+                    "name": "location",
+                    "image": "images/wc_icon.png",
+                    "icon_size": 30,
+                    "lat": 60,
+                    "lon": -86,
+                    "zoom": 4,
+                    "line": false
+                },
+                "media": {
+                    "url": "images/images_4/burials-1.jpg",
+                    "credit": "Simon Keay / University of Southampton",
+                    "caption": "Burials of 5th and early 6th centuries AD date that were established within the shell of the earlier Shipyard, indicating how much its original function had changed"
+                }
+            },
+			{
+                "text": {
+                    "headline": "Terme Horrea",
+                    "text": "These continued in use until some time in the 5th or 6th centuries AD."
+                },
+                "location": {
+                    "name": "location",
+                    "image": "images/wc_icon.png",
+                    "icon_size": 30,
+                    "lat": 63,
+                    "lon": -83,
+                    "zoom": 4,
+                    "line": false
+                },
+                "media": {
+                    "url": "",
+                    "credit": "",
+                    "caption": ""
+                }
+            },
+            {
+                "text": {
+                    "headline": "Mura Costantiniane",
+                    "text": "Substantial fortifications built from brick faced concrete that enclosed the Trajanic basin and other key parts of the core of Portus in the later 5th centuries AD. In certain parts of the port these were free-standing, whilst in others they incorporated buildings that were already standing, as in the case of the Shipyard and the Palazzo Imperiale."
+                },
+                "location": {
+                    "name": "location",
+                    "image": "images/wc_icon.png",
+                    "icon_size": 30,
+                    "lat": 68.75,
+                    "lon": -104,
+                    "zoom": 4,
+                    "line": false
+                },
+                "media": {
+                    "url": "images/images_4/costantiniane.jpg",
+                    "credit": "Hembo Pagi / Portus Project",
+                    "caption": ""
+                }
+            },
+			{
+                "text": {
+                    "headline": "Temple (overlooking the Trajanic basin)",
+                    "text": "A large temple that is situated on axis to the entrance to the Trajanic basin, and in front of which stood a colossal statue of the Emperor Trajan."
+                },
+                "location": {
+                    "name": "location",
+                    "image": "images/wc_icon.png",
+                    "icon_size": 30,
+                    "lat": 59,
+                    "lon": -69,
+                    "zoom": 4,
+                    "line": false
+                },
+                "media": {
+                    "url": "images/images_2/statue.jpg",
+                    "credit": "Simon Keay / University of Southampton",
+                    "caption": "Statue of the Emperor Trajan similar to that which is understood to have stood in front of the Temple overlooking the Trajanic basin"
+                }
+            },
+			{
+                "text": {
+                    "headline": "Cemetery (east of Portus)",
+                    "text": "An extensive area of scattered burials that lies in the flat ground between the Trajanic basin and the Tiber. This had a long life, with some of the burials, such as those in the vicinity of the River Port, possibly focusing upon churches."
+                },
+                "location": {
+                    "name": "location",
+                    "image": "images/wc_icon.png",
+                    "icon_size": 30,
+                    "lat": 59,
+                    "lon": -60,
+                    "zoom": 4,
+                    "line": false
+                },
+                "media": {
+                    "url": "",
+                    "credit": "",
+                    "caption": ""
+                }
+            },
+			{
+                "text": {
+                    "headline": "River Port",
+                    "text": "The buildings that comprised this site seem to have gone out of use in the later 5th centuries AD, with burials being established in their ruins."
+                },
+                "location": {
+                    "name": "location",
+                    "image": "images/wc_icon.png",
+                    "icon_size": 30,
+                    "lat": 57,
+                    "lon": -44,
+                    "zoom": 4,
+                    "line": false
+                },
+                "media": {
+                    "url": "images/images_1/port.jpg",
+                    "credit": "Soprintendenza Speciale per il Colosseo, il Museo Nazionale Romano e l’Area Archeologica di Roma",
+                    "caption": "Aerial View of the river port"
+                }
+            },
+			{
+                "text": {
+                    "headline": "Isola Sacra",
+                    "text": "A large island lying between Portus and Ostia that was defined by the Tiber to the east and south, the Tyrrhenian sea to the west and the Fiumicino canal to the north. <br/><br/><strong>Possible Road (on the route of the Via Flavia):</strong> There is no evidence for a road preceding the Via Flavia connecting Portus and Ostia, but it is very unlikely that there was no road between the ports; but the earliest actual archaeological evidence for the road is a late 1st century AD coin in its foundations."
+                },
+                "location": {
+                    "name": "location",
+                    "image": "images/wc_icon.png",
+                    "icon_size": 30,
+                    "lat": 32,
+                    "lon": -65,
+                    "zoom": 4,
+                    "line": false
+                },
+                "media": {
+                    "url": "",
+                    "credit": "Simon Keay / University of Southampton",
+                    "caption": ""
+                }
+            },
+			{
+                "text": {
+                    "headline": "Hinterland",
+                    "text": "Very little is known about the hinterland of Portus at this date."
+                },
+                "location": {
+                    "name": "location",
+                    "image": "images/wc_icon.png",
+                    "icon_size": 30,
+                    "lat": 72,
+                    "lon": -30,
+                    "zoom": 3,
+                    "line": false
+                },
+                "media": {
+                    "url": "",
+                    "credit": "",
+                    "caption": ""
+                }
+            },
+			{
+                "text": {
+                    "headline": "Ostia",
+                    "text": "It is generally accepted that from the 3rd century AD, Ostia entered a period of gradual decline. However, it is recorded as having a bishop as early at this time and saw the construction of a Christian church in the reign of Constantine. It was also a mint for Roman bronze coins for a short period in the early 4th century and witnessed the development of some luxurious domus within the town in the 4th century AD. On the other hand, its administrative role must have been somewhat diminished by Constantine’s decision to make Portus a civitas, or urban entity, in the second quarter of the 4th century AD."
+                },
+                "location": {
+                    "name": "location",
+                    "image": "images/wc_icon.png",
+                    "icon_size": 30,
+                    "lat": -9,
+                    "lon": -23,
+                    "zoom": 4,
+                    "line": false
+                },
+                "media": {
+                    "url": "images/images_1/ostia_aerial.jpg",
+                    "credit": "Simon Keay / University of Southampton",
+                    "caption": "Ostia Antica from the air"
+                }
+            },
+            {
+                "text": {
+                    "headline": "Burials",
+                    "text": "Sporadic burials have been found within early and mid-imperial warehouses (see entries above)"
+                },
+                "location": {
+                    "name": "location",
+                    "image": "images/tiny_icon.png",
+                    "icon_size": 1,
+                    "lat": 57.5,
+                    "lon": -90.5,
+                    "zoom": 3,
+                    "line": false
+                },
+                "media": {
+                    "url": "images/images_4/burials.jpg",
+                    "credit": "Simon Keay / University of Southampton",
+                    "caption": "The excavation of one the many burials found within the ruins of the buildings at Portus"
+                }
+            },
+			{
+                "text": {
+                    "headline": "End of the Late Antique period",
+                    "text": "Portus continued to exist after the end of the Gothic Wars in the mid 6th centuries AD, and while it had lost much of its commercial role, it still remained a significant regional focus of Byzantine power."
+                },
+                "location": {
+                    "name": "location",
+                    "image": "images/tiny_icon.png",
+                    "icon_size": 1,
+                    "lat": 57.5,
+                    "lon": -90.5,
+                    "zoom": 3,
+                    "line": false
+                },
+                "media": {
+                    "url": "",
+                    "credit": "",
+                    "caption": ""
+                }
+            }
+        ]
+    }
+}

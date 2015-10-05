@@ -1,0 +1,656 @@
+{
+     "storymap": {
+		"slides": [
+            {
+                "text": {
+                    "headline": "Welcome to Portus",
+                    "text": "This tour has been designed to give us an idea of the modern day archaeological site that exists at Portus. We will travel across the site and visit many of the buildings that have been seen in the previous tours. The panoramic photographs give us a view the existing remains and the excavations that are occurring on site. Let us continue our tour."
+                },
+                "location": {
+                    "name": "location",
+                    "image": "images/tiny_icon.png",
+                    "icon_size": 1,
+                    "lat": 69,
+                    "lon": -135,
+                    "zoom": 4,
+                    "line": false
+                },
+                "media": {
+                    "url": "",
+                    "credit": "",
+                    "caption": ""
+                }
+            },
+            {
+                "id": 1,
+                "text": {
+                    "headline": "Entrance Gate",
+                    "text": "In the first century AD you would have been offshore in a ship in the great basin of Claudius, just in front of a quay that provided you with the first chance to step ashore. Assuming you were arriving by ship, you would have passed safely into the Claudian basin from the west, crossing to the north or south of the great Pharos or lighthouse, situated on its own artificial island."
+                },
+                "location": {
+                    "name": "location",
+                    "image": "images/wc_icon.png",
+                    "icon_size": 30,
+                    "lat": 53.25,
+                    "lon": -151.25,
+                    "zoom": 5,
+                    "line": false
+                },
+                "media": {
+                    "url": "images/images_5/entrance.jpg",
+                    "credit": "Simon Keay / University of Southampton",
+                    "caption": "Entrance gate to the Portus archaeological site"
+                }
+            },
+			{
+                "id": 3,
+                "text": {
+                    "headline": "Antemurale",
+                    "text": "A possible entrance in the northern side of the Claudian basin close to the intersection of the northern and eastern quays, identified by geo-archaeological coring."
+                },
+                "location": {
+                    "name": "location",
+                    "image": "images/wc_icon.png",
+                    "icon_size": 30,
+                    "lat": 54.25,
+                    "lon": -150.75,
+                    "zoom": 5,
+                    "line": false
+                },
+                "media": {
+                    "url": "images/images_1/antemurale.jpg",
+                    "credit": "Simon Keay / University of Southampton",
+                    "caption": ""
+                }
+            },
+            {
+                "id": 2,
+                "text": {
+                    "headline": "Claudian Basin",
+                    "text": "The basin was defined by two long concrete quays or “moles”, perhaps composed of arcades that stood clear of the water. These quays stretched westwards far out to sea and can still be traced both in the shape of the modern Fiumicino Canal just visible across the road to your south, and in remnants at various points near to the modern Fiumicino Airport away to the north-west.<br/><br/>On this tour you will be travelling through time as well as space, so you should also imagine jumping from the first century to the fifth and seeing a large structure now totally destroyed but known to us from the epigraphic evidence. This structure was known as the Porticus Placidiana."
+                },
+                "location": {
+                    "name": "location",
+                    "image": "images/wc_icon.png",
+                    "icon_size": 30,
+                    "lat": 61.75,
+                    "lon": -161.5,
+                    "zoom": 5,
+                    "line": false
+                },
+                "media": {
+                    "url": "images/images_1/northern_mole.jpg",
+                    "credit": "Simon Keay / University of Southampton",
+                    "caption": "View to the north of Portus, showing the surviving northern mole"
+                }
+            },
+			{
+                "id": 4,
+                "text": {
+                    "headline": "Portico di Claudio",
+                    "text": "Quay on the western facade of the port next to the Portico di Claudio and adjacent warehouses, that was intensively used between the mid 1st and 7th c AD."
+                },
+                "location": {
+                    "name": "location",
+                    "image": "images/wc_icon.png",
+                    "icon_size": 30,
+                    "lat": 57.25,
+                    "lon": -148.25,
+                    "zoom": 5,
+                    "line": false
+                },
+                "media": {
+                    "url": "<iframe width='100%' height='400px' src='https://www.thesphere.com/direct_embed/397494' class='sphere-direct_embed' type='text/html' frameborder=0 scrolling='no'  allowfullscreen='true' mozallowfullscreen='true' webkitallowfullscreen='true'></iframe>",
+                    "credit": "Stephen Kay / BSR & Portus Project",
+                    "caption": "360° panorama within the remains of the colonades of the Portico di Claudio"
+                }
+            },
+			{
+                "id": 5,
+                "text": {
+                    "headline": "Darsena",
+                    "text": "Monumental colonnade of mid 1st century AD date on the western facade of the port that afforded views over the Claudian basin."
+                },
+                "location": {
+                    "name": "location",
+                    "image": "images/wc_icon.png",
+                    "icon_size": 30,
+                    "lat": 59.75,
+                    "lon": -146.75,
+                    "zoom": 5,
+                    "line": false
+                },
+                "media": {
+                    "url": "images/images_5/darsena.jpg",
+                    "credit": "Simon Keay / University of Southampton",
+                    "caption": "View from the south west corner of the Darsena"
+                }
+            },
+			{
+                "id": 6,
+                "text": {
+                    "headline": "Grandi Magazzini di Traiani",
+                    "text": "A long concrete quay that ran from west to east and acted as the northern side of a channel that provided passage for ships heading towards the Trajanic basin; it was surmounted by a lantern and some baths."
+                },
+                "location": {
+                    "name": "location",
+                    "image": "images/wc_icon.png",
+                    "icon_size": 30,
+                    "lat": 63, 
+                    "lon": -149,
+                    "zoom": 5,
+                    "line": false
+                },
+                "media": {
+                    "url": "images/images_2/magazzini_traiani.jpg",
+                    "credit": "Simon Keay / University of Southampton",
+                    "caption": ""
+                }
+            },
+			{
+                "id": 7,
+                "text": {
+                    "headline": "Canale di Imbocco al Porto di Traiano",
+                    "text": "You are standing in what would have been the main channel for ships entering the inner part of the Claudian basin from the outer part beyond the quay. This would have been alive with shipping. You can appreciate yet again the scale of the undertaking.<br/><br/>If you take time to turn gently clockwise on this spot, starting with the Grandi Magazzini di Traiano you would have seen the inner face of the quay and a small bath complex. Turning further, you would have seen the lantern at the end of the inner mole and then, nearer to, another lantern. The base of this can just be made out. Turning yet further we see the quay extending to the east, capped with the remains of the Lanterna Baths. Next we see the modern Casale – the centre of operations of the Portus Project for many years. From behind the Casale we then see the Grandie Magazzini di Setimio Severo. Finally we turn to face due east and must imagine a clear line of sight through into yet another enormous basin – this time the hexagonal basin of Trajan.<br/><br/>For now we will continue our progress across the log jam of ships and arrive at the Lanterna."
+                },
+                "location": {
+                    "name": "location",
+                    "image": "images/wc_icon.png",
+                    "icon_size": 30,
+                    "lat": 66,
+                    "lon": -152,
+                    "zoom": 5,
+                    "line": false
+                },
+                "media": {
+                    "url": "",
+                    "credit": "",
+                    "caption": ""
+                }
+            },
+			{
+                "id": 8,
+                "text": {
+                    "headline": "Molo della Lanterna",
+                    "text": "From here you can also just make out the surviving line of the inner mole – the quay that extended roughly northwards from the Portico di Claudio and ended with a small lighthouse, similar to the one that stood directly in-front of you now. Nothing remains of the first lighthouse but we can imagine it, the inner lantern, and the outer Pharos form in a line of three lights enabling ships to enter and navigate the harbour both in the day and at night."
+                },
+                "location": {
+                    "name": "location",
+                    "image": "images/wc_icon.png",
+                    "icon_size": 30,
+                    "lat": 68,
+                    "lon": -146,
+                    "zoom": 5,
+                    "line": false
+                },
+                "media": {
+                    "url": "images/images_1/mollo_della_lanterna.jpg",
+                    "credit": "Simon Keay / University of Southampton",
+                    "caption": "View from the east of the remains of the Molo della Lanterna"
+                }
+            },
+			{
+                "id": 9,
+                "text": {
+                    "headline": "Terme della Lanterna",
+                    "text": "A set of baths on the narrow quay on the north side of the Canale di Imbocco al Porto di Traiano, and which continued in use well into the Late Antique period.<br/><br/>Located on the east-west internal mole separating the Claudian basin from the entrance canal to the Trajanic basin, the bath complex (c. 40 m by 30 m) was comprised of vaulted rooms of brick-faced concrete. The structure was initially excavated in 1824 when the marble cladding was removed. More recent systematic excavation is currently being undertaken by the Soprintendenza Speciale per il Colosseo, il Museo Nazionale Romano e l’Area Archeologica di Roma (Renato Sebastiani)."
+                },
+                "location": {
+                    "name": "location",
+                    "image": "images/wc_icon.png",
+                    "icon_size": 30,
+                    "lat": 69,
+                    "lon": -141.5,
+                    "zoom": 5,
+                    "line": false
+                },
+                "media": {
+                    "url": "images/images_2/terme_della_lanterna.jpg",
+                    "credit": "Stephen Kay / University of Southampton",
+                    "caption": "View of the Lanterna Baths from the air"
+                }
+            },
+			{
+                "id": 10,
+                "text": {
+                    "headline": "Building of uncertain function",
+                    "text": "We now pass back out into the Claudian Basin. In the bushes to our right we know from geophysics of a large rectangular building of uncertain function. As we continue along the path we will see the bulk of the Gandi Magazzini di Settimio Severo emerging from behind the trees."
+                },
+                "location": {
+                    "name": "location",
+                    "image": "images/wc_icon.png",
+                    "icon_size": 30,
+                    "lat": 71.25,
+                    "lon": -135,
+                    "zoom": 5,
+                    "line": false
+                },
+                "media": {
+                    "url": "<iframe width='100%' height='400px' src='https://www.thesphere.com/direct_embed/402811' class='sphere-direct_embed' type='text/html' frameborder=0 scrolling='no'  allowfullscreen='true' mozallowfullscreen='true' webkitallowfullscreen='true'></iframe>",
+                    "credit": "Stephen Kay / Portus Project",
+                    "caption": ""
+                }
+            },
+			{
+                "id": 11,
+                "text": {
+                    "headline": "Grandi Magazzini di Settimio Severo",
+                    "text": "From here you can see through one of the arches that connected the seaward and landward sides of the Grandi Magazzini di Settimio Severo. In the Roman period we would again be standing in the Claudian Basin."
+                },
+                "location": {
+                    "name": "location",
+                    "image": "images/wc_icon.png",
+                    "icon_size": 30,
+                    "lat": 72.25,
+                    "lon": -128.75,
+                    "zoom": 5,
+                    "line": false
+                },
+                "media": {
+                    "url": "<iframe width='100%' height='400px' src='https://www.thesphere.com/direct_embed/402729' class='sphere-direct_embed' type='text/html' frameborder=0 scrolling='no'  allowfullscreen='true' mozallowfullscreen='true' webkitallowfullscreen='true'></iframe>",
+                    "credit": "Stephen Kay / BSR & Portus Project",
+                    "caption": ""
+                }
+            },
+			{
+                "id": 12,
+                "text": {
+                    "headline": "Terrazza di Traiano",
+                    "text": "As we continue around the path we get several views of an arcaded structure, with a reconstructed brick façade above. This supported the once colonnaded façade (Terrazza di Traiano) of the so-called Palazzo Imperiale beyond."
+                },
+                "location": {
+                    "name": "location",
+                    "image": "images/wc_icon.png",
+                    "icon_size": 30,
+                    "lat": 74.75,
+                    "lon": -127.25,
+                    "zoom": 5,
+                    "line": false
+                },
+                "media": {
+                    "url": "images/images_2/terrazza.jpg",
+                    "credit": "Stephen Kay / BSR & Portus Project",
+                    "caption": "360° panorama in front of the Terrazza di Traiano's brick façade"
+                }
+            },
+			{
+                "id": 13,
+                "text": {
+                    "headline": "The Imperial Palace",
+                    "text": "As we turn the corner of the Palazzo Imperiale, more remains of the palace confront us.<br/><br/>The steep hill to the right was once a building at least three storeys high. The Palazzo Imperiale was a brick- and reticulate-faced concrete structure which covered nearly three hectares. Of its original three storeys, only the substructures and some of the first floor remain. The Palazzo‘s trapezoidal plan dictated the planning of the spur of land between the two basins on which it was situated. Here and there you can see the vaulted spaces leading into the surviving basement levels, including the long tunnel or cryptoporticus that runs the whole length of the Terraza di Traiano.<br/><br/>The structure has been of significant interest since the 16th century due to the discoveries of numerous columns, sculptures and inscriptions. The complex also contained its own bath suite in its southwest corner. The corpus of brickstamps found in the building indicates it was a predominantly Trajanic construction with later renovations undertaken by Hadrian and the Antonines. The building’s location as well as the evidence of its lavish marble decoration suggests it was presumably the headquarters of a high-ranking official or potentially the emperor himself on periodic voyages in and out of the port."
+                },
+                "location": {
+                    "name": "location",
+                    "image": "images/wc_icon.png",
+                    "icon_size": 30,
+                    "lat": 78,
+                    "lon": -126.5,
+                    "zoom": 5,
+                    "line": false
+                },
+                "media": {
+                    "url": "<iframe width='100%' height='400px' src='https://www.thesphere.com/direct_embed/412282' class='sphere-direct_embed' type='text/html' frameborder=0 scrolling='no'  allowfullscreen='true' mozallowfullscreen='true' webkitallowfullscreen='true'></iframe>",
+                    "credit": "Stephen Kay / BSR & Portus Project",
+                    "caption": "360° panorama within the rooms of the Palazzo Imperiale"
+                }
+            },
+            {
+                "id": 29,
+                "text": {
+                    "headline": "The Imperial Palace II",
+                    "text": "As we turn the corner of the Palazzo Imperiale, more remains of the palace confront us.<br/><br/>The steep hill to the right was once a building at least three storeys high. The Palazzo Imperiale was a brick- and reticulate-faced concrete structure which covered nearly three hectares. Of its original three storeys, only the substructures and some of the first floor remain. The Palazzo‘s trapezoidal plan dictated the planning of the spur of land between the two basins on which it was situated. Here and there you can see the vaulted spaces leading into the surviving basement levels, including the long tunnel or cryptoporticus that runs the whole length of the Terraza di Traiano.<br/><br/>The structure has been of significant interest since the 16th century due to the discoveries of numerous columns, sculptures and inscriptions. The complex also contained its own bath suite in its southwest corner. The corpus of brickstamps found in the building indicates it was a predominantly Trajanic construction with later renovations undertaken by Hadrian and the Antonines. The building’s location as well as the evidence of its lavish marble decoration suggests it was presumably the headquarters of a high-ranking official or potentially the emperor himself on periodic voyages in and out of the port."
+                },
+                "location": {
+                    "name": "location",
+                    "image": "images/wc_icon.png",
+                    "icon_size": 30,
+                    "lat": 77.75,
+                    "lon": -126,
+                    "zoom": 5,
+                    "line": false
+                },
+                "media": {
+                    "url": "<iframe width='100%' height='400px' src='https://www.thesphere.com/direct_embed/416803' class='sphere-direct_embed' type='text/html' frameborder=0 scrolling='no'  allowfullscreen='true' mozallowfullscreen='true' webkitallowfullscreen='true'></iframe>",
+                    "credit": "Stephen Kay / BSR & Portus Project",
+                    "caption": "360° panorama within the rooms of the Palazzo Imperiale"
+                }
+            },
+            {
+                "id": 15,
+                "text": {
+                    "headline": "Building 3",
+                    "text": "Immediately to the west of the castellum aquae was another part of the Palazzo Imperiale, a very long room (Building 3) that in turn abutted a major complex of rooms focused upon a cistern/peristyle (Building 8). In the centre of the former was an open area around which ran a vaulted portico on three stories; the bases of the piers that supported the vaults can still be clearly seen.<br/><br/>This room was provided with an opus spicatum (brick herringbone) floor, typical of working or service areas in major buildings such as this. In the early third century, a small glass producing furnace was installed. To the south of Buildings 1 and 3 there was an open area that provided access to the eastern facade of the Palazzo Imperiale from the quayside to the east."
+                },
+                "location": {
+                    "name": "location",
+                    "image": "images/wc_icon.png",
+                    "icon_size": 30,
+                    "lat": 78,
+                    "lon": -125,
+                    "zoom": 5,
+                    "line": false
+                },
+                "media": {
+                    "url": "<iframe width='100%' height='400px' src='https://www.thesphere.com/direct_embed/396922' class='sphere-direct_embed' type='text/html' frameborder=0 scrolling='no'  allowfullscreen='true' mozallowfullscreen='true' webkitallowfullscreen='true'></iframe>",
+                    "credit": "Stephen Kay / BSR & Portus Project",
+                    "caption": "360° panorama within the remains of Building 3"
+                }
+            },
+			{
+                "id": 14,
+                "text": {
+                    "headline": "Castellum Aquae",
+                    "text": "On the northeast side of the Palazzo Imperiale was a three-storey brick-faced cistern block, a castellum aquae, dating to the late Trajanic period. The water source for the complex has yet to be discovered.<br/><br/>The north side of the cistern block rested on the pre-Trajanic mole delineating the Claudian basin and on a Trajanic quay to the south. The cistern block also marked the northern extent of an open space bordered on the west by the Palazzo Imperiale and on the south by Shipyard."
+                },
+                "location": {
+                    "name": "location",
+                    "image": "images/wc_icon.png",
+                    "icon_size": 30,
+                    "lat": 78.25,
+                    "lon": -124.5,
+                    "zoom": 5,
+                    "line": false
+                },
+                "media": {
+                    "url": "<iframe width='100%' height='400px' src='https://www.thesphere.com/direct_embed/412277' class='sphere-direct_embed' type='text/html' frameborder=0 scrolling='no'  allowfullscreen='true' mozallowfullscreen='true' webkitallowfullscreen='true'></iframe>",
+                    "credit": "Stephen Kay / BSR & Portus Project",
+                    "caption": "360° panorama within one cistern of the Castellum Aquae <i>Note: rotate to see the rest of the cistern</i>"
+                }
+            },
+			{
+                "id": 16,
+                "text": {
+                    "headline": "Ludus",
+                    "text": "Sometime in the first half of the third century, an oval-shaped ludus (c. 42m by 38m), or training amphitheatre, was constructed in the open space to the east of the Palazzo Imperiale.  All that remains now are the foundations which reveal that the building’s superstructure was composed of two parallel walls spaced three meters apart with an additional façade wall only present on the western half of the building. The structure has the characteristic form of an amphitheatre, though is considerably smaller in size. Its entrance was located on the west side. The amphitheatre-shaped structure was systematically demolished sometime in the early fourth or fifth century."
+                },
+                "location": {
+                    "name": "location",
+                    "image": "images/wc_icon.png",
+                    "icon_size": 30,
+                    "lat": 78,
+                    "lon": -122.25,
+                    "zoom": 5,
+                    "line": false
+                },
+                "media": {
+                    "url": "<iframe width='100%' height='400px' src='https://www.thesphere.com/direct_embed/412985' class='sphere-direct_embed' type='text/html' frameborder=0 scrolling='no'  allowfullscreen='true' mozallowfullscreen='true' webkitallowfullscreen='true'></iframe>",
+                    "credit": "Stephen Kay / BSR & Portus Project",
+                    "caption": "360° panorama within the remains of the Ludus"
+                }
+            },
+			{
+                "id": 17,
+                "text": {
+                    "headline": "Imperial Shipyard",
+                    "text": "This was a large building that formed part of the same architectural conception as the Palazzo Imperiale and which has been interpreted as a shipyard or possibly shipsheds, which would have been used for the repair or construction of commercial ships and/or warships.<br/><br/>It was a late Trajanic-early Hadrianic structure (c. 180 m by 60 m) and lies to the southeast of the Palazzo Imperiale. The building is composed of brick-faced concrete piers with a series of brick arches extending north-south along the piers forming parallel bays which stretched from the Claudian to the Trajanic basins. The arched openings were subsequently filled in with brick- and reticulate-faced walls in the later 2nd century AD. The width of the majority of the bays is c. 12 m. In the 5th century AD parts of the building were used for the storage of grain."
+                },
+                "location": {
+                    "name": "location",
+                    "image": "images/wc_icon.png",
+                    "icon_size": 30,
+                    "lat": 78,
+                    "lon": -116.5,
+                    "zoom": 5,
+                    "line": false
+                },
+                "media": {
+                    "url": "<iframe width='100%' height='400px' src='https://www.thesphere.com/direct_embed/403033' class='sphere-direct_embed' type='text/html' frameborder=0 scrolling='no'  allowfullscreen='true' mozallowfullscreen='true' webkitallowfullscreen='true'></iframe>",
+                    "credit": "Stephen Kay / BSR & Portus Project",
+                    "caption": ""
+                }
+            },
+			{
+                "id": 18,
+                "text": {
+                    "headline": "Between Imperial Shipyard and Palazzo Imeperiale",
+                    "text": "We shall now leave the Imperial Shipyard and head back towards the Palazzo Imperiale. Through the trees you can gain your first view of the great Trajanic basin, onto which the Shipyard faced. Glimpsed now through the trees and perhaps speckled with wild birds the basin is an idyllic place.<br/><br/>But in the second century and beyond this would have been filled with ships moored in the centre and against the quays. The water would have been alive with “lighters” – small craft used to ferry goods and people from the seagoing vessels onto the shore.<br/><br/>The basin was c. 33ha in area – about 50 football pitches – and originally perhaps 5m deep."
+                },
+                "location": {
+                    "name": "location",
+                    "image": "images/wc_icon.png",
+                    "icon_size": 30,
+                    "lat": 76.5,
+                    "lon": -119.5,
+                    "zoom": 5,
+                    "line": false
+                },
+                "media": {
+                    "url": "",
+                    "credit": "Simon Keay / University of Southampton",
+                    "caption": ""
+                }
+            },
+			{
+                "id": 19,
+                "text": {
+                    "headline": "Top of the Palace",
+                    "text": "We will now walk over the top of the Imperial Palace. You can see a series of large depressions showing where the second and sometimes third storeys have collapsed down into the basement level. All of the accessible portions of the basement level were surveyed in the 1980s and by the Portus Project, using digital approaches such as laser scanning.<br/><br/>To the left facing onto the Trajanic Basin are a line of surviving storerooms, with intact light wells – the only means of bringing daylight into the gloom below."
+                },
+                "location": {
+                    "name": "location",
+                    "image": "images/wc_icon.png",
+                    "icon_size": 30,
+                    "lat": 75.5,
+                    "lon": -120.5,
+                    "zoom": 5,
+                    "line": false
+                },
+                "media": {
+                    "url": "images/images_5/top_pal.jpg",
+                    "credit": "Hembo Pagi / University of Southampton",
+                    "caption": "View over the remains of the Palazzo Imperiale while geophysical survey is being carried out"
+                }
+            },
+            {
+                "id": 20,
+                "text": {
+                    "headline": "Palazzo Imperiale Rooms",
+                    "text": "T"
+                },
+                "location": {
+                    "name": "location",
+                    "image": "images/wc_icon.png",
+                    "icon_size": 30,
+                    "lat": 74.75,
+                    "lon": -120.25,
+                    "zoom": 5,
+                    "line": false
+                },
+                "media": {
+                    "url": "",
+                    "credit": "Stephen Kay / BSR & Portus Project",
+                    "caption": "360° panorama at the junction between the Palazzo Imperiale and the Grandi Magazzini di Settimio Severo"
+                }
+            },
+			{
+                "id": 20,
+                "text": {
+                    "headline": "Junction with Warehouse",
+                    "text": "The end of the modern path takes us to the junction between the Imperial Palace and the Grandi Magazzini di Settimio Severo. We are now above the Terraza di Traiano and we will continue down into the building, walking past what was once a small bath complex in the Imperial Palace and through into the warehouses. None of these areas will be accessible due to Health & Safety concerns."
+                },
+                "location": {
+                    "name": "location",
+                    "image": "images/wc_icon.png",
+                    "icon_size": 30,
+                    "lat": 73.5,
+                    "lon": -125,
+                    "zoom": 5,
+                    "line": false
+                },
+                "media": {
+                    "url": "<iframe width='100%' height='400px' src='https://www.thesphere.com/direct_embed/416797' class='sphere-direct_embed' type='text/html' frameborder=0 scrolling='no'  allowfullscreen='true' mozallowfullscreen='true' webkitallowfullscreen='true'></iframe>",
+                    "credit": "Stephen Kay / BSR & Portus Project",
+                    "caption": "360° panorama at the junction between the Palazzo Imperiale and the Grandi Magazzini di Settimio Severo"
+                }
+            },
+			{
+                "id": 21,
+                "text": {
+                    "headline": "Grandi Magazzini di Settimio Severo",
+                    "text": "We are standing in an inner passageway on the ground level of the great warehouses of Septimius Severus.<br/><br/>The Grandi Magazzini di Settimio Severo was a large complex traditionally identified as a warehouse consisting of at least two storeys and situated in such way as to overlook the pool of the port to the south, the Trajanic Basin to the east and the Claudian basin to the north.<br/><br/>It was a large, L-shaped, brick-faced, concrete structure with two wings of rooms facing onto an open area which fronted the canal leading to the Trajanic basin.<br/><br/>The building had been identified as a Severan period grain-storage warehouse (horreum) but a later study of the brickstamps has indicated an earlier Antonine date for the structure."
+                },
+                "location": {
+                    "name": "location",
+                    "image": "images/wc_icon.png",
+                    "icon_size": 30,
+                    "lat": 73.15,
+                    "lon": -122.45,
+                    "zoom": 5,
+                    "line": false
+                },
+                "media": {
+                    "url": "<iframe width='100%' height='400px' src='https://www.thesphere.com/direct_embed/402741' class='sphere-direct_embed' type='text/html' frameborder=0 scrolling='no'  allowfullscreen='true' mozallowfullscreen='true' webkitallowfullscreen='true'></iframe>",
+                    "credit": "Stephen Kay / BSR & Portus Project",
+                    "caption": "360° panorama within the remains of the Grandi Magazzini di Settimio Severo"
+                }
+            },
+			{
+                "id": 22,
+                "text": {
+                    "headline": "Storeroom",
+                    "text": "To our right you can see the difference between the modern and Roman ground surface at this part of the site. Beyond the walls of the warehouse would have been a large open square, presumably used for managing the flow of goods between ships and the storerooms. We can imagine this area bustling with people from all over the Roman world.<br/><br/>To our left we pass a succession of vaulted storerooms. We are in a connecting passageway which would have been lit by windows and openings on the square. The storerooms had small high windows and it was only at specific points that the warehouse was “pierced” – allowing a direct flow of goods form the Trajanic Basin, through the warehouse, and into the body of the port. We can imagine this setup all over Portus, carefully managing its operation."
+                },
+                "location": {
+                    "name": "location",
+                    "image": "images/wc_icon.png",
+                    "icon_size": 30,
+                    "lat": 72.5,
+                    "lon": -120,
+                    "zoom": 5,
+                    "line": false
+                },
+                "media": {
+                    "url": "<iframe width='100%' height='400px' src='https://www.thesphere.com/direct_embed/397447' class='sphere-direct_embed' type='text/html' frameborder=0 scrolling='no'  allowfullscreen='true' mozallowfullscreen='true' webkitallowfullscreen='true'></iframe>",
+                    "credit": "Stephen Kay / BSR & Portus Project",
+                    "caption": "360° panorama inside one storeroom of the Grandi Magazzini di Settimio Severo"
+                }
+            },
+			{
+                "id": 23,
+                "text": {
+                    "headline": "View of the Basin",
+                    "text": "We shall now climb to the top of the reconstructed warehouses where we can gain the best view of the Trajanic Basin. The modern ramp mirrors its Roman predecessor, with surviving blocks at the bottom indicating the thresholds for wooden doors. Goods would have been carried and pushed up these ramps on carts, potentially yet further into a third storey high above us.<br/><br/>On the far side of the Trajanic Basin from our current viewpoint was a temple. The limited evidence available suggests that this was a temple to the cult of the Emperor, together with a number of attributed deities including “Liber Pater”."
+                },
+                "location": {
+                    "name": "location",
+                    "image": "images/wc_icon.png",
+                    "icon_size": 30,
+                    "lat": 72,
+                    "lon": -119,
+                    "zoom": 5,
+                    "line": false
+                },
+                "media": {
+                    "url": "<iframe width='100%' height='400px' src='https://www.thesphere.com/direct_embed/406068' class='sphere-direct_embed' type='text/html' frameborder=0 scrolling='no'  allowfullscreen='true' mozallowfullscreen='true' webkitallowfullscreen='true'></iframe>",
+                    "credit": "Stephen Kay / BSR & Portus Project",
+                    "caption": "360° panorama overlooking the Trajanic Basin"
+                }
+            },
+			{
+                "id": 24,
+                "text": {
+                    "headline": "Entrance to the Hexagon",
+                    "text": "We are now standing in what would have been the water marking the transition from the entrance canal we crossed earlier, between the Trajanic Warehouses and the Lanterna, and the Trajanic Basin."
+                },
+                "location": {
+                    "name": "location",
+                    "image": "images/wc_icon.png",
+                    "icon_size": 30,
+                    "lat": 68,
+                    "lon": -112,
+                    "zoom": 5,
+                    "line": false
+                },
+                "media": {
+                    "url": "images/images_5/basin_entrance.jpg",
+                    "credit": "Simon Keay / University of Southampton",
+                    "caption": "View across the Trajanic basin"
+                }
+            },
+			{
+                "id": 25,
+                "text": {
+                    "headline": "Basilica Portuense",
+                    "text": "The significant change came some time in the later 4th century AD and early 5th century AD, when this residence was converted into an early Christian church (basilica) c. 37m long by c. 20m wide. It comprised a large hall oriented from north to south and consisting of a nave and two flanking aisles with geometric and figured mosaic floors; it was approached through an east-west hall. This building was almost certainly under the jurisdiction of the Bishop of Portus – an individual who is first attested in AD 314."
+                },
+                "location": {
+                    "name": "location",
+                    "image": "images/wc_icon.png",
+                    "icon_size": 30,
+                    "lat": 60.5,
+                    "lon": -110.5,
+                    "zoom": 5,
+                    "line": false
+                },
+                "media": {
+                    "url": "<iframe width='640px' height='auto' src='https://www.thesphere.com/direct_embed/412796' class='sphere-direct_embed' type='text/html' frameborder=0 scrolling='no'  allowfullscreen='true' mozallowfullscreen='true' webkitallowfullscreen='true'></iframe>",
+                    "credit": "Stephen Kay / BSR & Portus Project",
+                    "caption": "360° panorama inside the remains of the Basilica"
+                }
+            },
+			{
+                "id": 26,
+                "text": {
+                    "headline": "Modern Cemetery",
+                    "text": "As we walk past the white wall of the modern cemetery of Fiumicino we can think about the burials we know from Roman times at Portus."
+                },
+                "location": {
+                    "name": "location",
+                    "image": "images/wc_icon.png",
+                    "icon_size": 30,
+                    "lat": 61,
+                    "lon": -126,
+                    "zoom": 5,
+                    "line": false
+                },
+                "media": {
+                    "url": "",
+                    "credit": "",
+                    "caption": ""
+                }
+            },
+			{
+                "id": 27,
+                "text": {
+                    "headline": "Entrance to the Darsena",
+                    "text": "We have arrived at the entrance to the Darsena. For the last few minutes we have roughly matched the line of yet another vital artery. The transverse canal linked the inner Claudian Basin and the Darsena with the Fiumicino Canal – sometimes known as the Fossa Traiana.<br/><br/>At this point we can also see the Eastern end of the Trajanic warehouses and, here and there, surviving steps and great mooring blocks."
+                },
+                "location": {
+                    "name": "location",
+                    "image": "images/wc_icon.png",
+                    "icon_size": 30,
+                    "lat": 64.5,
+                    "lon": -129,
+                    "zoom": 5,
+                    "line": false
+                },
+                "media": {
+                    "url": "<iframe src='http://www.thesphere.com/direct_embed/406063' width='640px' height='auto' class='sphere-direct_embed' type='text/html' frameborder=0 scrolling='no'>",
+                    "credit": "Stephen Kay / BSR & Portus Project",
+                    "caption": "360° panorama from the entrance to the Darsena"
+                }
+            },
+			{
+                "id": 28,
+                "text": {
+                    "headline": "Casale",
+                    "text": "As we make the final walk of this tour we pass by an excavation trench that shows a small section of the quay on which the Grandi Magazzini di Settimio Severo are situated.<br/><br/>We are crossing the water yet again and ending on the quayside at the very heart of this vast port complex. We hope you enjoyed this introduction to what Portus contains. The site itself extends far in every direction and on our website and as a learner on our free online course you can get an idea of the wider landscape and all the other fascinating buildings and other archaeological remains."
+                },
+                "location": {
+                    "name": "location",
+                    "image": "images/wc_icon.png",
+                    "icon_size": 30,
+                    "lat": 71,
+                    "lon": -126,
+                    "zoom": 5,
+                    "line": false
+                },
+                "media": {
+                    "url": "images/images_5/casale.jpg",
+                    "credit": "Daniel Gonzales",
+                    "caption": "View of the Casale as approached from the Darsena"
+                }
+            }	
+        ]
+    }
+}

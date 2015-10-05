@@ -1,0 +1,468 @@
+{
+	"calculate_zoom": true,
+     "storymap": {
+		"map_background_color": "#000000",
+		"slides": [
+            {
+                "text": {
+                    "headline": "Severan Period",
+                    "text": "We are visiting Portus in the later second century AD. By this time, the Roman Empire had achieved an unprecedented degree of political cohesion, and had been ruled by a succession of emperors of provincial origin, a development that was symptomatic of a high degree of social integration across the Empire.<br/><br/>After the completion of the Trajanic enlargements, the Palazzo Imperiale and other administrative buildings at the heart of the port witnessed continued construction in the course of the later 2nd century AD. Across Portus as a whole, mounting evidence suggests that this period, and extending into the end of Septimius Severus reign in AD 211 was a time of renewed construction of buildings and alterations to existing complexes. This activity was especially obvious in the Palazzo Imperiale."
+                },
+                "location": {
+                    "name": "location",
+                    "image": "images/tiny_icon.png",
+                    "icon_size": 1,
+                    "lat": 57.5,
+                    "lon": -90.5,
+                    "zoom": 3,
+                    "line": false
+                },
+                "media": {
+                    "url": "images/images_3/intro.jpg",
+                    "credit": "Simon Keay / Portus Project",
+                    "caption": "View of the storerooms of the Grandi Magazzini di Settimio Severo"
+                }
+            },
+            {
+                "text": {
+                    "headline": "Pharos",
+                    "text": "The Pharos, constructed during the reign of Claudius, continues to dominate the approach to Portus in the Trajanic phase. But the view from the Pharos would have been markedly different. In the Claudian period the view would have shown, presumably, warehouses and other buildings set back from the Claudian quayside. These would have been demolished in the massive bulding programme initiated by Trajan, leading to the excavation of the huge Trajanic basin, surrounded by some very large buildings on a scale that invites comparison with Imperial Rome itself."
+                },
+                "location": {
+                    "name": "location",
+                    "image": "images/wc_icon.png",
+                    "icon_size": 30,
+                    "lat": 49,
+                    "lon": -137,
+                    "zoom": 4,
+                    "line": false
+                },
+                "media": {
+                    "url": "images/images_1/mosaic_ostia.jpg",
+                    "credit": "Simon Keay / University of Southampton",
+                    "caption": "Depiction of the Pharos at Portus in a mosaic found at Ostia"
+                }
+            },
+            {
+                "text": {
+                    "headline": "Claudian Basin",
+                    "text": "During the Trajanic phase the outer, “Claudian” Basin would have continued to be alive with ships. We still know very little about the operation of how the harbour basins worked and related to one another, but presumably the Claudian basin, Trajanic basin and the Darsena, together with the Tiber frontage of Ostia to the south, would have served different types of shipping and also allowed for different phases in the management of goods. Perhaps the large ships bringing grain from North Africa and Egypt would have moored in the protection of the outer basin, until allocated a slot to unload in the Trajanic basin. Whilst we cannot be sure how it worked, and lack the crucial written documentation, we do have a sense of the mammoth scale of the task."
+                },
+                "location": {
+                    "name": "location",
+                    "image": "images/wc_icon.png",
+                    "icon_size": 30,
+                    "lat": 54,
+                    "lon": -115,
+                    "zoom": 4,
+                    "line": false
+                },
+                "media": {
+                    "url": "images/images_1/northern_mole.jpg",
+                    "credit": "Simon Keay / University of Southampton",
+                    "caption": "View to the north of Portus where the Claudian basin would have been located, now the international airport of Leonardo da Vinci at Fiumicino"
+                }
+            },
+			{
+                "text": {
+                    "headline": "Antemurale",
+                    "text": "Quay on the western facade of the port next to to the Portico di Claudio and adjacent warehouses, that was intensively used between the mid 1st and 7th century AD."
+                },
+                "location": {
+                    "name": "location",
+                    "image": "images/wc_icon.png",
+                    "icon_size": 30,
+                    "lat": 54,
+                    "lon": -103,
+                    "zoom": 4,
+                    "line": false
+                },
+                "media": {
+                    "url": "images/images_1/antemurale.jpg",
+                    "credit": "Simon Keay / University of Southampton",
+                    "caption": "Photograph of a surviving part of the Antemurale near the Portico di Claudio"
+                }
+            },
+			{
+                "text": {
+                    "headline": "Portico di Claudio",
+                    "text": "From the reign of Trajan onwards, the covered space between the Portico and the large warehouses behind was further developed, with the construction of a series of structures that filled in the gaps between the colonnade."
+                },
+                "location": {
+                    "name": "location",
+                    "image": "images/wc_icon.png",
+                    "icon_size": 30,
+                    "lat": 49,
+                    "lon": -98,
+                    "zoom": 4,
+                    "line": false
+                },
+                "media": {
+                    "url": "images/images_1/portico_di_claudia.jpg",
+                    "credit": "Daniel Gonzales",
+                    "caption": "View of the surviving colonnaded route of the Portico di Claudio, looking eastwards."
+                }
+            },
+			{
+                "text": {
+                    "headline": "Grandi Magazzini Traiani",
+                    "text": "These Trajanic warehouses underwent phases of rebuilding during the later 2nd and 3rd c AD."
+                },
+                "location": {
+                    "name": "location",
+                    "image": "images/wc_icon.png",
+                    "icon_size": 30,
+                    "lat": 51.5,
+                    "lon": -94.5,
+                    "zoom": 4,
+                    "line": false
+                },
+                "media": {
+                    "url": "images/images_3/magazzini_traiani.jpg",
+                    "credit": "Simon Keay / University of Southampton",
+                    "caption": ""
+                }
+            },
+			{
+                "text": {
+                    "headline": "Molo della Lanterna",
+                    "text": "This quay was constructed from brick faced at some stage in the late pre-Trajanic period. It ran from west to east and separated the central part of the Claudian basin from the Canale di imbocco al porto di Traiano. A lantern stood at its western end."
+                },
+                "location": {
+                    "name": "location",
+                    "image": "images/wc_icon.png",
+                    "icon_size": 30,
+                    "lat": 54,
+                    "lon": -98,
+                    "zoom": 4,
+                    "line": false
+                },
+                "media": {
+                    "url": "images/images_1/mollo_della_lanterna.jpg",
+                    "credit": "Simon Keay / University of Southampton",
+                    "caption": "View from the east of the remains of the Mollo della Lanterna"
+                }
+            },
+			{
+                "text": {
+                    "headline": "Darsena",
+                    "text": "This basin continued to play an important role in the enlarged Trajanic port, not least with the construction of the Grandi Magazzini di Traiano."
+                },
+                "location": {
+                    "name": "location",
+                    "image": "images/wc_icon.png",
+                    "icon_size": 30,
+                    "lat": 50.5,
+                    "lon": -94.5,
+                    "zoom": 4,
+                    "line": false
+                },
+                "media": {
+                    "url": "<iframe src='http://www.thesphere.com/direct_embed/406063' width='640px' height='auto' class='sphere-direct_embed' type='text/html' frameborder=0 scrolling='no'>",
+                    "credit": "Stephen Kay / BSR & Portus Project",
+                    "caption": "360° panorama from the entrance to the Darsena"
+                }
+            },
+			{
+                "text": {
+                    "headline": "Commercial Buildings",
+                    "text": "The excavations here show that prior to the establishment of Christianity as a state-recognized religion of the Roman Empire in AD 313, the site that was later covered by the Basilica was occupied by commercial buildings (some of which had mosaic floors) at the junction of major roads."
+                },
+                "location": {
+                    "name": "location",
+                    "image": "images/wc_icon.png",
+                    "icon_size": 30,
+                    "lat": 49.5,
+                    "lon": -87,
+                    "zoom": 4,
+                    "line": false
+                },
+                "media": {
+                    "url": "images/images_1/commercial_buildings.jpg",
+                    "credit": "Simon Keay / University of Southampton",
+                    "caption": "BuildingsExcavations undertaken on this site from the 1990s onwards uncovered a long stratigraphic sequence that begins in c the mid 1st c AD and continued down until the 13th c. Levels of the 1st, 2nd and 3rd centuries AD revealed buildings with mosaic floors and painted walls, structures that would have been perfectly suited to mercantile activities, as in nearby Ostia"
+                }
+            },
+			{
+                "text": {
+                    "headline": "Terme della Lanterna",
+                    "text": "A set of baths on the narrow quay on the north side of the Canale di Imbocco al Porto di Traiano, and which continued in use well into the Late Antique period.<br/><br/>Located on the east-west internal mole separating the Claudian basin from the entrance canal to the Trajanic basin, the bath complex (c. 40 m by 30 m) was comprised of vaulted rooms of brick-faced concrete. The structure was initially excavated in 1824 when the marble cladding was removed. More recent systematic excavation is currently being undertaken by the Soprintendenza Speciale per il Colosseo, il Museo Nazionale Romano e l’Area Archeologica di Roma (Renato Sebastiani)."
+                },
+                "location": {
+                    "name": "location",
+                    "image": "images/wc_icon.png",
+                    "icon_size": 30,
+                    "lat": 54,
+                    "lon": -93,
+                    "zoom": 4,
+                    "line": false
+                },
+                "media": {
+                    "url": "images/images_2/terme_della_lanterna.jpg",
+                    "credit": "Simon Keay / University of Southampton",
+                    "caption": "View of the Lanterna Baths taken from the air using a UAV. These photographs are used to digitally record the site"
+                }
+            },
+			{
+                "text": {
+                    "headline": "Grandi Magazzini di Settimio Severo",
+                    "text": "It was a large, L-shaped, brick-faced, concrete structure with two wings of rooms facing onto an open area which fronted the canal leading to the Trajanic basin. Sometime after its construction, a vaulted passageway was built on its northeast corner connecting it to the northwest corner of the Palazzo Imperiale."
+                },
+                "location": {
+                    "name": "location",
+                    "image": "images/wc_icon.png",
+                    "icon_size": 30,
+                    "lat": 55,
+                    "lon": -90,
+                    "zoom": 4,
+                    "line": false
+                },
+                "media": {
+                    "url": "images/images_3/magazzini.jpg",
+                    "credit": "Simon Keay / University of Southampton",
+                    "caption": "View of the Trajanic Basin beyond the Grandi Magazzini di Settimio Severo"
+				}
+            },
+			{
+                "text": {
+                    "headline": "Palazzo Imperiale",
+                    "text": "<strong>The Ludus:</strong></br>Sometime in the first half of the third century, an oval-shaped building (c. 42m by 38m) was constructed in the open space to the east of the Palazzo Imperiale.  All that remains now are the foundations which reveal that the building’s superstructure was composed of two parallel walls spaced three meters apart with an additional façade wall only present on the western half of the building. The structure has the characteristic form of an amphitheatre, though is considerably smaller in size, and may be a training arena, or ludus. Its entrance was located on the west side. The amphitheatre-shaped structure was systematically demolished sometime in the early fourth or fifth century."
+                },
+                "location": {
+                    "name": "location",
+                    "image": "images/wc_icon.png",
+                    "icon_size": 30,
+                    "lat": 57,
+                    "lon": -89,
+                    "zoom": 4,
+                    "line": false
+                },
+                "media": {
+                    "url": "images/images_3/ludus.jpg",
+                    "credit": "Simon Keay / University of Southampton",
+                    "caption": "Aerial photograph showing the curve of the ludus, or small amphitheatre"
+                }
+            },
+			{
+                "text": {
+                    "headline": "Shipyard",
+                    "text": "This was a large building that formed part of the same architectural conception as the Palazzo Imperiale and which has been interpreted as Shipyard, shelter for warships, but which may also have been used for the repair or construction of other kinds of ship.<br/><br/>It was a late Trajanic structure (c. 240 m by 60 m) and lies immediately to the southeast of the Palazzo Imperiale. It was composed of three building sections, each of which was subdivided by brick-faced concrete piers into a series of parallel passages, narrow bays and wide bays. The building stood to c. 18m high, with its southern side comprising an arched façade that opened onto the Trajanic basin. The arched openings were subsequently filled in with brick- and reticulate-faced walls. The width of the narrow bays is c. 12 m. The building’s original function was as a shipyard; indeed its structure form closely resembles shipyards of later historical ship buildings."
+                },
+                "location": {
+                    "name": "location",
+                    "image": "images/wc_icon.png",
+                    "icon_size": 30,
+                    "lat": 60,
+                    "lon": -86,
+                    "zoom": 4,
+                    "line": false
+                },
+                "media": {
+                    "url": "images/images_3/navalia.jpg",
+                    "credit": "Grant Cox / ArtasMedia",
+                    "caption": "Virtual reconstruction of the Shipyard"
+				}
+            },
+			{
+                "text": {
+                    "headline": "Terme Horrea",
+                    "text": "This is a small complex of uncertain date, interpreted by some as a warehouse that was later converted to baths. Buildings north of the Terme Horrea on the Claudian Basin have been interpreted as a large complex of water cisterns although again little is known for certain other than a late 2st/ early 2nd c AD date."
+                },
+                "location": {
+                    "name": "location",
+                    "image": "images/wc_icon.png",
+                    "icon_size": 30,
+                    "lat": 63,
+                    "lon": -83,
+                    "zoom": 4,
+                    "line": false
+                },
+                "media": {
+                    "url": "images/images_2/terme_horrea.jpg",
+                    "credit": "11/02/2015 / Google Earth",
+                    "caption": "Satellite image of the Horrea Terme - <i>wooded area near two orange roofs at centre of image</i>"
+                }
+            },
+			{
+                "text": {
+                    "headline": "Temple (overlooking the Trajanic basin)",
+                    "text": "A large temple that is situated on axis to the entrance to the Trajanic basin, and in front of which stood a colossal statue of the Emperor Trajan."
+                },
+                "location": {
+                    "name": "location",
+                    "image": "images/wc_icon.png",
+                    "icon_size": 30,
+                    "lat": 59,
+                    "lon": -69,
+                    "zoom": 4,
+                    "line": false
+                },
+                "media": {
+                    "url": "images/images_2/statue.jpg",
+                    "credit": "Simon Keay / University of Southampton",
+                    "caption": "Statue of the Emperor Trajan similar to that which is understood to have stood in front of the Temple overlooking the Trajanic basin"
+                }
+            },
+			{
+                "text": {
+                    "headline": "Ponte di Matidia",
+                    "text": "The site of a Roman bridge over the Fiumicino Canal (Fossa Traiano) that carried the principal road connection between Portus and Ostia."
+                },
+                "location": {
+                    "name": "location",
+                    "image": "images/wc_icon.png",
+                    "icon_size": 30,
+                    "lat": 46,
+                    "lon": -83,
+                    "zoom": 4,
+                    "line": false
+                },
+                "media": {
+                    "url": "images/images_2/ponte_matidia.jpg",
+                    "credit": "Simon Keay / University of Southampton",
+                    "caption": "There is no visible evidence left of the Ponte Matidia. This is near to the supposed location of the ancient bridge"
+                }
+            },
+			{
+                "text": {
+                    "headline": "Trajanic Aqueduct",
+                    "text": "An aqueduct that represented a re-routing of the line of earlier Claudian Aqueduct following the creation of the hexagonal basin under Trajan."
+                },
+                "location": {
+                    "name": "location",
+                    "image": "images/wc_icon.png",
+                    "icon_size": 30,
+                    "lat": 58,
+                    "lon": -60,
+                    "zoom": 4,
+                    "line": false
+                },
+                "media": {
+                    "url": "images/images_2/aquaeduct.jpg",
+                    "credit": "Soprintendenza Speciale per il Colosseo, il Museo Nazionale Romano e l’Area Archeologica di Roma",
+                    "caption": ""
+                }
+            },
+			{
+                "text": {
+                    "headline": "Canale Romano",
+                    "text": "The Canale Romano was built under Trajan, and ran from the Fiumicino Canal past the transhipment area of the hexagonal basin and across flat land to intersect with the Tiber. Also known as Trajanic Canal and Transhipment Canal. It was used by river boats to carry cargoes upriver to Rome."
+                },
+                "location": {
+                    "name": "location",
+                    "image": "images/wc_icon.png",
+                    "icon_size": 30,
+                    "lat": 57,
+                    "lon": -57,
+                    "zoom": 4,
+                    "line": false
+                },
+                "media": {
+                    "url": "images/images_2/canale.jpg",
+                    "credit": "Simon Keay / University of Southampton",
+                    "caption": "The Canale Romano would have run from the farm buildings to the Tiber beyond"
+                }
+            },
+			{
+                "text": {
+                    "headline": "River Port",
+                    "text": "A series of warehouses, a possible temple and other buildings.<br/><br/>Tombs (by the Tiber): A series of monumental tombs lining the western bank of the Tiber just north of the intersection of this with the Trajanic canal from Portus."
+                },
+                "location": {
+                    "name": "location",
+                    "image": "images/wc_icon.png",
+                    "icon_size": 30,
+                    "lat": 57,
+                    "lon": -44,
+                    "zoom": 4,
+                    "line": false
+                },
+                "media": {
+                    "url": "images/images_1/port.jpg",
+                    "credit": "Soprintendenza Speciale per il Colosseo, il Museo Nazionale Romano e l’Area Archeologica di Roma",
+                    "caption": "Aerial View of the river port"
+                }
+            },
+			{
+                "text": {
+                    "headline": "Isola Sacra Cemetery",
+                    "text": "A large cemetery comprising a large number of tombs of relatively high status individuals that was in use from the later 1st century AD until the 3rd/4th centuries AD."
+                },
+                "location": {
+                    "name": "location",
+                    "image": "images/wc_icon.png",
+                    "icon_size": 30,
+                    "lat": 40,
+                    "lon": -70,
+                    "zoom": 4,
+                    "line": false
+                },
+                "media": {
+                    "url": "images/images_2/isola_cemetery.jpg",
+                    "credit": "Simon Keay / University of Southampton",
+                    "caption": "View of the ruins of the Isola Sacra cemetery"
+                }
+            },
+			{
+                "text": {
+                    "headline": "Portus to Ostia Canal",
+                    "text": "This was a very large feature identified by geophysical survey and geo-archaeological coring, probably of Trajanic date. It  was traversed by a bridge in the north of the Isola Sacra, incorporated an island, and extended southwards in the direction of Ostia."
+                },
+                "location": {
+                    "name": "location",
+                    "image": "images/wc_icon.png",
+                    "icon_size": 30,
+                    "lat": 31,
+                    "lon": -65,
+                    "zoom": 4,
+                    "line": false
+                },
+                "media": {
+                    "url": "images/images_2/geo_canal.jpg",
+                    "credit": "Kristian Strutt / University of Southampton",
+                    "caption": "Geophysical survey results showing the proposed canal"
+                }
+            },
+			{
+                "text": {
+                    "headline": "Ostia",
+                    "text": "A major river port lying c. 16m to the south-west of Rome that was established by the late 4th BC and developed into a major urban community that, in tandem with Portus, the Emporium at Rome and the port of Centumcellae (Civitavecchia) was a key element in the network of ports serving the Capital."
+                },
+                "location": {
+                    "name": "location",
+                    "image": "images/wc_icon.png",
+                    "icon_size": 30,
+                    "lat": -9,
+                    "lon": -23,
+                    "zoom": 4,
+                    "line": false
+                },
+                "media": {
+                    "url": "images/images_1/ostia_aerial.jpg",
+                    "credit": "Simon Keay / University of Southampton",
+                    "caption": "Aerial view overlooking the ruins of Ostia with the bank of the Tiber on the far left of the photograph"
+                }
+            },
+			{
+                "text": {
+                    "headline": "End of the Severan Period",
+                    "text": "Over a period of c. seven years engineers and architects of the Emperor Trajan transformed what was the largest manmade Roman harbour of its time into a monumental representation of Roman Imperial power. Portus now acted as the maritime gateway to the City of Rome."
+                },
+                "location": {
+                    "name": "location",
+                    "image": "images/tiny_icon.png",
+                    "icon_size": 1,
+                    "lat": 57.5,
+                    "lon": -90.5,
+                    "zoom": 3,
+                    "line": false
+                },
+                "media": {
+                    "url": "",
+                    "credit": "",
+                    "caption": ""
+                }
+            }
+        ]
+	}
+}
