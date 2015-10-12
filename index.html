@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" ng-app="Map_View">
 
-<head ng-controller="HeadCtrl">
+<head>
     <meta charset="utf-8">
     <meta name="description" content="TimelineJS Embed">
     <meta name="apple-mobile-web-app-capable" content="yes">
@@ -121,7 +121,7 @@
                             </a>
                         </div>
                         <div class="textHolder">
-                            <div class="text">Home</div>
+                            <div class="text">{{'TOURS.HOME' | translate}}</div>
                             <div class="line"></div>
                         </div>
                     </div>
@@ -132,7 +132,7 @@
                             </a>
                         </div>
                         <div class="textHolder">
-                            <div class="text">Claudian</div>
+                            <div class="text">{{'TOURS.CLAUDIAN' | translate}}</div>
                             <div class="line"></div>
                         </div>
                     </div>
@@ -143,7 +143,7 @@
                             </a>
                         </div>
                         <div class="textHolder">
-                            <div class="text">Trajanic</div>
+                            <div class="text">{{'TOURS.TRAJANIC' | translate}}</div>
                             <div class="line"></div>
                         </div>
                     </div>
@@ -154,7 +154,7 @@
                             </a>
                         </div>
                         <div class="textHolder">
-                            <div class="text">Severan</div>
+                            <div class="text">{{'TOURS.SEVERAN' | translate}}</div>
                             <div class="line"></div>
                         </div>
                     </div>
@@ -165,7 +165,7 @@
                             </a>
                         </div>
                         <div class="textHolder">
-                            <div class="text">Fifth-Seventh</div>
+                            <div class="text">{{'TOURS.FIFTHSEVENTH' | translate}}</div>
                             <div class="line"></div>
                         </div>
                     </div>
@@ -176,7 +176,7 @@
                             </a>
                         </div>
                         <div class="textHolder">
-                            <div class="text">Modern</div>
+                            <div class="text">{{'TOURS.MODERN' | translate}}</div>
                             <div class="line"></div>
                         </div>
                     </div>
@@ -187,7 +187,7 @@
                             </a>
                         </div>
                         <div class="textHolder">
-                            <div class="text">Timeline</div>
+                            <div class="text">{{'TOURS.TIMELINE' | translate}}</div>
                             <div class="line"></div>
                         </div>
                     </div>
@@ -201,12 +201,14 @@
                 <div id="navbar">
                     <div class="scrollable-nav">
                         <ul class="nav navbar-nav text-center" role="menu" ng-controller="RegionCtrl">
+                            <li class="mobile text-center" role="presentation">
+                                <a ng-href="{{urlBegin()}}/about">{{'MENU.ABOUT' | translate | uppercase}}</a>
+                            </li>
                             <li class="dropdown open">
                                 <a ng-href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">{{'MENU.SELECTALANG' | translate}}<span class="caret"></span></a>
                                 <ul class="dropdown-menu" role="menu">
                                     <li class="mobile text-center" ng-repeat="country in region.countries()">
-                                      <a ng-href="#!/{{country.language}}/{{remainingUrl(country.language)}}" tooltip="{{country.languageLabel() | translate}}"><img ng-src="logos/{{country.language}}.jpg">
-                                      {{country.languageLabel() | translate | uppercase}}
+                                      <a ng-href="#!/{{country.language}}/{{remainingUrl(country.language)}}" tooltip="{{country.languageLabel() | translate}}">{{country.languageLabel() | uppercase}}
                                       </a>
                                       <hr>
                                     </li>
@@ -215,14 +217,31 @@
                             <li class="dropdown open">
                                 <a ng-href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">{{'MENU.SELECTATOUR' | translate | uppercase}}<span class="caret"></span></a>
                                 <ul class="dropdown-menu" role="menu" >
-                                    <li class="mobile text-center" ng-repeat="tour in tour.tours()">
-                                      <a ng-href="{{urlBegin()}}/{{localizedPage(2)}}" tooltip="{{country.languageLabel() | translate}}">{{tour.path.en | uppercase | removeunderscore}}</a>
+                                    <li class="mobile text-center">
+                                      <a ng-href="{{urlBegin()}}/{{localizedPage(1)}}" tooltip="{{country.languageLabel() | translate}}">{{'TOURS.CLAUDIAN' | translate | uppercase }}</a>
+                                    <hr>
+                                    </li>
+                                    <li class="mobile text-center">
+                                      <a ng-href="{{urlBegin()}}/{{localizedPage(2)}}" tooltip="{{country.languageLabel() | translate}}">{{'TOURS.TRAJANIC' | translate | uppercase }}</a>
+                                    <hr>
+                                    </li>
+                                    <li class="mobile text-center">
+                                      <a ng-href="{{urlBegin()}}/{{localizedPage(3)}}" tooltip="{{country.languageLabel() | translate}}">{{'TOURS.SEVERAN' | translate | uppercase }}</a>
+                                    <hr>
+                                    </li>
+                                    <li class="mobile text-center">
+                                      <a ng-href="{{urlBegin()}}/{{localizedPage(4)}}" tooltip="{{country.languageLabel() | translate}}">{{'TOURS.FIFTHSEVENTH' | translate | uppercase }}</a>
+                                    <hr>
+                                    </li>
+                                    <li class="mobile text-center">
+                                      <a ng-href="{{urlBegin()}}/{{localizedPage(5)}}" tooltip="{{country.languageLabel() | translate}}">{{'TOURS.MODERN' | translate | uppercase }}</a>
+                                    <hr>
+                                    </li>
+                                    <li class="mobile text-center">
+                                      <a ng-href="{{urlBegin()}}/{{localizedPage(4)}}" tooltip="{{country.languageLabel() | translate}}">{{'TOURS.TIMELINE' | translate | uppercase }}</a>
                                     <hr>
                                     </li>
                                 </ul>
-                            </li>
-                            <li class="mobile text-center" role="presentation">
-                              <a ng-href="{{urlBegin()}}/about">{{'MENU.ABOUT' | translate | capitalize}}</a>
                             </li>
                         </ul>
                     </div>

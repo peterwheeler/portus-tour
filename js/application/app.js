@@ -478,7 +478,12 @@ var angtranslations = {
 			ABOUTTIME: "a timeline of the work that has been carried out at Portus, from antiquarians to the present day.",
 			ABOUTEND: "Or select continue below to start the tour"
 		},
+		LANGUAGES: {
+			ENGLISH: "English",
+			ITALIAN: "Italian"
+		},
 		TOURS: {
+			HOME: "Home",
 			CLAUDIAN: "Claudian",
 			TRAJANIC: "Trajanic",
 			SEVERAN: "Severan",
@@ -529,7 +534,12 @@ var angtranslations = {
 			ABOUTTIME: " - a timeline of the work that has been carried out at Portus, from antiquarians to the present day.",
 			ABOUTEND: "Or select continue below to start the tour"	
 		},
+		LANGUAGES: {
+			ENGLISH: "English",
+			ITALIAN: "Italiano"
+		},
 		TOURS: {
+			HOME: "Home",
 			CLAUDIAN: "Claudio",
 			TRAJANIC: "Traiano",
 			SEVERAN: "Severo",
@@ -1187,47 +1197,47 @@ String.prototype.capitalize = function() {
     this.push.apply(this, a);
 },
 
-app.controller("HeadCtrl", ["$scope", "$location", function(a, b) {
-    function c() {
-        for (var c = [], d = 0; d < t1.c.countries.length; d++) {
-            var e = t1.c.countries[d];
-            if (b.path().contains(e.language)) {
-                for (var f, g = 0; g < t1.c.pages.length; g++) {
-                    var h = t1.c.pages[g];
-                    if (j === h[e.language]) {
-                        f = h;
-                        break;
-                    }
-                }
-                for (var d = 0; d < t1.c.countries.length; d++) {
-                    var i = t1.c.countries[d],
-                        j = b.path();
-                    c.push({
-                        lan: i.language,
-                        path: "http://" + b.host() + "/#!/" + i.language + f.path[i.language]
-                    });
-                }
-            }
-            a.defaultPath = "http://" + b.host() + "/#!/";
-        }
-        if (c.isEmpty()) {
-            for (var d = 0; d < t1.c.countries.length; d++) {
-                var k = t1.c.countries[d];
-                c.push({
-                    lan: k.language,
-                    path: "http://" + b.host() + "/#!/" + k.language + b.path()
-                });
-            }
-            a.defaultPath = b.absUrl();
-        }
-        a.links = c;
-    }
-    c(),
+// app.controller("HeadCtrl", ["$scope", "$location", function(a, b) {
+//     function c() {
+//         for (var c = [], d = 0; d < t1.c.countries.length; d++) {
+//             var e = t1.c.countries[d];
+//             if (b.path().contains(e.language)) {
+//                 for (var f, g = 0; g < t1.c.pages.length; g++) {
+//                     var h = t1.c.pages[g];
+//                     if (j === h[e.language]) {
+//                         f = h;
+//                         break;
+//                     }
+//                 }
+//                 for (var d = 0; d < t1.c.countries.length; d++) {
+//                     var i = t1.c.countries[d],
+//                         j = b.path();
+//                     c.push({
+//                         lan: i.language,
+//                         path: "http://" + b.host() + "/#!/" + i.language + f.path[i.language]
+//                     });
+//                 }
+//             }
+//             a.defaultPath = "http://" + b.host() + "/#!/";
+//         }
+//         if (c.isEmpty()) {
+//             for (var d = 0; d < t1.c.countries.length; d++) {
+//                 var k = t1.c.countries[d];
+//                 c.push({
+//                     lan: k.language,
+//                     path: "http://" + b.host() + "/#!/" + k.language + b.path()
+//                 });
+//             }
+//             a.defaultPath = b.absUrl();
+//         }
+//         a.links = c;
+//     }
+//     c(),
 
-    a.$on("$locationChangeStart", function() {
-        c();
-    })
-}]),
+//     a.$on("$locationChangeStart", function() {
+//         c();
+//     })
+// }]),
 
 app.controller("MainCtrl", ["$scope", "$window", "$rootScope", "localStorageService", "$interval", "$log", "$location", function(a, b, d, f, g, h, k) {
 
@@ -1361,7 +1371,7 @@ app.controller("RegionCtrl", ["$scope", "$rootScope", "$log", "$translate", "$lo
                     if (g[c].code === b) return g[c];
                 return a.contains("en") ? g[0] : a.contains("it") ? g[1] : void 0;
             }
-            var e, g = [new f("en", "en-uk", "en", "English"), new f("it", "it-it", "it", "Italian")], 
+            var e, g = [new f("en", "en-uk", "en", "English"), new f("it", "it-it", "it", "Italiano")], 
                 h = function() {
                     return g;
                 },
@@ -1388,24 +1398,6 @@ app.controller("RegionCtrl", ["$scope", "$rootScope", "$log", "$translate", "$lo
             return {
                 country: i,
                 countries: h
-            };
-        }(),
-
-        a.tour = function(){
-
-        	var c = a.region.country();
-
-        	var d = function(){
-                	// for (var j = 0; j < t1.c.pages.length; j++) {
-                		var f = t1.c.pages;
-                				var g = f.path;
-                				return f;
-                		// }
-                	// }
-                };
-
-            return{
-                tours: d
             };
         }(),
 
