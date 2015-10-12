@@ -305,6 +305,9 @@
     padding-top: 20px;
 }
 
+/*  Original Map Icons
+    ================================================== */
+
 @font-face {
     font-family:'vco-icons';src:url('icons/vco-icons.eot');src:url('icons/vco-icons.eot?#iefix') format('embedded-opentype'),url('icons/vco-icons.ttf') format('truetype'),url('icons/vco-icons.woff') format('woff'),url('icons/vco-icons.svg#vco-icons') format('svg');font-weight:normal;font-style:normal;
 }
@@ -543,6 +546,13 @@
 
 .vco-icon-touch-pinch:after {
     content: "\e604";
+}
+
+/*  New Map Icons
+    ================================================== */
+
+@font-face {
+    font-family:'tour-icons';src:url('tour-icons/tour-icons.eot');src:url('tour-icons/tour-icons.eot?#iefix') format('embedded-opentype'),url('tour-icons/tour-icons.ttf') format('truetype'),url('tour-icons/tour-icons.woff') format('woff'),url('tour-icons/tour-icons.svg#vco-icons') format('svg');font-weight:normal;font-style:normal;
 }
 
 .vco-dragging {
@@ -2449,7 +2459,7 @@
 }
 
 .vco-map .vco-mapmarker,.vco-map .vco-mapmarker-active {
-    font-family: 'vco-icons';
+    font-family: 'tour-icons';
     speak: none;
     font-style: normal;
     font-weight: normal;
@@ -2462,21 +2472,28 @@
     height: 52px !important;
     top: -46px;
     left: -13px;
+    color: #E62355;
 }
 
-.vco-map .vco-mapmarker:before,.vco-map .vco-mapmarker-active:before {
-    content: "\e600";
-    font-size: 52px;
+.vco-map .vco-mapmarker:before{
+    content: "\e801";
+    font-size: 42px;
     text-shadow: rgba(0,0,0,0.66) 0 2px 5px;
 }
 
-.vco-map .vco-mapmarker {
-    color: #a5a5a5;
+.vco-map .vco-mapmarker-active:before {
+    content: "\e802";
+    font-size: 48px;
+    text-shadow: rgba(0,0,0,0.66) 0 2px 5px;
 }
 
-.vco-map .vco-mapmarker-active {
-    color: #da0000;
-}
+/*.vco-map .vco-mapmarker {
+    color: #E62355;
+}*/
+
+/*.vco-map .vco-mapmarker-active {
+    color: #C90022;
+}*/
 
 .vco-map .vco-mapmarker-icon:after {
     font-size: 24px;

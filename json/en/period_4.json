@@ -48,8 +48,6 @@
                 },
                 "location": {
                     "name": "location",
-                    "image": "images/wc_icon.png",
-                    "icon_size": 30,
                     "lat": 49,
                     "lon": -137,
                     "zoom": 4,
@@ -68,8 +66,6 @@
                 },
                 "location": {
                     "name": "location",
-                    "image": "images/wc_icon.png",
-                    "icon_size": 30,
                     "lat": 54,
                     "lon": -115,
                     "zoom": 4,
@@ -88,8 +84,6 @@
                 },
                 "location": {
                     "name": "location",
-                    "image": "images/wc_icon.png",
-                    "icon_size": 30,
                     "lat": 45,
                     "lon": -98,
                     "zoom": 4,
@@ -108,8 +102,6 @@
                 },
                 "location": {
                     "name": "location",
-                    "image": "images/wc_icon.png",
-                    "icon_size": 30,
                     "lat": 54,
                     "lon": -103,
                     "zoom": 4,
@@ -128,8 +120,6 @@
                 },
                 "location": {
                     "name": "location",
-                    "image": "images/wc_icon.png",
-                    "icon_size": 30,
                     "lat": 49,
                     "lon": -98,
                     "zoom": 4,
@@ -148,8 +138,6 @@
                 },
                 "location": {
                     "name": "location",
-                    "image": "images/wc_icon.png",
-                    "icon_size": 30,
                     "lat": 51.5,
                     "lon": -94.5,
                     "zoom": 4,
@@ -168,8 +156,6 @@
                 },
                 "location": {
                     "name": "location",
-                    "image": "images/wc_icon.png",
-                    "icon_size": 30,
                     "lat": 54,
                     "lon": -98,
                     "zoom": 4,
@@ -188,8 +174,6 @@
                 },
                 "location": {
                     "name": "location",
-                    "image": "images/wc_icon.png",
-                    "icon_size": 30,
                     "lat": 50.5,
                     "lon": -94.5,
                     "zoom": 4,
@@ -208,8 +192,6 @@
                 },
                 "location": {
                     "name": "location",
-                    "image": "images/wc_icon.png",
-                    "icon_size": 30,
                     "lat": 49.5,
                     "lon": -87,
                     "zoom": 4,
@@ -228,8 +210,6 @@
                 },
                 "location": {
                     "name": "location",
-                    "image": "images/wc_icon.png",
-                    "icon_size": 30,
                     "lat": 54,
                     "lon": -93,
                     "zoom": 4,
@@ -248,8 +228,6 @@
                 },
                 "location": {
                     "name": "location",
-                    "image": "images/wc_icon.png",
-                    "icon_size": 30,
                     "lat": 55,
                     "lon": -90,
                     "zoom": 4,
@@ -268,8 +246,6 @@
                 },
                 "location": {
                     "name": "location",
-                    "image": "images/wc_icon.png",
-                    "icon_size": 30,
                     "lat": 57,
                     "lon": -89,
                     "zoom": 4,
@@ -288,8 +264,6 @@
                 },
                 "location": {
                     "name": "location",
-                    "image": "images/wc_icon.png",
-                    "icon_size": 30,
                     "lat": 60,
                     "lon": -86,
                     "zoom": 4,
@@ -308,8 +282,6 @@
                 },
                 "location": {
                     "name": "location",
-                    "image": "images/wc_icon.png",
-                    "icon_size": 30,
                     "lat": 63,
                     "lon": -83,
                     "zoom": 4,
@@ -328,8 +300,6 @@
                 },
                 "location": {
                     "name": "location",
-                    "image": "images/wc_icon.png",
-                    "icon_size": 30,
                     "lat": 68.75,
                     "lon": -104,
                     "zoom": 4,
@@ -348,8 +318,6 @@
                 },
                 "location": {
                     "name": "location",
-                    "image": "images/wc_icon.png",
-                    "icon_size": 30,
                     "lat": 59,
                     "lon": -69,
                     "zoom": 4,
@@ -368,8 +336,6 @@
                 },
                 "location": {
                     "name": "location",
-                    "image": "images/wc_icon.png",
-                    "icon_size": 30,
                     "lat": 59,
                     "lon": -60,
                     "zoom": 4,
@@ -388,8 +354,6 @@
                 },
                 "location": {
                     "name": "location",
-                    "image": "images/wc_icon.png",
-                    "icon_size": 30,
                     "lat": 57,
                     "lon": -44,
                     "zoom": 4,
@@ -408,8 +372,6 @@
                 },
                 "location": {
                     "name": "location",
-                    "image": "images/wc_icon.png",
-                    "icon_size": 30,
                     "lat": 32,
                     "lon": -65,
                     "zoom": 4,
@@ -428,8 +390,6 @@
                 },
                 "location": {
                     "name": "location",
-                    "image": "images/wc_icon.png",
-                    "icon_size": 30,
                     "lat": 72,
                     "lon": -30,
                     "zoom": 3,
@@ -448,8 +408,6 @@
                 },
                 "location": {
                     "name": "location",
-                    "image": "images/wc_icon.png",
-                    "icon_size": 30,
                     "lat": -9,
                     "lon": -23,
                     "zoom": 4,
