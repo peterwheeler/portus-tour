@@ -3486,14 +3486,11 @@ VCO.Dom = {
 		}
 	},
 	
-	create: function(tagName, className, container, translate) {
+	create: function(tagName, className, container) {
 		var el = document.createElement(tagName);
 		el.className = className;
 		if (container) {
 			container.appendChild(el);
-		}
-		if (translate){
-			el.setAttribute(translate, '{{TOUR.P1_HEADLINE_1}}');
 		}
 		return el;
 	},
@@ -5383,7 +5380,7 @@ VCO.Media = VCO.Class.extend({
 		
 		// Caption
 		if (this.data.caption && this.data.caption != "" && !this._el.caption) {
-			this._el.caption				= VCO.Dom.create("div", "vco-caption", this._el.content_container, "translate");
+			this._el.caption				= VCO.Dom.create("div", "vco-caption", this._el.content_container);
 			this._el.caption.innerHTML		= this.data.caption;
 			this.options.caption_height 	= this._el.caption.offsetHeight;
 		}
@@ -9907,8 +9904,6 @@ L.Map = L.Class.extend({
 
 	layerPointToLatLng: function (point) { // (Point)
 		var projectedPoint = L.point(point).add(this.getPixelOrigin());
-		// var projectedPoint1 = L.point(480, 400).add(this.getPixelOrigin());
-		// console.log(this.unproject(projectedPoint1) );
 		return this.unproject(projectedPoint);
 	},
 
@@ -16949,12 +16944,6 @@ VCO.Map = VCO.Class.extend({
 	_createLines: function(array) {
 		
 	},
-
-	_createFinal: function () {
-		if (marker.data.type == "final") {
-			console.log("karen plenk");
-		}
-	},
 	
 	
 	/*	Map Specific
@@ -17228,16 +17217,14 @@ VCO.MapMarker.Leaflet = VCO.MapMarker.extend({
 			if (o.use_custom_markers && d.location.icon && d.location.icon != "") {
 				this._custom_icon = true;
 				this._custom_icon_url = d.location.icon;
-				this._custom_icon_size = d.location.icon_size;
-				this._icon = new L.icon({iconUrl: this._custom_icon_url, iconSize: [this._custom_icon_size], iconAnchor:[10, 10]});
+				this._icon = new L.icon({iconUrl: this._custom_icon_url, iconSize: [48], iconAnchor:[24, 48]});
 			
 			} else if (o.use_custom_markers && d.location.image && d.location.image != "") {
 				this._custom_image_icon = true;
 				this._custom_icon_url = d.location.image;
-				this._custom_icon_size = d.location.icon_size;
-				this._icon = new L.icon({iconUrl: this._custom_icon_url, iconSize: [this._custom_icon_size], iconAnchor:[10, 10], shadowSize: [68, 95], shadowAnchor: [22, 94], className:"vco-mapmarker-image-icon"});
+				this._icon = new L.icon({iconUrl: this._custom_icon_url, iconSize: [48], iconAnchor:[24, 48], shadowSize: [68, 95], shadowAnchor: [22, 94], className:"vco-mapmarker-image-icon"});
 			} else {
-				this._icon = new L.divIcon({className: 'vco-mapmarker ' + this.media_icon_class, iconAnchor:[10, 10]});
+				this._icon = new L.divIcon({className: 'vco-mapmarker ' + this.media_icon_class, iconAnchor:[10, 0]});
 			}
 			
 			this._marker = new L.marker([d.location.lat, d.location.lon], {
@@ -17280,9 +17267,9 @@ VCO.MapMarker.Leaflet = VCO.MapMarker.extend({
 			if (a) {
 				this._marker.setZIndexOffset(100);
 				if (this._custom_image_icon) {
-					this._icon = new L.icon({iconUrl: this._custom_icon_url, iconSize: [this._custom_icon_size], iconAnchor:[10, 10], shadowSize: [68, 95], shadowAnchor: [22, 94], className:"vco-mapmarker-image-icon-active"});
+					this._icon = new L.icon({iconUrl: this._custom_icon_url, iconSize: [48], iconAnchor:[24, 48], shadowSize: [68, 95], shadowAnchor: [22, 94], className:"vco-mapmarker-image-icon-active"});
 				} else {
-					this._icon = new L.divIcon({className: 'vco-mapmarker-active ' + this.media_icon_class, iconAnchor:[10, 10]});
+					this._icon = new L.divIcon({className: 'vco-mapmarker-active ' + this.media_icon_class, iconAnchor:[10, 0]});
 				}
 				
 				//this.timer = setTimeout(function() {self._openPopup();}, this.options.duration + 200);
@@ -17292,9 +17279,9 @@ VCO.MapMarker.Leaflet = VCO.MapMarker.extend({
 				clearTimeout(this.timer);
 				this._marker.setZIndexOffset(0);
 				if (this._custom_image_icon) {
-					this._icon = new L.icon({iconUrl: this._custom_icon_url, iconSize: [this._custom_icon_size], iconAnchor:[10, 10], shadowSize: [68, 95], shadowAnchor: [22, 94], className:"vco-mapmarker-image-icon"});
+					this._icon = new L.icon({iconUrl: this._custom_icon_url, iconSize: [48], iconAnchor:[24, 48], shadowSize: [68, 95], shadowAnchor: [22, 94], className:"vco-mapmarker-image-icon"});
 				} else {
-					this._icon = new L.divIcon({className: 'vco-mapmarker ' + this.media_icon_class, iconAnchor:[10, 10]});
+					this._icon = new L.divIcon({className: 'vco-mapmarker ' + this.media_icon_class, iconAnchor:[10, 0]});
 				}
 				
 				this._setIcon();
@@ -17675,7 +17662,7 @@ VCO.Map.Leaflet = VCO.Map.extend({
 		// Hide Active Line
 		this._line_active.setStyle({opacity:0});
 		
-		if (this.options.maps[0].map_type == "zoomify" && this.options.maps[0].map_as_image) {
+		if (this.options.map_type == "zoomify" && this.options.map_as_image) {
 			
 			var _center_zoom 	= this._tile_layer.getCenterZoom(this._map);
 			

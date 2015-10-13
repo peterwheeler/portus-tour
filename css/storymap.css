@@ -2468,11 +2468,19 @@
     line-height: 1;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    width: 38px !important;
-    height: 52px !important;
     top: -46px;
     left: -13px;
     color: #E62355;
+}
+
+.vco-map .vco-mapmarker {
+    width: 42px !important;
+    height: 42px !important;
+}
+
+.vco-map .vco-mapmarker-active {
+    width: 48px !important;
+    height: 48px !important;    
 }
 
 .vco-map .vco-mapmarker:before{
@@ -2489,9 +2497,9 @@
 
 /*.vco-map .vco-mapmarker {
     color: #E62355;
-}*/
+}
 
-/*.vco-map .vco-mapmarker-active {
+.vco-map .vco-mapmarker-active {
     color: #C90022;
 }*/
 
