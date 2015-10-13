@@ -11,6 +11,7 @@
                 "location": {
                     "name": "location",
                     "image": "images/tiny_icon.png",
+                    "icon_size": 1,
                     "lat": 74.75,
                     "lon": -127.25,
                     "zoom": 3,

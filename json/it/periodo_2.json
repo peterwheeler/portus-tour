@@ -9,7 +9,7 @@
                 "location": {
                     "name": "location",
                     "image": "images/tiny_icon.png",
-                    "icon_size": 30,
+                    "icon_size": 1,
                     "lat": 57.5,
                     "lon": -90.5,
                     "zoom": 3,
@@ -28,8 +28,6 @@
                 },
                 "location": {
                     "name": "location",
-                    "image": "images/wc_icon.png",
-                    "icon_size": 30,
                     "lat": 49,
                     "lon": -137,
                     "zoom": 4,
@@ -48,8 +46,6 @@
                 },
                 "location": {
                     "name": "location",
-                    "image": "images/wc_icon.png",
-                    "icon_size": 30,
                     "lat": 54,
                     "lon": -115,
                     "zoom": 4,
@@ -68,8 +64,6 @@
                 },
                 "location": {
                     "name": "location",
-                    "image": "images/wc_icon.png",
-                    "icon_size": 30,
                     "lat": 49,
                     "lon": -98,
                     "zoom": 4,
@@ -88,8 +82,6 @@
                 },
                 "location": {
                     "name": "location",
-                    "image": "images/wc_icon.png",
-                    "icon_size": 30,
                     "lat": 51.5,
                     "lon": -94.5,
                     "zoom": 4,
@@ -162,8 +154,6 @@
                 },
                 "location": {
                     "name": "location",
-                    "image": "images/wc_icon.png",
-                    "icon_size": 30,
                     "lat": 54,
                     "lon": -93,
                     "zoom": 4,
@@ -182,8 +172,6 @@
                 },
                 "location": {
                     "name": "location",
-                    "image": "images/wc_icon.png",
-                    "icon_size": 30,
                     "lat": 55,
                     "lon": -90,
                     "zoom": 4,
@@ -202,8 +190,6 @@
                 },
                 "location": {
                     "name": "location",
-                    "image": "images/wc_icon.png",
-                    "icon_size": 30,
                     "lat": 57,
                     "lon": -89,
                     "zoom": 4,
@@ -222,8 +208,6 @@
                 },
                 "location": {
                     "name": "location",
-                    "image": "images/wc_icon.png",
-                    "icon_size": 30,
                     "lat": 60,
                     "lon": -86,
                     "zoom": 4,
@@ -242,8 +226,6 @@
                 },
                 "location": {
                     "name": "location",
-                    "image": "images/wc_icon.png",
-                    "icon_size": 30,
                     "lat": 63,
                     "lon": -83,
                     "zoom": 4,
@@ -262,8 +244,6 @@
                 },
                 "location": {
                     "name": "location",
-                    "image": "images/wc_icon.png",
-                    "icon_size": 30,
                     "lat": 59,
                     "lon": -69,
                     "zoom": 4,
@@ -300,8 +280,6 @@
                 },
                 "location": {
                     "name": "location",
-                    "image": "images/wc_icon.png",
-                    "icon_size": 30,
                     "lat": 58,
                     "lon": -60,
                     "zoom": 4,
@@ -320,8 +298,6 @@
                 },
                 "location": {
                     "name": "location",
-                    "image": "images/wc_icon.png",
-                    "icon_size": 30,
                     "lat": 57,
                     "lon": -57,
                     "zoom": 4,
@@ -340,8 +316,6 @@
                 },
                 "location": {
                     "name": "location",
-                    "image": "images/wc_icon.png",
-                    "icon_size": 30,
                     "lat": 57,
                     "lon": -44,
                     "zoom": 4,
@@ -360,8 +334,6 @@
                 },
                 "location": {
                     "name": "location",
-                    "image": "images/wc_icon.png",
-                    "icon_size": 30,
                     "lat": 40,
                     "lon": -70,
                     "zoom": 4,
@@ -380,8 +352,6 @@
                 },
                 "location": {
                     "name": "location",
-                    "image": "images/wc_icon.png",
-                    "icon_size": 30,
                     "lat": 31,
                     "lon": -65,
                     "zoom": 4,
@@ -400,8 +370,6 @@
                 },
                 "location": {
                     "name": "location",
-                    "image": "images/wc_icon.png",
-                    "icon_size": 30,
                     "lat": -9,
                     "lon": -23,
                     "zoom": 4,
