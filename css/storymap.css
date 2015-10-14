@@ -1049,7 +1049,7 @@
 .vco-skinny .vco-slide .vco-slide-content-container .vco-slide-content .vco-text .vco-text-content-container {
     padding-left: 10px;
     padding-right: 10px;
-    padding-bottom: 100px;
+    padding-bottom: 40px;
 }
 
 .vco-mobile.vco-skinny .vco-slide-content-container .vco-slide-content .vco-media img,.vco-mobile.vco-skinny .vco-slide-content-container .vco-slide-content .vco-media embed,.vco-mobile.vco-skinny .vco-slide-content-container .vco-slide-content .vco-media object,.vco-mobile.vco-skinny .vco-slide-content-container .vco-slide-content .vco-media video,.vco-mobile.vco-skinny .vco-slide-content-container .vco-slide-content .vco-media iframe {
@@ -1493,14 +1493,14 @@
 }
 
 .vco-skinny .vco-media .vco-media-content-container .vco-credit,.vco-skinny .vco-media .vco-media-content-container .vco-caption {
-    margin-top: 2px;
-    padding-left: 10px;
-    padding-right: 10px;
+    margin: 2px auto 0 auto;
+    padding-left: 5px;
+    padding-right: 5px;
     font-size: 8px;
 }
 
 .vco-skinny .vco-media .vco-media-content-container .vco-credit {
-    margin-top: 0;
+    margin-top: 3px;
 }
 
 .vco-text {
