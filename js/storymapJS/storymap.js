@@ -4828,6 +4828,23 @@ VCO.MenuBar = VCO.Class.extend({
 			this._el.button_collapse_toggle.innerHTML	= VCO.Language.buttons.uncollapse_toggle + "<span class='vco-icon-arrow-down'></span>";
 		}
 	},
+
+	_collapseButtonToggle: function(e) {
+		if (this.collapsed) {
+			this.collapsed = false;
+			this.show();
+			this._el.button_backtostart.style.display = "none";
+			this._el.button_overview.style.display = "inline";
+			this._el.button_collapse_toggle.innerHTML	= VCO.Language.buttons.collapse_toggle + "<span class='vco-icon-arrow-up'></span>";
+
+		} else {
+			this.collapsed = true;
+			this.hide(25);
+			this._el.button_overview.style.display = "none";
+			this._el.button_backtostart.style.display = "inline";
+			this._el.button_collapse_toggle.innerHTML	= VCO.Language.buttons.uncollapse_toggle + "<span class='vco-icon-arrow-down'></span>";
+		}
+	},
 	
 	/*	Private Methods
 	================================================== */
@@ -4876,6 +4893,14 @@ VCO.MenuBar = VCO.Class.extend({
 		if (height) {
 			this.options.height = height;
 		}
+	},
+
+
+	/*	Public
+	================================================== */
+
+	collapseButtonToggle: function () {
+		this._collapseButtonToggle();
 	}
 	
 });
@@ -5267,7 +5292,8 @@ VCO.Media = VCO.Class.extend({
 					this._el.credit.style.width		= "auto";
 				}
 				if (this._el.caption) {
-					this._el.caption.style.width	= "auto";
+					this._el.caption.style.width	= "100px";
+					this._el.caption.style.color	= "blue";
 				}
 			}
 			
@@ -16811,10 +16837,8 @@ VCO.Map = VCO.Class.extend({
 					// Fire Event
 					this._onMarkerChange();
 					
-				}
-				
-			}
-			
+				}	
+			}	
 		}
 	},
 	
@@ -16938,7 +16962,6 @@ VCO.Map = VCO.Class.extend({
 				this._addToLine(this._line, array[i]);
 			}
 		};
-		
 	},
 	
 	_createLines: function(array) {
@@ -17078,6 +17101,7 @@ VCO.Map = VCO.Class.extend({
 		if (this.current_marker != e.marker_number) {
 			this.goTo(e.marker_number);
 		}
+		this.fire("markerclicked");
 	},
 	
 	_onMapLoaded: function(e) {
@@ -17358,9 +17382,6 @@ VCO.Map.Leaflet = VCO.Map.extend({
 			this._line_active.setStyle({opacity:0});
 			this._line.setStyle({opacity:0});
 		}
-
-		
-		
 	},
 	
 	/*	Create Mini Map
@@ -17391,8 +17412,7 @@ VCO.Map.Leaflet = VCO.Map.extend({
 			}
 		}).addTo(this._map);
 		
-		this._mini_map.getContainer().style.backgroundColor = this.options.map_background_color;
-		
+		this._mini_map.getContainer().style.backgroundColor = this.options.map_background_color;	
 	},
 
 	/*	Create Layer Switch
@@ -17769,14 +17789,8 @@ VCO.Map.Leaflet = VCO.Map.extend({
 			
 				marker.data.location.zoom = calculated_zoom;
 			}
-			
-
 		};
-		
-		
 	},
-	
-	
 	
 	/*	Line
 	================================================== */
@@ -17790,8 +17804,7 @@ VCO.Map.Leaflet = VCO.Map.extend({
 			dashArray: 	this.options.line_dash,
 			lineJoin: 	this.options.line_join,
 			className: 	"vco-map-line"
-		} );
-		
+		});		
 	},
 	
 	_addLineToMap: function(line) {
@@ -17867,8 +17880,7 @@ VCO.Map.Leaflet = VCO.Map.extend({
 				this._mini_map.restore();
 				//this._mini_map.updateDisplay(_location, _zoom, _duration);
 			}
-		} 
-		
+		}	
 	},
 	
 	_getMapLocation: function(m) {
@@ -17894,15 +17906,12 @@ VCO.Map.Leaflet = VCO.Map.extend({
 		target_latlng 	= this._map.unproject(target_point, zoom);
 		
 		return target_latlng;
-
 	},
 	
 	_getBoundsZoom: function(origin, destination, correct_for_center) {
 		var _origin = origin,
 			_padding = [(Math.abs(this.options.maps[0].map_center_offset.left)*3),(Math.abs(this.options.maps[0].map_center_offset.top)*3)];
-			
-		
-		//_padding = [0,0];
+	
 		//_padding = [0,0];
 		if (correct_for_center) {
 			var _lat = _origin.lat + (_origin.lat - destination.lat)/2,
@@ -17970,9 +17979,7 @@ VCO.Map.Leaflet = VCO.Map.extend({
 				this._viewTo(this._markers[this.current_marker].data.location, {zoom:this._getMapZoom()});
 			}
 		};
-	}
-	
-	
+	}	
 });
 
 /*	Overwrite and customize Leaflet functions
@@ -18592,7 +18599,6 @@ VCO.StoryMap = VCO.Class.extend({
 			this._menubar.setSticky(this.options.menubar_height);
 		}
 		
-		
 		// Update Display
 		this._updateDisplay(this.options.map_height, true, 2000);
 		
@@ -18653,6 +18659,7 @@ VCO.StoryMap = VCO.Class.extend({
 		
 		// Map Events
 		this._map.on('change', this._onMapChange, this);
+		this._map.on('markerclicked', this._onIconClick, this);
 
 		if (this._message) {
 			this._message.on('clicked', this._onMessageClick, this);
@@ -18843,6 +18850,10 @@ VCO.StoryMap = VCO.Class.extend({
 	
 	_onOverview: function(e) {
 		this._map.markerOverview();
+	},
+
+	_onIconClick: function(e){
+		this._menubar.collapseButtonToggle();
 	},
 	
 	_onBackToStart: function(e) {
