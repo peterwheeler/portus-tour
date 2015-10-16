@@ -751,6 +751,59 @@ hr.style {
     left: 45%;
 }
 
+/* Menubar
+============================================================================= */
+
+.menubar {
+    position: absolute;
+    margin: 16px;
+    padding: 10px;
+    left: 0px;
+    top: 0px;
+    z-index: 10;
+    transition: left 0.5s;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2),0 -1px 0px rgba(0,0,0,0.02);
+}
+
+.menubar-button {
+  display: inline-block;
+}
+
+.menubar-button:after {
+    content: "";
+    top: 10px;
+    border-left: 1px solid #ddd;
+    height: 28px;
+}
+
+.button-backtostart {
+
+}
+
+.button-overview {
+
+}
+
+.button-overview {
+
+}
+
+.button-layers {
+    width: 80px;
+}
+
+.menubar-dropdown {
+    position: relative;
+    text-align: left;
+    min-width: 224px;
+
+}
+
+.leaflet-control {
+  margin-top: 0px;
+}
+
 /* Messages
 ============================================================================= */
 
@@ -761,6 +814,7 @@ hr.style {
 
 .message-tours {
     display: inline-block;
+    background-color: #fff;
 }
 
 .textHolderWhite{

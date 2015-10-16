@@ -4713,6 +4713,8 @@ VCO.MenuBar = VCO.Class.extend({
 			button_overview: {},
 			button_backtostart: {},
 			button_collapse_toggle: {},
+			button_layers: {},
+			control_layer: {},
 			arrow: {},
 			line: {},
 			coverbar: {},
@@ -4810,6 +4812,10 @@ VCO.MenuBar = VCO.Class.extend({
 	_onButtonBackToStart: function(e) {
 		this.fire("back_to_start", e);
 	},
+
+	_onButtonLayers: function(e) {
+		this.fire("layers", e);
+	},
 	
 	_onButtonCollapseMap: function(e) {
 		if (this.collapsed) {
@@ -4850,38 +4856,42 @@ VCO.MenuBar = VCO.Class.extend({
 	================================================== */
 	_initLayout: function () {
 		// Create Layout
-		
+
 		// Buttons
-		this._el.button_overview 						= VCO.Dom.create('span', 'vco-menubar-button', this._el.container);
+		this._el.button_backtostart 					= VCO.Dom.create('div', 'menubar-button button-backtostart', this._el.container);
+		VCO.DomEvent.addListener(this._el.button_backtostart, 'click', this._onButtonBackToStart, this);
+
+		this._el.button_overview 						= VCO.Dom.create('div', 'menubar-button button-overview', this._el.container);
 		VCO.DomEvent.addListener(this._el.button_overview, 'click', this._onButtonOverview, this);
 		
-		this._el.button_backtostart 					= VCO.Dom.create('span', 'vco-menubar-button', this._el.container);
-		VCO.DomEvent.addListener(this._el.button_backtostart, 'click', this._onButtonBackToStart, this);
-		
-		this._el.button_collapse_toggle 				= VCO.Dom.create('span', 'vco-menubar-button', this._el.container);
+		this._el.button_collapse_toggle 				= VCO.Dom.create('div', 'menubar-button button-collapse_toggle', this._el.container);
 		VCO.DomEvent.addListener(this._el.button_collapse_toggle, 'click', this._onButtonCollapseMap, this);
+
+		this._el.button_layers 					= VCO.Dom.create('div', 'menubar-button button-layers', this._el.container);
+		VCO.DomEvent.addListener(this._el.button_layers, 'click', this._onButtonLayers, this);
 		
 		if (this.options.maps[0].map_as_image) {
-			this._el.button_overview.innerHTML			= VCO.Language.buttons.overview;
+			this._el.button_overview.innerHTML			= "<i class='fa fa-compass fa-lg'></i>";
 		} else {
-			this._el.button_overview.innerHTML			= VCO.Language.buttons.map_overview;
+			this._el.button_overview.innerHTML			= "<i class='fa fa-align-left fa-lg'></i>";
 		}
 
-		this._el.button_backtostart.innerHTML		= VCO.Language.buttons.backtostart;
-		this._el.button_collapse_toggle.innerHTML	= VCO.Language.buttons.collapse_toggle + "<span class='vco-icon-arrow-up'></span>";	
+		this._el.button_backtostart.innerHTML		= "<i class='fa fa-reply fa-lg'></i>";
+		this._el.button_collapse_toggle.innerHTML	= VCO.Language.buttons.collapse_toggle + "<span class='vco-icon-arrow-up'></span>";
+		// this._el.button_layers.innerHTML		= VCO.Language.buttons.collapse_toggle + "<i class='fa fa-map fa-lg'></i>";	
 
 		if (VCO.Browser.mobile) {
 			this._el.button_backtostart.style.display = "none";
 			this._el.container.setAttribute("ontouchstart"," ");
 		}
 		else{
-			this._el.button_collapse_toggle.style.display = "none";
+			// this._el.button_collapse_toggle.style.display = "none";
 		}
 		
 	},
 	
 	_initEvents: function () {
-		
+		trace(1);
 	},
 	
 	// Update Display
@@ -4901,6 +4911,10 @@ VCO.MenuBar = VCO.Class.extend({
 
 	collapseButtonToggle: function () {
 		this._collapseButtonToggle();
+	},
+
+	controlLayers: function (layers) {
+		this._el.button_layers.appendChild(layers);
 	}
 	
 });
@@ -16610,7 +16624,7 @@ VCO.Map = VCO.Class.extend({
 
 		// Layer Control
 		this._layer_control = null;
-		
+				
 		// Markers
 		this._markers = [];
 		
@@ -16871,7 +16885,8 @@ VCO.Map = VCO.Class.extend({
 	},
 
 	createLayerControl: function() {
-		this._createLayerControl();
+		trace(2);
+		return this._createLayerControl();
 	},
 	
 	setMapOffset: function(left, top) {
@@ -17120,8 +17135,6 @@ VCO.Map = VCO.Class.extend({
 		
 		this.initialMapLocation();
 		this.fire("loaded", this.data);
-
-		this.createLayerControl();
 	},
 	
 	_onWheel: function(e) {
@@ -17431,7 +17444,15 @@ VCO.Map.Leaflet = VCO.Map.extend({
 		}		
 
 		// Create Layer Control
-		this._layer_control = new L.control.layers(_layergroup, null, {position: 'topleft'}).addTo(this._map);
+		this._layer_control = new L.control.layers(_layergroup, null, {position: 'topleft'});
+		// .addTo(this._map);
+		
+		this._layer_control._map = this._map;
+
+		var controlBox = this._layer_control.onAdd(this._map);
+
+		return controlBox;
+
 	},
 	
 	/*	Create Background Map
@@ -18341,7 +18362,8 @@ VCO.StoryMap = VCO.Class.extend({
 			storyslider: {},
 			map: {},
 			menubar: {},
-			messages: {}
+			messages: {},
+			test: {}
 		};
 		
 		// Determine Container Element
@@ -18360,6 +18382,7 @@ VCO.StoryMap = VCO.Class.extend({
 		
 		// Menu Bar
 		this._menubar = {};
+		this.layer_control = {};
 
 		//Messages
 		this._messages = {};
@@ -18554,7 +18577,7 @@ VCO.StoryMap = VCO.Class.extend({
 		this.options.base_class = this._el.container.className;
 		
 		// Create Layout
-		this._el.menubar		= VCO.Dom.create('div', 'vco-menubar', this._el.container);
+		this._el.menubar		= VCO.Dom.create('div', 'menubar', this._el.container);
 		this._el.map 			= VCO.Dom.create('div', 'vco-map', this._el.container);
 		this._el.storyslider 	= VCO.Dom.create('div', 'vco-storyslider', this._el.container);
 		this._el.messages 		= VCO.Dom.create('div', 'vco-messages', this._el.container);
@@ -18575,6 +18598,9 @@ VCO.StoryMap = VCO.Class.extend({
 		
 		// Create Menu Bar
 		this._menubar = new VCO.MenuBar(this._el.menubar, this._menubarContainer, this.options);
+		this.layer_control = this._map.createLayerControl();
+		this._menubar.controlLayers(this.layer_control);
+		// this._el.menubar.appendChild(this.layer_control);
 
 		this._showMessage();
 		this._finalmessage;
@@ -18853,7 +18879,9 @@ VCO.StoryMap = VCO.Class.extend({
 	},
 
 	_onIconClick: function(e){
-		this._menubar.collapseButtonToggle();
+		if (this.options.layout == "portrait") {
+			this._menubar.collapseButtonToggle();
+		}
 	},
 	
 	_onBackToStart: function(e) {
