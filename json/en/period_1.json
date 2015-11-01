@@ -62,7 +62,7 @@
             {
                 "text": {
                     "headline": "Claudian Basin",
-                    "text": "The Claudian Basin was a large 200 Ha artificial outer harbour basin defined by an estuarine landscape to the east, concrete quays to the north and south and a lighthouse to the west. The principal entrance was from the west, with a secondary in its <a onclick='goTo(5);' title='Northern Entrance'>north-eastern corner</a>.<br/><br/>An inscription from AD 46 found at the site in 1836 commemorates the Emperor Claudius as having delivered the City (of Rome) from the dangers of flooding through the construction of canals (fossis). These stretched from the Tiber to the sea. The inscription also commemorates the construction of the harbour. Here is the full text:<br/><br/>TI(berius) CLAVDIVS DRVSI F(ilius) CAESAR<br/>AVG(ustus) GERMANICVS PONTIF(ex) MAX(imus)<br/>TRIB(unicia) POTEST(ate) VI CO(n)S(ul) DESIGN(atus) IIII IMP(erator) XII P(ater) P(atriae)<br/>FOSSIS DVCTIS A TIBERI OPERIS PORTV[s]<br/>CAVSSA EMISSISQVE IN MARE VRBEM<br/>INVNDATIONIS PERICYLO LIBERAVIT<br/><br/>The northern quay of the Claudian basin was uncovered during clearance work for the building of Fiumucino International Airport in the 1960s. It was built from <i>opus caementicium</i> (hydraulic concrete) and can be traced for well over a kilometre from a point just west of the northern point of the eastern quay (where there was a narrow entrance) as far as the main runway of the airport, but continued onwards to a point a short distance to the north of the Pharos. There is good evidence for a number of structural phases in the surviving concrete."
+                    "text": "The Claudian Basin was a large 200 Ha artificial outer harbour basin defined by an estuarine landscape to the east, concrete quays to the north and south and a lighthouse to the west. The principal entrance was from the west, with a secondary in its <a onclick='goTo(5);' title='Northern Entrance'>north-eastern corner</a>.<br/><br/>An inscription from AD 46 found at the site in 1836 commemorates the Emperor Claudius as having delivered the City (of Rome) from the dangers of flooding through the construction of canals (fossis). These stretched from the Tiber to the sea. The inscription also commemorates the construction of the harbour. Here is the full text:<br/><br/><i>TI(berius) CLAVDIVS DRVSI F(ilius) CAESAR<br/>AVG(ustus) GERMANICVS PONTIF(ex) MAX(imus)<br/>TRIB(unicia) POTEST(ate) VI CO(n)S(ul) DESIGN(atus) IIII IMP(erator) XII P(ater) P(atriae)<br/>FOSSIS DVCTIS A TIBERI OPERIS PORTV[s]<br/>CAVSSA EMISSISQVE IN MARE VRBEM<br/>INVNDATIONIS PERICYLO LIBERAVIT</i><br/><br/>The northern quay of the Claudian basin was uncovered during clearance work for the building of Fiumucino International Airport in the 1960s. It was built from <i>opus caementicium</i> (hydraulic concrete) and can be traced for well over a kilometre from a point just west of the northern point of the eastern quay (where there was a narrow entrance) as far as the main runway of the airport, but continued onwards to a point a short distance to the north of the Pharos. There is good evidence for a number of structural phases in the surviving concrete."
                 },
                 "location": {
                     "name": "location",
@@ -109,7 +109,7 @@
                 },
                 "media": {
                     "url": "images/images_1/northern_entrance.jpg",
-                    "credit": "11/02/2014  /  Google Earth",
+                    "credit": "11/02/2014  /  Google Earth <a href='https://goo.gl/maps/AMcCriZCaVs' target='_blank'>41°47°12.08', -12°15°12.44'</a>",
                     "caption": "Satellite image over the possible location of the northern entrance to the Claudian basin (<i>the open ground at the top of the image<i/>)"
                 }
             },
@@ -152,7 +152,7 @@
             {
                 "text": {
                     "headline": "Claudian Quay",
-                    "text": "In 2007 the Portus Project team found this large concrete quay that defined the southern edge of the Claudian basin."
+                    "text": "In 2007 the Portus Project team found this large concrete quay that defined the southern edge of the Claudian basin"
                 },
                 "location": {
                     "name": "location",
@@ -182,7 +182,7 @@
                 "media": {
                     "url": "images/images_1/antemurale.jpg",
                     "credit": "Simon Keay / University of Southampton",
-                    "caption": "View of a surviving part of the Antemurale close to the lighthouse at its northern end."
+                    "caption": "View of a surviving part of the Antemurale close to the lighthouse at its northern end"
                 }
             },
             {
@@ -200,7 +200,7 @@
                 "media": {
                     "url": "images/images_1/portico_di_claudia.jpg",
                     "credit": "Daniel Gonzales",
-                    "caption": "View of the surviving colonnaded route of the Portico di Claudio, looking eastwards."
+                    "caption": "View of the surviving colonnaded route of the Portico di Claudio, looking eastwards"
                 }
             },
             {
@@ -242,7 +242,7 @@
             {
                 "text": {
                     "headline": "Commercial Buildings",
-                    "text": "Excavations by Lidia Paroli and Mauro Maiorano in the area to the east of the transverse canal, next to the colonnaded road, show that prior to c. the 4th to early 5th centuries AD, the site was occupied by a road junction, on to which opened several buildings of a possibly commercial character. These underwent a continual process of development in the course of the 1st, 2nd and 3rd centuries AD with the appearance of mosaic floors and painted walls.<br/><br/>The position of the buildings would have been perfectly suited to mercantile activities, with the intersection of the canal, the end of the adjacent Darsena, and presumably also both the road leading south towards the ‘Isola Sacra’ and Ostia. Elements of these buildings were later incorporated into the Basilica Portuense, or early Christian church.<br/><br/>One assumes that one or more bridges may have spanned the Canale Trasverso between this area and the buildings lying to the west of it; since the only representation of these, however, dates from the 16th century, there is no scientific basis for them yet.<br/><br/>Immediately to the west of the Canale Trasverso lie a number of structures that are only known to us from geophysical survey.  Further to the west of these, to the east of the Portico di Claudio and to the south of the Darsena, lie the remains of a massive rectangular warehouse complex with central courtyard. This was first identified by Rdolfo Lanciani in 1868, who curiously labelled it as the “Foro Olitorio”."
+                    "text": "Excavations by Lidia Paroli and Mauro Maiorano in the area to the east of the transverse canal, next to the colonnaded road, show that prior to c. the 4th to early 5th centuries AD, the site was occupied by a road junction, on to which opened several buildings of a possibly commercial character. These underwent a continual process of development in the course of the 1st, 2nd and 3rd centuries AD with the appearance of mosaic floors and painted walls.<br/><br/>The position of the buildings would have been perfectly suited to mercantile activities, with the intersection of the canal, the end of the adjacent Darsena, and presumably also both the road leading south towards the Isola Sacra and Ostia. Elements of these buildings were later incorporated into the Basilica Portuense, or early Christian church.<br/><br/>One assumes that one or more bridges may have spanned the Canale Trasverso between this area and the buildings lying to the west of it; since the only representation of these, however, dates from the 16th century, there is no scientific basis for them yet.<br/><br/>Immediately to the west of the Canale Trasverso lie a number of structures that are only known to us from geophysical survey.  Further to the west of these, to the east of the Portico di Claudio and to the south of the Darsena, lie the remains of a massive rectangular warehouse complex with central courtyard. This was first identified by Rdolfo Lanciani in 1868, who curiously labelled it as the “Foro Olitorio”."
                 },
                 "location": {
                     "name": "location",

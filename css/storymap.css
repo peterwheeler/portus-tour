@@ -614,6 +614,21 @@
     }
 }
 
+/* Menubar
+============================================================================= */
+
+.menubar {
+    position: absolute;
+    margin: 16px;
+    padding: 10px;
+    left: 0px;
+    top: 0px;
+    z-index: 999;
+    transition: left 0.5s;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2),0 -1px 0px rgba(0,0,0,0.02);
+}
+
 .vco-menubar-button {
     border-right: 1px solid #e6e6e6;
     font-size: 14px;
@@ -635,6 +650,107 @@
 .vco-menubar-button:hover {
     background: #da0000;
     color: #fff;
+}
+
+.menubar .buttons-container {
+    
+}
+
+.menubar, .menubar a, .menubar p, .menubar label {
+    line-height: normal;
+    text-align: center;
+    font-family: 'Forum', cursive;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #333;
+}
+
+.menubar-button {
+    display: inline-block;
+    padding: 0px 5px 0px 5px;
+}
+
+.menubar a:hover {
+  text-decoration: none;
+  color: #333;
+}
+
+.menubar-button:hover, .menubar-button label:hover {
+  cursor: pointer;
+}
+.menubar-button:after {
+/*    content: "";
+    top: 10px;
+    border-left: 1px solid #ddd;
+    height: 28px;*/
+}
+
+.menbar-logo {
+  height: 25px;
+  width: 25px;
+  background-image: url(../logos/logo.png);
+  background-repeat: no-repeat;
+  background-size: 25px;
+}
+
+.button-collapse_toggle {
+}
+
+.button-backtostart {
+
+}
+
+.button-overview {
+
+}
+
+.button-layers {
+}
+
+.menubar-dropdown {
+    position: relative;
+    text-align: left;
+    min-width: 224px;
+}
+
+.leaflet-control {
+    margin-top: 0px;
+}
+
+.vco-skinny .menubar {
+    position: absolute;
+    width: 100%;
+    margin: 0px;
+    padding: 20px 10px 2px 10px;
+}
+
+.vco-skinny .menubar, .vco-skinny .menubar a{
+    font-size: 24px;
+}
+
+.vco-skinny .menubar .buttons-container {
+    padding: 0px 50px 0px 0px;
+    height: 30px;
+}
+
+.vco-skinny .menubar .menubar-button {
+    margin: 0px 8px;
+}
+
+.vco-skinny .menubar .button-collapse_toggle {
+  margin: 0px 20px 2px 0px;
+}
+
+.vco-skinny .menubar .button-backtostart {
+
+}
+
+.vco-skinny .menubar .button-overview {
+
+}
+
+.vco-skinny .menubar .button-layers {
 }
 
 .vco-mobile .vco-menubar-button:hover {

@@ -62,7 +62,7 @@
             {
                 "text": {
                     "headline": "Il bacino di Claudio",
-                    "text": "Il bacino di Claudio era un grande bacino portuale artificiale esterno di 200 ettari, definito da un paesaggio a estuario ad est, da banchine di cemento a nord e sud e da un faro a ovest. L'ingresso principale era a ovest, con  un accesso secondario nel suo angolo nord-orientale.<br/><br/>Un'iscrizione del 46 d.C., ritrovata presso il sito nel 1836, commemora l'imperatore Claudio per aver protetto la città (di Roma) dal pericolo delle inondazioni attraverso la costruzione di canali. Questi si estendevano dal Tevere fino al mare. L'iscrizione ricorda anche la costruzione del porto. Ecco il testo integrale:<br/><br/>TI(berius) CLAVDIVS DRVSI F(ilius) CAESAR<br/>AVG(ustus) GERMANICVS PONTIF(ex) MAX(imus)<br/>TRIB(unicia) POTEST(ate) VI CO(n)S(ul) DESIGN(atus) IIII IMP(erator) XII P(ater) P(atriae)<br/>FOSSIS DVCTIS A TIBERI OPERIS PORTV[s]<br/>CAVSSA EMISSISQVE IN MARE VRBEM<br/>INVNDATIONIS PERICYLO LIBERAVIT<br/><br/>Il molo settentrionale del bacino di Claudio è stato scoperto durante i lavori intrapresi per la costruzione dell’Aereoporto Internazionale di Fiumucino nel 1960. Il molo é stato costruito in opus caementicium (cemento idraulico) e si puó seguire per più di un chilometro ad ovest della punta settentrionale della banchina orientale (dove si trovava l'ingresso piccolo). Il molo continuava fino ad un punto a nelle vicinanze settentrionali del faro. Il Calcestruzzo supestite ha messo in luce alcune fasi strutturali differenti."
+                    "text": "Il bacino di Claudio era un grande bacino portuale artificiale esterno di 200 ettari, definito da un paesaggio a estuario ad est, da banchine di cemento a nord e sud e da un faro a ovest. L'ingresso principale era a ovest, con  un accesso secondario nel suo angolo nord-orientale.<br/><br/>Un'iscrizione del 46 d.C., ritrovata presso il sito nel 1836, commemora l'imperatore Claudio per aver protetto la città (di Roma) dal pericolo delle inondazioni attraverso la costruzione di canali. Questi si estendevano dal Tevere fino al mare. L'iscrizione ricorda anche la costruzione del porto. Ecco il testo integrale:<br/><br/><i>TI(berius) CLAVDIVS DRVSI F(ilius) CAESAR<br/>AVG(ustus) GERMANICVS PONTIF(ex) MAX(imus)<br/>TRIB(unicia) POTEST(ate) VI CO(n)S(ul) DESIGN(atus) IIII IMP(erator) XII P(ater) P(atriae)<br/>FOSSIS DVCTIS A TIBERI OPERIS PORTV[s]<br/>CAVSSA EMISSISQVE IN MARE VRBEM<br/>INVNDATIONIS PERICYLO LIBERAVIT</i><br/><br/>Il molo settentrionale del bacino di Claudio è stato scoperto durante i lavori intrapresi per la costruzione dell’Aereoporto Internazionale di Fiumucino nel 1960. Il molo é stato costruito in opus caementicium (cemento idraulico) e si puó seguire per più di un chilometro ad ovest della punta settentrionale della banchina orientale (dove si trovava l'ingresso piccolo). Il molo continuava fino ad un punto a nelle vicinanze settentrionali del faro. Il Calcestruzzo supestite ha messo in luce alcune fasi strutturali differenti."
                 },
                 "location": {
                     "name": "location",
@@ -109,7 +109,7 @@
                 },
                 "media": {
                     "url": "images/images_1/northern_entrance.jpg",
-                    "credit": "11/02/2014  /  Google Earth",
+                    "credit": "11/02/2014  /  Google Earth <a href='https://goo.gl/maps/AMcCriZCaVs' target='_blank'>41°47°12.08', -12°15°12.44'</a>",
                     "caption": "Immagine satellitare che illustra la possibile posizione dell’entrata nord del bacino di Claudio. (<i>lo spazio aperto nella parte superiore dell’immagine<i/>)"
                 }
             },
@@ -146,7 +146,7 @@
                 "media": {
                     "url": "images/images_1/monte_giulio.jpg",
                     "credit": "Simon Keay / University of Southampton",
-                    "caption": "Facciata della cisterna d’acqua dietro al Monte Giulio."
+                    "caption": "Facciata della cisterna d’acqua dietro al Monte Giulio"
                 }
             },
             {
@@ -278,7 +278,7 @@
             {
                 "text": {
                     "headline": "L'Acquedotto di Claudio",
-                    "text": "L'acquedotto di Claudio portava l'acqua a Portus da una sorgente in prossimità della moderna Ponte Galeria (una città a circa 10 km a nord est di Portus). L’acquedotto correva lungo la riva occidentale del fiume, prima di svoltare in direzione sud-ovest fino a dirigersi verso il centro della Porta Claudia in prossimità delle costruzioni commerciali ( e successivamente della Basilica Portuense)."
+                    "text": "L'acquedotto di Claudio portava l'acqua a Portus da una sorgente in prossimità della moderna Ponte Galeria (una città a circa 10 km a nord est di Portus). L’acquedotto correva lungo la riva occidentale del fiume, prima di svoltare in direzione sud-ovest fino a dirigersi verso il centro della Porta Claudia in prossimità delle costruzioni commerciali (e successivamente della Basilica Portuense)."
                 },
                 "location": {
                     "name": "location",
@@ -343,7 +343,7 @@
                 },
                 "media": {
                     "url": "images/images_1/campana.jpg",
-                    "credit": "11/02/2014  /  Google Earth",
+                    "credit": "11/02/2014  /  Google Earth <a href='https://goo.gl/maps/1sHhHkUvkfD2' target='_blank'>41°48°59.13', -12°19°73.67'</a>",
                     "caption": "Immagine satellitare di una parte dello scavo della via Campana, 4km a nord-est di Pisa"
                 }
             },
@@ -361,14 +361,14 @@
                 },
                 "media": {
                     "url": "images/images_1/northern_canal.jpg",
-                    "credit": "24/07/2003  /  Google Earth",
+                    "credit": "24/07/2003  /  Google Earth <a href='https://goo.gl/maps/egEBwRvUp8K2' target='_blank'>41°47°16.22', -12°16°13.33'</a>",
                     "caption": "Immagine satellitare che mostra come si possano vedere I resti del canale settentrionale attraverso le linee tratteggiate"
                 }
             },
             {
                 "text": {
                     "headline": "Lo Stagno Maccarese",
-                    "text": "Una laguna di acqua salata interna rispetto alla costa a nord della zona principale di Portus"
+                    "text": "Una laguna di acqua salata interna rispetto alla costa a nord della zona principale di Portus."
                 },
                 "location": {
                     "name": "location",
@@ -487,7 +487,7 @@
                 },
                 "media": {
                     "url": "images/images_1/ostia_harbour.jpg",
-                    "credit": "Simon Keay / University of Southampton",
+                    "credit": "24/07/2003  /  Google Earth <a href='https://goo.gl/maps/9q8dRvFMCE22' target='_blank'>41°45°14.59', -12°16°53.05'</a>",
                     "caption": "Sito del porto di Ostia, a sinistra degli alberi al centro dell’immagine"
                 }
             },

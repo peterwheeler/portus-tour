@@ -4710,6 +4710,7 @@ VCO.MenuBar = VCO.Class.extend({
 		this._el = {
 			parent: {},
 			container: {},
+			button_logo: {},
 			button_container: {},
 			button_overview: {},
 			button_backtostart: {},
@@ -4822,38 +4823,44 @@ VCO.MenuBar = VCO.Class.extend({
 		if (this.collapsed) {
 			this.collapsed = false;
 			this.show();
-			this._el.button_backtostart.style.display = "none";
-			this._el.button_overview.style.display = "inline";
+
+			this._el.button_overview.disabled = "disabled";
+			this._el.button_backtostart.disabled = "";
+
 			this.fire("collapse", {y:this.options.menubar_default_y});
-			this._el.button_collapse_toggle.innerHTML	= VCO.Language.buttons.collapse_toggle + "<span class='vco-icon-arrow-up'></span>";
-			this._el.button_collapse_toggle.title = VCO.Language.buttons.collapse_toggle;
+
+			this._el.button_collapse_toggle.innerHTML	= "<i class='fa fa-align-left fa-lg'></i>";
+			this._el.button_collapse_toggle.title = VCO.Language.buttons.uncollapse_toggle;
+			
 		} else {
 			this.collapsed = true;
 			this.hide(25);
-			this._el.button_overview.style.display = "none";
-			this._el.button_backtostart.style.display = "inline";
+
+			this._el.button_overview.disabled = "";
+			this._el.button_overview.disabled = "disabled";
+
 			this.fire("collapse", {y:1});
-			this._el.button_collapse_toggle.innerHTML	= VCO.Language.buttons.uncollapse_toggle + "<span class='vco-icon-arrow-down'></span>";
-			this._el.button_collapse_toggle.title = VCO.Language.buttons.uncollapse_toggle;
+			
+			this._el.button_collapse_toggle.innerHTML	= "<i class='fa fa-map-o fa-lg'></i>";		
+			this._el.button_collapse_toggle.title = VCO.Language.buttons.collapse_toggle;
 		}
 	},
 
 	_collapseButtonToggle: function(e) {
-		if (this.collapsed) {
-			this.collapsed = false;
-			this.show();
-			this._el.button_backtostart.style.display = "none";
-			this._el.button_overview.style.display = "inline";
-			this._el.button_collapse_toggle.innerHTML	= VCO.Language.buttons.collapse_toggle + "<span class='vco-icon-arrow-up'></span>";
+        if (this.collapsed) {
+            this.collapsed = false;
+            this.show();
+            this._el.button_backtostart.style.display = "none";
+            this._el.button_overview.style.display = "inline";
 
-		} else {
-			this.collapsed = true;
-			this.hide(25);
-			this._el.button_overview.style.display = "none";
-			this._el.button_backtostart.style.display = "inline";
-			this._el.button_collapse_toggle.innerHTML	= VCO.Language.buttons.uncollapse_toggle + "<span class='vco-icon-arrow-down'></span>";
-		}
-	},
+        } else {
+            this.collapsed = true;
+            this.hide(25);
+            this._el.button_overview.style.display = "none";
+            this._el.button_backtostart.style.display = "inline";
+        }
+    },
+
 	
 	/*	Private Methods
 	================================================== */
@@ -4863,37 +4870,38 @@ VCO.MenuBar = VCO.Class.extend({
 		this._el.button_container						= VCO.Dom.create('div', 'buttons-container', this._el.container);
 
 		// Buttons
-		this._el.button_backtostart 					= VCO.Dom.create('div', 'menubar-button button-backtostart', this._el.button_container);
-		VCO.DomEvent.addListener(this._el.button_backtostart, 'click', this._onButtonBackToStart, this);
+		this._el.button_collapse_toggle 				= VCO.Dom.create('div', 'menubar-button button-collapse_toggle', this._el.button_container);
+		VCO.DomEvent.addListener(this._el.button_collapse_toggle, 'click', this._onButtonCollapseMap, this);
 
 		this._el.button_overview 						= VCO.Dom.create('div', 'menubar-button button-overview', this._el.button_container);
 		VCO.DomEvent.addListener(this._el.button_overview, 'click', this._onButtonOverview, this);
-		
-		this._el.button_collapse_toggle 				= VCO.Dom.create('div', 'menubar-button button-collapse_toggle', this._el.button_container);
-		VCO.DomEvent.addListener(this._el.button_collapse_toggle, 'click', this._onButtonCollapseMap, this);
+
+		this._el.button_backtostart 					= VCO.Dom.create('div', 'menubar-button button-backtostart', this._el.button_container);
+		VCO.DomEvent.addListener(this._el.button_backtostart, 'click', this._onButtonBackToStart, this);
 
 		this._el.button_layers 							= VCO.Dom.create('div', 'menubar-button button-layers', this._el.button_container);
 		VCO.DomEvent.addListener(this._el.button_layers, 'click', this._onButtonLayers, this);
 		
-		if (this.options.maps[0].map_as_image) {
-			this._el.button_overview.innerHTML			= "<i class='fa fa-compass fa-lg'></i>";
-		} else {
-			this._el.button_overview.innerHTML			= "<i class='fa fa-align-left fa-lg'></i>";
-		}
+		// if (this.options.maps[0].map_as_image) {
+		// 	this._el.button_overview.innerHTML			= "<i class='fa fa-compass fa-lg'></i>";
+		// } else {
+		// 	this._el.button_overview.innerHTML			= "<i class='fa fa-compass fa-lg'></i>";
+		// }
 
+		this._el.button_overview.innerHTML			= "<i class='fa fa-external-link fa-lg'></i>";
 		this._el.button_backtostart.innerHTML			= "<i class='fa fa-reply fa-lg'></i>";
-		this._el.button_collapse_toggle.innerHTML		= VCO.Language.buttons.collapse_toggle + "<span class='vco-icon-arrow-up'></span>";
+
+		if (VCO.Browser.mobile) {
+			this._el.button_collapse_toggle.innerHTML	= "<i class='fa fa-map-o fa-lg'></i>";
+			this._el.container.setAttribute("ontouchstart"," ");
+		}
+		else {
+			this._el.button_collapse_toggle.innerHTML	= "<i class='fa fa-map-o fa-lg'</i>";
+			// this._el.button_collapse_toggle.style.display = "none";
+		}
 
 		this._el.button_backtostart.title 				= VCO.Language.buttons.backtostart;
 		this._el.button_overview.title 					= VCO.Language.buttons.overview;
-
-		if (VCO.Browser.mobile) {
-			this._el.button_backtostart.style.display = "none";
-			this._el.container.setAttribute("ontouchstart"," ");
-		}
-		else{
-			this._el.button_collapse_toggle.style.display = "none";
-		}
 		
 	},
 	
