@@ -762,7 +762,6 @@ hr.style {
 
 .message-tours {
     display: inline-block;
-    background-color: #fff;
 }
 
 .textHolderWhite{
@@ -827,7 +826,7 @@ hr.style {
 
     .navbar {
         display: block;
-        margin-top: 120px;
+        margin-top: 50%;
     }
 
     .navbar-nav {

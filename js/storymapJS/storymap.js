@@ -18918,10 +18918,10 @@ VCO.StoryMap = VCO.Class.extend({
 					message_class: 		"vco-message-full"
 				});
 				if (localStorage.getItem("ls.locale.main").contains("en")) {
-					this._message.updateMessage("<span class='arrow-maps-mobile'>Change Maps</span><span class='arrow-storymap'>Switch between Map & Story</span><div class='vco-icon-swipe-left'></div><span>Swipe to Navigate</span><div class='pin-info'><i class='fa fa-map-marker fa-3x map-icon'></i><br/>Click on a Pin to go to the Slide</div>");
+					this._message.updateMessage("<span class='arrow-menu'>Menu</span><div class='menuOpenerWhite'><i class='fa fa-bars fa-inverse'></i></div><div class='vco-icon-swipe-left'></div><span>Swipe to Navigate</span>");
 				}
 				else {
-					this._message.updateMessage("<span class='arrow-maps'>Cambia Maps</span><span class='arrow-menu'>Clicca Qui per il Menu Principale</span><div class='vco-icon-swipe-left'></div><span>Swipe to Navigate</span>");
+					this._message.updateMessage("<span class='arrow-menu'>Menu</span><div class='menuOpenerWhite'><i class='fa fa-bars fa-inverse'></i></div><div class='vco-icon-swipe-left'></div><span>Swipe to Navigate</span>");
 				}
 				this._message.addTo(this._el.container);
 			}

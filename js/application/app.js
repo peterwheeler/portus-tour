@@ -523,8 +523,8 @@ var angtranslations = {
 		},
 		ABOUT: {
 				ABOUT: "· ABOUT ·",
-				ABOUTTEXT: "Porto (l’antico Portus) era il porto marittimo di Roma antica e, con il vicino porto fluviale di Ostia, è stato al centro di una rete di porti che collegavano Roma Imperiale tra la metà del I secolo e il VI secolo d.C. Questo tour fa parte del sito web della Soprintendenza Speciale per i Beni Archeologici di Roma (SSBAR), organo periferico del Ministero per i Beni e le Attività Culturali (MIBAC), ed è stato creato in collaborazione con il",
-				ABOUTSUBTEXT: "This tour has been constructed by the Portus Project to help visualise the different phases of the port over time. It also consists of a modern tour of the site and a history of the archaeological investigations that have been carried out at the site. It was built in collaboration with the Soprintendenza Speciale per il Colosseo, il Museo Nazionale Romano e l’Area Archeologica di Roma, which is part of the Ministero per i Beni e le Attività Culturali (MIBAC).",
+				ABOUTTEXT: "Portus was the maritime port of Imperial Rome between the mid-1st century AD and the 6th century AD. It was the focus of a network of ports and, together with the neighbouring river port at Ostia, it was the commercial hub that connected the city to the rest of the Mediterranean world. It played a key role in re-distributing imports from other Mediterranean ports to supply the city and, to a lesser extent, exporting products from the Tiber valley. It was established under the emperor Claudius, subsequently enlarged by Trajan and successive emperors into the 4th century AD, until its gradual decline in the later 5th and 6th centuries AD",
+				ABOUTSUBTEXT: "Porto (l’antico Portus) era il porto marittimo di Roma antica e, con il vicino porto fluviale di Ostia, è stato al centro di una rete di porti che collegavano Roma Imperiale tra la metà del I secolo e il VI secolo d.C. Questo tour fa parte del sito web della Soprintendenza Speciale per i Beni Archeologici di Roma (SSBAR), organo periferico del Ministero per i Beni e le Attività Culturali (MIBAC), ed è stato creato in collaborazione con il",
 			ABOUTSUBSUBTEXT: "Each tour covers a different period in time. These are:",
 			ABOUTCLA: " - stretching from the beginning of the port's construction in c. AD 46 until its inauguration under the Emperor Nero in AD 64.",
 			ABOUTTRA: " - covering the development of the port during the reign of the emperor Trajan, with the majority of work probably concentrated between AD 110-117.",
@@ -1197,48 +1197,6 @@ String.prototype.capitalize = function() {
     this.push.apply(this, a);
 },
 
-// app.controller("HeadCtrl", ["$scope", "$location", function(a, b) {
-//     function c() {
-//         for (var c = [], d = 0; d < t1.c.countries.length; d++) {
-//             var e = t1.c.countries[d];
-//             if (b.path().contains(e.language)) {
-//                 for (var f, g = 0; g < t1.c.pages.length; g++) {
-//                     var h = t1.c.pages[g];
-//                     if (j === h[e.language]) {
-//                         f = h;
-//                         break;
-//                     }
-//                 }
-//                 for (var d = 0; d < t1.c.countries.length; d++) {
-//                     var i = t1.c.countries[d],
-//                         j = b.path();
-//                     c.push({
-//                         lan: i.language,
-//                         path: "http://" + b.host() + "/#!/" + i.language + f.path[i.language]
-//                     });
-//                 }
-//             }
-//             a.defaultPath = "http://" + b.host() + "/#!/";
-//         }
-//         if (c.isEmpty()) {
-//             for (var d = 0; d < t1.c.countries.length; d++) {
-//                 var k = t1.c.countries[d];
-//                 c.push({
-//                     lan: k.language,
-//                     path: "http://" + b.host() + "/#!/" + k.language + b.path()
-//                 });
-//             }
-//             a.defaultPath = b.absUrl();
-//         }
-//         a.links = c;
-//     }
-//     c(),
-
-//     a.$on("$locationChangeStart", function() {
-//         c();
-//     })
-// }]),
-
 app.controller("MainCtrl", ["$scope", "$window", "$rootScope", "localStorageService", "$interval", "$log", "$location", function(a, b, d, f, g, h, k) {
 
 a.$watch(function() {
@@ -1346,7 +1304,7 @@ a.$watch('theslideIndex', function(){
         }();
 
  b.init = function() {
-            d.user.loadLocale() ? h.debug("locale is: " + d.user.getLocale().main) : h.debug("locale is: fucked" );
+            d.user.loadLocale() ? h.debug("locale is: " + d.user.getLocale().main) : h.debug("locale is: loaded" );
         };
         b.init();
 
