@@ -3,8 +3,28 @@
 		"slides": [
             {
                 "text": {
-                    "headline": "Il IV secolo",
-                    "text": "Questo tour vi presenta Portus come nel periodo compreso tra la V e VI secolo d.C., con il carattere del cambiamento porto, come aveva fatto più volte in precedenza. Anche se la popolazione di Roma era inferiore a quella dell Impero, sappiamo dal contenuto degli Editti imperiali risalenti al IV° e all’inizio del V° secolo d.C., e dalle osservazioni di autori contemporanee quali Sidonio Apollinare, che Portus ha continuato a svolgere un ruolo significativo nella fornitura di Roma. A partire dall'ultimo quarto del V° secolo d.C., tuttavia, la portata e l'intensità di questa attività ha cominciato a diminuire. Le ceramiche provenienti dagli scavi archeologici forniscono una buona testimonianza di questo.<br/><br/>In questo, un circuito murario è stato creato per racchiudere tutti gli edifici che si trovavano attorno al bacino di Traiano e alla facciata marittima sul lato occidentale della Darsena. L'intento era chiaramente quello di garantire che questa zona più interna del porto, che era rimasta la scena di attività commerciali fondamentali per Roma, fosse protetta da minacce esterne. Non e’ chiaro chi fosse il responsabile di tali minacce, anche se il Re barbarico Odoacre o il Re ostrogoto Teodorico il Grande sono i possibili candidati.<br/><br/>Mentre l'entità complessiva del porto aveva così cominciato a contrarsi, le chiese cristiane si stavano stabilendo, in particolare la Basilica Portuense. Dal VI° secolo dC, il bacino di Claudio era in gran parte interrato e, anche se la porta è stata al centro di una lotta tra Bizantini e Ostrogoti durante le guerre gotiche (535-553 d.C.), le sepolture cominciarono ad apparire all'interno delle rovine dei magazzini e di altre strutture. Dopo la conclusione delle guerre, il Palazzo Imperiale e gli altri edifici sono stati abbandonati con al successive contrazione della zona del porto, fino alla concentrazione intorno alla zona della Basilica Portuense e di Episcopio."
+                    "headline": "Dal V al VII secolo",
+                    "text": "Questo tour vi presenta Portus nel periodo compreso tra la V e VII secolo d.C., con la caratteristica del porto che cambia, come aveva fatto più volte in precedenza. Anche se la popolazione di Roma era inferiore a quella dell Impero, sappiamo, dal contenuto degli Editti imperiali risalenti al IV e all’inizio del V secolo d.C. e dalle osservazioni degli autori contemporanee quali Sidonio Apollinare, che Portus ha continuato a svolgere un ruolo significativo nella fornitura di Roma. Dall’ultimo quarto del V secolo d.C., tuttavia, la portata e l'intensità di questa attività ha cominciato a diminuire. Le ceramiche provenienti dagli scavi archeologici forniscono una buona testimonianza di questo."
+                },
+                "location": {
+                    "name": "location",
+                    "image": "images/tiny_icon.png",
+                    "icon_size": 1,
+                    "lat": 57.5,
+                    "lon": -90.5,
+                    "zoom": 3,
+                    "line": false
+                },
+                "media": {
+                    "url": "images/images_4/fifth-seventh.jpg",
+                    "credit": "Simon Keay / University of Southampton",
+                    "caption": "Vista settentrionale dei resti della Basilica Portuense (<i>vista da nord-ovest</i>)"
+                }
+            },
+            {
+                "text": {
+                    "headline": "Portus dal V al VII secolo",
+                    "text": "In questo momento, una cinta muraria è stata creata per racchiudere tutti gli edifici che si trovavano attorno al bacino di Traiano e alla facciata marittima sul lato occidentale della Darsena. L'intento era chiaramente quello di garantire che questa zona più interna del porto, che era rimasta la scena di attività commerciali fondamentali per Roma, fosse protetta dalle minacce esterne. Non è chiaro chi fosse il responsabile di tali minacce, anche se si puó ipotizzare che arrivassero dal Re barbarico Odoacre o il Re ostrogoto Teodorico il Grande.<br/><br/>Mentre l'estensione complessiva del porto aveva cominciato a contrarsi, le chiese cristiane si stavano stabilendo, in particolare la Basilica Portuense. Dal VI secolo d.C., il bacino di Claudio era in gran parte interrato e, anche se il porto è stato al centro di una lotta tra Bizantini e Ostrogoti durante le guerre gotiche (535-553 d.C.), le sepolture cominciarono ad apparire all'interno delle rovine dei magazzini e di altre strutture. Dopo la conclusione delle guerre, il Palazzo Imperiale e gli altri edifici vennero abbandonati con al successive contrazione della zona del porto, fino alla concentrazione intorno alla zona della Basilica Portuense e di Episcopio."
                 },
                 "location": {
                     "name": "location",
@@ -23,30 +43,30 @@
             },
             {
                 "text": {
-                    "headline": "Faro",
-                    "text": "The Pharos, constructed during the reign of Claudius, continues to dominate the approach to Portus in the Trajanic phase. But the view from the Pharos would have been markedly different. In the Claudian period the view would have shown, presumably, warehouses and other buildings set back from the Claudian quayside. These would have been demolished in the massive bulding programme initiated by Trajan, leading to the excavation of the huge Trajanic basin, surrounded by some very large buildings on a scale that invites comparison with Imperial Rome itself."
+                    "headline": "Il Faro",
+                    "text": "Il Faro (Pharos), costruito durante il regno di Claudio, continua a dominare l'ingresso di Portus nella fase traianea, nonostante la vista dal faro sia nettamente cambiata. Nel periodo claudio, il paesaggio visibile era formato, presumibilmente, da magazzini e altri edifici in una posizione arretrata rispetto alla banchina claudia. Questi edifici sarebbero stati demoliti dal progetto di costruzione iniziato da Traiano, che prevedeva lo scavo del grande bacino di Traiano, circondato da alcuni edifici maestosi con una scala che invitava al confronto diretto con la Roma Imperiale."
                 },
                 "location": {
                     "name": "location",
-                    "lat": 49,
-                    "lon": -137,
+                    "lat": 46.5,
+                    "lon": -136.5,
                     "zoom": 4,
                     "line": false
                 },
                 "media": {
                     "url": "images/images_1/mosaic_ostia.jpg",
                     "credit": "Simon Keay / University of Southampton",
-                    "caption": "Mosaic at Ostia showing the Pharos"
+                    "caption": "Immagine del Pharo a Portus in un mosaico ritrovato a Ostia"
                 }
             },
             {
                 "text": {
-                    "headline": "Bacino di Claudio",
-                    "text": "Gli scavi dal progetto Portus hanno rivelato la prova che dal tardo V° secolo d.C., la parte meridionale del bacino di Claudio si era riempito di sedimenti. Si immagina che questo è sintomo del disuso del bacino nel suo complesso, e ha assicurato che il Palazzo Imperiale diventasse senza sbocco. Al contrario, il bacino esagonale ha continuato a funzionare nel periodo bizantino."
+                    "headline": "Il Bacino di Claudio",
+                    "text": "Gli scavi dal progetto Portus hanno rivelato che dal tardo V secolo d.C., la parte meridionale del bacino di Claudio si era riempito di sedimenti. Si pensa che questo sia un sintomo del disuso del bacino nel suo complesso, permettendo che il Palazzo Imperiale diventasse senza sbocco. Al contrario, il bacino esagonale ha continuato a funzionare nel periodo bizantino."
                 },
-                                "location": {
+                "location": {
                     "name": "location",
-                    "lat": 54,
+                    "lat": 53,
                     "lon": -115,
                     "zoom": 4,
                     "line": false
@@ -54,216 +74,216 @@
                 "media": {
                     "url": "images/images_1/northern_mole.jpg",
                     "credit": "Simon Keay / University of Southampton",
-                    "caption": "View to the north of Portus, showing the surviving northern mole"
+                    "caption": "Vista a nord di Portus, mostra il molo settentrionale."
                 }
             },
 			{
                 "text": {
-                    "headline": "Porticus Placidiana",
-                    "text": "Questo portico colonnato di V° secolo è noto solo tramite le testimonianze epigrafiche. Sembra probabile che fosse situate nella parte meridionale del molo di Claudio, tra la moderna Via Portuense a la Fossa Traiana."
+                    "headline": "La Porticus Placidiana",
+                    "text": "Questo portico colonnato del V secolo è noto solo tramite le testimonianze epigrafiche. Sembra che fosse situato nella parte meridionale del molo di Claudio, tra la moderna Via Portuense e la Fossa Traiana."
                 },
                 "location": {
                     "name": "location",
-                    "lat": 45,
-                    "lon": -98,
+                    "lat": 39,
+                    "lon": -101,
                     "zoom": 4,
                     "line": false
                 },
                 "media": {
                     "url": "images/images_4/porticus.jpg",
                     "credit": "Simon Keay / University of Southampton",
-                    "caption": "Base of a statue from Portus, set up by Flavius Alexander Cresconius"
+                    "caption": "Base di una statua proveniente da Portus, di Flavius Alexander Cresconius e che menziona la costruzione del Porticus Placidiana"
                 }
             },
 			{
                 "text": {
-                    "headline": "Antemurale",
-                    "text": "L'attività principale era la costruzione delle mura verso il mare nel tardo V° secolo d.C. Queste comprendevano una serie di torri e porte che bloccavano e proteggevano le strutture di epoche precedenti che si trovavano tra loro e il Portico di Claudio."
+                    "headline": "L’Antemurale",
+                    "text": "L'attività principale nel tardo V secolo d.C. era la costruzione delle mura verso il mare,che comprendevano una serie di torri e porte per bloccare e proteggere le strutture delle epoche precedenti che si trovavano tra loro e il Portico di Claudio."
                 },
                 "location": {
                     "name": "location",
-                    "lat": 54,
-                    "lon": -103,
+                    "lat": 51,
+                    "lon": -102.25,
                     "zoom": 4,
                     "line": true
                 },
                 "media": {
                     "url": "images/images_4/antemurale.jpg",
                     "credit": "Lidia Paroli / Soprintendenza Speciale per il Colosseo, Museo Nazionale Romano e Area Archeologica di Roma",
-                    "caption": "View looking over antemurale, late antique walls and Portico di Claudio"
+                    "caption": "Vista guardando oltre all’antemurale, le mura tardo antiche e il Portico di Claudio"
                 }
             },
 			{
                 "text": {
-                    "headline": "Portico di Claudio",
-                    "text": "Questo portico è stato bloccato dal bacino di Claudio da strutture successive e, infine, dale mura tardo-antiche del bastione."
+                    "headline": "Il Portico di Claudio",
+                    "text": "Questo portico è stato separato dal bacino di Claudio dalle strutture successive e, infine, dalle mura tardo-antiche dell’Antimurale."
                 },
                 "location": {
                     "name": "location",
-                    "lat": 49,
-                    "lon": -98,
+                    "lat": 44,
+                    "lon": -96,
                     "zoom": 4,
                     "line": false
                 },
                 "media": {
                     "url": "images/images_1/portico_di_claudia.jpg",
                     "credit": "Tim Sly / University of Southampton",
-                    "caption": "View to the north of Portus, showing the surviving northern mole"
+                    "caption": "Vista a nord di Portus, mostra il molo settentrionale."
                 }
             },
 			{
                 "text": {
-                    "headline": "Grandi Magazzini Traiani",
-                    "text": "I dati disponibili suggeriscono che questi grandi magazzini hanno continuato ad essere utilizzati fino almeno al VI° C AD. Poco dopo, tuttavia, sepolture occasionali sono state collocate all'interno di diversi magazzini - un chiaro indice della diminuzione del ruolo commerciale del porto nel periodo bizantino."
+                    "headline": "I Grandi Magazzini Traiano",
+                    "text": "I dati disponibili suggeriscono che questi grandi magazzini hanno continuato a essere utilizzati fino almeno al VI° secolo d.C.. Poco dopo, tuttavia, alcune sepolture occasionali sono state collocate all'interno di diversi magazzini - un chiaro indice della diminuzione del ruolo commerciale del porto nel periodo bizantino."
                 },
                 "location": {
                     "name": "location",
-                    "lat": 51.5,
-                    "lon": -94.5,
+                    "lat": 48,
+                    "lon": -92,
                     "zoom": 4,
                     "line": false
                 },
                 "media": {
                     "url": "images/images_4/magazzini_traiano.jpg",
                     "credit": "Simon Keay / University of Southampton",
-                    "caption": "Grandi Magazzini di Traiano showing the late antique walls blocking the entrances"
+                    "caption": "I Grandi Magazzini di Traiano mostrano le mura tardo antiche che bloccano le entrate"
                 }
             },
 			{
                 "text": {
-                    "headline": "Molo della Lanterna",
-                    "text": "This quay was constructed from brick faced at some stage in the late pre-Trajanic period. It ran from west to east and separated the central part of the Claudian basin from the Canale di imbocco al porto di Traiano. A lantern stood at its western end."
+                    "headline": "Il Molo della Lanterna",
+                    "text": "Questo molo è stato costruito in mattoni a facciavista nel tardo periodo pre-traianeo. Il Molo andava da ovest a est e separava la parte centrale del bacino di Claudio dal Canale d’imbocco al porto di Traiano. Una lanterna era localizzata nella sua estremità occidentale."
                 },
                 "location": {
                     "name": "location",
-                    "lat": 54,
-                    "lon": -98,
+                    "lat": 49.5,
+                    "lon": -94.5,
                     "zoom": 4,
                     "line": false
                 },
                 "media": {
                     "url": "images/images_1/mollo_della_lanterna.jpg",
                     "credit": "Simon Keay / University of Southampton",
-                    "caption": "View from the east of the remains of the Mollo della Lanterna"
+                    "caption": "Vista da est dei resti del Molo della Lanterna"
                 }
             },
 			{
                 "text": {
-                    "headline": "Darsena",
-                    "text": "This basin continued to play an important role in the enlarged Trajanic port, not least with the construction of the Grandi Magazzini di Traiano."
+                    "headline": "La Darsena",
+                    "text": "Questo bacino ha continuato a svolgere un ruolo importante nel porto traianeo, anche in seguito alla costruzione dei Grandi Magazzini di Traiano."
                 },
                 "location": {
                     "name": "location",
-                    "lat": 50.5,
-                    "lon": -94.5,
+                    "lat": 48.5,
+                    "lon": -87,
                     "zoom": 4,
                     "line": false
                 },
                 "media": {
                     "url": "<iframe src='http://www.thesphere.com/direct_embed/406063' width='640px' height='auto' class='sphere-direct_embed' type='text/html' frameborder=0 scrolling='no'>",
                     "credit": "Stephen Kay / BSR & Portus Project",
-                    "caption": "360° panorama from the entrance to the Darsena"
+                    "caption": "Panorama a 360° dall’entrata alla Darsena"
                 }
             },
 			{
                 "text": {
-                    "headline": "Basilica Portuense",
-                    "text": "Il cambiamento significativo è avvenuto nel tardo IV°d.C e all'inizio del V° d.C., quando la residenza è stata trasformata in una chiesa paleocristiana (basilica) di circa 37m di lunghezza e circa 20m di larghezza. E' formata da una grande sala orientata nord/sud, da una navata centrale e due navate laterali con pavimenti a mosaico geometrici e figurati; a cui si accedeva attraverso un corridoio est-ovest. Questo edificio era quasi certamente sotto la giurisdizione del Vescovo di Portus - una figura che viene attestata per la prima volta nel 314 d.C."
+                    "headline": "La Basilica Portuense",
+                    "text": "Il cambiamento significativo è avvenuto nel tardo IV d.C e all'inizio del V d.C., quando la residenza è stata trasformata in una chiesa paleocristiana (basilica) di circa 37m di lunghezza e circa 20m di larghezza. È formata da una grande sala orientata nord/sud, da una navata centrale e due navate laterali con pavimenti a mosaico geometrici e figurati; a cui si accedeva attraverso un corridoio est-ovest. Questo edificio era quasi certamente sotto la giurisdizione del Vescovo di Portus - una figura che viene attestata per la prima volta nel 314 d.C."
                 },
                 "location": {
                     "name": "location",
-                    "lat": 49.5,
-                    "lon": -87,
+                    "lat": 46.5,
+                    "lon": -84.5,
                     "zoom": 4,
                     "line": false
                 },
                 "media": {
                     "url": "images/images_4/basilica.jpg",
                     "credit": "Lidia Paroli / Soprintendenza Speciale per il Colosseo, Museo Nazionale Romano e Area Archeologica di Roma",
-                    "caption": "Aerial photo of the Early Christian Basilica after being excavated"
+                    "caption": "Foto aerea della Basilica paleocristiana dopo lo scavo"
                 }
             },
 			{
                 "text": {
-                    "headline": "Terme della Lanterna",
+                    "headline": "Le Terme della Lanterna",
                     "text": "Ci sono buone evidenze che suggeriscono l'uso continuato di questo edificio e in età tardoantica."
                 },
                 "location": {
                     "name": "location",
-                    "lat": 54,
-                    "lon": -93,
+                    "lat": 51,
+                    "lon": -92,
                     "zoom": 4,
                     "line": false
                 },
                 "media": {
                     "url": "images/images_4/terme_della_lanterna.jpg",
                     "credit": "Stephen Keay / BSR & Portus Project",
-                    "caption": "View of the Lanterna Baths from the air"
+                    "caption": "Vista aerea dei Bagni della Lanterna"
                 }
             },
 			{
                 "text": {
-                    "headline": "Grandi Magazzini di Settimio Severo",
-                    "text": "The Grandi Magazzini di Settimio Severo was a large complex traditionally identified as a warehouse consisting of at least two storeys and situated in such way as to overlook the pool of the port to the south, the Trajanic Basin to the east and the Claudian basin to the north.<br/><br/>It was a large, L-shaped, brick-faced, concrete structure with two wings of rooms facing onto an open area which fronted the canal leading to the Trajanic basin.<br/><br/>The building had been identified as a Severan period warehouse (horreum) but a later study of the brickstamps indicated an earlier Antonine date for the structure.<br/><br/>Sometime after its construction, a vaulted passageway was built on its northeast corner connecting it to the northwest corner of the Palazzo Imperiale."
+                    "headline": "I Grandi Magazzini di Settimio Severo",
+                    "text": "I Grandi Magazzini di Settimio Severo erano un grande complesso, tradizionalmente identificato come un magazzino costituito da almeno due piani e situato in modo da affacciarsi sul bacino del porto a sud, il bacino di Traiano a est e il bacino di Claudio a nord.<br/><br/>Era un grande struttura in cemento, a forma di L, con la facciata in mattoni, e che presentava due ali di camere che si affacciavano su uno spazio aperto verso il canale che conduce al bacino traianeo.<br/><br/>L'edificio era stato identificato come un magazzino di epoca severiana (horreum), ma uno studio più recente dei bolli laterizi indica una data Antonina.<br/><br/> Qualche tempo dopo la sua costruzione, è stato aggiunto un passaggio a volta nel suo angolo nord-est come collegamento all’angolo nord-ovest del Palazzo Imperiale."
                 },
                 "location": {
                     "name": "location",
-                    "lat": 55,
-                    "lon": -90,
+                    "lat": 52.5,
+                    "lon": -88,
                     "zoom": 4,
                     "line": false
                 },
                 "media": {
                     "url": "<iframe width='100%' height='400px' src='https://www.thesphere.com/direct_embed/402719' class='sphere-direct_embed' type='text/html' frameborder=0 scrolling='no'  allowfullscreen='true' mozallowfullscreen='true' webkitallowfullscreen='true'></iframe>",
                     "credit": "Stephen Kay / BSR & Portus Project",
-                    "caption": "360° panorama within the remains of the Grandi Magazzini di Settimio Severo"
+                    "caption": "Panorama a 360° dei resti dei Grandi Magazzini di Settimio Severo"
                 }
             },
 			{
                 "text": {
-                    "headline": "Palazzo Imperiale",
-                    "text": "Nei primi anni del V° secolo d.C. il ludus è stato demolito lasciando spazio a una fila di camere che vanno da nord a sud e che rappresentano un ampliamento verso est del corpo principale del Palazzo Imperiale. Le camere, di cui una latrina a tre posti, sono riccamente decorate con marmi e stucchi dipinti e si affacciano su un giardino ad ovest.<br/><br/>b. La facciata Settentrionale<br/>Recenti scavi nelle camere che correvano lungo la facciata nord del Palazzo Imperiale rivelano che all’inizio del V° secolo d.C. subì una fase  importante di aggiornamento. Ciò ha incluso la creazione di pavimenti in marmo in opus sectile di grande qualita’ e pitture murali. Tutte queste camere e, si presume, parte del complesso furono demolite dopo la fine delle guerre gotiche."
+                    "headline": "Il Palazzo Imperiale",
+                    "text": "Nei primi anni del V secolo d.C. il ludus è stato demolito lasciando spazio a una fila di camere che vanno da nord a sud e che rappresentano un ampliamento verso est del corpo principale del Palazzo Imperiale. Le camere, di cui una latrina a tre posti, sono riccamente decorate con marmi e stucchi dipinti e si affacciano, a ovest su un giardino.<br/><br/>b. La facciata Settentrionale<br/>Recenti scavi nelle camere della facciata nord del Palazzo Imperiale rivelano che, all’inizio del V secolo d.C., subì una fase di ristrotturazione importante con la creazione di pavimenti in opus sectile in marmo di grande qualitá e delle pitture murali. Si presume che tutte queste camere e parte del complesso furono demolite dopo la fine delle guerre gotiche."
                 },
                 "location": {
                     "name": "location",
-                    "lat": 57,
-                    "lon": -89,
+                    "lat": 54,
+                    "lon": -88,
                     "zoom": 4,
                     "line": false
                 },
                 "media": {
                     "url": "images/images_4/pi_rooms.jpg",
                     "credit": "Simon Keay / University of Southampton",
-                    "caption": "View over rooms in the Palazzo Imperiale occupied in the 5th and 6th centuries AD"
+                    "caption": "Vista delle stanze del Palazzo Imperiale in uso nel V e nel VI Secolo d.C."
                 }
             },
 			{
                 "text": {
-                    "headline": "Navalia",
-                    "text": "Questo edificio ha continuato ad essere in uso fino al periodo bizantino. Tuttavia, c'è stato un primo cambiamento d’uso all’inizio del Vsecolo d.C., quando la funzione delle camere che erano state costruite in una delle baie originali del complesso traianeo e’ stata cambiata e le stanze sono state convertite in magazzini con pavimenti sopraelevati, probabilmente usati per conservare il grano. Successivamente, nel tardo V° secolo d.C., le sepolture cominciarono ad apparire all'interno dell'edificio, con il complesso probabilmente demolito dai Bizantini dopo la conclusione delle guerre gotiche a metà del VI° secolo d.C."
+                    "headline": "Il Cantiere Navale",
+                    "text": "Questo edificio ha continuato a essere in uso fino al periodo bizantino. Tuttavia, ha subito un primo cambiamento d’uso all’inizio del V secolo d.C., quando le camere che erano state costruite in una delle baie originali del complesso traianeo sono state convertite in magazzini con i pavimenti sopraelevati, probabilmente usati per conservare il grano. In seguito, nel tardo V secolo d.C., le sepolture cominciarono ad apparire all'interno dell'edificio, e il complesso viene probabilmente demolito dai Bizantini dopo la conclusione delle guerre gotiche a metà del VI secolo d.C."
                 },
                 "location": {
                     "name": "location",
-                    "lat": 60,
-                    "lon": -86,
+                    "lat": 56.5,
+                    "lon": -85.5,
                     "zoom": 4,
                     "line": false
                 },
                 "media": {
                     "url": "images/images_4/burials-1.jpg",
                     "credit": "Simon Keay / University of Southampton",
-                    "caption": "Burials of 5th and early 6th centuries AD date that were established within the shell of the earlier Shipyard, indicating how much its original function had changed"
+                    "caption": "Le sepolture del V e dell’inizio del VI secolo d.C. sono create all'interno della struttura del Cantiere Navale e  dimostrano quanto sia cambiata la sua funzione originaria"
                 }
             },
 			{
                 "text": {
-                    "headline": "Terme Horrea",
-                    "text": "Le terme hanno continuato ad essere in uso fino al V o VI secolo d.C."
+                    "headline": "Le Terme Horrea",
+                    "text": "Le terme hanno continuato a essere in uso fino al V o VI secolo d.C."
                 },
                 "location": {
                     "name": "location",
-                    "lat": 63,
-                    "lon": -83,
+                    "lat": 60,
+                    "lon": -84.5,
                     "zoom": 4,
                     "line": false
                 },
@@ -275,13 +295,13 @@
             },
             {
                 "text": {
-                    "headline": "Mura Costantiniane",
-                    "text": "Fortificazioni sono state costruite in mattoni e cemento, nel tardo V secolo d.C., a delimitare il bacino di Traiano e le altre parti fondamentali del nucleo di Portus. In alcune parti del porto erano “free-standing”, mentre in altre edifici già presenti sono stati incorporati nelle mura, come nel caso del Navalia e il Palazzo Imperiale."
+                    "headline": "Le Mura Costantiniane",
+                    "text": "Nel tardo V secolo d.C., sono state costruite delle fortificazioni in mattoni e cemento a delimitare il bacino di Traiano e le altre parti fondamentali del centro di Portus. In alcune parti del porto le mura erano indipendenti dalle strutture pre-esistenti, mentre in altre hanno incorporato alcuni edifici, come nel caso dei Cantieri Navali e il Palazzo Imperiale."
                 },
                 "location": {
                     "name": "location",
-                    "lat": 68.75,
-                    "lon": -104,
+                    "lat": 56.5,
+                    "lon": -88,
                     "zoom": 4,
                     "line": false
                 },
@@ -293,31 +313,31 @@
             },
 			{
                 "text": {
-                    "headline": "Tempio (affacciato sul bacino di traiano)",
-                    "text": "La data di abbandono di questo complesso e’ sconosciuta."
+                    "headline": "Il Tempio (affacciato sul bacino di Traiano)",
+                    "text": "Un grande tempio che si trova in asse con l'ingresso al bacino di Traiano e di fronte al quale si trovava una statua colossale dell'imperatore Traiano."
                 },
                 "location": {
                     "name": "location",
-                    "lat": 59,
-                    "lon": -69,
+                    "lat": 56,
+                    "lon": -67,
                     "zoom": 4,
                     "line": false
                 },
                 "media": {
                     "url": "images/images_2/statue.jpg",
                     "credit": "Simon Keay / University of Southampton",
-                    "caption": "Statue of the Emperor Trajan similar to that which is understood to have stood in front of the Temple overlooking the Trajanic basin"
+                    "caption": "Statua di Traiano simile a quella che doveva trovare di fronte al tempio che si affaccia sul bacino di Traiano"
                 }
             },
 			{
                 "text": {
-                    "headline": "Cimitero (est di Portus)",
-                    "text": "Una vasta zona di sepolture sparse che si trova nel terreno pianeggiante tra il bacino di Traiano e il Tevere, ha avuto una lunga vita, con alcune delle tombe, come quelle in prossimità del porto fluviale, concentrate vicino alle chiese."
+                    "headline": "Il Cimitero (est di Portus)",
+                    "text": "Una vasta zona di sepolture sparse che si trova nel terreno pianeggiante tra il bacino di Traiano e il Tevere. È stata usata a lungo, con alcune delle tombe, come quelle in prossimità del porto fluviale, concentrate nelle vicinanze alle chiese."
                 },
                 "location": {
                     "name": "location",
-                    "lat": 59,
-                    "lon": -60,
+                    "lat": 56,
+                    "lon": -56,
                     "zoom": 4,
                     "line": false
                 },
@@ -329,13 +349,13 @@
             },
 			{
                 "text": {
-                    "headline": "Porto fluviale",
-                    "text": "Gli edifici che componevano questo sito sembrano essere andati in disuso nel tardo V° secolo d.C., mentre delle sepolture appaiono nelle loro rovine."
+                    "headline": "Il Porto fluviale",
+                    "text": "Gli edifici che componevano questo sito sembrano essere andati in disuso nel tardo V secolo d.C., mentre delle sepolture iniziano ad apparire nelle rovine."
                 },
                 "location": {
                     "name": "location",
-                    "lat": 57,
-                    "lon": -44,
+                    "lat": 51,
+                    "lon": -43.5,
                     "zoom": 4,
                     "line": false
                 },
@@ -347,8 +367,26 @@
             },
 			{
                 "text": {
-                    "headline": "Entroterra",
-                    "text": "Si conosce molto poco dell'entroterra del porto in questo periodo."
+                    "headline": "L’Isola Scara",
+                    "text": "Una grande isola situata tra Portus e Ostia delimitata dal Tevere a est e sud, dal Mar Tirreno a ovest e dal canale di Fiumicino a nord. <br/> <strong> Strada Possibile (sul tracciato della Via Flavia): </ strong> Non ci sono le prove di una strada precedente alla Via Flavia che collegava Portus e Ostia, ma è molto improbabile che non ci fosse nessuna strada tra i porti. Le prime testimonianze archeologiche di una strada risalgono a una moneta del tardo I secolo d.C."
+                },
+                "location": {
+                    "name": "location",
+                    "lat": 30,
+                    "lon": -60,
+                    "zoom": 4,
+                    "line": false
+                },
+                "media": {
+                    "url": "",
+                    "credit": "Simon Keay / University of Southampton",
+                    "caption": ""
+                }
+            },
+			{
+                "text": {
+                    "headline": "L’Entroterra",
+                    "text": "Si conosce molto poco dell'entroterra di Portus in questo periodo."
                 },
                 "location": {
                     "name": "location",
@@ -366,12 +404,12 @@
 			{
                 "text": {
                     "headline": "Ostia",
-                    "text": "E' generalmente accettato che dal III° secolo d.C., Ostia entrò in un periodo di graduale declino. Tuttavia, è registrato il fatto che avesse un vescovo già in questo momento e ha visto la costruzione di una chiesa cristiana nel regno di Costantino. E' stata anche una zecca per le monete romane di bronzo per un breve periodo agli inizi del IV° e ha visto lo sviluppo di alcune domus di lusso all'interno della città nel IV ° secolo d.C. D'altra parte, il suo ruolo amministrativo deve essere diminuito in seguito alla decisione di Costantino di fare di Portus una civitas, o entità urbana, nel secondo trimestre del IV° secolo dC."
+                    "text": "E' generalmente accettato che dal III secolo d.C., Ostia entrò in un periodo di graduale declino. Tuttavia, il fatto che avesse un vescovo già in questo momento e che ha visto la costruzione di una chiesa cristiana nel regno di Costantino è stato documentato. Ha anche avuto, per un breve periodo agli inizi del IV Secolo, una zecca per le monete romane in bronzo e ha visto lo sviluppo di alcune domus di lusso all'interno della città nel IV secolo d.C. D'altra parte, il suo ruolo amministrativo deve essere diminuito in seguito alla decisione di Costantino di fare di Portus una civitas, o entità urbana, nel secondo trimestre del IV secolo dC."
                 },
                 "location": {
                     "name": "location",
-                    "lat": -9,
-                    "lon": -23,
+                    "lat": -14,
+                    "lon": -22,
                     "zoom": 4,
                     "line": false
                 },
@@ -381,10 +419,10 @@
                     "caption": "Ostia Antica from the air"
                 }
             },
-			{
+            {
                 "text": {
-                    "headline": "Sepolture",
-                    "text": "Sepolture sporadiche all'interno dei magazzini dell’inizio e medio-imperiali (vedi esempio sopra)"
+                    "headline": "Le Sepolture",
+                    "text": "Sepolture sporadiche sono state ritrovate all'interno dei magazzini d’inizio e medio-imperiali (vedi esempio sopra)"
                 },
                 "location": {
                     "name": "location",
@@ -398,13 +436,13 @@
                 "media": {
                     "url": "images/images_4/burials.jpg",
                     "credit": "Simon Keay / University of Southampton",
-                    "caption": "The excavation of one the many burials found within the ruins of the buildings at Portus"
+                    "caption": "Scavo di una delle tante tombe trovate tra le rovine deigli edifici di Portus"
                 }
             },
 			{
                 "text": {
-                    "headline": "Fine del periodo Tardo antico",
-                    "text": "Portus ha continuato ad esistere dopo la fine delle guerre gotiche a metà del VI° secolo d.C., nonostante avesse perso gran parte del suo ruolo commerciale, restava comunque un centro regionale significativo del potere bizantino."
+                    "headline": "La Fine del periodo Tardo antico",
+                    "text": "Portus ha continuato ad esistere dopo la fine delle guerre gotiche a metà del VI secolo d.C., nonostante avesse perso gran parte del suo ruolo commerciale, restava comunque un centro regionale significativo del potere bizantino."
                 },
                 "location": {
                     "name": "location",

@@ -10,8 +10,8 @@
                     "name": "location",
                     "image": "images/tiny_icon.png",
                     "icon_size": 1,
-                    "lat": 69,
-                    "lon": -135,
+                    "lat": 57.5,
+                    "lon": -90.5,
                     "zoom": 4,
                     "line": false
                 },
@@ -29,8 +29,8 @@
                 },
                 "location": {
                     "name": "location",
-                    "lat": 53.25,
-                    "lon": -151.25,
+                    "lat": 43,
+                    "lon": -96,
                     "zoom": 5,
                     "line": false
                 },
@@ -48,8 +48,8 @@
                 },
                 "location": {
                     "name": "location",
-                    "lat": 54.25,
-                    "lon": -150.75,
+                    "lat": 44,
+                    "lon": -96,
                     "zoom": 5,
                     "line": false
                 },
@@ -67,8 +67,8 @@
                 },
                 "location": {
                     "name": "location",
-                    "lat": 61.75,
-                    "lon": -161.5,
+                    "lat": 46,
+                    "lon": -100,
                     "zoom": 5,
                     "line": false
                 },
@@ -86,8 +86,8 @@
                 },
                 "location": {
                     "name": "location",
-                    "lat": 57.25,
-                    "lon": -148.25,
+                    "lat": 44,
+                    "lon": -96,
                     "zoom": 5,
                     "line": false
                 },
@@ -105,8 +105,8 @@
                 },
                 "location": {
                     "name": "location",
-                    "lat": 59.75,
-                    "lon": -146.75,
+                    "lat": 46,
+                    "lon": -93,
                     "zoom": 5,
                     "line": false
                 },
@@ -119,13 +119,13 @@
 			{
                 "id": 6,
                 "text": {
-                    "headline": "Grandi Magazzini di Traiani",
+                    "headline": "Grandi Magazzini Traiani",
                     "text": "A long concrete quay that ran from west to east and acted as the northern side of a channel that provided passage for ships heading towards the Trajanic basin; it was surmounted by a lantern and some baths."
                 },
                 "location": {
                     "name": "location",
-                    "lat": 63, 
-                    "lon": -149,
+                    "lat": 48,
+                    "lon": -92,
                     "zoom": 5,
                     "line": false
                 },
@@ -143,8 +143,8 @@
                 },
                 "location": {
                     "name": "location",
-                    "lat": 66,
-                    "lon": -152,
+                    "lat": 46,
+                    "lon": -88,
                     "zoom": 5,
                     "line": false
                 },
@@ -162,8 +162,8 @@
                 },
                 "location": {
                     "name": "location",
-                    "lat": 68,
-                    "lon": -146,
+                    "lat": 49.5,
+                    "lon": -94.5,
                     "zoom": 5,
                     "line": false
                 },
@@ -181,8 +181,8 @@
                 },
                 "location": {
                     "name": "location",
-                    "lat": 69,
-                    "lon": -141.5,
+                    "lat": 50.5,
+                    "lon": -93,
                     "zoom": 5,
                     "line": false
                 },
@@ -200,8 +200,8 @@
                 },
                 "location": {
                     "name": "location",
-                    "lat": 71.25,
-                    "lon": -135,
+                    "lat": 51,
+                    "lon": -93,
                     "zoom": 5,
                     "line": false
                 },
@@ -219,8 +219,8 @@
                 },
                 "location": {
                     "name": "location",
-                    "lat": 72.25,
-                    "lon": -128.75,
+                    "lat": 52.5,
+                    "lon": -88,
                     "zoom": 5,
                     "line": false
                 },
@@ -238,8 +238,8 @@
                 },
                 "location": {
                     "name": "location",
-                    "lat": 74.75,
-                    "lon": -127.25,
+                    "lat": 53,
+                    "lon": -89,
                     "zoom": 5,
                     "line": false
                 },
@@ -257,8 +257,8 @@
                 },
                 "location": {
                     "name": "location",
-                    "lat": 78,
-                    "lon": -126.5,
+                    "lat": 55,
+                    "lon": -91,
                     "zoom": 5,
                     "line": false
                 },
@@ -276,8 +276,8 @@
                 },
                 "location": {
                     "name": "location",
-                    "lat": 77.75,
-                    "lon": -126,
+                    "lat": 54,
+                    "lon": -88,
                     "zoom": 5,
                     "line": false
                 },
@@ -295,8 +295,8 @@
                 },
                 "location": {
                     "name": "location",
-                    "lat": 78,
-                    "lon": -125,
+                    "lat": 56,
+                    "lon": -88,
                     "zoom": 5,
                     "line": false
                 },
@@ -314,8 +314,8 @@
                 },
                 "location": {
                     "name": "location",
-                    "lat": 78.25,
-                    "lon": -124.5,
+                    "lat": 56.5,
+                    "lon": -87,
                     "zoom": 5,
                     "line": false
                 },
@@ -333,8 +333,8 @@
                 },
                 "location": {
                     "name": "location",
-                    "lat": 78,
-                    "lon": -122.25,
+                    "lat": 56.5,
+                    "lon": -86.5,
                     "zoom": 5,
                     "line": false
                 },
@@ -352,8 +352,8 @@
                 },
                 "location": {
                     "name": "location",
-                    "lat": 78,
-                    "lon": -116.5,
+                    "lat": 56.5,
+                    "lon": -85.5,
                     "zoom": 5,
                     "line": false
                 },
@@ -371,8 +371,8 @@
                 },
                 "location": {
                     "name": "location",
-                    "lat": 76.5,
-                    "lon": -119.5,
+                    "lat": 55.5,
+                    "lon": -87,
                     "zoom": 5,
                     "line": false
                 },
@@ -390,8 +390,8 @@
                 },
                 "location": {
                     "name": "location",
-                    "lat": 75.5,
-                    "lon": -120.5,
+                    "lat": 54,
+                    "lon": -87,
                     "zoom": 5,
                     "line": false
                 },
@@ -405,12 +405,12 @@
                 "id": 20,
                 "text": {
                     "headline": "Palazzo Imperiale Rooms",
-                    "text": "T"
+                    "text": ""
                 },
                 "location": {
                     "name": "location",
-                    "lat": 74.75,
-                    "lon": -120.25,
+                    "lat": 54,
+                    "lon": -87,
                     "zoom": 5,
                     "line": false
                 },
@@ -428,8 +428,8 @@
                 },
                 "location": {
                     "name": "location",
-                    "lat": 73.5,
-                    "lon": -125,
+                    "lat": 53,
+                    "lon": -87,
                     "zoom": 5,
                     "line": false
                 },
@@ -447,8 +447,8 @@
                 },
                 "location": {
                     "name": "location",
-                    "lat": 73.15,
-                    "lon": -122.45,
+                    "lat": 52.5,
+                    "lon": -88,
                     "zoom": 5,
                     "line": false
                 },
@@ -466,8 +466,8 @@
                 },
                 "location": {
                     "name": "location",
-                    "lat": 72.5,
-                    "lon": -120,
+                    "lat": 52,
+                    "lon": -86,
                     "zoom": 5,
                     "line": false
                 },
@@ -485,8 +485,8 @@
                 },
                 "location": {
                     "name": "location",
-                    "lat": 72,
-                    "lon": -119,
+                    "lat": 51,
+                    "lon": -84,
                     "zoom": 5,
                     "line": false
                 },
@@ -504,8 +504,8 @@
                 },
                 "location": {
                     "name": "location",
-                    "lat": 68,
-                    "lon": -112,
+                    "lat": 51.5,
+                    "lon": -84,
                     "zoom": 5,
                     "line": false
                 },
@@ -523,8 +523,8 @@
                 },
                 "location": {
                     "name": "location",
-                    "lat": 60.5,
-                    "lon": -110.5,
+                    "lat": 46.5,
+                    "lon": -84.5,
                     "zoom": 5,
                     "line": false
                 },
@@ -542,8 +542,8 @@
                 },
                 "location": {
                     "name": "location",
-                    "lat": 61,
-                    "lon": -126,
+                    "lat": 46.5,
+                    "lon": -84.5,
                     "zoom": 5,
                     "line": false
                 },
@@ -561,8 +561,8 @@
                 },
                 "location": {
                     "name": "location",
-                    "lat": 64.5,
-                    "lon": -129,
+                    "lat": 46.5,
+                    "lon": -84.5,
                     "zoom": 5,
                     "line": false
                 },
@@ -580,8 +580,8 @@
                 },
                 "location": {
                     "name": "location",
-                    "lat": 71,
-                    "lon": -126,
+                    "lat": 46.5,
+                    "lon": -84.5,
                     "zoom": 5,
                     "line": false
                 },

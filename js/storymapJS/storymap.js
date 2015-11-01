@@ -4710,6 +4710,7 @@ VCO.MenuBar = VCO.Class.extend({
 		this._el = {
 			parent: {},
 			container: {},
+			button_container: {},
 			button_overview: {},
 			button_backtostart: {},
 			button_collapse_toggle: {},
@@ -4825,6 +4826,7 @@ VCO.MenuBar = VCO.Class.extend({
 			this._el.button_overview.style.display = "inline";
 			this.fire("collapse", {y:this.options.menubar_default_y});
 			this._el.button_collapse_toggle.innerHTML	= VCO.Language.buttons.collapse_toggle + "<span class='vco-icon-arrow-up'></span>";
+			this._el.button_collapse_toggle.title = VCO.Language.buttons.collapse_toggle;
 		} else {
 			this.collapsed = true;
 			this.hide(25);
@@ -4832,6 +4834,7 @@ VCO.MenuBar = VCO.Class.extend({
 			this._el.button_backtostart.style.display = "inline";
 			this.fire("collapse", {y:1});
 			this._el.button_collapse_toggle.innerHTML	= VCO.Language.buttons.uncollapse_toggle + "<span class='vco-icon-arrow-down'></span>";
+			this._el.button_collapse_toggle.title = VCO.Language.buttons.uncollapse_toggle;
 		}
 	},
 
@@ -4857,17 +4860,19 @@ VCO.MenuBar = VCO.Class.extend({
 	_initLayout: function () {
 		// Create Layout
 
+		this._el.button_container						= VCO.Dom.create('div', 'buttons-container', this._el.container);
+
 		// Buttons
-		this._el.button_backtostart 					= VCO.Dom.create('div', 'menubar-button button-backtostart', this._el.container);
+		this._el.button_backtostart 					= VCO.Dom.create('div', 'menubar-button button-backtostart', this._el.button_container);
 		VCO.DomEvent.addListener(this._el.button_backtostart, 'click', this._onButtonBackToStart, this);
 
-		this._el.button_overview 						= VCO.Dom.create('div', 'menubar-button button-overview', this._el.container);
+		this._el.button_overview 						= VCO.Dom.create('div', 'menubar-button button-overview', this._el.button_container);
 		VCO.DomEvent.addListener(this._el.button_overview, 'click', this._onButtonOverview, this);
 		
-		this._el.button_collapse_toggle 				= VCO.Dom.create('div', 'menubar-button button-collapse_toggle', this._el.container);
+		this._el.button_collapse_toggle 				= VCO.Dom.create('div', 'menubar-button button-collapse_toggle', this._el.button_container);
 		VCO.DomEvent.addListener(this._el.button_collapse_toggle, 'click', this._onButtonCollapseMap, this);
 
-		this._el.button_layers 					= VCO.Dom.create('div', 'menubar-button button-layers', this._el.container);
+		this._el.button_layers 							= VCO.Dom.create('div', 'menubar-button button-layers', this._el.button_container);
 		VCO.DomEvent.addListener(this._el.button_layers, 'click', this._onButtonLayers, this);
 		
 		if (this.options.maps[0].map_as_image) {
@@ -4876,16 +4881,18 @@ VCO.MenuBar = VCO.Class.extend({
 			this._el.button_overview.innerHTML			= "<i class='fa fa-align-left fa-lg'></i>";
 		}
 
-		this._el.button_backtostart.innerHTML		= "<i class='fa fa-reply fa-lg'></i>";
-		this._el.button_collapse_toggle.innerHTML	= VCO.Language.buttons.collapse_toggle + "<span class='vco-icon-arrow-up'></span>";
-		// this._el.button_layers.innerHTML		= VCO.Language.buttons.collapse_toggle + "<i class='fa fa-map fa-lg'></i>";	
+		this._el.button_backtostart.innerHTML			= "<i class='fa fa-reply fa-lg'></i>";
+		this._el.button_collapse_toggle.innerHTML		= VCO.Language.buttons.collapse_toggle + "<span class='vco-icon-arrow-up'></span>";
+
+		this._el.button_backtostart.title 				= VCO.Language.buttons.backtostart;
+		this._el.button_overview.title 					= VCO.Language.buttons.overview;
 
 		if (VCO.Browser.mobile) {
 			this._el.button_backtostart.style.display = "none";
 			this._el.container.setAttribute("ontouchstart"," ");
 		}
 		else{
-			// this._el.button_collapse_toggle.style.display = "none";
+			this._el.button_collapse_toggle.style.display = "none";
 		}
 		
 	},
@@ -5307,7 +5314,6 @@ VCO.Media = VCO.Class.extend({
 				}
 				if (this._el.caption) {
 					this._el.caption.style.width	= "100px";
-					this._el.caption.style.color	= "blue";
 				}
 			}
 			
@@ -5402,10 +5408,11 @@ VCO.Media = VCO.Class.extend({
 		this._state.media_loaded = true;
 		this.fire("media_loaded", this.data);
 		if (this._el.credit) {
-			this._el.credit.style.width		= this._el.content_item.offsetWidth + "px";
+			this._el.credit.style.minWidth	= this._el.content_item.offsetWidth + "px";
 		}
 		if (this._el.caption) {
-			this._el.caption.style.width		= this._el.content_item.offsetWidth + "px";
+			this._el.caption.style.minWidth	= this._el.content_item.offsetWidth + "px";
+
 		}
 	},
 	
@@ -7768,7 +7775,6 @@ VCO.StorySlider = VCO.Class.extend({
 		}
 		
 		if (localStorage.getItem("ls.locale.main").contains("en")) {
-			console.log(this._prevTour);
 			this._startmessage.updateMessage("<div class='message-tours'>Select the previous or next tour<br><div class='itemHolderMessage'><div class='imageHolder'><a href='#!/" + prevTour() + "'><img src='logos/mini-tours/" + this._prevTour + ".png' ng-src='logos/mini-tours/" + this._prevTour + ".png'></a></div><div class='textHolderWhite'><div class='text'>" + this._prevTour + "</div></div></div><div class='itemHolderMessage'><div class='imageHolder'><a href='#!/" + nextTour() + "'><img src='logos/mini-tours/" + nextTour().split('/')[1] + ".png' ng-src='logos/mini-tours/" + nextTour().split('/')[1] + ".png'></a></div><div class='textHolderWhite'><div class='text'>" + nextTour().split('/')[1] + "</div></div></div><br><span class='vco-button'>CLOSE</span></div>");
 		}
 		else {
@@ -15293,6 +15299,273 @@ L.control.layers = function (baseLayers, overlays, options) {
 	return new L.Control.Layers(baseLayers, overlays, options);
 };
 
+/*
+ * L.Control.CustomLayers is a control to allow users to switch between different layers on the map.
+ */
+
+L.Control.CustomLayers = L.Control.extend({
+	options: {
+		collapsed: true,
+		position: 'topright',
+		autoZIndex: true,
+		hideSingleBase: false
+	},
+
+	initialize: function (baseLayers, overlays, options) {
+		L.setOptions(this, options);
+
+		this._layers = {};
+		this._lastZIndex = 0;
+		this._handlingClick = false;
+
+		for (var i in baseLayers) {
+			this._addLayer(baseLayers[i], i);
+		}
+
+		for (i in overlays) {
+			this._addLayer(overlays[i], i, true);
+		}
+	},
+
+	onAdd: function () {
+		this._initLayout();
+		this._update();
+
+		return this._container;
+	},
+
+	addBaseLayer: function (layer, name) {
+		this._addLayer(layer, name);
+		return this._update();
+	},
+
+	addOverlay: function (layer, name) {
+		this._addLayer(layer, name, true);
+		return this._update();
+	},
+
+	removeLayer: function (layer) {
+		layer.off('add remove', this._onLayerChange, this);
+
+		delete this._layers[L.stamp(layer)];
+		return this._update();
+	},
+
+	_initLayout: function () {
+		var className = 'leaflet-control-layers',
+		    container = this._container = L.DomUtil.create('div', 'dropdown');
+
+		// makes this work on IE touch devices by stopping it from firing a mouseout event when the touch is released
+		container.setAttribute('aria-haspopup', true);
+
+		if (!L.Browser.touch) {
+			L.DomEvent
+				.disableClickPropagation(container)
+				.disableScrollPropagation(container);
+		} else {
+			L.DomEvent.on(container, 'click', L.DomEvent.stopPropagation);
+		}
+
+		// var form = this._form = L.DomUtil.create('form', className + '-list');
+
+		if (this.options.collapsed) {
+			if (!L.Browser.android) {
+				L.DomEvent.on(container, {
+					mouseenter: this._expand,
+					mouseleave: this._collapse
+				}, this);
+			}
+
+			var link = this._layersLink = L.DomUtil.create('a', 'controlLink', container);
+			link.role = 'button';
+			link.setAttribute('data-toggle', 'dropdown');
+			link.setAttribute('data-target', '#');
+			link.setAttribute('aria-haspopup', 'true');
+			link.setAttribute('aria-expanded', 'true');
+
+			link.innerHTML = "Layers<span class='caret'></span>";
+
+			if (L.Browser.touch) {
+				L.DomEvent
+				    .on(link, 'click', L.DomEvent.stop)
+				    .on(link, 'click', this._expand, this);
+			} else {
+				L.DomEvent.on(link, 'focus', this._expand, this);
+			}
+
+			// work around for Firefox Android issue https://github.com/Leaflet/Leaflet/issues/2033
+			// L.DomEvent.on(this._layersList, 'click', function () {
+			// 	setTimeout(L.bind(this._onInputClick, this), 0);
+			// }, this);
+
+			this._map.on('click', this._collapse, this);
+			// TODO keyboard accessibility
+		} else {
+			this._expand();
+		}
+		this._layersList = this._form = L.DomUtil.create('ul', 'dropdown-menu', container)
+		this._baseLayersList = L.DomUtil.create('div', 'baselayers', this._layersList);
+		this._separator = L.DomUtil.create('li', 'divider', this._layersList);
+		this._separator.role = "separator";
+		this._overlaysList = L.DomUtil.create('div', 'overlays', this._layersList);
+
+		// container.appendChild(form);
+	},
+
+	_addLayer: function (layer, name, overlay) {
+		//layer.on('add remove', this._onLayerChange, this);
+
+		var id = L.stamp(layer);
+
+		this._layers[id] = {
+			layer: layer,
+			name: name,
+			overlay: overlay
+		};
+
+		if (this.options.autoZIndex && layer.setZIndex) {
+			this._lastZIndex++;
+			layer.setZIndex(this._lastZIndex);
+		}
+	},
+
+	_update: function () {
+		if (!this._container) { return this; }
+
+		//L.DomUtil.empty(this._baseLayersList);
+		//L.DomUtil.empty(this._overlaysList);
+
+		var baseLayersPresent, overlaysPresent, i, obj, baseLayersCount = 0;
+
+		for (i in this._layers) {
+			obj = this._layers[i];
+			this._addItem(obj);
+			overlaysPresent = overlaysPresent || obj.overlay;
+			baseLayersPresent = baseLayersPresent || !obj.overlay;
+			baseLayersCount += !obj.overlay ? 1 : 0;
+		}
+
+		// Hide base layers section if there's only one layer.
+		if (this.options.hideSingleBase) {
+			baseLayersPresent = baseLayersPresent && baseLayersCount > 1;
+			this._baseLayersList.style.display = baseLayersPresent ? '' : 'none';
+		}
+
+		this._separator.style.display = overlaysPresent && baseLayersPresent ? '' : 'none';
+
+		return this;
+	},
+
+	_onLayerChange: function (e) {
+		if (!this._handlingClick) {
+			this._update();
+		}
+
+		var overlay = this._layers[L.stamp(e.target)].overlay;
+
+		var type = overlay ?
+			(e.type === 'add' ? 'overlayadd' : 'overlayremove') :
+			(e.type === 'add' ? 'baselayerchange' : null);
+
+		if (type) {
+			this._map.fire(type, e.target);
+		}
+	},
+
+	// IE7 bugs out if you create a radio dynamically, so you have to do it this hacky way (see http://bit.ly/PqYLBe)
+	_createRadioElement: function (name, checked) {
+
+		var radioHtml = '<input type="radio"  name="' +
+				name + '"' + (checked ? ' checked="checked"' : '') + '/>';
+
+		var radioFragment = document.createElement('div');
+		radioFragment.innerHTML = radioHtml;
+
+		return radioFragment.firstChild;
+	},
+
+	_hasClass: function (el, cls) {
+  		return el.className && new RegExp("(\\s|^)" + cls + "(\\s|$)").test(el.className);
+	},
+
+	_addItem: function (obj) {
+		var item = L.DomUtil.create('li', 'list-group-item'),
+		input,
+		checked = this._map.hasLayer(obj.layer);
+
+		if (obj.overlay) {
+			input = L.DomUtil.create('input', 'overlay-input', item);
+			input.type = 'checkbox';
+			input.defaultChecked = checked;
+		}
+		else {
+			input = this._createRadioElement('leaflet-base-layers', checked);
+		}
+
+		input.layerId = L.stamp(obj.layer);
+
+		L.DomEvent.on(input, 'click', this._onInputClick, this);
+
+		var label = document.createElement('label');
+		var name = document.createElement('span');
+		name.innerHTML = ' ' + obj.name;
+
+		item.appendChild(label);
+		label.appendChild(input);
+		label.appendChild(name);
+
+		var container = obj.overlay ? this._overlaysList : this._baseLayersList;
+		container.appendChild(item);
+
+		return item;
+	},
+
+	_onInputClick: function () {
+		var inputs = this._form.getElementsByTagName('input'),
+		    input, item, layer, hasLayer;
+		var addedLayers = [],
+		    removedLayers = [];
+
+		this._handlingClick = true;
+
+		for (var i = 0, len = inputs.length; i < len; i++) {
+			input = inputs[i];
+			layer = this._layers[input.layerId].layer;
+			hasLayer = this._map.hasLayer(layer);
+
+			if (input.checked && !hasLayer) {
+			addedLayers.push(layer);
+
+			} else if (!input.checked && hasLayer) {
+				removedLayers.push(layer);
+			}			
+		}
+
+		// Bugfix issue 2318: Should remove all old layers before readding new ones
+		for (i = 0; i < removedLayers.length; i++) {
+			this._map.removeLayer(removedLayers[i]);
+		}
+		for (i = 0; i < addedLayers.length; i++) {
+			this._map.addLayer(addedLayers[i]);
+		}
+
+		this._handlingClick = false;
+
+		this._refocusOnMap();
+	},
+
+	_expand: function () {
+		L.DomUtil.addClass(this._container, 'leaflet-control-layers-expanded');
+	},
+
+	_collapse: function () {
+		L.DomUtil.removeClass(this._container, 'leaflet-control-layers-expanded');
+	}
+});
+
+L.control.customlayers = function (baseLayers, overlays, options) {
+	return new L.Control.CustomLayers(baseLayers, overlays, options);
+};
 
 /*
  * L.PosAnimation is used by Leaflet internally for pan animations.
@@ -17444,7 +17717,7 @@ VCO.Map.Leaflet = VCO.Map.extend({
 		}		
 
 		// Create Layer Control
-		this._layer_control = new L.control.layers(_layergroup, null, {position: 'topleft'});
+		this._layer_control = new L.control.customlayers(_layergroup, null, {position: 'topleft'});
 		// .addTo(this._map);
 		
 		this._layer_control._map = this._map;
@@ -17546,9 +17819,6 @@ VCO.Map.Leaflet = VCO.Map.extend({
 		// if (map_type) {
 		// 	_maps_type_arr = map_type.split(':');
 		// }
-
-		// console.log(_options);
-		// console.log(_maps_type_arr[0]);
 	
 		// 	// Set Tiles
 		// 	switch(_maps_type_arr[0]) {
@@ -18600,7 +18870,6 @@ VCO.StoryMap = VCO.Class.extend({
 		this._menubar = new VCO.MenuBar(this._el.menubar, this._menubarContainer, this.options);
 		this.layer_control = this._map.createLayerControl();
 		this._menubar.controlLayers(this.layer_control);
-		// this._el.menubar.appendChild(this.layer_control);
 
 		this._showMessage();
 		this._finalmessage;
@@ -18946,6 +19215,9 @@ VCO.StoryMap = VCO.Class.extend({
 	_onLoaded: function() {
 		if (this._loaded.storyslider && this._loaded.map) {
 			this.fire("loaded", this.data);
+			if (this.options.layout == "portrait") {
+				this._updateDisplay(this.options.map_height, true, 7000, "story");
+			}
 		}
 	}
 	

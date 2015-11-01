@@ -48,8 +48,8 @@
                 },
                 "location": {
                     "name": "location",
-                    "lat": 47.5,
-                    "lon": -137,
+                    "lat": 46.5,
+                    "lon": -136.5,
                     "zoom": 5,
                     "line": false
                 },
@@ -66,7 +66,7 @@
                 },
                 "location": {
                     "name": "location",
-                    "lat": 54,
+                    "lat": 53,
                     "lon": -115,
                     "zoom": 4,
                     "line": false
@@ -84,8 +84,8 @@
                 },
                 "location": {
                     "name": "location",
-                    "lat": 66.75,
-                    "lon": -104.5,
+                    "lat": 65,
+                    "lon": -104.25,
                     "zoom": 4,
                     "line": false
                 },
@@ -120,8 +120,8 @@
                 },
                 "location": {
                     "name": "location",
-                    "lat": 65.15,
-                    "lon": -89.5,
+                    "lat": 63,
+                    "lon": -89,
                     "zoom": 4,
                     "line": false
                 },
@@ -138,8 +138,8 @@
                 },
                 "location": {
                     "name": "location",
-                    "lat": 60,
-                    "lon": -85,
+                    "lat": 59,
+                    "lon": -83,
                     "zoom": 4,
                     "line": false
                 },
@@ -156,8 +156,8 @@
                 },
                 "location": {
                     "name": "location",
-                    "lat": 59,
-                    "lon": -89,
+                    "lat": 56,
+                    "lon": -86,
                     "zoom": 4,
                     "line": false
                 },
@@ -174,8 +174,8 @@
                 },
                 "location": {
                     "name": "location",
-                    "lat": 54,
-                    "lon": -103,
+                    "lat": 51,
+                    "lon": -102.25,
                     "zoom": 4,
                     "line": true
                 },
@@ -192,8 +192,8 @@
                 },
                 "location": {
                     "name": "location",
-                    "lat": 49,
-                    "lon": -98,
+                    "lat": 44,
+                    "lon": -96,
                     "zoom": 4,
                     "line": false
                 },
@@ -210,8 +210,8 @@
                 },
                 "location": {
                     "name": "location",
-                    "lat": 54,
-                    "lon": -98,
+                    "lat": 49.75,
+                    "lon": -94.5,
                     "zoom": 4,
                     "line": false
                 },
@@ -228,8 +228,8 @@
                 },
                 "location": {
                     "name": "location",
-                    "lat": 50.5,
-                    "lon": -94.5,
+                    "lat": 48,
+                    "lon": -88.25,
                     "zoom": 4,
                     "line": false
                 },
@@ -246,8 +246,8 @@
                 },
                 "location": {
                     "name": "location",
-                    "lat": 49.5,
-                    "lon": -87,
+                    "lat": 45.5,
+                    "lon": -86.5,
                     "zoom": 4,
                     "line": false
                 },
@@ -264,7 +264,7 @@
                 },
                 "location": {
                     "name": "location",
-                    "lat": 50.25,
+                    "lat": 47,
                     "lon": -70.75,
                     "zoom": 4,
                     "line": false
@@ -282,8 +282,8 @@
                 },
                 "location": {
                     "name": "location",
-                    "lat": 52,
-                    "lon": -60,
+                    "lat": 48.5,
+                    "lon": -57,
                     "zoom": 4,
                     "line": false
                 },
@@ -300,8 +300,8 @@
                 },
                 "location": {
                     "name": "location",
-                    "lat": 57,
-                    "lon": -44,
+                    "lat": 51,
+                    "lon": -43.5,
                     "zoom": 4,
                     "line": false
                 },
@@ -318,8 +318,8 @@
                 },
                 "location": {
                     "name": "location",
-                    "lat": 65,
-                    "lon": -31,
+                    "lat": 58,
+                    "lon": -35,
                     "zoom": 4,
                     "line": false
                 },
@@ -336,14 +336,14 @@
                 },
                 "location": {
                     "name": "location",
-                    "lat": 70.5,
-                    "lon": -17,
+                    "lat": 71,
+                    "lon": -2,
                     "zoom": 4,
                     "line": false
                 },
                 "media": {
                     "url": "images/images_1/campana.jpg",
-                    "credit": "11/02/2014  /  Google Earth",
+                    "credit": "11/02/2014  /  Google Earth <a href='https://goo.gl/maps/1sHhHkUvkfD2' target='_blank'>41°48°59.13', -12°19°73.67'</a>",
                     "caption": "Satellite image showing the excavation of a part of the Via Campana, 4 km north-east of Portus"
                 }
             },
@@ -354,14 +354,14 @@
                 },
                 "location": {
                     "name": "location",
-                    "lat": 68.5,
+                    "lat": 66.5,
                     "lon": -57,
                     "zoom": 4,
                     "line": false
                 },
                 "media": {
                     "url": "images/images_1/northern_canal.jpg",
-                    "credit": "24/07/2003  /  Google Earth",
+                    "credit": "24/07/2003  /  Google Earth <a href='https://goo.gl/maps/egEBwRvUp8K2' target='_blank'>41°47°16.22', -12°16°13.33'</a>",
                     "caption": "Satellite imagery showing how the remains of the northern canal can be seen through the crop marks"
                 }
             },
@@ -408,8 +408,8 @@
                 },
                 "location": {
                     "name": "location",
-                    "lat": 40,
-                    "lon": 12,
+                    "lat": 35,
+                    "lon": 14,
                     "zoom": 4,
                     "line": false
                 },
@@ -426,8 +426,8 @@
                 },
                 "location": {
                     "name": "location",
-                    "lat": 32,
-                    "lon": -65,
+                    "lat": 30,
+                    "lon": -60,
                     "zoom": 4,
                     "line": false
                 },
@@ -444,8 +444,8 @@
                 },
                 "location": {
                     "name": "location",
-                    "lat": 1,
-                    "lon": -37,
+                    "lat": -4,
+                    "lon": -33,
                     "zoom": 4,
                     "line": false
                 },
@@ -462,8 +462,8 @@
                 },
                 "location": {
                     "name": "location",
-                    "lat": -9,
-                    "lon": -23,
+                    "lat": -14,
+                    "lon": -22,
                     "zoom": 4,
                     "line": false
                 },
@@ -480,15 +480,15 @@
                 },
                 "location": {
                     "name": "location",
-                    "lat": -10.75,
-                    "lon": -42,
+                    "lat": -16,
+                    "lon": -41,
                     "zoom": 4,
                     "line": false
                 },
                 "media": {
                     "url": "images/images_1/ostia_harbour.jpg",
-                    "credit": "Simon Keay / University of Southampton",
-                    "caption": "Site of the harbour of Ostia, to left of trees at centre of image"
+                    "credit": "24/07/2003  /  Google Earth <a href='https://goo.gl/maps/9q8dRvFMCE22' target='_blank'>41°45°14.59', -12°16°53.05'</a>",
+                    "caption": "Site of the harbour of Ostia <i>to left of trees at centre of image</i>"
                 }
             },
             {
@@ -498,8 +498,8 @@
                 },
                 "location": {
                     "name": "location",
-                    "lat": -18,
-                    "lon": -16,
+                    "lat": -26,
+                    "lon": -13,
                     "zoom": 4,
                     "line": false
                 },

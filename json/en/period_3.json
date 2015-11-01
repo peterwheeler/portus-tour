@@ -30,8 +30,8 @@
                 },
                 "location": {
                     "name": "location",
-                    "lat": 49,
-                    "lon": -137,
+                    "lat": 46.5,
+                    "lon": -136.5,
                     "zoom": 4,
                     "line": false
                 },
@@ -48,7 +48,7 @@
                 },
                 "location": {
                     "name": "location",
-                    "lat": 54,
+                    "lat": 53,
                     "lon": -115,
                     "zoom": 4,
                     "line": false
@@ -66,8 +66,8 @@
                 },
                 "location": {
                     "name": "location",
-                    "lat": 54,
-                    "lon": -103,
+                    "lat": 51,
+                    "lon": -102.5,
                     "zoom": 4,
                     "line": false
                 },
@@ -84,8 +84,8 @@
                 },
                 "location": {
                     "name": "location",
-                    "lat": 49,
-                    "lon": -98,
+                    "lat": 44,
+                    "lon": -96,
                     "zoom": 4,
                     "line": false
                 },
@@ -102,8 +102,8 @@
                 },
                 "location": {
                     "name": "location",
-                    "lat": 51.5,
-                    "lon": -94.5,
+                    "lat": 48,
+                    "lon": -92,
                     "zoom": 4,
                     "line": false
                 },
@@ -120,8 +120,8 @@
                 },
                 "location": {
                     "name": "location",
-                    "lat": 54,
-                    "lon": -98,
+                    "lat": 49.75,
+                    "lon": -94.5,
                     "zoom": 4,
                     "line": false
                 },
@@ -138,8 +138,8 @@
                 },
                 "location": {
                     "name": "location",
-                    "lat": 50.5,
-                    "lon": -94.5,
+                    "lat": 48.25,
+                    "lon": -89,
                     "zoom": 4,
                     "line": false
                 },
@@ -156,8 +156,8 @@
                 },
                 "location": {
                     "name": "location",
-                    "lat": 49.5,
-                    "lon": -87,
+                    "lat": 45.5,
+                    "lon": -86.5,
                     "zoom": 4,
                     "line": false
                 },
@@ -174,8 +174,8 @@
                 },
                 "location": {
                     "name": "location",
-                    "lat": 54,
-                    "lon": -93,
+                    "lat": 51,
+                    "lon": -92,
                     "zoom": 4,
                     "line": false
                 },
@@ -192,8 +192,8 @@
                 },
                 "location": {
                     "name": "location",
-                    "lat": 55,
-                    "lon": -90,
+                    "lat": 52.5,
+                    "lon": -88,
                     "zoom": 4,
                     "line": false
                 },
@@ -210,8 +210,8 @@
                 },
                 "location": {
                     "name": "location",
-                    "lat": 57,
-                    "lon": -89,
+                    "lat": 54,
+                    "lon": -88,
                     "zoom": 4,
                     "line": false
                 },
@@ -228,8 +228,8 @@
                 },
                 "location": {
                     "name": "location",
-                    "lat": 60,
-                    "lon": -86,
+                    "lat": 56.5,
+                    "lon": -85.5,
                     "zoom": 4,
                     "line": false
                 },
@@ -246,8 +246,8 @@
                 },
                 "location": {
                     "name": "location",
-                    "lat": 63,
-                    "lon": -83,
+                    "lat": 60,
+                    "lon": -84.5,
                     "zoom": 4,
                     "line": false
                 },
@@ -264,8 +264,8 @@
                 },
                 "location": {
                     "name": "location",
-                    "lat": 59,
-                    "lon": -69,
+                    "lat": 56,
+                    "lon": -67,
                     "zoom": 4,
                     "line": false
                 },
@@ -282,8 +282,8 @@
                 },
                 "location": {
                     "name": "location",
-                    "lat": 46,
-                    "lon": -83,
+                    "lat": 41.5,
+                    "lon": -81.5,
                     "zoom": 4,
                     "line": false
                 },
@@ -300,8 +300,8 @@
                 },
                 "location": {
                     "name": "location",
-                    "lat": 58,
-                    "lon": -60,
+                    "lat": 54.5,
+                    "lon": -57,
                     "zoom": 4,
                     "line": false
                 },
@@ -318,7 +318,7 @@
                 },
                 "location": {
                     "name": "location",
-                    "lat": 57,
+                    "lat": 52.5,
                     "lon": -57,
                     "zoom": 4,
                     "line": false
@@ -336,8 +336,8 @@
                 },
                 "location": {
                     "name": "location",
-                    "lat": 57,
-                    "lon": -44,
+                    "lat": 51,
+                    "lon": -43.5,
                     "zoom": 4,
                     "line": false
                 },
@@ -354,8 +354,8 @@
                 },
                 "location": {
                     "name": "location",
-                    "lat": 40,
-                    "lon": -70,
+                    "lat": 31,
+                    "lon": -65,
                     "zoom": 4,
                     "line": false
                 },
@@ -372,8 +372,8 @@
                 },
                 "location": {
                     "name": "location",
-                    "lat": 31,
-                    "lon": -65,
+                    "lat": 34,
+                    "lon": -72,
                     "zoom": 4,
                     "line": false
                 },
@@ -390,8 +390,8 @@
                 },
                 "location": {
                     "name": "location",
-                    "lat": -9,
-                    "lon": -23,
+                    "lat": -14,
+                    "lon": -22,
                     "zoom": 4,
                     "line": false
                 },

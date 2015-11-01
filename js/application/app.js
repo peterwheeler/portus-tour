@@ -771,7 +771,7 @@ new t1.o.Page(
 			calculate_zoom: false, 
 			zoomify: {
 				"name": "Drawing",
-				"path": "maps/it/period_2/",
+				"path": "maps/en/period_2/",
 				"width": 5200,
 				"height": 5844,
 				"tolerance": 0.9,
@@ -872,7 +872,7 @@ new t1.o.Page(
 			calculate_zoom: false, 
 			zoomify: {
 				"name": "Drawing",
-				"path": "maps/it/period_3/",
+				"path": "maps/en/period_3/",
 				"width": 5200,
 				"height": 5844,
 				"tolerance": 0.9,
@@ -973,7 +973,7 @@ new t1.o.Page(
 			calculate_zoom: false, 
 			zoomify: {
 				"name": "Drawing",
-				"path": "maps/it/period_4/",
+				"path": "maps/en/period_4/",
 				"width": 5200,
 				"height": 5844,
 				"tolerance": 0.9,
@@ -1029,7 +1029,7 @@ new t1.o.Page(
 			calculate_zoom: false, 
 			zoomify: {
 				"name": "Drawing",
-				"path": "maps/satellite/",
+				"path": "maps/en/satellite/",
 				"width": 5200,
 				"height": 5844,
 				"tolerance": 0.9,
@@ -1044,7 +1044,7 @@ new t1.o.Page(
 			calculate_zoom: false, 
 			zoomify: {
 				"name": "Drawing",
-				"path": "maps/satellite/",
+				"path": "maps/en/satellite/",
 				"width": 5200,
 				"height": 5844,
 				"tolerance": 0.9,

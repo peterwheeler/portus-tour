@@ -1,33 +1,31 @@
 {
-    "calculate_zoom": true,
      "storymap": {
-        "map_background_color": "#000000",
-        "slides": [
+		"slides": [
             {
                 "text": {
-                    "headline": "",
-                    "text": "Welcome to Portus. In the first century AD you would have been offshore in a ship in the great basin of Claudius, just in front of a quay that provided you with the first chance to step ashore. Assuming you were arriving by ship, you would have passed safely into the Claudian basin from the west, crossing to the north or south of the great Pharos or lighthouse, situated on its own artificial island."
+                    "headline": "Benvenuti a Portus",
+                    "text": "Questo tour è stato progettato per dare un'idea del sito archeologico che esiste a Portus oggigiorno. Viaggeremo attraverso il sito e visiteremo molti degli edifici che sono stati descritti nei tour precedenti. Le fotografie panoramiche ci permettono di vedere i resti e degli scavi che si verificano sul posto. Continuiamo il nostro tour."
                 },
                 "location": {
                     "name": "location",
                     "image": "images/tiny_icon.png",
                     "icon_size": 1,
-                    "lat": 74.75,
-                    "lon": -127.25,
-                    "zoom": 3,
+                    "lat": 69,
+                    "lon": -135,
+                    "zoom": 4,
                     "line": false
                 },
                 "media": {
-                    "url": "../Tour/images/images_1/northern_mole.jpg",
-                    "credit": "Simon Keay © University of Southampton",
-                    "caption": "View to the north of Portus, showing the surviving northern mole"
+                    "url": "",
+                    "credit": "",
+                    "caption": ""
                 }
             },
             {
                 "id": 1,
                 "text": {
-                    "headline": "Entrance Gate",
-                    "text": "Welcome to Portus. In the first century AD you would have been offshore in a ship in the great basin of Claudius, just in front of a quay that provided you with the first chance to step ashore. Assuming you were arriving by ship, you would have passed safely into the Claudian basin from the west, crossing to the north or south of the great Pharos or lighthouse, situated on its own artificial island."
+                    "headline": "L’Ingresso",
+                    "text": "Nel I secolo d.C. ti saresti trovato al largo, in una nave nel grande bacino di Claudio, proprio di fronte alla banchina che forniva la prima occasione per l’attracco. Dando per scontato l’arrivo via nave, saresti dovuto passare nel bacino di Claudio da ovest, passando a nord o a sud del grande Pharos o faro, situato sulla propria isola artificiale."
                 },
                 "location": {
                     "name": "location",
@@ -38,91 +36,91 @@
                 },
                 "media": {
                     "url": "images/images_5/entrance.jpg",
-                    "credit": "Simon Keay © University of Southampton",
-                    "caption": "Mosaic at Ostia showing the Pharos"
+                    "credit": "Simon Keay / University of Southampton",
+                    "caption": "Cancello d’ingresso del sito archeologico di Portus"
+                }
+            },
+			{
+                "id": 3,
+                "text": {
+                    "headline": "L’Antemurale",
+                    "text": "Un possibile ingresso nella parte settentrionale del bacino di Claudio vicino all'incrocio delle banchine settentrionali e orientali, identificato dai carotaggi geo-archeologici."
+                },
+                "location": {
+                    "name": "location",
+                    "lat": 54.25,
+                    "lon": -150.75,
+                    "zoom": 5,
+                    "line": false
+                },
+                "media": {
+                    "url": "images/images_1/antemurale.jpg",
+                    "credit": "Simon Keay / University of Southampton",
+                    "caption": ""
                 }
             },
             {
                 "id": 2,
                 "text": {
-                    "headline": "Claudian Basin",
-                    "text": "The basin was defined by two long concrete quays or “moles”, perhaps composed of arcades that stood clear of the water. These quays stretched westwards far out to sea and can still be traced both in the shape of the modern Fiumicino Canal just visible across the road to your south, and in remnants at various points near to the modern Fiumicino Airport away to the north-west.<br/><br/>On this tour you will be travelling through time as well as space, so you should also imagine jumping from the first century to the fifth and seeing a large structure now totally destroyed but known to us from the epigraphic evidence. This structure was known as the Porticus Placidiana."
+                    "headline": "Il Bacino di Claudio",
+                    "text": "Il bacino era delimitato da due moli lunghi in cemento, forse formati da arcate che si trovavano al di fuori dell'acqua. Queste banchine si estendevano verso ovest in mare aperto e possono ancora essere rintracciate nella forma del canale moderno di Fiumicino visibile dall’altra parte della strada, e nei resti visibili in alcune aree in direzione nord-ovest nelle vicinanze dell’Aeroporto moderno di Fiumicino. <br/> In questo tour viaggerai attraverso il tempo e lo spazio, quindi immagina di saltare dal I al V secolo e di vedere una grande struttura ormai completamente distrutta, ma conosciuta grazie alle testimonianze epigrafica. Questa struttura era conosciuta come il Porticus Placidiana."
                 },
                 "location": {
                     "name": "location",
-                    "lat": 62,
-                    "lon": -161,
+                    "lat": 61.75,
+                    "lon": -161.5,
                     "zoom": 5,
                     "line": false
                 },
                 "media": {
-                    "url": "../Tour/images/images_1/northern_mole.jpg",
-                    "credit": "Simon Keay © University of Southampton",
+                    "url": "images/images_1/northern_mole.jpg",
+                    "credit": "Simon Keay / University of Southampton",
                     "caption": "View to the north of Portus, showing the surviving northern mole"
                 }
             },
-            {
-                "id": 3,
-                "text": {
-                    "headline": "Antemurale",
-                    "text": "A possible entrance in the northern side of the Claudian basin close to the intersection of the northern and eastern quays, identified by geo-archaeological coring."
-                },
-                "location": {
-                    "name": "location",
-                    "lat": 67, 
-                    "lon": -164,
-                    "zoom": 5,
-                    "line": false
-                },
-                "media": {
-                    "url": "https://blog.soton.ac.uk/portusproject/files/2014/05/2.3sm4.jpg",
-                    "credit": "Stephen Kay / Portus Project",
-                    "caption": ""
-                }
-            },
-            {
+			{
                 "id": 4,
                 "text": {
-                    "headline": "Portico di Claudio",
-                    "text": "Quay on the western facade of the port next to the Portico di Claudio and adjacent warehouses, that was intensively used between the mid 1st and 7th c AD."
+                    "headline": "Il Portico di Claudio",
+                    "text": "La banchina sulla facciata occidentale del porto, vicino al Portico di Claudio e ai magazzini adiacenti, che è stata utilizzata  intensamente tra la metà del I e il VII secolo d.C."
                 },
                 "location": {
                     "name": "location",
-                    "lat": 56.5,
-                    "lon": -149.5,
+                    "lat": 57.25,
+                    "lon": -148.25,
                     "zoom": 5,
                     "line": false
                 },
                 "media": {
                     "url": "<iframe width='100%' height='400px' src='https://www.thesphere.com/direct_embed/397494' class='sphere-direct_embed' type='text/html' frameborder=0 scrolling='no'  allowfullscreen='true' mozallowfullscreen='true' webkitallowfullscreen='true'></iframe>",
-                    "credit": "Stephen Kay / Portus Project",
-                    "caption": ""
+                    "credit": "Stephen Kay / BSR & Portus Project",
+                    "caption": "Panorama a 360° dei resti del colonnato del Portico di Claudio"
                 }
             },
-            {
+			{
                 "id": 5,
                 "text": {
-                    "headline": "Darsena",
-                    "text": "Monumental colonnade of mid 1st c AD date on the western facade of the port that afforded views over the Claudian basin."
+                    "headline": "La Darsena",
+                    "text": "Colonnato monumentale della metá del I secolo d.C. nella facciata occidentale del porto che si affacciava sul bacino di Claudio."
                 },
                 "location": {
                     "name": "location",
-                    "lat": 60,
-                    "lon": -147,
+                    "lat": 59.75,
+                    "lon": -146.75,
                     "zoom": 5,
                     "line": false
                 },
                 "media": {
-                    "url": "../Tour/images/images_1/portico_di_claudia.jpg",
-                    "credit": "Daniel Gonzales © University of Southampton",
-                    "caption": "View to the north of Portus, showing the surviving northern mole"
+                    "url": "images/images_5/darsena.jpg",
+                    "credit": "Simon Keay / University of Southampton",
+                    "caption": "Vista della Darsena dall’angolo sud-ovest"
                 }
             },
-            {
+			{
                 "id": 6,
                 "text": {
-                    "headline": "Grandi Magazzini Traiani",
-                    "text": "A long concrete quay that ran from west to east and acted as the northern side of a channel that provided passage for ships heading towards the Trajanic basin; it was surmounted by a lantern and some baths. <br/><br/><strong>Lanterna:</strong> Small lighthouse on the end of the Molo della Lanterna."
+                    "headline": "I Grandi Magazzini di Traiano",
+                    "text": "Una lunga banchina in cemento che correva da ovest a est e ha agito come il lato nord di un canale che garantiva di passaggio alle navi dirette verso il bacino di Traiano; era sormontata da una lanterna e da alcuni bagni."
                 },
                 "location": {
                     "name": "location",
@@ -132,21 +130,21 @@
                     "line": false
                 },
                 "media": {
-                    "url": "../Tour/images/images_1/mollo_della_lanterna.jpg",
-                    "credit": "Gareth Beale © University of Southampton",
-                    "caption": "View from the south up the entrance canal showing the Mollo della Lanterna in the left background"
+                    "url": "images/images_2/magazzini_traiani.jpg",
+                    "credit": "Simon Keay / University of Southampton",
+                    "caption": ""
                 }
             },
-            {
+			{
                 "id": 7,
                 "text": {
-                    "headline": "Canale di Imbocco al Porto di Traiano",
-                    "text": "You are standing in what would have been the main channel for ships entering the inner part of the Claudian basin from the outer part beyond the quay. This would have been alive with shipping. You can appreciate yet again the scale of the undertaking.<br/><br/>If you take time to turn gently clockwise on this spot, starting with the Grandi Magazzini di Traiano you would have seen the inner face of the quay and a small bath complex. Turning further, you would have seen the lantern at the end of the inner mole and then, nearer to, another lantern. The base of this can just be made out. Turning yet further we see the quay extending to the east, capped with the remains of the Lanterna Baths. Next we see the modern Casale – the centre of operations of the Portus Project for many years. From behind the Casale we then see the Grandie Magazzini di Setimio Severo. Finally we turn to face due east and must imagine a clear line of sight through into yet another enormous basin – this time the hexagonal basin of Trajan.<br/><br/>For now we will continue our progress across the log jam of ships and arrive at the Lanterna."
+                    "headline": "Il Canale d’imbocco al Porto di Traiano",
+                    "text": "Sei in piedi in quello che sarebbe stato il principale canale per le navi che entravano nella parte interna del bacino Claudio dalla parte esterna al di là della banchina. Questo sarebbe stato affollato nel pieno dei commerci. È possibile apprezzare ancora una volta la scala delle operazioni. <br/> Se hai tempo di girare delicatamente in senso orario in questo luogo, potrai vedere le facciate interne della banchina a partire dai Grandi Magazzini di Traiano e dal piccolo complesso termale. Girando nuovamente, vedrai la lanterna alla fine del molo interno e poi, più vicino, un'altra lanterna. La base di questo può solo essere immaginata Eppure, girando ulteriormente puoi vedere la banchina che si estende a est, ricoperta con i resti delle Terme della Lanterna. Successivamente, vedrai il Casale moderno - il centro delle operazioni del Portus Project da molti anni. Da dietro il Casale vedrai i Grandi Magazzini di Settimio Severo. Infine rivolgiti verso est e immagina una chiara linea visiva in un altro bacino enorme  - questa volta il bacino esagonale di Traiano. <br/> Per ora continueremo il nostro viaggio attraverso il percorso delle navi fino ad arrivare alla Lanterna."
                 },
                 "location": {
                     "name": "location",
                     "lat": 66,
-                    "lon": -150,
+                    "lon": -152,
                     "zoom": 5,
                     "line": false
                 },
@@ -156,11 +154,11 @@
                     "caption": ""
                 }
             },
-            {
+			{
                 "id": 8,
                 "text": {
-                    "headline": "Molo della Lanterna",
-                    "text": "From here you can also just make out the surviving line of the inner mole – the quay that extended roughly northwards from the Portico di Claudio and ended with a small lighthouse, similar to the one that stood directly in-front of you now. Which one are you talking about ?  Nothing remains to the first lighthouse but we can imagine it, the inner lantern, and the outer Pharos former a line of three lights enabling ships to enter and navigate the harbour both in the day and at night."
+                    "headline": "Il Molo della Lanterna",
+                    "text": "Da qui si puoi immaginare la linea del molo interno - la banchina si estendeva all'incirca verso nord dal Portico di Claudio e terminava con un piccolo faro, simile a quello che si trovava direttamente di fronte a te in questo momento. Non é rimasto nulla del primo faro, ma possiamo immaginare che la lanterna interna e il Pharos esterno formavano una linea di tre luci che consentiva alle navi di entrare e navigare nel porto sia di giorno che di notte."
                 },
                 "location": {
                     "name": "location",
@@ -170,16 +168,16 @@
                     "line": false
                 },
                 "media": {
-                    "url": "",
-                    "credit": "",
-                    "caption": ""
+                    "url": "images/images_1/mollo_della_lanterna.jpg",
+                    "credit": "Simon Keay / University of Southampton",
+                    "caption": "Vista dei resti del Molo della Lanterna da est"
                 }
             },
-            {
+			{
                 "id": 9,
                 "text": {
-                    "headline": "Terme della Lanterna",
-                    "text": "A set of baths on the narrow quay on the north side of the Canale di Imbocco al Porto di Traiano, and which continued in use well into the Late Antique period.<br/><br/>Located on the east-west internal mole separating the Claudian basin from the entrance canal to the Trajanic basin, the bath complex (c. 40 m by 30 m) was comprised of vaulted rooms of brick-faced concrete. The structure was initially excavated in 1824 when the marble cladding was removed. More recent systematic excavation is currently being undertaken by the Soprintendenza Speciale per i Beni Archeologici di Roma (Renato Sebastiani)."
+                    "headline": "Le Terme della Lanterna",
+                    "text": "Le terme sono formate da una serie di bagni sul lato nord del Canale di imbocco al Porto di Traiano, sul molo stretto,e che hanno continuato a essere in uso anche nel periodo tardoantico. <br/> Situato sul molo interno (est-ovest) che separava il bacino di Claudio dal canale d’ingresso al bacino di Traiano, il complesso termale (circa 40 m per 30 m) era composto da stanze con il soffitto a volta a faccia vista. La struttura è stata scavata inizialmente  nel 1824, quando è stato rimosso il rivestimento. Lo scavo sistematico è attualmente in corso, sotto la direzione dalla Soprintendenza Speciale per il Colosseo, il Museo Nazionale Romano e l'Area Archeologica di Roma (Renato Sebastiani)."
                 },
                 "location": {
                     "name": "location",
@@ -191,18 +189,18 @@
                 "media": {
                     "url": "images/images_2/terme_della_lanterna.jpg",
                     "credit": "Stephen Kay / University of Southampton",
-                    "caption": "View of the Lanterna Baths from the air"
+                    "caption": "Vista aerea delle Terme della Lanterna"
                 }
             },
-            {
+			{
                 "id": 10,
                 "text": {
-                    "headline": "Building of uncertain function",
-                    "text": "We now pass back out into the Claudian Basin. In the bushes to our right we know from geophysics of a large rectangular building of uncertain function. As we continue along the path we will see the bulk of the Gandi Magazzini di Settimio Severo emerging from behind the trees."
+                    "headline": "L’Edificio di funzione incerta",
+                    "text": "Torniamo di nuovo nel bacino di Claudio. La geofisica ci ha mostrato un grande edificio rettangolare di incerta funzione, tra i cespugli alla nostra destra. Mentre continuiamo lungo il sentiero vedremo emergere i Gandi Magazzini di Settimio Severo da dietro gli alberi."
                 },
                 "location": {
                     "name": "location",
-                    "lat": 71,
+                    "lat": 71.25,
                     "lon": -135,
                     "zoom": 5,
                     "line": false
@@ -210,33 +208,33 @@
                 "media": {
                     "url": "<iframe width='100%' height='400px' src='https://www.thesphere.com/direct_embed/402811' class='sphere-direct_embed' type='text/html' frameborder=0 scrolling='no'  allowfullscreen='true' mozallowfullscreen='true' webkitallowfullscreen='true'></iframe>",
                     "credit": "Stephen Kay / Portus Project",
-                    "caption": ""
+                    "caption": "Vista aerea delle Terme della Lanterna"
                 }
             },
-            {
+			{
                 "id": 11,
                 "text": {
-                    "headline": "Grandi Magazzini di Settimio Severo",
-                    "text": "From here you can see through one of the arches that connected the seaward and landward sides of the Grandi Magazzini di Settimio Severo. In the Roman period we would again be standing in the Claudian Basin."
+                    "headline": "I Grandi Magazzini di Settimio Severo",
+                    "text": "Da qui si può vedere attraverso uno degli archi che collegavano la parte marittima e terrestre dei Grandi Magazzini di Settimio Severo. Nel periodo romano ci troveremmo nel bacino di Claudio."
                 },
                 "location": {
                     "name": "location",
-                    "lat": 72.5,
-                    "lon": -129.5,
+                    "lat": 72.25,
+                    "lon": -128.75,
                     "zoom": 5,
                     "line": false
                 },
                 "media": {
                     "url": "<iframe width='100%' height='400px' src='https://www.thesphere.com/direct_embed/402729' class='sphere-direct_embed' type='text/html' frameborder=0 scrolling='no'  allowfullscreen='true' mozallowfullscreen='true' webkitallowfullscreen='true'></iframe>",
-                    "credit": "Stephen Kay / Portus Project",
+                    "credit": "Stephen Kay / BSR & Portus Project",
                     "caption": ""
                 }
             },
-            {
+			{
                 "id": 12,
                 "text": {
-                    "headline": "Terrazza di Traiano",
-                    "text": "As we continue around the path we get several views of an arcaded structure, with a reconstructed brick façade above. This supported the once colonnaded façade (Terrazza di Traiano) of the so-called Palazzo Imperiale beyond."
+                    "headline": "La Terrazza di Traiano",
+                    "text": "Mentre continuiamo lungo il sentiero, vediamo di una struttura ad archi che sostiene una facciata in mattoni. Questa struttura sosteneva la facciata colonnata (Terrazza di Traiano) del cosiddetto Palazzo Imperiale."
                 },
                 "location": {
                     "name": "location",
@@ -246,16 +244,16 @@
                     "line": false
                 },
                 "media": {
-                    "url": "images/images_5/terrazza.jpg",
-                    "credit": "Stephen Kay / Portus Project",
-                    "caption": ""
+                    "url": "images/images_2/terrazza.jpg",
+                    "credit": "Stephen Kay / BSR & Portus Project",
+                    "caption": "Panorama a 360° di fronte alla facciata in matoni della Terrazza di Traiano"
                 }
             },
-            {
+			{
                 "id": 13,
                 "text": {
-                    "headline": "The Imperial Palace",
-                    "text": "As we turn the corner of the Palazzo Imperiale, more remains of the palace confront us.<br/><br/>The steep hill to the right was once a building at least three storeys high. The Palazzo Imperiale was a brick- and reticulate-faced concrete structure which covered nearly three hectares. Of its original three storeys, only the substructures and some of the first floor remain. The Palazzo‘s trapezoidal plan dictated the planning of the spur of land between the two basins on which it was situated. Here and there you can see the vaulted spaces leading into the surviving basement levels, including the long tunnel or cryptoporticus that runs the whole length of the Terraza di Traiano.<br/><br/>The structure has been of significant interest since the 16th century due to the discoveries of numerous columns, sculptures and inscriptions. The complex also contained its own bath suite in its southwest corner. The corpus of brickstamps found in the building indicates it was a predominantly Trajanic construction with later renovations undertaken by Hadrian and the Antonines. The building’s location as well as the evidence of its lavish marble decoration suggests it was presumably the headquarters of a high-ranking official or potentially the emperor himself on periodic voyages in and out of the port."
+                    "headline": "Il Palazzo Imperiale",
+                    "text": "Altri resti del Palazzo Imperiale appaiono appena giriamo l’angolo. <br/> La collinetta ripida a destra era, una volta, un edificio alto almeno tre piani. Il Palazzo Imperiale era una struttura in mattoni e opus reticulatum che copriva quasi tre ettari. Dei suoi tre piani originali, rimangono solo le fondamenta e alcune parti del primo piano. La pianta trapezoidale del Palazzo ha dettato la pianificazione urbanistica dello sperone di terra tra i due bacini in cui era situato. Qua e là puoi vedere gli spazi con soffitti a volta che conducono ai piani interrati superstiti, tra cui il lungo tunnel o criptoportico che corre lungo la Terraza di Traiano. <br/> La struttura è stata considerata di notevole interesse a partire dal XVI secolo grazie alla scoperta di numerose colonne, sculture e iscrizioni. Il complesso conteneva anche un bagno privato nell’angolo sud-ovest. I bolli laterizi presenti nell'edificio dimostrano che fosse una costruzione prevalentemente traianea con successive ristrutturazioni intraprese da Adriano e dagli Antonini. La posizione del palazzo, così come le prove della sua ricca decorazione marmorea suggeriscono una funzione riconducibile, presumibilmente, al quartier generale di un alto funzionario o, potenzialmente, dell'imperatore stesso durante i viaggi periodici all‘nterno e all’esterno del porto."
                 },
                 "location": {
                     "name": "location",
@@ -266,15 +264,15 @@
                 },
                 "media": {
                     "url": "<iframe width='100%' height='400px' src='https://www.thesphere.com/direct_embed/412282' class='sphere-direct_embed' type='text/html' frameborder=0 scrolling='no'  allowfullscreen='true' mozallowfullscreen='true' webkitallowfullscreen='true'></iframe>",
-                    "credit": "Stephen Kay / Portus Project",
-                    "caption": ""
+                    "credit": "Stephen Kay / BSR & Portus Project",
+                    "caption": "Panorama a 360° di fronte alla facciata in matoni della Terrazza di Traiano"
                 }
             },
             {
                 "id": 29,
                 "text": {
-                    "headline": "The Imperial Palace II",
-                    "text": "As we turn the corner of the Palazzo Imperiale, more remains of the palace confront us.<br/><br/>The steep hill to the right was once a building at least three storeys high. The Palazzo Imperiale was a brick- and reticulate-faced concrete structure which covered nearly three hectares. Of its original three storeys, only the substructures and some of the first floor remain. The Palazzo‘s trapezoidal plan dictated the planning of the spur of land between the two basins on which it was situated. Here and there you can see the vaulted spaces leading into the surviving basement levels, including the long tunnel or cryptoporticus that runs the whole length of the Terraza di Traiano.<br/><br/>The structure has been of significant interest since the 16th century due to the discoveries of numerous columns, sculptures and inscriptions. The complex also contained its own bath suite in its southwest corner. The corpus of brickstamps found in the building indicates it was a predominantly Trajanic construction with later renovations undertaken by Hadrian and the Antonines. The building’s location as well as the evidence of its lavish marble decoration suggests it was presumably the headquarters of a high-ranking official or potentially the emperor himself on periodic voyages in and out of the port."
+                    "headline": "Il Palazzo Imperiale II",
+                    "text": "Altri resti del Palazzo Imperiale appaiono appena giriamo l’angolo. <br/> La collinetta ripida a destra era, una volta, un edificio alto almeno tre piani. Il Palazzo Imperiale era una struttura in mattoni e opus reticulatum che copriva quasi tre ettari. Dei suoi tre piani originali, rimangono solo le fondamenta e alcune parti del primo piano. La pianta trapezoidale del Palazzo ha dettato la pianificazione urbanistica dello sperone di terra tra i due bacini in cui era situato. Qua e là puoi vedere gli spazi con soffitti a volta che conducono ai piani interrati superstiti, tra cui il lungo tunnel o criptoportico che corre lungo la Terraza di Traiano. <br/> La struttura è stata considerata di notevole interesse a partire dal XVI secolo grazie alla scoperta di numerose colonne, sculture e iscrizioni. Il complesso conteneva anche un bagno privato nell’angolo sud-ovest. I bolli laterizi presenti nell'edificio dimostrano che fosse una costruzione prevalentemente traianea con successive ristrutturazioni intraprese da Adriano e dagli Antonini. La posizione del palazzo, così come le prove della sua ricca decorazione marmorea suggeriscono una funzione riconducibile, presumibilmente, al quartier generale di un alto funzionario o, potenzialmente, dell'imperatore stesso durante i viaggi periodici all‘nterno e all’esterno del porto."
                 },
                 "location": {
                     "name": "location",
@@ -285,15 +283,34 @@
                 },
                 "media": {
                     "url": "<iframe width='100%' height='400px' src='https://www.thesphere.com/direct_embed/416803' class='sphere-direct_embed' type='text/html' frameborder=0 scrolling='no'  allowfullscreen='true' mozallowfullscreen='true' webkitallowfullscreen='true'></iframe>",
-                    "credit": "Stephen Kay / Portus Project",
-                    "caption": ""
+                    "credit": "Stephen Kay / BSR & Portus Project",
+                    "caption": "Panorama a 360° delle stanze del Palazzo Imperiale"
                 }
             },
             {
+                "id": 15,
+                "text": {
+                    "headline": "L’Edificio 3",
+                    "text": "Un'altra parte del Palazzo Imperiale, formata una stanza molto lunga (Edificio 3) che confinava un grande complesso di camere attorno a una cisterna/peristilio (Building 8), si trovava immediatamente a ovest del castellum aquae. Al centro della  stanza si trovava uno spazio aperto attorno al quale correva un portico su tre piani; le basi dei pilastri che sostenevano le volte si vedono ancora chiaramente. <br/> La stanza aveva un pavimento in opus spicatum (con i mattoni a spina di pesce), tipico delle aree destinate a qualche tipo lavorazione o delle aree di servizio in edifici importanti come questo. Nei primi anni del III secolo è stato installato un piccolo forno per la produzione del vetro. A sud degli edifici 1 e 3 si trovava uno spazio aperto che forniva l'accesso alla facciata orientale del Palazzo Imperiale dal molo verso est."
+                },
+                "location": {
+                    "name": "location",
+                    "lat": 78,
+                    "lon": -125,
+                    "zoom": 5,
+                    "line": false
+                },
+                "media": {
+                    "url": "<iframe width='100%' height='400px' src='https://www.thesphere.com/direct_embed/396922' class='sphere-direct_embed' type='text/html' frameborder=0 scrolling='no'  allowfullscreen='true' mozallowfullscreen='true' webkitallowfullscreen='true'></iframe>",
+                    "credit": "Stephen Kay / BSR & Portus Project",
+                    "caption": "Panorama a 360° dei resti dell’Edificio 3"
+                }
+            },
+			{
                 "id": 14,
                 "text": {
-                    "headline": "Castellum Aquae",
-                    "text": "On the northeast side of the Palazzo Imperiale was a three-storey brick-faced cistern block, a castellum aquae, dating to the late Trajanic period. The water source for the complex has yet to be discovered.<br/><br/>The north side of the cistern block rested on the pre-Trajanic mole delineating the Claudian basin and on a Trajanic quay to the south. The cistern block also marked the northern extent of an open space bordered on the west by the Palazzo Imperiale and on the south by Navalia."
+                    "headline": "Il Castellum Aquae",
+                    "text": "Sul lato nord-est del Palazzo Imperiale si trovava il castellum aquae, un edificio a tre piani in mattoni a faccia vista risalente allla fine del periodo traianeo. La fonte da cui proveniva l'acqua per il complesso non è ancora stata scoperta. <br/> Il lato settentrionale della cisterna poggiava sul molo pre-traianeo che delineava il bacino di Claudio, menre quello meridionale poggiava sulla banchina di Traiano  In aggiunta, la cisterna definiva la parte nord di uno spazio aperto delimitato a ovest dal Palazzo Imperiale e a sud dal Cantiere Navale."
                 },
                 "location": {
                     "name": "location",
@@ -304,34 +321,15 @@
                 },
                 "media": {
                     "url": "<iframe width='100%' height='400px' src='https://www.thesphere.com/direct_embed/412277' class='sphere-direct_embed' type='text/html' frameborder=0 scrolling='no'  allowfullscreen='true' mozallowfullscreen='true' webkitallowfullscreen='true'></iframe>",
-                    "credit": "Stephen Kay / Portus Project",
-                    "caption": ""
+                    "credit": "Stephen Kay / BSR & Portus Project",
+                    "caption": "Panorama a 360° di una cisterna del  Castellum Aquae <i>Nota: ruota per vedere il resto della cisterna </i>"
                 }
             },
-            {
-                "id": 15,
-                "text": {
-                    "headline": "Building 3",
-                    "text": "Immediately to the west of the castellum aquae was another part of the Palazzo Imperiale, a very long room (Building 3) that in turn abutted a major complex of rooms focused upon a cistern/peristyle (Building 8). In the centre of the former was an open area around which ran a vaulted portico on three stories; the bases of the piers that supported the vaults can still be clearly seen.<br/><br/>This room was provided with an opus spicatum (brick herringbone) floor, typical of working or service areas in major buildings such as this. In the early third century, a small glass producing furnace was installed. To the south of Buildings 1 and 3 there was an open area that provided access to the eastern facade of the Palazzo Imperiale from the quayside to the east."
-                },
-                "location": {
-                    "name": "location",
-                    "lat": 78,
-                    "lon": -125,
-                    "zoom": 5,
-                    "line": false
-                },
-                "media": {
-                    "url": "<iframe width='100%' height='400px' src='https://www.thesphere.com/direct_embed/416803' class='sphere-direct_embed' type='text/html' frameborder=0 scrolling='no'  allowfullscreen='true' mozallowfullscreen='true' webkitallowfullscreen='true'></iframe>",
-                    "credit": "Stephen Kay / Portus Project",
-                    "caption": ""
-                }
-            },
-            {
+			{
                 "id": 16,
                 "text": {
-                    "headline": "Ludus",
-                    "text": "Sometime in the first half of the third century, an oval-shaped ludus (c. 42m by 38m), or training amphitheatre, was constructed in the open space to the east of the Palazzo Imperiale.  All that remains now are the foundations which reveal that the building’s superstructure was composed of two parallel walls spaced three meters apart with an additional façade wall only present on the western half of the building. The structure has the characteristic form of an amphitheatre, though is considerably smaller in size. Its entrance was located on the west side. The amphitheatre-shaped structure was systematically demolished sometime in the early fourth or fifth century."
+                    "headline": "Il Ludos",
+                    "text": "Nella prima metà del III secolo è stato costruito un ludus, o anfiteatro per l’allenamento, a pianta ovale (circa 42m per 38m) nello spazio aperto ad est del Palazzo Imperiale. Tutto ciò che rimane oggi sono le fondamenta, le quali rivelano che la sovrastruttura dell'edificio era composta da due pareti parallele distanziate di tre metri una dall’altra con una facciata supplementare presente solo nella metà occidentale dell'edificio. La struttura presenta la forma caratteristica di un anfiteatro, anche se è notevolmente più piccolo. L'ingresso era situato sul lato ovest. La struttura a forma di anfiteatro fu demolita sistematicamente nei primi anni del IV o V secolo."
                 },
                 "location": {
                     "name": "location",
@@ -342,15 +340,15 @@
                 },
                 "media": {
                     "url": "<iframe width='100%' height='400px' src='https://www.thesphere.com/direct_embed/412985' class='sphere-direct_embed' type='text/html' frameborder=0 scrolling='no'  allowfullscreen='true' mozallowfullscreen='true' webkitallowfullscreen='true'></iframe>",
-                    "credit": "Simon Keay © University of Southampton",
-                    "caption": ""
+                    "credit": "Stephen Kay / BSR & Portus Project",
+                    "caption": "Panorama a 360° dei resti del Ludus"
                 }
             },
-            {
+			{
                 "id": 17,
                 "text": {
-                    "headline": "Navalia",
-                    "text": "This was a large building that formed part of the same architectural conception as the Palazzo Imperiale and which has been interpreted as a shipyard or possibly shipsheds, which would have been used for the repair or construction of commercial ships and/or warships.<br/><br/>It was a late Trajanic-early Hadrianic structure (c. 180 m by 60 m) and lies to the southeast of the Palazzo Imperiale. The building is composed of brick-faced concrete piers with a series of brick arches extending north-south along the piers forming parallel bays which stretched from the Claudian to the Trajanic basins. The arched openings were subsequently filled in with brick- and reticulate-faced walls in the later 2nd c AD. The width of the majority of the bays is c. 12 m. In the 5th c AD parts of the building were used for the storage of grain."
+                    "headline": "Il Cantiere Navale Imperiale",
+                    "text": "Questo era un grande edificio che faceva parte della stessa concezione architettonica del Palazzo Imperiale,  che è stato interpretato come un cantiere navale, e che sarebbe stato utilizzato per la riparazione o la costruzione di navi commerciali e/o di navi da guerra. <Br / > <br/>  Si tatta di una struttura (di circa 180m per 60m) della fine del periodo traianeo – inizio del periodo di Adriano che si trova a sud-est del Palazzo Imperiale. L'edificio era composto da pilastri in calcestruzzo in faccia vista che sostenevano una serie di archi in mattoni, che si estendevano da nord a sud lungo i moli formando delle baie parallele tra I bacini di Claudio e Traiano. Le aperture ad arco sono state successivamente chiuse, alla fine del II secolo d.C,  con pareti in mattoni e reticolato. La maggior parte delle campate erano larghe circa 12 m. Nelle V secolo d.C. parte dell'edificio è stato utilizzato per lo stoccaggio di grano."
                 },
                 "location": {
                     "name": "location",
@@ -360,16 +358,16 @@
                     "line": false
                 },
                 "media": {
-                    "url": "https://blog.soton.ac.uk/portusproject/files/2014/05/2.3sm4.jpg",
-                    "credit": "Stephen Kay / Portus Project",
+                    "url": "<iframe width='100%' height='400px' src='https://www.thesphere.com/direct_embed/403033' class='sphere-direct_embed' type='text/html' frameborder=0 scrolling='no'  allowfullscreen='true' mozallowfullscreen='true' webkitallowfullscreen='true'></iframe>",
+                    "credit": "Stephen Kay / BSR & Portus Project",
                     "caption": ""
                 }
             },
-            {
+			{
                 "id": 18,
                 "text": {
-                    "headline": "Between Navalia and Palazzo Imeperiale",
-                    "text": "We shall now leave the Navalia and head back towards the Palazzo Imperiale. Through the trees you can gain your first view of the great Trajanic basin, onto which the Navalia faced. Glimpsed now through the trees and perhaps speckled with wild birds the basin is an idyllic place.<br/><br/>But in the second century and beyond this would have been filled with ships moored in the centre and against the quays. The water would have been alive with “lighters” – small craft used to ferry goods and people from the seagoing vessels onto the shore.<br/><br/>The basin was c. 33ha in area – about 50 football pitches – and originally perhaps 5m deep."
+                    "headline": "Tra il Cantiere Navale Imperiale e il Palazzo Imperiale",
+                    "text": "Lasciamo il Cantiere Navale Imperiale e ci dirigiamo verso il Palazzo Imperiale. Il primo scorcio del grande bacino di Traiano, su cui si affacciava il Cantiere Navale, si vede attraverso gli alberi. Il bacino è un luogo idilliaco, che lo si intraveda tra gli alberi o che sia popolato dagli uccelli selvatici. <br/> Ma nel secondo secolo e oltre questo sarebbe stato riempito con le navi ormeggiate al centro e contro le banchine. L'acqua sarebbe stato vivo con 'accendini' -. Piccola imbarcazione usata per trasportare merci e persone dalle navi marittime sulla riva <br/> Il bacino era c. 33ha in zona - circa 50 campi da calcio - e originariamente forse 5 metri di profondità."
                 },
                 "location": {
                     "name": "location",
@@ -379,16 +377,16 @@
                     "line": false
                 },
                 "media": {
-                    "url": "../Tour/images/images_1/ostia_aerial.jpg",
-                    "credit": "Simon Keay © University of Southampton",
-                    "caption": "Ostia Antica from the air"
+                    "url": "",
+                    "credit": "Simon Keay / University of Southampton",
+                    "caption": ""
                 }
             },
-            {
+			{
                 "id": 19,
                 "text": {
-                    "headline": "Top of the Palace",
-                    "text": "We will now walk over the top of the Imperial Palace. You can see a series of large depressions showing where the second and sometimes third storeys have collapsed down into the basement level. All of the accessible portions of the basement level were surveyed in the 1980s and by the Portus Project, using digital approaches such as laser scanning.<br/><br/>To the left facing onto the Trajanic Basin are a line of surviving storerooms, with intact light wells – the only means of bringing daylight into the gloom below."
+                    "headline": "La Parte superiore del Palazzo",
+                    "text": "Stiamo camminando sopra la parte superiore del Palazzo Imperiale. Potete vedere una serie di grandi depressioni che ci indicano il punto in cui il secondo e qualche volta il terzo piano sono crollati nel seminterrato. Le zone accessibili del piano interrato sono state ricognite nel 1980 e dal Portus Project, utilizzando techniche digitali come la scansione laser. <br/> Sulla sinistra, affacciate sul bacino di Traiano si trovano i magazzini sopravissuti, con I pozzi di luce intatti – si tratta dell'unico modo di portare la luce negli ambienti sotterranei."
                 },
                 "location": {
                     "name": "location",
@@ -398,16 +396,35 @@
                     "line": false
                 },
                 "media": {
-                    "url": "../Tour/images/images_1/ostia_aerial.jpg",
-                    "credit": "Simon Keay © University of Southampton",
-                    "caption": "Ostia Antica from the air"
+                    "url": "images/images_5/top_pal.jpg",
+                    "credit": "Hembo Pagi / University of Southampton",
+                    "caption": "Vista dei resti del Palazzo Imperiale mentre la ricognizione geofisica e’ intrapresa"
                 }
             },
             {
                 "id": 20,
                 "text": {
-                    "headline": "Junction with Warehouse",
-                    "text": "The end of the modern path takes us to the junction between the Imperial Palace and the Grandi Magazzini di Settimio Severo. We are now above the Terraza di Traiano and we will continue down into the building, walking past what was once a small bath complex in the Imperial Palace and through into the warehouses. None of these areas will be accessible due to Health & Safety concerns."
+                    "headline": "Le Stanze del Palazzo Imperiale",
+                    "text": "T"
+                },
+                "location": {
+                    "name": "location",
+                    "lat": 74.75,
+                    "lon": -120.25,
+                    "zoom": 5,
+                    "line": false
+                },
+                "media": {
+                    "url": "",
+                    "credit": "Stephen Kay / BSR & Portus Project",
+                    "caption": "Panorama a 360° dell’incrocio tra il Palazzo Imperiale e I Grandi Magazzini di Settimio Severo"
+                }
+            },
+			{
+                "id": 20,
+                "text": {
+                    "headline": "Il raccordo con i Magazzini",
+                    "text": "Alla fine del tracciato moderno si trova il raccordo tra il Palazzo Imperiale e i Grandi Magazzini di Settimio Severo. Ora ci troviamo al di sopra della Terrazza di Traiano e proseguiremo all’interno dell'edificio, passando accanto a quello che ,una volta, era un piccolo bagno del Palazzo Imperiale e attraverso dei depositi. Nessuna di queste aree è accessibile a causa delle norme sulla sicurezza nei cantieri."
                 },
                 "location": {
                     "name": "location",
@@ -418,15 +435,15 @@
                 },
                 "media": {
                     "url": "<iframe width='100%' height='400px' src='https://www.thesphere.com/direct_embed/416797' class='sphere-direct_embed' type='text/html' frameborder=0 scrolling='no'  allowfullscreen='true' mozallowfullscreen='true' webkitallowfullscreen='true'></iframe>",
-                    "credit": "Simon Keay © University of Southampton",
-                    "caption": ""
+                    "credit": "Stephen Kay / BSR & Portus Project",
+                    "caption": "Panorama a 360° dell’incrocio tra il Palazzo Imperiale e I Grandi Magazzini di Settimio Severo"
                 }
             },
-            {
+			{
                 "id": 21,
                 "text": {
                     "headline": "Grandi Magazzini di Settimio Severo",
-                    "text": "We are standing in an inner passageway on the ground level of the great warehouses of Septimius Severus.<br/><br/>The Grandi Magazzini di Settimio Severo was a large complex traditionally identified as a warehouse consisting of at least two storeys and situated in such way as to overlook the pool of the port to the south, the Trajanic Basin to the east and the Claudian basin to the north.<br/><br/>It was a large, L-shaped, brick-faced, concrete structure with two wings of rooms facing onto an open area which fronted the canal leading to the Trajanic basin.<br/><br/>The building had been identified as a Severan period grain-storage warehouse (horreum) but a later study of the brickstamps has indicated an earlier Antonine date for the structure."
+                    "text": "Ci troviamo in un passaggio al piano terra dei Grandi Magazzini di Settimio Severo.<br/><br/>I Grandi Magazzini di Settimio Severo formano un grande complesso, dizionalmente identificato come un magazzino costituito da almeno due piani e situato in modo da affacciarsi sul bacino del porto a sud, il bacino di Traiano a est e il bacino di Claudio a nord.<br/><br/>Era un grande struttura in cemento, a forma di L, con la facciata in mattoni, e che presentava due ali di camere che si affacciavano su uno spazio aperto verso il canale che conduce al bacino traianeo.<br/><br/> L'edificio era stato identificato come un magazzino di epoca severiana (horreum), ma uno studio più recente dei bolli laterizi indica una data Antonina."
                 },
                 "location": {
                     "name": "location",
@@ -437,15 +454,15 @@
                 },
                 "media": {
                     "url": "<iframe width='100%' height='400px' src='https://www.thesphere.com/direct_embed/402741' class='sphere-direct_embed' type='text/html' frameborder=0 scrolling='no'  allowfullscreen='true' mozallowfullscreen='true' webkitallowfullscreen='true'></iframe>",
-                    "credit": "Simon Keay © University of Southampton",
-                    "caption": "Ostia Antica from the air"
+                    "credit": "Stephen Kay / BSR & Portus Project",
+                    "caption": "360° panorama within the remains of the Grandi Magazzini di Settimio Severo"
                 }
             },
-            {
+			{
                 "id": 22,
                 "text": {
-                    "headline": "Storeroom",
-                    "text": "To our right you can see the difference between the modern and Roman ground surface at this part of the site. Beyond the walls of the warehouse would have been a large open square, presumably used for managing the flow of goods between ships and the storerooms. We can imagine this area bustling with people from all over the Roman world.<br/><br/>To our left we pass a succession of vaulted storerooms. We are in a connecting passageway which would have been lit by windows and openings on the square. The storerooms had small high windows and it was only at specific points that the warehouse was “pierced” – allowing a direct flow of goods form the Trajanic Basin, through the warehouse, and into the body of the port. We can imagine this setup all over Portus, carefully managing its operation."
+                    "headline": "I Depositi",
+                    "text": "Alla nostra destra si può vedere la differenza tra la superficie del terreno moderna e quella di epoca romana in questa parte del sito. Al di là delle pareti del magazzino si trovava una grande piazza aperta, utilizzatat presumibilmente per la gestione del flusso delle merci tra le navi e i magazzini. Possiamo immaginare questa zona come un’area affollata da persone provenienti da tutto il mondo romano. <br/> "
                 },
                 "location": {
                     "name": "location",
@@ -456,15 +473,15 @@
                 },
                 "media": {
                     "url": "<iframe width='100%' height='400px' src='https://www.thesphere.com/direct_embed/397447' class='sphere-direct_embed' type='text/html' frameborder=0 scrolling='no'  allowfullscreen='true' mozallowfullscreen='true' webkitallowfullscreen='true'></iframe>",
-                    "credit": "Simon Keay © University of Southampton",
-                    "caption": "Ostia Antica from the air"
+                    "credit": "Stephen Kay / BSR & Portus Project",
+                    "caption": "Panorama a 360° all’interno di una delle stanze usate come deposito nei Grandi Magazzini di Settimio Severo"
                 }
             },
-            {
+			{
                 "id": 23,
                 "text": {
-                    "headline": "View of the Basin",
-                    "text": "We shall now climb to the top of the reconstructed warehouses where we can gain the best view of the Trajanic Basin. The modern ramp mirrors its Roman predecessor, with surviving blocks at the bottom indicating the thresholds for wooden doors. Goods would have been carried and pushed up these ramps on carts, potentially yet further into a third storey high above us.<br/><br/>On the far side of the Trajanic Basin from our current viewpoint was a temple. The limited evidence available suggests that this was a temple to the cult of the Emperor, together with a number of attributed deities including “Liber Pater”."
+                    "headline": "Veduta del Bacino",
+                    "text": "Passiamo ora salire in cima ai magazzini ricostruiti per avere la  vista migliore del Bacino di Traiano. La rampa moderna rispecchia quella romana, con i blocchi di originali alla base ad indicare la posizione delle soglie con le porte in legno. Le merci venivano trasportate e spinte su queste rampe con dei carri, forse fino al terzo piano, sopra di noi. <br/> Dalla parte opposta del bacino a quella in cui ci troviamo ora si trovava un tempio. Le evidenze disponibili sono limitate a suggeriscono che fosse destinato al culto dell'Imperatore, insieme ad una serie di divinità tra cui 'Liber Pater'."
                 },
                 "location": {
                     "name": "location",
@@ -474,16 +491,16 @@
                     "line": false
                 },
                 "media": {
-                    "url": "../Tour/images/images_1/ostia_aerial.jpg",
-                    "credit": "Simon Keay © University of Southampton",
-                    "caption": "Ostia Antica from the air"
+                    "url": "<iframe width='100%' height='400px' src='https://www.thesphere.com/direct_embed/406068' class='sphere-direct_embed' type='text/html' frameborder=0 scrolling='no'  allowfullscreen='true' mozallowfullscreen='true' webkitallowfullscreen='true'></iframe>",
+                    "credit": "Stephen Kay / BSR & Portus Project",
+                    "caption": "360° panorama overlooking the Trajanic Basin"
                 }
             },
-            {
+			{
                 "id": 24,
                 "text": {
-                    "headline": "Entrance to the Hexagon",
-                    "text": "We are now standing in what would have been the water marking the transition from the entrance canal we crossed earlier, between the Trajanic Warehouses and the Lanterna, and the Trajanic Basin."
+                    "headline": "L'Ingresso all’Esagono",
+                    "text": "Ora citroviamo nell’area che avrebbe segnato il passaggio dall’ingresso del canale che abbiamo attraversato in precedenza, tra i magazzini traianei e la Lanterna, al bacino di Traiano."
                 },
                 "location": {
                     "name": "location",
@@ -493,35 +510,35 @@
                     "line": false
                 },
                 "media": {
-                    "url": "../Tour/images/images_1/ostia_aerial.jpg",
-                    "credit": "Simon Keay © University of Southampton",
-                    "caption": "Ostia Antica from the air"
+                    "url": "images/images_5/basin_entrance.jpg",
+                    "credit": "Simon Keay / University of Southampton",
+                    "caption": "Vista del bacino di Traiano"
                 }
             },
-            {
+			{
                 "id": 25,
                 "text": {
-                    "headline": "Basilica Portuense",
-                    "text": "The significant change came some time in the later 4th c. AD and early 5th c. AD, when this residence was converted into an early Christian church (basilica) c. 37m long by c. 20m wide. It comprised a large hall oriented from north to south and consisting of a nave and two flanking aisles with geometric and figured mosaic floors; it was approached through an east-west hall. This building was almost certainly under the jurisdiction of the Bishop of Portus – an individual who is first attested in AD 314."
+                    "headline": "La Basilica Portuense",
+                    "text": "Il cambiamento significativo è avvenuto nel tardo IV d.C e all'inizio del V d.C., quando questa residenza è stata trasformata in una chiesa paleocristiana (basilica) di circa 37m di lunghezza e circa 20m di larghezza. È formata da una grande sala orientata nord/sud, da una navata centrale e due navate laterali con pavimenti a mosaico geometrici e figurati; a cui si accedeva attraverso un corridoio est-ovest. Questo edificio era quasi certamente sotto la giurisdizione del Vescovo di Portus - una figura che viene attestata per la prima volta nel 314 d.C."
                 },
                 "location": {
                     "name": "location",
-                    "lat": 60,
-                    "lon": -110,
+                    "lat": 60.5,
+                    "lon": -110.5,
                     "zoom": 5,
                     "line": false
                 },
                 "media": {
-                    "url": "<iframe width='100%' height='400px' src='https://www.thesphere.com/direct_embed/412796' class='sphere-direct_embed' type='text/html' frameborder=0 scrolling='no'  allowfullscreen='true' mozallowfullscreen='true' webkitallowfullscreen='true'></iframe>",
-                    "credit": "Simon Keay © University of Southampton",
-                    "caption": "Ostia Antica from the air"
+                    "url": "<iframe width='640px' height='auto' src='https://www.thesphere.com/direct_embed/412796' class='sphere-direct_embed' type='text/html' frameborder=0 scrolling='no'  allowfullscreen='true' mozallowfullscreen='true' webkitallowfullscreen='true'></iframe>",
+                    "credit": "Stephen Kay / BSR & Portus Project",
+                    "caption": "Panorama a 360° all’interno dei resti della Basilica"
                 }
             },
-            {
+			{
                 "id": 26,
                 "text": {
-                    "headline": "Modern Cemetery",
-                    "text": "As we walk past the white wall of the modern cemetery of Fiumicino we can think about the burials we know from Roman times at Portus."
+                    "headline": "Il Cimitero Moderno",
+                    "text": "Mentre camminiamo oltre al muro bianco del cimitero moderno di Fiumicino ,possiamo pensare alle sepolture che conosciamo risalenti al tempo dei romani a Portus."
                 },
                 "location": {
                     "name": "location",
@@ -531,49 +548,49 @@
                     "line": false
                 },
                 "media": {
-                    "url": "../Tour/images/images_1/ostia_aerial.jpg",
-                    "credit": "Simon Keay © University of Southampton",
-                    "caption": "Ostia Antica from the air"
+                    "url": "",
+                    "credit": "",
+                    "caption": ""
                 }
             },
-            {
+			{
                 "id": 27,
                 "text": {
-                    "headline": "Entrance to the Darsena",
-                    "text": "We have arrived at the entrance to the Darsena. For the last few minutes we have roughly matched the line of yet another vital artery. The transverse canal linked the inner Claudian Basin and the Darsena with the Fiumicino Canal – sometimes known as the Fossa Traiana.<br/><br/>At this point we can also see the Eastern end of the Trajanic warehouses and, here and there, surviving steps and great mooring blocks."
+                    "headline": "L'Ingresso alla Darsena",
+                    "text": "Siamo giunti all'ingresso della Darsena. Negli gli ultimi minuti abbiamo seguito, a grosso modo, la linea corrispondente a un'altra arteria vitale: il Canale Trasversale, che collegava l'interno del bacino di Claudio e la Darsena con il Canale di Fiumicino – conosciuta anche come la Fossa Traiana <br/> Da questo punto possiamo anche vedere il limite orientale dei magazzini traianei, le scalinate e i grandi blocchi per l’ormeggio."
                 },
                 "location": {
                     "name": "location",
-                    "lat": 64,
+                    "lat": 64.5,
                     "lon": -129,
                     "zoom": 5,
                     "line": false
                 },
                 "media": {
-                    "url": "../Tour/images/images_1/ostia_aerial.jpg",
-                    "credit": "Simon Keay © University of Southampton",
-                    "caption": "Ostia Antica from the air"
+                    "url": "<iframe src='http://www.thesphere.com/direct_embed/406063' width='640px' height='auto' class='sphere-direct_embed' type='text/html' frameborder=0 scrolling='no'>",
+                    "credit": "Stephen Kay / BSR & Portus Project",
+                    "caption": "Panorama 360° dall’ingresso alla Darsena"
                 }
             },
-            {
+			{
                 "id": 28,
                 "text": {
-                    "headline": "Casale",
-                    "text": "As we make the final walk of this tour we pass by an excavation trench that shows a small section of the quay on which the Grandi Magazzini di Settimio Severo are situated. We are crossing the water yet again and ending on the quayside at the very heart of this vast port complex. We hope you enjoyed this introduction to what Portus contains. The site itself extends far in every direction and on our website and as a learner on our free online course you can get an idea of the wider landscape and all the other fascinating buildings and other archaeological remains."
+                    "headline": "Il Casale",
+                    "text": "Al termine di questo tour passiamo vicino a una trincea di scavo che mostra una piccola sezione del molo su cui si trovano la Grandi Magazzini di Settimio Severo. <br/> Stiamo attraversando nuovamente l’acqua, fino ad arrivare sulla banchina nel cuore di questo vasto complesso portuale. Speriamo che questa introduzione a Portus ti sia piaciuta. Il sito stesso si estende in tutte le direzioni e puoi farti un'idea del paesaggio, di tutti gli altri edifici e dei resti archeologici tramite il nostro sito web o seguendo il nostro corso online gratuito."
                 },
                 "location": {
                     "name": "location",
-                    "lat": 72,
+                    "lat": 71,
                     "lon": -126,
                     "zoom": 5,
                     "line": false
                 },
                 "media": {
-                    "url": "../Tour/images/images_1/ostia_aerial.jpg",
-                    "credit": "Simon Keay © University of Southampton",
-                    "caption": "Ostia Antica from the air"
+                    "url": "images/images_5/casale.jpg",
+                    "credit": "Daniel Gonzales",
+                    "caption": "Vista del Casale venendo dalla Darsena"
                 }
-            }   
+            }	
         ]
     }
 }
