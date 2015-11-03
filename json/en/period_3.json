@@ -6,7 +6,7 @@
             {
                 "text": {
                     "headline": "Severan Period",
-                    "text": "We are visiting Portus in the later second century AD. By this time, the Roman Empire had achieved an unprecedented degree of political cohesion, and had been ruled by a succession of emperors of provincial origin, a development that was symptomatic of a high degree of social integration across the Empire.<br/><br/>After the completion of the Trajanic enlargements, the Palazzo Imperiale and other administrative buildings at the heart of the port witnessed continued construction in the course of the later 2nd century AD. Across Portus as a whole, mounting evidence suggests that this period, and extending into the end of Septimius Severus reign in AD 211 was a time of renewed construction of buildings and alterations to existing complexes. This activity was especially obvious in the Palazzo Imperiale."
+                    "text": "We are visiting Portus in the later second century AD. By this time, the Roman Empire had achieved an unprecedented degree of political cohesion, and had been ruled by a succession of emperors of provincial origin, a development that was symptomatic of a high degree of social integration across the Empire.<br/><br/>After the completion of the Trajanic enlargements, the Palazzo Imperiale and other administrative buildings at the heart of the port witnessed continued construction in the course of the later 2<sup>nd</sup> century AD. Across Portus as a whole, mounting evidence suggests that this period, and extending into the end of Septimius Severus reign in AD 211 was a time of renewed construction of buildings and alterations to existing complexes. This activity was especially obvious in the Palazzo Imperiale."
                 },
                 "location": {
                     "name": "location",
@@ -62,7 +62,7 @@
 			{
                 "text": {
                     "headline": "Antemurale",
-                    "text": "Quay on the western facade of the port next to to the Portico di Claudio and adjacent warehouses, that was intensively used between the mid 1st and 7th century AD."
+                    "text": "Quay on the western facade of the port next to to the Portico di Claudio and adjacent warehouses, that was intensively used between the mid 1<sup>st</sup> and 7<sup>th</sup> century AD."
                 },
                 "location": {
                     "name": "location",
@@ -98,7 +98,7 @@
 			{
                 "text": {
                     "headline": "Grandi Magazzini Traiani",
-                    "text": "These Trajanic warehouses underwent phases of rebuilding during the later 2nd and 3rd c AD."
+                    "text": "These Trajanic warehouses underwent phases of rebuilding during the later 2<sup>nd</sup> and 3<sup>rd</sup> c AD."
                 },
                 "location": {
                     "name": "location",
@@ -144,9 +144,9 @@
                     "line": false
                 },
                 "media": {
-                    "url": "<iframe src='http://www.thesphere.com/direct_embed/406063' width='640px' height='auto' class='sphere-direct_embed' type='text/html' frameborder=0 scrolling='no'>",
-                    "credit": "Stephen Kay / BSR & Portus Project",
-                    "caption": "360° panorama from the entrance to the Darsena"
+                    "url": "images/images_1/darsena.jpg",
+                    "credit": "Simon Keay / University of Southampton",
+                    "caption": "View of the entrance to the Darsena"
                 }
             },
 			{
@@ -164,7 +164,7 @@
                 "media": {
                     "url": "images/images_1/commercial_buildings.jpg",
                     "credit": "Simon Keay / University of Southampton",
-                    "caption": "BuildingsExcavations undertaken on this site from the 1990s onwards uncovered a long stratigraphic sequence that begins in c the mid 1st c AD and continued down until the 13th c. Levels of the 1st, 2nd and 3rd centuries AD revealed buildings with mosaic floors and painted walls, structures that would have been perfectly suited to mercantile activities, as in nearby Ostia"
+                    "caption": "BuildingsExcavations undertaken on this site from the 1990s onwards uncovered a long stratigraphic sequence that begins in c the mid 1<sup>st</sup> c AD and continued down until the 13<sup>th</sup> c. Levels of the 1<sup>st</sup>, 2<sup>nd</sup> and 3<sup>rd</sup> centuries AD revealed buildings with mosaic floors and painted walls, structures that would have been perfectly suited to mercantile activities, as in nearby Ostia"
                 }
             },
 			{
@@ -242,7 +242,7 @@
 			{
                 "text": {
                     "headline": "Terme Horrea",
-                    "text": "This is a small complex of uncertain date, interpreted by some as a warehouse that was later converted to baths. Buildings north of the Terme Horrea on the Claudian Basin have been interpreted as a large complex of water cisterns although again little is known for certain other than a late 2st/ early 2nd c AD date."
+                    "text": "This is a small complex of uncertain date, interpreted by some as a warehouse that was later converted to baths. Buildings north of the Terme Horrea on the Claudian Basin have been interpreted as a large complex of water cisterns although again little is known for certain other than a late 1<sup>st</sup>/ early 2<sup>nd</sup> c AD date."
                 },
                 "location": {
                     "name": "location",
@@ -253,7 +253,7 @@
                 },
                 "media": {
                     "url": "images/images_2/terme_horrea.jpg",
-                    "credit": "11/02/2015 / Google Earth",
+                    "credit": "11/02/2014  /  Google Earth <a href='https://goo.gl/maps/ic9oy9xbVC32' target='_blank'>41°47°02.25', 12°15°13.49'</a>",
                     "caption": "Satellite image of the Horrea Terme - <i>wooded area near two orange roofs at centre of image</i>"
                 }
             },
@@ -350,7 +350,7 @@
 			{
                 "text": {
                     "headline": "Isola Sacra Cemetery",
-                    "text": "A large cemetery comprising a large number of tombs of relatively high status individuals that was in use from the later 1st century AD until the 3rd/4th centuries AD."
+                    "text": "A large cemetery comprising a large number of tombs of relatively high status individuals that was in use from the later 1<sup>st</sup> century AD until the 3<sup>rd</sup>/4<sup>th</sup> centuries AD."
                 },
                 "location": {
                     "name": "location",
@@ -386,7 +386,7 @@
 			{
                 "text": {
                     "headline": "Ostia",
-                    "text": "A major river port lying c. 16m to the south-west of Rome that was established by the late 4th BC and developed into a major urban community that, in tandem with Portus, the Emporium at Rome and the port of Centumcellae (Civitavecchia) was a key element in the network of ports serving the Capital."
+                    "text": "A major river port lying c. 16m to the south-west of Rome that was established by the late 4<sup>th</sup> BC and developed into a major urban community that, in tandem with Portus, the Emporium at Rome and the port of Centumcellae (Civitavecchia) was a key element in the network of ports serving the Capital."
                 },
                 "location": {
                     "name": "location",

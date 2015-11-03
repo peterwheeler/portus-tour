@@ -4,7 +4,7 @@
             {
                 "text": {
                     "headline": "The Fifth to Seventh Century Period",
-                    "text": "This tour introduces you to Portus as it was in the period between the fifth and sixth centuries AD, with the character of the port changing, as it had several times before. Although the population of Rome would have been lower than it had been under the hey-day of Empire, we know from the content of Imperial Edicts dating to the 4th and earlier 5th centuries AD, and contemporary comments by writers like Sidonius Apollinaris, that Portus continued to play a significant role in supplying Rome during the 4th and the middle 5th century AD. From the last quarter of the 5th century AD, however, the scope and intensity of this activity began to dwindle. The ceramics from the archaeological excavations provide good evidence for this."
+                    "text": "This tour introduces you to Portus as it was in the period between the fifth and sixth centuries AD, with the character of the port changing, as it had several times before. Although the population of Rome would have been lower than it had been under the hey-day of Empire, we know from the content of Imperial Edicts dating to the 4<sup>th</sup> and earlier 5<sup>th</sup> centuries AD, and contemporary comments by writers like Sidonius Apollinaris, that Portus continued to play a significant role in supplying Rome during the 4th and the middle 5<sup>th</sup> century AD. From the last quarter of the 5<sup>th</sup> century AD, however, the scope and intensity of this activity began to dwindle. The ceramics from the archaeological excavations provide good evidence for this."
                 },
                 "location": {
                     "name": "location",
@@ -24,7 +24,7 @@
             {
                 "text": {
                     "headline": "Portus in the 5<sup>th</sup> to 7<sup>th</sup> Centuries",
-                    "text": "At this point, a <a onclick='goTo(16)' title='Mura Constantiniane'>wall circuit</a> was established to enclose all of the buildings that clustered around the Trajanic basin and the maritime façade on the western side of the Darsena. The intention was clearly to ensure that this innermost area of the port, which remained the scene of commercial activity crucial to Rome, was protected from external threats. It is unclear who was responsible for this, although the Skirian King, Odovacar, and the Ostrogothic King, Theoderic the Great, are possible candidates.<br/><br/>While the overall extent of the port had thus begun to contract, Christian churches had been established, most notably the Basilica Portuense. By the 6th century AD, the Claudian basin had largely silted up and even though the port was the focus of a struggle between Byzantines and Ostrogoths during the Gothic wars (AD 535-553), <a onclick='goTo(23)' title='Burials'>burials</a> began to appear within the ruins of warehouses and other structures. After the conclusion of the wars, the Palazzo Imperiale and other buildings were abandoned as the area of the port contracted even further, and being focused around the area of the <a onclick='goTo(9)' title='Basilica Portuense'>Basilica Portuense</a> and Episcopio."
+                    "text": "At this point, a wall circuit was established to enclose all of the buildings that clustered around the Trajanic basin and the maritime façade on the western side of the Darsena. The intention was clearly to ensure that this innermost area of the port, which remained the scene of commercial activity crucial to Rome, was protected from external threats. It is unclear who was responsible for this, although the Skirian King, Odovacar, and the Ostrogothic King, Theoderic the Great, are possible candidates.<br/><br/>While the overall extent of the port had thus begun to contract, Christian churches had been established, most notably the Basilica Portuense. By the 6<sup>th</sup> century AD, the Claudian basin had largely silted up and even though the port was the focus of a struggle between Byzantines and Ostrogoths during the Gothic wars (AD 535-553), burials began to appear within the ruins of warehouses and other structures. After the conclusion of the wars, the Palazzo Imperiale and other buildings were abandoned as the area of the port contracted even further, and being focused around the area of the Basilica Portuense and Episcopio."
                 },
                 "location": {
                     "name": "location",
@@ -62,7 +62,7 @@
             {
                 "text": {
                     "headline": "Claudian Basin",
-                    "text": "Excavations by the Portus Project have revealed evidence that by the later 5th century AD, the southern side of the Claudian basin had filled up with sediment. One imagines that this is symptomatic of the disuse of the basin as a whole, and ensured that the Palazzo Imperiale had become land-locked. By contrast, the hexagonal basin continued to function well into the Byzantine period."
+                    "text": "Excavations by the Portus Project have revealed evidence that by the later 5<sup>th</sup> century AD, the southern side of the Claudian basin had filled up with sediment. One imagines that this is symptomatic of the disuse of the basin as a whole, and ensured that the Palazzo Imperiale had become land-locked. By contrast, the hexagonal basin continued to function well into the Byzantine period."
                 },
                 "location": {
                     "name": "location",
@@ -80,7 +80,7 @@
 			{
                 "text": {
                     "headline": "Porticus Placidiana",
-                    "text": "A colonnaded portico of 5th century AD date that is only known to us from epigraphic evidence. It seems likely that it would have been situated on the southern mole of the Claudian quay, between the modern Via Portuense and the Fossa Traiana."
+                    "text": "A colonnaded portico of 5<sup>th</sup> century AD date that is only known to us from epigraphic evidence. It seems likely that it would have been situated on the southern mole of the Claudian quay, between the modern Via Portuense and the Fossa Traiana."
                 },
                 "location": {
                     "name": "location",
@@ -98,7 +98,7 @@
 			{
                 "text": {
                     "headline": "Antemurale",
-                    "text": "The main activity here was the construction of the seaward walls in the later 5th century AD. These comprised a series of towers and doorways that blocked off and protected earlier structures lying between them and the Portico di Claudio."
+                    "text": "The main activity here was the construction of the seaward walls in the later 5<sup>th</sup> century AD. These comprised a series of towers and doorways that blocked off and protected earlier structures lying between them and the Portico di Claudio."
                 },
                 "location": {
                     "name": "location",
@@ -134,7 +134,7 @@
 			{
                 "text": {
                     "headline": "Grandi Magazzini di Traiano",
-                    "text": "Available evidence suggests that these great warehouses continued to be used until at least the 6th century AD. At some stage shortly afterwards, however, occasional burials were placed within different storerooms – a clear index of the diminishing commercial role of the port in the Byzantine period."
+                    "text": "Available evidence suggests that these great warehouses continued to be used until at least the 6<sup>th</sup> century AD. At some stage shortly afterwards, however, occasional burials were placed within different storerooms – a clear index of the diminishing commercial role of the port in the Byzantine period."
                 },
                 "location": {
                     "name": "location",
@@ -180,15 +180,15 @@
                     "line": false
                 },
                 "media": {
-                    "url": "<iframe src='http://www.thesphere.com/direct_embed/406063' width='640px' height='auto' class='sphere-direct_embed' type='text/html' frameborder=0 scrolling='no'>",
-                    "credit": "Stephen Kay / BSR & Portus Project",
-                    "caption": "360° panorama from the entrance to the Darsena"
+                    "url": "images/images_1/darsena.jpg",
+                    "credit": "Simon Keay / University of Southampton",
+                    "caption": "View of the entrance to the Darsena"
                 }
             },
 			{
                 "text": {
                     "headline": "Basilica Portuense",
-                    "text": "The significant change came some time in the later 4th century AD and early 5th century AD, when this residence was converted into an early Christian church (basilica) c. 37m long by c. 20m wide. It comprised a large hall oriented from north to south and consisting of a nave and two flanking aisles with geometric and figured mosaic floors; it was approached through an east-west hall. This building was almost certainly under the jurisdiction of the Bishop of Portus – an individual who is first attested in AD 314."
+                    "text": "The significant change came some time in the later 4th century AD and early 5<sup>th</sup> century AD, when this residence was converted into an early Christian church (basilica) c. 37m long by c. 20m wide. It comprised a large hall oriented from north to south and consisting of a nave and two flanking aisles with geometric and figured mosaic floors; it was approached through an east-west hall. This building was almost certainly under the jurisdiction of the Bishop of Portus – an individual who is first attested in AD 314."
                 },
                 "location": {
                     "name": "location",
@@ -234,15 +234,15 @@
                     "line": false
                 },
                 "media": {
-                    "url": "<iframe width='100%' height='400px' src='https://www.thesphere.com/direct_embed/402719' class='sphere-direct_embed' type='text/html' frameborder=0 scrolling='no'  allowfullscreen='true' mozallowfullscreen='true' webkitallowfullscreen='true'></iframe>",
-                    "credit": "Stephen Kay / BSR & Portus Project",
-                    "caption": "360° panorama within the remains of the Grandi Magazzini di Settimio Severo"
+                    "url": "images/images_4/grandi_magazzini.jpg",
+                    "credit": "Simon Keay / University of Southampton",
+                    "caption": "View within the remains of the Grandi Magazzini di Settimio Severo"
                 }
             },
 			{
                 "text": {
                     "headline": "Palazzo Imperiale",
-                    "text": "<strong>a. New Rooms</strong><br/>Sometime in the early 5th century AD the ludus was demolished. A row of rooms, that represent an eastward extension of the main body of the Palazzo Imperiale were constructed, running from  north to south across its site. The rooms, including a three-seater latrine, were lavishly decorated with marble and painted stucco and fronted onto a garden to the west.<br/><br/><strong>b. Northern Facade</strong><br/>Recent excavations in the range of rooms that ran along the northern façade of the Palazzo Imperiale reveal that the earlier 5th century AD underwent a major phase of renovation. This included the establishment of high quality opus sectile marble floors and wall paintings. All of these rooms and, one assumes, much of the rest of the complex were demolished after the end of the Gothic Wars."
+                    "text": "<strong>a. New Rooms</strong><br/>Sometime in the early 5<sup>th</sup> century AD the ludus was demolished. A row of rooms, that represent an eastward extension of the main body of the Palazzo Imperiale were constructed, running from  north to south across its site. The rooms, including a three-seater latrine, were lavishly decorated with marble and painted stucco and fronted onto a garden to the west.<br/><br/><strong>b. Northern Facade</strong><br/>Recent excavations in the range of rooms that ran along the northern façade of the Palazzo Imperiale reveal that the earlier 5<sup>th</sup> century AD underwent a major phase of renovation. This included the establishment of high quality opus sectile marble floors and wall paintings. All of these rooms and, one assumes, much of the rest of the complex were demolished after the end of the Gothic Wars."
                 },
                 "location": {
                     "name": "location",
@@ -254,13 +254,13 @@
                 "media": {
                     "url": "images/images_4/pi_rooms.jpg",
                     "credit": "Simon Keay / University of Southampton",
-                    "caption": "View over rooms in the Palazzo Imperiale occupied in the 5th and 6th centuries AD"
+                    "caption": "View over rooms in the Palazzo Imperiale occupied in the 5<sup>th</sup> and 6<sup>th</sup> centuries AD"
                 }
             },
 			{
                 "text": {
                     "headline": "Shipyard",
-                    "text": "This building continued in use until the Byzantine period. However, there was a first change in use in the earlier 5thc AD, when the function of the rooms that had been built within one of the original narrow bays of the Trajanic complex was changed and they were converted into storerooms with raised floors, probably used to store grain. Subsequently in the later 5th century AD, burials began to appear within the building, with the complex probably being demolished by the Byzantines after the conclusion of the Gothic Wars in the mid 6th century AD."
+                    "text": "This building continued in use until the Byzantine period. However, there was a first change in use in the earlier 5<sup>th</sup> c AD, when the function of the rooms that had been built within one of the original narrow bays of the Trajanic complex was changed and they were converted into storerooms with raised floors, probably used to store grain. Subsequently in the later 5<sup>th</sup> century AD, burials began to appear within the building, with the complex probably being demolished by the Byzantines after the conclusion of the Gothic Wars in the mid 6<sup>th</sup> century AD."
                 },
                 "location": {
                     "name": "location",
@@ -270,15 +270,15 @@
                     "line": false
                 },
                 "media": {
-                    "url": "images/images_4/burials-1.jpg",
+                    "url": "images/images_4/burials1.jpg",
                     "credit": "Simon Keay / University of Southampton",
-                    "caption": "Burials of 5th and early 6th centuries AD date that were established within the shell of the earlier Shipyard, indicating how much its original function had changed"
+                    "caption": "Burials of 5<sup>th</sup> and early 6<sup>th</sup> centuries AD date that were established within the shell of the earlier Shipyard, indicating how much its original function had changed"
                 }
             },
 			{
                 "text": {
                     "headline": "Terme Horrea",
-                    "text": "These continued in use until some time in the 5th or 6th centuries AD."
+                    "text": "These continued in use until some time in the 5<sup>th</sup> or 6<sup>th</sup> centuries AD."
                 },
                 "location": {
                     "name": "location",
@@ -296,7 +296,7 @@
             {
                 "text": {
                     "headline": "Mura Costantiniane",
-                    "text": "Substantial fortifications built from brick faced concrete that enclosed the Trajanic basin and other key parts of the core of Portus in the later 5th centuries AD. In certain parts of the port these were free-standing, whilst in others they incorporated buildings that were already standing, as in the case of the Shipyard and the Palazzo Imperiale."
+                    "text": "Substantial fortifications built from brick faced concrete that enclosed the Trajanic basin and other key parts of the core of Portus in the later 5<sup>th</sup> centuries AD. In certain parts of the port these were free-standing, whilst in others they incorporated buildings that were already standing, as in the case of the Shipyard and the Palazzo Imperiale."
                 },
                 "location": {
                     "name": "location",
@@ -350,7 +350,7 @@
 			{
                 "text": {
                     "headline": "River Port",
-                    "text": "The buildings that comprised this site seem to have gone out of use in the later 5th centuries AD, with burials being established in their ruins."
+                    "text": "The buildings that comprised this site seem to have gone out of use in the later 5<sup>th</sup> centuries AD, with burials being established in their ruins."
                 },
                 "location": {
                     "name": "location",
@@ -368,7 +368,7 @@
 			{
                 "text": {
                     "headline": "Isola Sacra",
-                    "text": "A large island lying between Portus and Ostia that was defined by the Tiber to the east and south, the Tyrrhenian sea to the west and the Fiumicino canal to the north. <br/><br/><strong>Possible Road (on the route of the Via Flavia):</strong> There is no evidence for a road preceding the Via Flavia connecting Portus and Ostia, but it is very unlikely that there was no road between the ports; but the earliest actual archaeological evidence for the road is a late 1st century AD coin in its foundations."
+                    "text": "A large island lying between Portus and Ostia that was defined by the Tiber to the east and south, the Tyrrhenian sea to the west and the Fiumicino canal to the north. <br/><br/><strong>Possible Road (on the route of the Via Flavia):</strong> There is no evidence for a road preceding the Via Flavia connecting Portus and Ostia, but it is very unlikely that there was no road between the ports; but the earliest actual archaeological evidence for the road is a late 1<sup>st</sup> century AD coin in its foundations."
                 },
                 "location": {
                     "name": "location",
@@ -404,7 +404,7 @@
 			{
                 "text": {
                     "headline": "Ostia",
-                    "text": "It is generally accepted that from the 3rd century AD, Ostia entered a period of gradual decline. However, it is recorded as having a bishop as early at this time and saw the construction of a Christian church in the reign of Constantine. It was also a mint for Roman bronze coins for a short period in the early 4th century and witnessed the development of some luxurious domus within the town in the 4th century AD. On the other hand, its administrative role must have been somewhat diminished by Constantine’s decision to make Portus a civitas, or urban entity, in the second quarter of the 4th century AD."
+                    "text": "It is generally accepted that from the 3<sup>rd</sup> century AD, Ostia entered a period of gradual decline. However, it is recorded as having a bishop as early at this time and saw the construction of a Christian church in the reign of Constantine. It was also a mint for Roman bronze coins for a short period in the early 4th century and witnessed the development of some luxurious domus within the town in the 4th century AD. On the other hand, its administrative role must have been somewhat diminished by Constantine’s decision to make Portus a civitas, or urban entity, in the second quarter of the 4<sup>th</sup> century AD."
                 },
                 "location": {
                     "name": "location",
@@ -442,7 +442,7 @@
 			{
                 "text": {
                     "headline": "End of the Late Antique period",
-                    "text": "Portus continued to exist after the end of the Gothic Wars in the mid 6th centuries AD, and while it had lost much of its commercial role, it still remained a significant regional focus of Byzantine power."
+                    "text": "Portus continued to exist after the end of the Gothic Wars in the mid 6<sup>th</sup> centuries AD, and while it had lost much of its commercial role, it still remained a significant regional focus of Byzantine power."
                 },
                 "location": {
                     "name": "location",

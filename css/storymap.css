@@ -1193,7 +1193,7 @@
 }
 
 .vco-slidenav-previous .vco-slidenav-content-container,.vco-slidenav-next .vco-slidenav-content-container,.vco-slidenav-start .vco-slidenav-content-container,.vco-slidenav-end .vco-slidenav-content-container {
-    height: 200px;
+    height: 100px;
     width: 100px;
     position: absolute;
 }
@@ -2607,8 +2607,8 @@
 }
 
 .vco-map .vco-mapmarker-active {
-    width: 48px !important;
-    height: 48px !important;    
+    width: 42px !important;
+    height: 42px !important;    
 }
 
 .vco-map .vco-mapmarker:before{
@@ -2619,7 +2619,7 @@
 
 .vco-map .vco-mapmarker-active:before {
     content: "\e802";
-    font-size: 48px;
+    font-size: 42px;
     text-shadow: rgba(0,0,0,0.66) 0 2px 5px;
 }
 

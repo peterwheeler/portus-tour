@@ -54,7 +54,7 @@
                 "media": {
                     "url": "images/images_2/claudian_basin.jpg",
                     "credit": "Simon Keay / University of Southampton",
-                    "caption": "View across the Claudian basin would have been located, now the international airport Leonrado da Vinci at Fiumicino"
+                    "caption": "View across the Claudian basin"
                 }
             },
             {
@@ -124,9 +124,9 @@
                     "line": false
                 },
                 "media": {
-                    "url": "<iframe src='http://www.thesphere.com/direct_embed/406063' width='640px' height='auto' class='sphere-direct_embed' type='text/html' frameborder=0 scrolling='no'>",
-                    "credit": "Stephen Kay / BSR & Portus Project",
-                    "caption": "360° panorama from the entrance to the Darsena"
+                    "url": "images/images_1/darsena.jpg",
+                    "credit": "Simon Keay / University of Southampton",
+                    "caption": "View of the entrance to the Darsena"
                 }
             },
 			{
@@ -168,7 +168,7 @@
 			{
                 "text": {
                     "headline": "Palazzo Imperiale",
-                    "text": "This large three storey administrative complex built under Trajan was at the heart of the port and overlooked both the Claudian and Trajanic basins. The surviving Terrazza di Traiano was the monumental western-facing colonnaded façade of the Palazzo.<br/><br/>The Palazzo Imperiale was a concrete structure faced with opus mixtum which covered nearly three hectares. Of its original three storeys, only the substructures and some of the first floor remain. The Palazzo‘s trapezoidal plan was dictated by the isthmus of land lying between the two basins on which it was situated.<br/><br/>The structure has been of significant interest since the 16th century due to the discoveries of numerous columns, sculptures and inscriptions. The complex also contained its own bath suite in its southwest corner. The corpus of brickstamps found in the building indicates it was a predominantly Trajanic construction with later renovations undertaken by Hadrian and the Antonines. The building’s location as well as the evidence of its lavish marble decoration suggests it was presumably the headquarters of a high-ranking official or potentially the emperor himself.<br/><br/>Within the complex are several building spaces along the northern façade that have been excavated between 2007 and 2015 as part of the Portus Project.<br/><br/><strong>a) Castellum Aquae (Building 1):</strong><br/>This was a three-storey brick-faced cistern block, a castellum aquae, dating to the late Trajanic-Hadrianic period. It forms part of the north-eastern. The north side of the cistern block rested on the pre-Trajanic mole delineating the Claudian basin and on a Trajanic mole to the south.<br/><br/><strong>b) Building 3:</strong><br/>Immediately to the west of the Castellum Aquae was another part of the Palazzo Imperiale, a very long room (Building 3) that in turn abutted a major complex of rooms focused upon a cistern/peristyle (Building 8). In the centre of the former was an open area around which ran a vaulted portico on three stories; the bases of the piers that supported the vaults can still be clearly seen. This room was provided with an opus spicatum (brick herringbone) floor, typical of working or service areas in major buildings such as this. In the early third century, a small glass-producing furnace was installed.<br/><br/>To the south of Buildings 1 and 3 there was an open area that provided access to the eastern facade of the Palazzo Imperiale from the quayside to the east."
+                    "text": "This large three storey administrative complex built under Trajan was at the heart of the port and overlooked both the Claudian and Trajanic basins. The surviving Terrazza di Traiano was the monumental western-facing colonnaded façade of the Palazzo.<br/><br/>The Palazzo Imperiale was a concrete structure faced with opus mixtum which covered nearly three hectares. Of its original three storeys, only the substructures and some of the first floor remain. The Palazzo‘s trapezoidal plan was dictated by the isthmus of land lying between the two basins on which it was situated.<br/><br/>The structure has been of significant interest since the 16<sup>th</sup> century due to the discoveries of numerous columns, sculptures and inscriptions. The complex also contained its own bath suite in its southwest corner. The corpus of brickstamps found in the building indicates it was a predominantly Trajanic construction with later renovations undertaken by Hadrian and the Antonines. The building’s location as well as the evidence of its lavish marble decoration suggests it was presumably the headquarters of a high-ranking official or potentially the emperor himself.<br/><br/>Within the complex are several building spaces along the northern façade that have been excavated between 2007 and 2015 as part of the Portus Project.<br/><br/><strong>a) Castellum Aquae (Building 1):</strong><br/>This was a three-storey brick-faced cistern block, a castellum aquae, dating to the late Trajanic-Hadrianic period. It forms part of the north-eastern. The north side of the cistern block rested on the pre-Trajanic mole delineating the Claudian basin and on a Trajanic mole to the south.<br/><br/><strong>b) Building 3:</strong><br/>Immediately to the west of the Castellum Aquae was another part of the Palazzo Imperiale, a very long room (Building 3) that in turn abutted a major complex of rooms focused upon a cistern/peristyle (Building 8). In the centre of the former was an open area around which ran a vaulted portico on three stories; the bases of the piers that supported the vaults can still be clearly seen. This room was provided with an opus spicatum (brick herringbone) floor, typical of working or service areas in major buildings such as this. In the early third century, a small glass-producing furnace was installed.<br/><br/>To the south of Buildings 1 and 3 there was an open area that provided access to the eastern facade of the Palazzo Imperiale from the quayside to the east."
                 },
                 "location": {
                     "name": "location",
@@ -204,7 +204,7 @@
 			{
                 "text": {
                     "headline": "Terme Horrea",
-                    "text": "This is a small complex of uncertain date, interpreted by some as a warehouse that was later converted to baths. Buildings north of the Terme Horrea on the Claudian Basin have been interpreted as a large complex of water cisterns although again little is known for certain other than a late 1st or early 2nd century AD date."
+                    "text": "This is a small complex of uncertain date, interpreted by some as a warehouse that was later converted to baths. Buildings north of the Terme Horrea on the Claudian Basin have been interpreted as a large complex of water cisterns although again little is known for certain other than a late 1<sup>st</sup> or early 2<sup>nd</sup> century AD date."
                 },
                 "location": {
                     "name": "location",
@@ -215,7 +215,7 @@
                 },
                 "media": {
                     "url": "images/images_2/terme_horrea.jpg",
-                    "credit": "11/02/2014  / Google Earth",
+                    "credit": "11/02/2014  /  Google Earth <a href='https://goo.gl/maps/ic9oy9xbVC32' target='_blank'>41°47°02.25', 12°15°13.49'</a>",
                     "caption": "Satellite image of the site of the Horrea Terme (<i>wooded area near two orange roofs at centre of image</i>)"
                 }
             },
@@ -312,7 +312,7 @@
 			{
                 "text": {
                     "headline": "Isola Sacra Cemetery",
-                    "text": "A large cemetery comprising a large number of tombs of relatively high status individuals that was in use from the later 1st century AD until the 3rd/4th century AD."
+                    "text": "A large cemetery comprising a large number of tombs of relatively high status individuals that was in use from the later 1<sup>st</sup> century AD until the 3<sup>rd</sup>/4<sup>th</sup> century AD."
                 },
                 "location": {
                     "name": "location",
@@ -348,7 +348,7 @@
 			{
                 "text": {
                     "headline": "Ostia",
-                    "text": "A major river port lying c. 16m to the south-west of Rome that was established by the late 4th BC and developed into a major urban community that, in tandem with Portus, the Emporium at Rome and the port of Centumcellae (Civitavecchia) was a key element in the network of ports serving the Capital."
+                    "text": "A major river port lying c. 16m to the south-west of Rome that was established by the late 4<sup>th</sup> BC and developed into a major urban community that, in tandem with Portus, the Emporium at Rome and the port of Centumcellae (Civitavecchia) was a key element in the network of ports serving the Capital."
                 },
                 "location": {
                     "name": "location",

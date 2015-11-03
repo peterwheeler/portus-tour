@@ -180,9 +180,9 @@
                     "line": false
                 },
                 "media": {
-                    "url": "<iframe src='http://www.thesphere.com/direct_embed/406063' width='640px' height='auto' class='sphere-direct_embed' type='text/html' frameborder=0 scrolling='no'>",
-                    "credit": "Stephen Kay / BSR & Portus Project",
-                    "caption": "Panorama a 360° dall’entrata alla Darsena"
+                    "url": "images/images_1/darsena.jpg",
+                    "credit": "Simon Keay / University of Southampton",
+                    "caption": "Vista l'ingresso alla Darsena"
                 }
             },
 			{
@@ -234,9 +234,9 @@
                     "line": false
                 },
                 "media": {
-                    "url": "<iframe width='100%' height='400px' src='https://www.thesphere.com/direct_embed/402719' class='sphere-direct_embed' type='text/html' frameborder=0 scrolling='no'  allowfullscreen='true' mozallowfullscreen='true' webkitallowfullscreen='true'></iframe>",
-                    "credit": "Stephen Kay / BSR & Portus Project",
-                    "caption": "Panorama a 360° dei resti dei Grandi Magazzini di Settimio Severo"
+                    "url": "images/images_4/grandi_magazzini.jpg",
+                    "credit": "Simon Keay / University of Southampton",
+                    "caption": "Vista dei resti dei Grandi Magazzini di Settimio Severo"
                 }
             },
 			{
@@ -270,9 +270,9 @@
                     "line": false
                 },
                 "media": {
-                    "url": "images/images_4/burials-1.jpg",
+                    "url": "images/images_4/burials1.jpg",
                     "credit": "Simon Keay / University of Southampton",
-                    "caption": "Le sepolture del V e dell’inizio del VI secolo d.C. sono create all'interno della struttura del Cantiere Navale e  dimostrano quanto sia cambiata la sua funzione originaria"
+                    "caption": "Le sepolture del V e dell’inizio del VI secolo d.C. sono create all'interno della struttura del Cantiere Navale e dimostrano quanto sia cambiata la sua funzione originaria"
                 }
             },
 			{
@@ -362,7 +362,7 @@
                 "media": {
                     "url": "images/images_1/port.jpg",
                     "credit": "Soprintendenza Speciale per il Colosseo, il Museo Nazionale Romano e l’Area Archeologica di Roma",
-                    "caption": "Aerial View of the river port"
+                    "caption": "Vista aerea del porto fluviale. Le linee tratteggiate indentificano i resti degli edifici."
                 }
             },
 			{
@@ -416,7 +416,7 @@
                 "media": {
                     "url": "images/images_1/ostia_aerial.jpg",
                     "credit": "Simon Keay / University of Southampton",
-                    "caption": "Ostia Antica from the air"
+                    "caption": "Vista aerea delle rovine di Ostia. Il Tevere é identificabile in lontananza, a sinistra"
                 }
             },
             {

@@ -629,7 +629,7 @@ new t1.o.Page(
 				"width": 5200,
 				"height": 5844,
 				"tolerance": 0.9,
-				"attribution": "<a href='http://www.portusproject.org' target='_blank'>Portus Project</a>"
+				"attribution": "Peter Wheeler / University of Southampton"
 			}
 		},
 		{
@@ -644,7 +644,7 @@ new t1.o.Page(
 				"width": 5200,
 				"height": 5844,
 				"tolerance": 0.9,
-				"attribution": "<a href='http://www.portusproject.org' target='_blank'>Portus Project</a>"
+				"attribution": "Maria del Carmen Moreno Escobar / University of Southampton"
 			}
 		},
 		{
@@ -659,7 +659,7 @@ new t1.o.Page(
 				"width": 5200,
 				"height": 5844,
 				"tolerance": 0.9,
-				"attribution": "<a href='http://www.portusproject.org' target='_blank'>Portus Project</a>"
+				"attribution": "Digital Globe 2014"
 			},
 		}],
 		it: [{
@@ -674,7 +674,7 @@ new t1.o.Page(
 				"width": 5200,
 				"height": 5844,
 				"tolerance": 0.9,
-				"attribution": "<a href='http://www.portusproject.org' target='_blank'>Portus Project</a>"
+				"attribution": "Peter Wheeler / University of Southampton"
 			}
 		},
 		{
@@ -689,7 +689,7 @@ new t1.o.Page(
 				"width": 5200,
 				"height": 5844,
 				"tolerance": 0.9,
-				"attribution": "<a href='http://www.portusproject.org' target='_blank'>Portus Project</a>"
+				"attribution": "Maria del Carmen Moreno Escobar / University of Southampton"
 			}
 		},
 		{
@@ -704,7 +704,7 @@ new t1.o.Page(
 				"width": 5200,
 				"height": 5844,
 				"tolerance": 0.9,
-				"attribution": "<a href='http://www.portusproject.org' target='_blank'>Portus Project</a>"
+				"attribution": "Digital Globe 2014"
 			}
 		}]
 	}
@@ -730,7 +730,7 @@ new t1.o.Page(
 				"width": 5200,
 				"height": 5844,
 				"tolerance": 0.9,
-				"attribution": "<a href='http://www.portusproject.org' target='_blank'>Portus Project</a>"
+				"attribution": "Peter Wheeler / University of Southampton"
 			}
 		},
 		{
@@ -745,7 +745,7 @@ new t1.o.Page(
 				"width": 5200,
 				"height": 5844,
 				"tolerance": 0.9,
-				"attribution": "<a href='http://www.portusproject.org' target='_blank'>Portus Project</a>"
+				"attribution": "Maria del Carmen Moreno Escobar / University of Southampton"
 			}
 		},
 		{
@@ -760,7 +760,7 @@ new t1.o.Page(
 				"width": 5200,
 				"height": 5844,
 				"tolerance": 0.9,
-				"attribution": "<a href='http://www.portusproject.org' target='_blank'>Portus Project</a>"
+				"attribution": "Digital Globe 2014"
 			}
 		}],
 		it: [{
@@ -775,7 +775,7 @@ new t1.o.Page(
 				"width": 5200,
 				"height": 5844,
 				"tolerance": 0.9,
-				"attribution": "<a href='http://www.portusproject.org' target='_blank'>Portus Project</a>"
+				"attribution": "Peter Wheeler / University of Southampton"
 			}
 		},
 		{
@@ -790,7 +790,7 @@ new t1.o.Page(
 				"width": 5200,
 				"height": 5844,
 				"tolerance": 0.9,
-				"attribution": "<a href='http://www.portusproject.org' target='_blank'>Portus Project</a>"
+				"attribution": "Maria del Carmen Moreno Escobar / University of Southampton"
 			}
 		},
 		{
@@ -805,7 +805,7 @@ new t1.o.Page(
 				"width": 5200,
 				"height": 5844,
 				"tolerance": 0.9,
-				"attribution": "<a href='http://www.portusproject.org' target='_blank'>Portus Project</a>"
+				"attribution": "Digital Globe 2014"
 			}
 		}]
 	}
@@ -831,7 +831,7 @@ new t1.o.Page(
 				"width": 5200,
 				"height": 5844,
 				"tolerance": 0.9,
-				"attribution": "<a href='http://www.portusproject.org' target='_blank'>Portus Project</a>"
+				"attribution": "Peter Wheeler / University of Southampton"
 			}
 		},
 		{
@@ -846,7 +846,7 @@ new t1.o.Page(
 				"width": 5200,
 				"height": 5844,
 				"tolerance": 0.9,
-				"attribution": "<a href='http://www.portusproject.org' target='_blank'>Portus Project</a>"
+				"attribution": "Maria del Carmen Moreno Escobar / University of Southampton"
 			}
 		},		
 		{
@@ -861,7 +861,7 @@ new t1.o.Page(
 				"width": 5200,
 				"height": 5844,
 				"tolerance": 0.9,
-				"attribution": "<a href='http://www.portusproject.org' target='_blank'>Portus Project</a>"
+				"attribution": "Digital Globe 2014"
 			}
 		}],
 		it: [{
@@ -876,7 +876,7 @@ new t1.o.Page(
 				"width": 5200,
 				"height": 5844,
 				"tolerance": 0.9,
-				"attribution": "<a href='http://www.portusproject.org' target='_blank'>Portus Project</a>"
+				"attribution": "Peter Wheeler / University of Southampton"
 			}
 		},
 		{
@@ -891,7 +891,7 @@ new t1.o.Page(
 				"width": 5200,
 				"height": 5844,
 				"tolerance": 0.9,
-				"attribution": "<a href='http://www.portusproject.org' target='_blank'>Portus Project</a>"
+				"attribution": "Maria del Carmen Moreno Escobar / University of Southampton"
 			}
 		},		
 		{
@@ -906,7 +906,7 @@ new t1.o.Page(
 				"width": 5200,
 				"height": 5844,
 				"tolerance": 0.9,
-				"attribution": "<a href='http://www.portusproject.org' target='_blank'>Portus Project</a>"
+				"attribution": "Digital Globe 2014"
 			}
 		}]
 	}
@@ -932,7 +932,7 @@ new t1.o.Page(
 				"width": 5200,
 				"height": 5844,
 				"tolerance": 0.9,
-				"attribution": "<a href='http://www.portusproject.org' target='_blank'>Portus Project</a>"
+				"attribution": "Peter Wheeler / University of Southampton"
 			}
 		},
 		{
@@ -947,7 +947,7 @@ new t1.o.Page(
 				"width": 5200,
 				"height": 5844,
 				"tolerance": 0.9,
-				"attribution": "<a href='http://www.portusproject.org' target='_blank'>Portus Project</a>"
+				"attribution": "Maria del Carmen Moreno Escobar / University of Southampton"
 			}
 		},		
 		{
@@ -962,7 +962,7 @@ new t1.o.Page(
 				"width": 5200,
 				"height": 5844,
 				"tolerance": 0.9,
-				"attribution": "<a href='http://www.portusproject.org' target='_blank'>Portus Project</a>"
+				"attribution": "Digital Globe 2014"
 			}
 		}],
 		it: [{
@@ -977,7 +977,7 @@ new t1.o.Page(
 				"width": 5200,
 				"height": 5844,
 				"tolerance": 0.9,
-				"attribution": "<a href='http://www.portusproject.org' target='_blank'>Portus Project</a>"
+				"attribution": "Peter Wheeler / University of Southampton"
 			}
 		},
 		{
@@ -992,7 +992,7 @@ new t1.o.Page(
 				"width": 5200,
 				"height": 5844,
 				"tolerance": 0.9,
-				"attribution": "<a href='http://www.portusproject.org' target='_blank'>Portus Project</a>"
+				"attribution": "Maria del Carmen Moreno Escobar / University of Southampton"
 			}
 		},		
 		{
@@ -1007,7 +1007,7 @@ new t1.o.Page(
 				"width": 5200,
 				"height": 5844,
 				"tolerance": 0.9,
-				"attribution": "<a href='http://www.portusproject.org' target='_blank'>Portus Project</a>"
+				"attribution": "Digital Globe 2014"
 			}
 		}]
 	}
@@ -1033,7 +1033,7 @@ new t1.o.Page(
 				"width": 5200,
 				"height": 5844,
 				"tolerance": 0.9,
-				"attribution": "<a href='http://www.portusproject.org' target='_blank'>Portus Project</a>"
+				"attribution": "Digital Globe 2014"
 			}
 		}],
 		it: [{
@@ -1048,7 +1048,7 @@ new t1.o.Page(
 				"width": 5200,
 				"height": 5844,
 				"tolerance": 0.9,
-				"attribution": "<a href='http://www.portusproject.org' target='_blank'>Portus Project</a>"
+				"attribution": "Digital Globe 2014"
 			}
 		}]
 	}

@@ -664,8 +664,8 @@ hr.style {
 
 .arrow-maps {
     position: absolute;
-    left: 70px;
-    top: 50px;
+    left: 180px;
+    top: 20px;
 }
 
 .arrow-maps:before {
@@ -945,7 +945,7 @@ hr.style {
 
     .navbar {
         display: block;
-        margin-top: 100px;
+        margin-top: 50%;
     }
 
     .headerText {

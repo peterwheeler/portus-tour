@@ -4897,7 +4897,7 @@ VCO.MenuBar = VCO.Class.extend({
 		}
 		else {
 			this._el.button_collapse_toggle.innerHTML	= "<i class='fa fa-map-o fa-lg'</i>";
-			// this._el.button_collapse_toggle.style.display = "none";
+			this._el.button_collapse_toggle.style.display = "none";
 		}
 
 		this._el.button_backtostart.title 				= VCO.Language.buttons.backtostart;

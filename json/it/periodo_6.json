@@ -14,13 +14,13 @@
             {
                 "startDate":"1500",
                 "headline":"Il periodo medievale, quello antiquario e quello moderno",
-                "text":"Questo periodo vede la scomparsa graduale del porto, con molti dei suoi edifici che cadono in degrado, prima di essere demoliti e crollare.  Il sito è stato poi ampiamente derubato dei suoi materiali da costruzione che sono stati riutilizzati negli edifici nelle vicinanze e a Roma. <br/> Nonostante questo, gli scavi recenti hanno dimostrato che alcuni degli edifici del porto erano ancora in piedi, in una certa misura, e sono stati oggetto di un’occupazione sporadica nel corso del XIII e XIV secolo. <br/> Nonostante la scomparsa graduale di gran parte del sito, molte strutture erano ancora visibili nel XVI secolo, diminuendo nelle epoche successive. Le prime incisioni e I dipinti ci danno un'idea del sito da questo momento in poi, fornendoci informazioni preziose sugli edifici che oggi sono rintracciabili solo sotto terra. <br/> Appare evidente che I viaggiatori hanno visitato alcuni degli edifici che erano ancora in piedi nel XVII e XVIII secolo. Ma è solo dal XIX secolo che il sito è diventato oggetto dell’interesse antiquario e archeologico.",
+                "text":"Questo periodo vede la scomparsa graduale del porto, con molti dei suoi edifici che cadono in degrado, prima di essere demoliti e crollare.  Il sito è stato poi ampiamente derubato dei suoi materiali da costruzione che sono stati riutilizzati negli edifici nelle vicinanze e a Roma.<br/><br/>Nonostante questo, gli scavi recenti hanno dimostrato che alcuni degli edifici del porto erano ancora in piedi, in una certa misura, e sono stati oggetto di un’occupazione sporadica nel corso del XIII e XIV secolo.<br/><br/>Nonostante la scomparsa graduale di gran parte del sito, molte strutture erano ancora visibili nel XVI secolo, diminuendo nelle epoche successive. Le prime incisioni e I dipinti ci danno un'idea del sito da questo momento in poi, fornendoci informazioni preziose sugli edifici che oggi sono rintracciabili solo sotto terra.<br/><br/>Appare evidente che I viaggiatori hanno visitato alcuni degli edifici che erano ancora in piedi nel XVII e XVIII secolo. Ma è solo dal XIX secolo che il sito è diventato oggetto dell’interesse antiquario e archeologico.",
                 "type":"default",
                 "asset":
                 {
                     "media":"images/images_6/torlonia.jpg",
                     "credit":"Simon Keay / University of Southampton",
-                    "caption":"Plaster cast of the Torlonia Relief"
+                    "caption":""
                 }
             },
             {
@@ -97,7 +97,7 @@
                 {
                     "media":"images/images_6/plastico.jpg",
                     "credit":"<a href='http://www.portusproject.org'>Portus Project</a>",
-                    "caption":"Detail of the model of Portus created by Gismondi in the 1930s, and currently in the Museo at the Porta San Paolo, Rome"
+                    "caption":""
                 }
             },
             {
@@ -130,13 +130,13 @@
                 {
                     "media":"images/images_6/geophysics.jpg",
                     "credit":"<a href='http://www.portusproject.org'>Portus Project</a>",
-                    "caption":"Results of geophysical survey that was conducted between 1998 and 2005."
+                    "caption":""
                 }
             },
             {
                 "startDate":"2009",
                 "headline":"Il Portus Project",
-                "text":"Questo progetto (www.portusproject.org) rappresenta un importante collaborazione di ricerca tra l'Università di Southampton, la British School at Rome, la Soprintendenza Speciale per il Colosseo, il Museo Nazionale Romano e l'Area Archeologica di Roma e l'Università di Cambridge; e ha coinvolto anche la Cooperativa Parsifal (Roma) e una serie di specialisti provenienti dagli istituti di ricerca e da Università in Italia, Regno Unito, Spagna, Francia e Belgio. In una prima fase (2007-2011), il lavoro si è concentrato sulla scavo del lato orientale del Palazzo Imperiale, mentre in una fase successiva (2011-ad oggi), l'attenzione è stata rivolta al Cantiere Navale (navalia) e alla zona settentrionale del Palazzo Imperiale. Le Arti and Humanities Research Council (AHRC), del Regno Unito e la SSBAR hanno dato contributi finanziari importanti per questo lavoro di ricerca. In aggiunta, il progetto ha intrapreso l’indagine geofisica dell’Isola Sacra, in collaborazione con Paola Germoni (SSBAR), al fine di comprendere la relazione tra Portus e Ostia. <br/> Dal 2013, il Portus Project ha opitato la Portus Fieldschool  al fine di continuare gli scavi del Navalia e del Palazzo Imperiale in un ambiente scolastico e tramite la collaborazione tra l'Università di Southampton, il SSBAR (Angelo Pellegrino e Renato Sebastiani) e la British School at Rome. <br/> L'iniziativa del Portus Project ha adottato un approccio interdisciplinare allo studio di Portus, con tecniche che vanno dal campo dell’archeologia informatica, l'antropologia fisica e la profilazione biologica degli scheletri umani, fino alla geo-archeologia e all'analisi ambientale. La formazione degli studenti in molte di queste e altre tecniche è stata una componente fondamentale dei progetti intrapresi.",
+                "text":"Questo progetto (www.portusproject.org) rappresenta un importante collaborazione di ricerca tra l'Università di Southampton, la British School at Rome, la Soprintendenza Speciale per il Colosseo, il Museo Nazionale Romano e l'Area Archeologica di Roma e l'Università di Cambridge; e ha coinvolto anche la Cooperativa Parsifal (Roma) e una serie di specialisti provenienti dagli istituti di ricerca e da Università in Italia, Regno Unito, Spagna, Francia e Belgio. In una prima fase (2007-2011), il lavoro si è concentrato sulla scavo del lato orientale del Palazzo Imperiale, mentre in una fase successiva (2011-ad oggi), l'attenzione è stata rivolta al Cantiere Navale (navalia) e alla zona settentrionale del Palazzo Imperiale. Le Arti and Humanities Research Council (AHRC), del Regno Unito e la SSBAR hanno dato contributi finanziari importanti per questo lavoro di ricerca. In aggiunta, il progetto ha intrapreso l’indagine geofisica dell’Isola Sacra, in collaborazione con Paola Germoni (SSBAR), al fine di comprendere la relazione tra Portus e Ostia.<br/><br/>Dal 2013, il Portus Project ha opitato la Portus Fieldschool  al fine di continuare gli scavi del Navalia e del Palazzo Imperiale in un ambiente scolastico e tramite la collaborazione tra l'Università di Southampton, il SSBAR (Angelo Pellegrino e Renato Sebastiani) e la British School at Rome.<br/><br/>L'iniziativa del Portus Project ha adottato un approccio interdisciplinare allo studio di Portus, con tecniche che vanno dal campo dell’archeologia informatica, l'antropologia fisica e la profilazione biologica degli scheletri umani, fino alla geo-archeologia e all'analisi ambientale. La formazione degli studenti in molte di queste e altre tecniche è stata una componente fondamentale dei progetti intrapresi.",
                 "asset":
                 {
                     "media":"",

@@ -144,9 +144,9 @@
                     "line": false
                 },
                 "media": {
-                    "url": "<iframe src='http://www.thesphere.com/direct_embed/406063' width='640px' height='auto' class='sphere-direct_embed' type='text/html' frameborder=0 scrolling='no'>",
-                    "credit": "Stephen Kay / BSR & Portus Project",
-                    "caption": "Panorama a 360° dall’entrata alla Darsena"
+                    "url": "images/images_1/darsena.jpg",
+                    "credit": "Simon Keay / University of Southampton",
+                    "caption": "Vista l'ingresso alla Darsena"
                 }
             },
 			{
@@ -206,7 +206,7 @@
 			{
                 "text": {
                     "headline": "Il Palazzo Imperiale",
-                    "text": "<strong>Il Ludus:</strong> Nella prima metà del III secolo, un edificio a forma di ovale (circa 42m per 38m) è stato costruito nello spazio aperto ad est del Palazzo Imperiale. Tutto ciò che rimane oggi sono le fondamenta, le quali rivelano che la sovrastruttura dell'edificio era composta da due pareti parallele distanziate di tre metri una dall’altra con una facciata supplementare presente solo nella metà occidentale dell'edificio. La struttura ha la forma caratteristica di un anfiteatro, anche se è notevolmente più piccolo in termini di dimensioni, e può essere un’area di allenamento, o ludus. L'ingresso era situato sul lato ovest. La struttura a forma di anfiteatro fu demolita sistematicamente nei primi anni del IV o V secolo."
+                    "text": "<strong>Il Ludus:</strong></br>Nella prima metà del III secolo, un edificio a forma di ovale (circa 42m per 38m) è stato costruito nello spazio aperto ad est del Palazzo Imperiale. Tutto ciò che rimane oggi sono le fondamenta, le quali rivelano che la sovrastruttura dell'edificio era composta da due pareti parallele distanziate di tre metri una dall’altra con una facciata supplementare presente solo nella metà occidentale dell'edificio. La struttura ha la forma caratteristica di un anfiteatro, anche se è notevolmente più piccolo in termini di dimensioni, e può essere un’area di allenamento, o ludus. L'ingresso era situato sul lato ovest. La struttura a forma di anfiteatro fu demolita sistematicamente nei primi anni del IV o V secolo."
                 },
                 "location": {
                     "name": "location",
@@ -236,7 +236,7 @@
                 "media": {
                     "url": "images/images_3/navalia.jpg",
                     "credit": "Grant Cox / ArtasMedia",
-                    "caption": "Virtual reconstruction of the Shipyard"
+                    "caption": "Ricostruzione al computer del cantiere navale imperiale che si affaccia sul bacino traianeo."
 				}
             },
 			{
@@ -253,7 +253,7 @@
                 },
                 "media": {
                     "url": "images/images_2/terme_horrea.jpg",
-                    "credit": "11/02/2015 / Google Earth",
+                    "credit": "11/02/2014  /  Google Earth <a href='https://goo.gl/maps/ic9oy9xbVC32' target='_blank'>41°47°02.25', 12°15°13.49'</a>",
                     "caption": "Immagine satellitare delle Terme Horrea(<i>area boscosa vicino ai due tetti arancioni al centro dell’immagine</i>)"
                 }
             },

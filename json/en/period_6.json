@@ -14,7 +14,7 @@
             {
                 "startDate":"1500",
                 "headline":"The medieval, antiquarian and modern periods",
-                "text":"This period sees the port gradually disappear from view, with many of its once great buildings falling into disrepair, before being demolished and collapsing into ruin. The site was subsequently extensively robbed so that its construction materials could be re-used in buildings in the vicinity and at Rome.<br/><br/>Notwithstanding this, recent excavations have provided evidence that some of the buildings at the port were still standing to some degree and were the object of sporadic occupation during the 13th and 14th centuries<br/><br/>Despite this gradual disappearance of much of the site from view, much remained standing above ground as late as the 16th century, with progressively less in later periods. Early engravings and paintings give us an idea of how the site looked from this time onwards, and provide invaluable details about buildings that now only survive below ground.<br/><br/>It is clear that some of the buildings that were still standing above ground in the 17th and 18th centuries were visited by travellers.  But it was really not until the 19th century that the site became the object of sustained antiquarian and archaeological interest.",
+                "text":"This period sees the port gradually disappear from view, with many of its once great buildings falling into disrepair, before being demolished and collapsing into ruin. The site was subsequently extensively robbed so that its construction materials could be re-used in buildings in the vicinity and at Rome.<br/><br/>Notwithstanding this, recent excavations have provided evidence that some of the buildings at the port were still standing to some degree and were the object of sporadic occupation during the 13<sup>th</sup> and 14<sup>th</sup> centuries<br/><br/>Despite this gradual disappearance of much of the site from view, much remained standing above ground as late as the 16<sup>th</sup> century, with progressively less in later periods. Early engravings and paintings give us an idea of how the site looked from this time onwards, and provide invaluable details about buildings that now only survive below ground.<br/><br/>It is clear that some of the buildings that were still standing above ground in the 17<sup>th</sup> and 18<sup>th</sup> centuries were visited by travellers.  But it was really not until the 19th century that the site became the object of sustained antiquarian and archaeological interest.",
                 "type":"default",
                 "asset":
                 {
@@ -37,7 +37,7 @@
             {
                 "startDate":"1554",
                 "headline":"Work by Pirro Ligorio",
-                "text":"The site was first illustrated in the 16th century with the imaginative representations by Pirro Ligorio. His most famous image of the site was produced in 1554 and ‘reconstructed’ Portus.",
+                "text":"The site was first illustrated in the 16<sup>th</sup> century with the imaginative representations by Pirro Ligorio. His most famous image of the site was produced in 1554 and ‘reconstructed’ Portus.",
                 "asset":
                 {
                     "media":"images/images_6/ligorio.jpg",
@@ -48,7 +48,7 @@
             {
                 "startDate":"1588",
                 "headline":"Work of Antonio Danti",
-                "text":"Antonio Danti (1588) produced two representations of Portus in 1588. These decorate the great Galleria Cartografica in the Vatican; one image shows a colour “aerial” view of the ruins while the other shows a reconstruction of how it might have looked in antiquity. While the former image is an important record of what was standing in the late 16th century, the latter and Ligorio’s reconstruction are valuable in telling us about contemporary attitudes to the Classical past.",
+                "text":"Antonio Danti (1588) produced two representations of Portus in 1588. These decorate the great Galleria Cartografica in the Vatican; one image shows a colour “aerial” view of the ruins while the other shows a reconstruction of how it might have looked in antiquity. While the former image is an important record of what was standing in the late 16<sup>th</sup> century, the latter and Ligorio’s reconstruction are valuable in telling us about contemporary attitudes to the Classical past.",
                 "asset":
                 {
                     "media":"images/images_6/danti.jpg",
@@ -59,7 +59,7 @@
             {
                 "startDate":"1750",
                 "headline":"Sporadic work in 18th century",
-                "text":"Intermittent excavations at the site began in the late 18th century with a view to finding Roman works of art that now adorn the Vatican and elsewhere in Rome.",
+                "text":"Intermittent excavations at the site began in the late 18<sup>th</sup> century with a view to finding Roman works of art that now adorn the Vatican and elsewhere in Rome.",
                 "asset":
                 {
                     "media":"",

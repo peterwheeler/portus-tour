@@ -7,10 +7,10 @@ VCO.Language = {
 		start: 				"Explore"
     },
     buttons: {
-        map_overview:      "vista generale della mappa",
-		overview:          "vista generale",
-        backtostart:       "tornare all' inizio",
-        collapse_toggle:   "nascondere mappa",
-        uncollapse_toggle: "mostrare mappa"
+        map_overview:      "Vista Generale della Mappa",
+		overview:          "Vista Generale",
+        backtostart:       "Tornare all' Inizio",
+        collapse_toggle:   "Nascondere Mappa",
+        uncollapse_toggle: "Mostrare Mappa"
     }
 };

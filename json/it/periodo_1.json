@@ -38,7 +38,7 @@
                 "media": {
                     "url": "images/images_1/northern_mole.jpg",
                     "credit": "Simon Keay / University of Southampton",
-                    "caption": "Vista a nord di Portus, immediatamente a sud dell’aereoporto internazionale Leonardo da Vinci a Fiumicino, dove si doveva trovare il bacino di Claudio"
+                    "caption": ""
                 }
             },
             {
@@ -50,7 +50,7 @@
                     "name": "location",
                     "lat": 46.5,
                     "lon": -136.5,
-                    "zoom": 5,
+                    "zoom": 4,
                     "line": false
                 },
                 "media": {
@@ -62,7 +62,7 @@
             {
                 "text": {
                     "headline": "Il bacino di Claudio",
-                    "text": "Il bacino di Claudio era un grande bacino portuale artificiale esterno di 200 ettari, definito da un paesaggio a estuario ad est, da banchine di cemento a nord e sud e da un faro a ovest. L'ingresso principale era a ovest, con  un accesso secondario nel suo angolo nord-orientale.<br/><br/>Un'iscrizione del 46 d.C., ritrovata presso il sito nel 1836, commemora l'imperatore Claudio per aver protetto la città (di Roma) dal pericolo delle inondazioni attraverso la costruzione di canali. Questi si estendevano dal Tevere fino al mare. L'iscrizione ricorda anche la costruzione del porto. Ecco il testo integrale:<br/><br/><i>TI(berius) CLAVDIVS DRVSI F(ilius) CAESAR<br/>AVG(ustus) GERMANICVS PONTIF(ex) MAX(imus)<br/>TRIB(unicia) POTEST(ate) VI CO(n)S(ul) DESIGN(atus) IIII IMP(erator) XII P(ater) P(atriae)<br/>FOSSIS DVCTIS A TIBERI OPERIS PORTV[s]<br/>CAVSSA EMISSISQVE IN MARE VRBEM<br/>INVNDATIONIS PERICYLO LIBERAVIT</i><br/><br/>Il molo settentrionale del bacino di Claudio è stato scoperto durante i lavori intrapresi per la costruzione dell’Aereoporto Internazionale di Fiumucino nel 1960. Il molo é stato costruito in opus caementicium (cemento idraulico) e si puó seguire per più di un chilometro ad ovest della punta settentrionale della banchina orientale (dove si trovava l'ingresso piccolo). Il molo continuava fino ad un punto a nelle vicinanze settentrionali del faro. Il Calcestruzzo supestite ha messo in luce alcune fasi strutturali differenti."
+                    "text": "Il bacino di Claudio era un grande bacino portuale artificiale esterno di 200 ettari, definito da un paesaggio a estuario ad est, da banchine di cemento a nord e sud e da un faro a ovest. L'ingresso principale era a ovest, con  un accesso secondario nel suo angolo nord-orientale.<br/><br/>Un'iscrizione del 46 d.C., ritrovata presso il sito nel 1836, commemora l'imperatore Claudio per aver protetto la città (di Roma) dal pericolo delle inondazioni attraverso la costruzione di canali. Questi si estendevano dal Tevere fino al mare. L'iscrizione ricorda anche la costruzione del porto. Ecco il testo integrale:<br/><br/><i>TI(berius) CLAVDIVS DRVSI F(ilius) CAESAR<br/>AVG(ustus) GERMANICVS PONTIF(ex) MAX(imus)<br/>TRIB(unicia) POTEST(ate) VI CO(n)S(ul) DESIGN(atus) IIII IMP(erator) XII P(ater) P(atriae)<br/>FOSSIS DVCTIS A TIBERI OPERIS PORTV[s]<br/>CAVSSA EMISSISQVE IN MARE VRBEM<br/>INVNDATIONIS PERICYLO LIBERAVIT</i><br/><br/>Il molo settentrionale del bacino di Claudio è stato scoperto durante i lavori intrapresi per la costruzione dell’Aereoporto Internazionale di Fiumucino nel 1960. Il molo é stato costruito in <i>opus caementicium</i> (cemento idraulico) e si puó seguire per più di un chilometro ad ovest della punta settentrionale della banchina orientale (dove si trovava l'ingresso piccolo). Il molo continuava fino ad un punto a nelle vicinanze settentrionali del faro. Il Calcestruzzo supestite ha messo in luce alcune fasi strutturali differenti."
                 },
                 "location": {
                     "name": "location",
@@ -109,7 +109,7 @@
                 },
                 "media": {
                     "url": "images/images_1/northern_entrance.jpg",
-                    "credit": "11/02/2014  /  Google Earth <a href='https://goo.gl/maps/AMcCriZCaVs' target='_blank'>41°47°12.08', -12°15°12.44'</a>",
+                    "credit": "11/02/2014  /  Google Earth <a href='https://goo.gl/maps/AMcCriZCaVs' target='_blank'>41°47°12.08', 12°15°12.44'</a>",
                     "caption": "Immagine satellitare che illustra la possibile posizione dell’entrata nord del bacino di Claudio. (<i>lo spazio aperto nella parte superiore dell’immagine<i/>)"
                 }
             },
@@ -224,7 +224,7 @@
             {
                 "text": {
                     "headline": "La Darsena",
-                    "text": "La Darsena è un piccolo bacino portuale, nel cuore del Porto di Claudio, la cui funzione non è del tutto chiara, ma che potrebbe essere correlata all’attracco delle navi fluviali.Queste dovrebbero essere state caricate con il grano proveniente dai vicini Grandi Magazzini di Traiano e dal Foro Olitorio, per poi essere trasportati lungo i canali e  ilTevere fino a Roma.<br/><br/>Il Canale di Comunicazione Trasverso, che correva verso sud dal bacino del porto, forniva l'accesso all'ingresso della Darsena e al Canale di Fiumicino."
+                    "text": "La Darsena è un piccolo bacino portuale, nel cuore del Porto di Claudio, la cui funzione non è del tutto chiara, ma che potrebbe essere correlata all’attracco delle navi fluviali.Queste dovrebbero essere state caricate con il grano proveniente dai vicini Grandi Magazzini di Traiano e dal Foro Olitorio, per poi essere trasportati lungo i canali e ilTevere fino a Roma.<br/><br/>Il Canale di Comunicazione Trasverso, che correva verso sud dal bacino del porto, forniva l'accesso all'ingresso della Darsena e al Canale di Fiumicino."
                 },
                 "location": {
                     "name": "location",
@@ -234,9 +234,9 @@
                     "line": false
                 },
                 "media": {
-                    "url": "<iframe src='http://www.thesphere.com/direct_embed/406063' width='640px' height='auto' class='sphere-direct_embed' type='text/html' frameborder=0 scrolling='no'>",
-                    "credit": "Stephen Kay / BSR & Portus Project",
-                    "caption": "Panorama a 360° dall’ingresso alla Darsena"
+                    "url": "images/images_1/darsena.jpg",
+                    "credit": "Simon Keay / University of Southampton",
+                    "caption": "Vista l'ingresso alla Darsena"
                 }
             },
             {
@@ -314,7 +314,7 @@
             {
                 "text": {
                     "headline": "Il Tevere",
-                    "text": "Il Tevere, che nasce dall’Appennino Tosco-Emiliano, collegava Roma al Mar Tirreno e correva attraverso una serie di terre ricche che hanno prodotto legno, mattoni e altri materiali da costruzione, vino e altri prodotti agricoli, sia per Roma che, in qualche misura, per l'esportazione. Gli spostamenti attraverso la città di Roma erano articolati dal fiume, il quale era attraversato da diversi ponti importanti e era delimitato da una serie di installazioni portuali che servivano il traffico a valle e a monte. Uno dei più importanti era l’Emporium, che si trovava sulla riva orientale ed era stato il punto principale per lo scarico dei carichi portati a monte da Portus e Ostia. Grandi magazzini e altre strutture come la Porticus Aemilia sono note da qui, cosí come una collina di cocci di anfore provenienti dal sud della Spagna e Nord Africa, conosciuto come il Monte Testaccio. Il principale porto fluviale sulla riva occidentale era rappresentato dalla Ripa Grande, che garaniva l'accesso al quartiere Transtiberim di Roma e presentava un carattere molto cosmopolita, con testimonianze epigrafiche per i commercianti. Esso si collegava direttamente a Portus per mezzo della Via Campana/Portuense."
+                    "text": "Il Tevere, che nasce dall’Appennino Tosco-Emiliano, collegava Roma al Mar Tirreno e correva attraverso una serie di terre ricche che hanno prodotto legno, mattoni e altri materiali da costruzione, vino e altri prodotti agricoli, sia per Roma che, in qualche misura, per l'esportazione. Gli spostamenti attraverso la città di Roma erano articolati dal fiume, il quale era attraversato da diversi ponti importanti e era delimitato da una serie di installazioni portuali che servivano il traffico a valle e a monte. Uno dei più importanti era l’Emporium, che si trovava sulla riva orientale ed era stato il punto principale per lo scarico dei carichi portati a monte da Portus e Ostia.<br/><br/>Grandi magazzini e altre strutture come la Porticus Aemilia sono note da qui, cosí come una collina di cocci di anfore provenienti dal sud della Spagna e Nord Africa, conosciuto come il Monte Testaccio. Il principale porto fluviale sulla riva occidentale era rappresentato dalla Ripa Grande, che garaniva l'accesso al quartiere Transtiberim di Roma e presentava un carattere molto cosmopolita, con testimonianze epigrafiche per i commercianti. Esso si collegava direttamente a Portus per mezzo della Via Campana/Portuense."
                 },
                 "location": {
                     "name": "location",
@@ -343,7 +343,7 @@
                 },
                 "media": {
                     "url": "images/images_1/campana.jpg",
-                    "credit": "11/02/2014  /  Google Earth <a href='https://goo.gl/maps/1sHhHkUvkfD2' target='_blank'>41°48°59.13', -12°19°73.67'</a>",
+                    "credit": "11/02/2014  /  Google Earth <a href='https://goo.gl/maps/1sHhHkUvkfD2' target='_blank'>41°48°59.13', 12°19°73.67'</a>",
                     "caption": "Immagine satellitare di una parte dello scavo della via Campana, 4km a nord-est di Pisa"
                 }
             },
@@ -361,7 +361,7 @@
                 },
                 "media": {
                     "url": "images/images_1/northern_canal.jpg",
-                    "credit": "24/07/2003  /  Google Earth <a href='https://goo.gl/maps/egEBwRvUp8K2' target='_blank'>41°47°16.22', -12°16°13.33'</a>",
+                    "credit": "24/07/2003  /  Google Earth <a href='https://goo.gl/maps/egEBwRvUp8K2' target='_blank'>41°47°16.22', 12°16°13.33'</a>",
                     "caption": "Immagine satellitare che mostra come si possano vedere I resti del canale settentrionale attraverso le linee tratteggiate"
                 }
             },
@@ -432,8 +432,8 @@
                     "line": false
                 },
                 "media": {
-                    "url": "",
-                    "credit": "",
+                    "url": "images/images_1/isola_sacra.jpg",
+                    "credit": "Simon Keay / University of Southampton",
                     "caption": ""
                 }
             },
@@ -487,7 +487,7 @@
                 },
                 "media": {
                     "url": "images/images_1/ostia_harbour.jpg",
-                    "credit": "24/07/2003  /  Google Earth <a href='https://goo.gl/maps/9q8dRvFMCE22' target='_blank'>41°45°14.59', -12°16°53.05'</a>",
+                    "credit": "24/07/2003  /  Google Earth <a href='https://goo.gl/maps/9q8dRvFMCE22' target='_blank'>41°45°14.59', 12°16°53.05'</a>",
                     "caption": "Sito del porto di Ostia, a sinistra degli alberi al centro dell’immagine"
                 }
             },
