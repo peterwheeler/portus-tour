@@ -4824,25 +4824,40 @@ VCO.MenuBar = VCO.Class.extend({
 			this.collapsed = false;
 			this.show();
 
-			this._el.button_overview.disabled = "disabled";
-			this._el.button_backtostart.disabled = "";
+			this._el.button_overview.style.color = "grey";
+			this._el.button_layers.style.color = "grey";
+			this._el.button_backtostart.style.color = "#333";
 
 			this.fire("collapse", {y:this.options.menubar_default_y});
 
-			this._el.button_collapse_toggle.innerHTML	= "<i class='fa fa-align-left fa-lg'></i>";
-			this._el.button_collapse_toggle.title = VCO.Language.buttons.uncollapse_toggle;
-			
+			if (this._el.button_collapse_toggle.title == VCO.Language.buttons.uncollapse_toggle) {
+				this._el.button_collapse_toggle.innerHTML	= "<i class='fa fa-align-left fa-lg'></i>";
+				this._el.button_collapse_toggle.title = VCO.Language.buttons.collapse_toggle;
+			}
+			else {
+				this._el.button_collapse_toggle.innerHTML	= "<i class='fa fa-map-o fa-lg'></i>";		
+				this._el.button_collapse_toggle.title = VCO.Language.buttons.uncollapse_toggle;
+			}
+	
 		} else {
 			this.collapsed = true;
 			this.hide(25);
 
-			this._el.button_overview.disabled = "";
-			this._el.button_overview.disabled = "disabled";
+			this._el.button_overview.style.color = "#333";
+			this._el.button_layers.style.color = "#333";
+			this._el.button_backtostart.style.color = "grey";
 
 			this.fire("collapse", {y:1});
-			
-			this._el.button_collapse_toggle.innerHTML	= "<i class='fa fa-map-o fa-lg'></i>";		
-			this._el.button_collapse_toggle.title = VCO.Language.buttons.collapse_toggle;
+
+			if (this._el.button_collapse_toggle.title == VCO.Language.buttons.uncollapse_toggle) {
+				this._el.button_collapse_toggle.innerHTML	= "<i class='fa fa-align-left fa-lg'></i>";
+				this._el.button_collapse_toggle.title = VCO.Language.buttons.collapse_toggle;
+			}
+			else {
+				this._el.button_collapse_toggle.innerHTML	= "<i class='fa fa-map-o fa-lg'></i>";		
+				this._el.button_collapse_toggle.title = VCO.Language.buttons.uncollapse_toggle;
+			}
+
 		}
 	},
 
@@ -4850,14 +4865,36 @@ VCO.MenuBar = VCO.Class.extend({
         if (this.collapsed) {
             this.collapsed = false;
             this.show();
-            this._el.button_backtostart.style.display = "none";
-            this._el.button_overview.style.display = "inline";
+
+            this._el.button_overview.style.color = "grey";
+			this._el.button_layers.style.color = "grey";
+			this._el.button_backtostart.style.color = "#333";
+
+			if (this._el.button_collapse_toggle.title == VCO.Language.buttons.uncollapse_toggle) {
+				this._el.button_collapse_toggle.innerHTML	= "<i class='fa fa-align-left fa-lg'></i>";
+				this._el.button_collapse_toggle.title = VCO.Language.buttons.collapse_toggle;
+			}
+			else {
+				this._el.button_collapse_toggle.innerHTML	= "<i class='fa fa-map-o fa-lg'></i>";		
+				this._el.button_collapse_toggle.title = VCO.Language.buttons.uncollapse_toggle;
+			}
 
         } else {
             this.collapsed = true;
             this.hide(25);
-            this._el.button_overview.style.display = "none";
-            this._el.button_backtostart.style.display = "inline";
+
+            this._el.button_overview.style.color = "#333";
+			this._el.button_layers.style.color = "#333";
+			this._el.button_backtostart.style.color = "grey";
+
+			if (this._el.button_collapse_toggle.title == VCO.Language.buttons.uncollapse_toggle) {
+				this._el.button_collapse_toggle.innerHTML	= "<i class='fa fa-align-left fa-lg'></i>";
+				this._el.button_collapse_toggle.title = VCO.Language.buttons.collapse_toggle;
+			}
+			else {
+				this._el.button_collapse_toggle.innerHTML	= "<i class='fa fa-map-o fa-lg'></i>";		
+				this._el.button_collapse_toggle.title = VCO.Language.buttons.uncollapse_toggle;
+			}
         }
     },
 
@@ -4873,11 +4910,11 @@ VCO.MenuBar = VCO.Class.extend({
 		this._el.button_collapse_toggle 				= VCO.Dom.create('div', 'menubar-button button-collapse_toggle', this._el.button_container);
 		VCO.DomEvent.addListener(this._el.button_collapse_toggle, 'click', this._onButtonCollapseMap, this);
 
-		this._el.button_overview 						= VCO.Dom.create('div', 'menubar-button button-overview', this._el.button_container);
-		VCO.DomEvent.addListener(this._el.button_overview, 'click', this._onButtonOverview, this);
-
 		this._el.button_backtostart 					= VCO.Dom.create('div', 'menubar-button button-backtostart', this._el.button_container);
 		VCO.DomEvent.addListener(this._el.button_backtostart, 'click', this._onButtonBackToStart, this);
+
+		this._el.button_overview 						= VCO.Dom.create('div', 'menubar-button button-overview', this._el.button_container);
+		VCO.DomEvent.addListener(this._el.button_overview, 'click', this._onButtonOverview, this);
 
 		this._el.button_layers 							= VCO.Dom.create('div', 'menubar-button button-layers', this._el.button_container);
 		VCO.DomEvent.addListener(this._el.button_layers, 'click', this._onButtonLayers, this);
@@ -4888,15 +4925,18 @@ VCO.MenuBar = VCO.Class.extend({
 		// 	this._el.button_overview.innerHTML			= "<i class='fa fa-compass fa-lg'></i>";
 		// }
 
-		this._el.button_overview.innerHTML			= "<i class='fa fa-external-link fa-lg'></i>";
+		this._el.button_overview.innerHTML				= "<i class='fa fa-external-link fa-lg'></i>";
 		this._el.button_backtostart.innerHTML			= "<i class='fa fa-reply fa-lg'></i>";
 
 		if (VCO.Browser.mobile) {
 			this._el.button_collapse_toggle.innerHTML	= "<i class='fa fa-map-o fa-lg'></i>";
+			this._el.button_collapse_toggle.title = VCO.Language.buttons.uncollapse_toggle;
+			this._el.button_overview.style.color = "grey";
+
+			this._el.button_layers.setAttribute("map", " ");
 			this._el.container.setAttribute("ontouchstart"," ");
 		}
 		else {
-			this._el.button_collapse_toggle.innerHTML	= "<i class='fa fa-map-o fa-lg'</i>";
 			this._el.button_collapse_toggle.style.display = "none";
 		}
 
@@ -15361,10 +15401,11 @@ L.Control.CustomLayers = L.Control.extend({
 
 	_initLayout: function () {
 		var className = 'leaflet-control-layers',
-		    container = this._container = L.DomUtil.create('div', 'dropdown');
+		    container = this._container = L.DomUtil.create('li', 'dropdown');
 
 		// makes this work on IE touch devices by stopping it from firing a mouseout event when the touch is released
-		container.setAttribute('aria-haspopup', true);
+		// container.setAttribute('aria-haspopup', true);
+		container.style.listStyleType = "none";
 
 		if (!L.Browser.touch) {
 			L.DomEvent
@@ -15384,14 +15425,27 @@ L.Control.CustomLayers = L.Control.extend({
 				}, this);
 			}
 
-			var link = this._layersLink = L.DomUtil.create('a', 'controlLink', container);
+			var link = this._layersLink = L.DomUtil.create('a', 'controlLink dropdown-toggle', container);
 			link.role = 'button';
+			link.setAttribute('ng-href', '#');
 			link.setAttribute('data-toggle', 'dropdown');
 			link.setAttribute('data-target', '#');
 			link.setAttribute('aria-haspopup', 'true');
-			link.setAttribute('aria-expanded', 'true');
+			link.setAttribute('aria-expanded', 'false');
 
-			link.innerHTML = "Layers<span class='caret'></span>";
+			if (L.Browser.mobile) {
+				link.innerHTML = "<i class='fa fa-clone fa-lg'></i>";
+				if (link.parentElement.hasAttribute("map")){
+					link.style.color = "grey";
+				}
+				else{
+					link.style.color = "#333";
+				}
+			}
+			else{
+				link.innerHTML = "Layers<span class='caret'></span>";
+			}
+			
 
 			if (L.Browser.touch) {
 				L.DomEvent
@@ -15407,16 +15461,19 @@ L.Control.CustomLayers = L.Control.extend({
 			// }, this);
 
 			this._map.on('click', this._collapse, this);
+
 			// TODO keyboard accessibility
 		} else {
 			this._expand();
 		}
-		this._layersList = this._form = L.DomUtil.create('ul', 'dropdown-menu', container)
+		this._layersList = this._form = L.DomUtil.create('ul', 'dropdown-menu', container);
+		this._layersList.setAttribute('role', 'menu');
 		this._baseLayersList = L.DomUtil.create('div', 'baselayers', this._layersList);
 		this._separator = L.DomUtil.create('li', 'divider', this._layersList);
 		this._separator.role = "separator";
 		this._overlaysList = L.DomUtil.create('div', 'overlays', this._layersList);
 
+		L.DomEvent.on(this._layersList, 'click', this._collapse, this);
 		// container.appendChild(form);
 	},
 
@@ -15563,11 +15620,11 @@ L.Control.CustomLayers = L.Control.extend({
 	},
 
 	_expand: function () {
-		L.DomUtil.addClass(this._container, 'leaflet-control-layers-expanded');
+		L.DomUtil.addClass(this._container, 'open');
 	},
 
 	_collapse: function () {
-		L.DomUtil.removeClass(this._container, 'leaflet-control-layers-expanded');
+		L.DomUtil.removeClass(this._container, 'open');
 	}
 });
 
