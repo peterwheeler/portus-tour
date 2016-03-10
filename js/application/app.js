@@ -633,6 +633,8 @@ var angtranslations = {
                 }
             }
 
+
+// jghufuyk
             for (var j = 0; j < t1.c.pages.length; j++) {
                 var e = t1.c.pages[j];
 
