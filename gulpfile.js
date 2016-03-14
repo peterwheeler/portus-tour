@@ -14,15 +14,13 @@ gulp.task("serve", [], function() {
             server: {
                 baseDir: "./"
             },
-            // port: 5000,
-            // open: false,
             middleware: [historyApiFallback()]
         });
 
     gulp.watch("./css/**/*.css").on("change", browserSync.reload);
-    gulp.watch("./js/**/*.js").on("change", browserSync.reload);
+    gulp.watch("./js/application/*.js").on("change", browserSync.reload);
     gulp.watch("./partials/**/*.html").on("change", browserSync.reload);
-    gulp.watch("./*.html").on("change", browserSync.reload);
+    gulp.watch("./index.html").on("change", browserSync.reload);
 });
 
 gulp.task("default", ["serve"]);

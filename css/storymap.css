@@ -300,6 +300,11 @@
     }
 }
 
+.vco-small h2 {
+    margin-top: 0;
+    padding-top: 10px;
+}
+
 .vco-skinny h2 {
     margin-top: 0;
     padding-top: 10px;
@@ -659,7 +664,7 @@
 .menubar, .menubar a, .menubar p, .menubar label {
     line-height: normal;
     text-align: center;
-    font-family: 'Forum', cursive;
+    font-family: 'Forum', cursive !important;
     font-size: 14px;
     font-weight: 600;
     text-transform: uppercase;
@@ -716,6 +721,41 @@
 
 .leaflet-control {
     margin-top: 0px;
+}
+
+.vco-small .menubar {
+    position: absolute;
+    width: 100%;
+    margin: 0px;
+    padding: 18px 10px 4px 10px;
+}
+
+.vco-small .menubar, .vco-small .menubar a{
+    font-size: 24px;
+}
+
+.vco-small .menubar .buttons-container {
+    padding: 0px 50px 0px 0px;
+    height: 30px;
+}
+
+.vco-small .menubar .menubar-button {
+    margin: 0px 8px;
+}
+
+.vco-small .menubar .button-collapse_toggle {
+  margin: 0px 20px 2px 0px;
+}
+
+.vco-small .menubar .button-backtostart {
+
+}
+
+.vco-small .menubar .button-overview {
+
+}
+
+.vco-small .menubar .button-layers {
 }
 
 .vco-skinny .menubar {
@@ -1132,6 +1172,59 @@
     padding: 0;
 }
 
+.vco-small .vco-slide {
+    display: block;
+}
+
+.vco-small .vco-slide .vco-slide-content-container {
+    display: block;
+    position: static;
+    height: auto;
+    vertical-align: baseline;
+}
+
+.vco-small .vco-slide-text-only .vco-slide-content-container {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.vco-small .vco-slide .vco-slide-content-container .vco-slide-content {
+    display: block;
+    position: static;
+    vertical-align: baseline;
+    height: auto;
+}
+
+.vco-small .vco-slide .vco-slide-content-container .vco-slide-content .vco-media {
+    position: static;
+    width: 100%;
+    height: auto;
+    float: none;
+    display: block;
+}
+
+.vco-small .vco-slide .vco-slide-content-container .vco-slide-content .vco-text {
+    display: block;
+    height: auto;
+    vertical-align: baseline;
+    position: static;
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    float: none;
+    padding: 0;
+}
+
+.vco-small .vco-slide .vco-slide-content-container .vco-slide-content .vco-text .vco-text-content-container {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 40px;
+}
+
+.vco-mobile.vco-small .vco-slide-content-container .vco-slide-content .vco-media img,.vco-mobile.vco-small .vco-slide-content-container .vco-slide-content .vco-media embed,.vco-mobile.vco-small .vco-slide-content-container .vco-slide-content .vco-media object,.vco-mobile.vco-small .vco-slide-content-container .vco-slide-content .vco-media video,.vco-mobile.vco-small .vco-slide-content-container .vco-slide-content .vco-media iframe {
+    max-height: 420px;
+}
+
 .vco-skinny .vco-slide {
     display: block;
 }
@@ -1182,7 +1275,7 @@
 }
 
 .vco-mobile.vco-skinny .vco-slide-content-container .vco-slide-content .vco-media img,.vco-mobile.vco-skinny .vco-slide-content-container .vco-slide-content .vco-media embed,.vco-mobile.vco-skinny .vco-slide-content-container .vco-slide-content .vco-media object,.vco-mobile.vco-skinny .vco-slide-content-container .vco-slide-content .vco-media video,.vco-mobile.vco-skinny .vco-slide-content-container .vco-slide-content .vco-media iframe {
-    max-height: 175px;
+    max-height: 300px;
 }
 
 .vco-slidenav-previous,.vco-slidenav-next,.vco-slidenav-start,.vco-slidenav-end {
@@ -1291,6 +1384,46 @@
     margin-left: -4px;
 }
 
+.vco-small .vco-slidenav-next, .vco-small .vco-slidenav-end {
+    right: 32px;
+}
+
+.vco-small .vco-slidenav-next .vco-slidenav-icon, .vco-small .vco-slidenav-end .vco-slidenav-icon {
+    margin-left: 8px;
+}
+
+.vco-small .vco-slidenav-previous .vco-slidenav-content-container,.vco-small .vco-slidenav-next .vco-slidenav-content-container,.vco-small .vco-slidenav-start .vco-slidenav-content-container,.vco-small .vco-slidenav-end .vco-slidenav-content-container {
+    width: 32px;
+    height: 32px;
+}
+
+.vco-small .vco-slidenav-previous .vco-slidenav-title,.vco-small .vco-slidenav-next .vco-slidenav-title,.vco-small .vco-slidenav-start .vco-slidenav-title,.vco-small .vco-slidenav-end .vco-slidenav-title,.vco-small .vco-slidenav-previous .vco-slidenav-description,.vco-small .vco-slidenav-next .vco-slidenav-description,.vco-small .vco-slidenav-start .vco-slidenav-description,.vco-small .vco-slidenav-end .vco-slidenav-description {
+    display: none;
+}
+
+.vco-small .vco-slidenav-previous .vco-slidenav-icon,.vco-small .vco-slidenav-next .vco-slidenav-icon,.vco-small .vco-slidenav-start .vco-slidenav-icon,.vco-small .vco-slidenav-end .vco-slidenav-icon {
+    filter: alpha(opacity=33);
+    -khtml-opacity: .33;
+    -moz-opacity: .33;
+    opacity: .33;
+}
+
+.vco-small .vco-slidenav-next:hover .vco-slidenav-icon,.vco-small .vco-slidenav-end:hover .vco-slidenav-icon {
+    margin-left: 12px;
+    filter: alpha(opacity=100);
+    -khtml-opacity: 1;
+    -moz-opacity: 1;
+    opacity: 1;
+}
+
+.vco-small .vco-slidenav-previous:hover .vco-slidenav-icon, .vco-small .vco-slidenav-start:hover .vco-slidenav-icon {
+    margin-left: -4px;
+    filter: alpha(opacity=100);
+    -khtml-opacity: 1;
+    -moz-opacity: 1;
+    opacity: 1;
+}
+
 .vco-skinny .vco-slidenav-next, .vco-skinny .vco-slidenav-end {
     right: 32px;
 }
@@ -1393,6 +1526,10 @@
     -khtml-opacity: 1;
     -moz-opacity: 1;
     opacity: 1;
+}
+
+.vco-mobile .vco-slidenav-previous,.vco-small.vco-mobile .vco-slidenav-previous,.vco-small.vco-layout-landscape.vco-mobile .vco-slidenav-previous,.vco-small.vco-layout-portrait.vco-mobile .vco-slidenav-previous,.vco-mobile .vco-slidenav-next,.vco-mobile .vco-slidenav-start,.vco-mobile .vco-slidenav-end,.vco-small.vco-mobile .vco-slidenav-next,.vco-small.vco-mobile .vco-slidenav-start,.vco-small.vco-mobile .vco-slidenav-end,.vco-small.vco-layout-landscape.vco-mobile .vco-slidenav-next,.vco-small.vco-layout-landscape.vco-mobile .vco-slidenav-start,.vco-small.vco-layout-landscape.vco-mobile .vco-slidenav-end,.vco-small.vco-layout-portrait.vco-mobile .vco-slidenav-next,.vco-small.vco-layout-portrait.vco-mobile .vco-slidenav-start,.vco-small.vco-layout-portrait.vco-mobile .vco-slidenav-end {
+    display: none;
 }
 
 .vco-mobile .vco-slidenav-previous,.vco-skinny.vco-mobile .vco-slidenav-previous,.vco-skinny.vco-layout-landscape.vco-mobile .vco-slidenav-previous,.vco-skinny.vco-layout-portrait.vco-mobile .vco-slidenav-previous,.vco-mobile .vco-slidenav-next,.vco-mobile .vco-slidenav-start,.vco-mobile .vco-slidenav-end,.vco-skinny.vco-mobile .vco-slidenav-next,.vco-skinny.vco-mobile .vco-slidenav-start,.vco-skinny.vco-mobile .vco-slidenav-end,.vco-skinny.vco-layout-landscape.vco-mobile .vco-slidenav-next,.vco-skinny.vco-layout-landscape.vco-mobile .vco-slidenav-start,.vco-skinny.vco-layout-landscape.vco-mobile .vco-slidenav-end,.vco-skinny.vco-layout-portrait.vco-mobile .vco-slidenav-next,.vco-skinny.vco-layout-portrait.vco-mobile .vco-slidenav-start,.vco-skinny.vco-layout-portrait.vco-mobile .vco-slidenav-end {
@@ -1613,6 +1750,24 @@
     }
 }
 
+.vco-small .vco-media {
+    width: 100%;
+    height: auto;
+    float: none;
+    display: block;
+}
+
+.vco-small .vco-media .vco-media-content-container .vco-credit,.vco-small .vco-media .vco-media-content-container .vco-caption {
+    margin: 2px auto 0 auto;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size: 10px;
+}
+
+.vco-small .vco-media .vco-media-content-container .vco-credit {
+    margin-top: 3px;
+}
+
 .vco-skinny .vco-media {
     width: 100%;
     height: auto;
@@ -1830,6 +1985,11 @@
 .vco-slide.vco-full-image-background .vco-media .vco-media-wikipedia h4 a,.vco-slide.vco-full-color-background .vco-media .vco-media-wikipedia h4 a {
     color: #fff !important;
     text-shadow: 1px 1px 1px #000 !important;
+}
+
+.vco-mobile.vco-small .vco-media .vco-media-wikipedia {
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .vco-mobile.vco-skinny .vco-media .vco-media-wikipedia {
@@ -2497,6 +2657,17 @@
 .vco-layout-portrait .leaflet-bottom {
     bottom: 0;
     top: auto;
+}
+
+.vco-mobile.vco-small .leaflet-control-zoom,.vco-mobile.vco-small .leaflet-control-layers {
+    margin-top: 35px;
+}
+
+.vco-small .leaflet-container .leaflet-control-attribution {
+    background-color: transparent;
+    box-shadow: none;
+    margin: 0;
+    border: none;
 }
 
 .vco-mobile.vco-skinny .leaflet-control-zoom,.vco-mobile.vco-skinny .leaflet-control-layers {

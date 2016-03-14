@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" ng-app="Map_View">
 
-
 <head>
     <base href="/">
     <meta charset="utf-8">
@@ -99,8 +98,7 @@
 
 </head>
 
-<body>
- <!-- ng-controller="mainCtrl"> -->
+<body ng-controller="MainCtrl">
 
     <div class="menuOpener">
         <i class="fa fa-bars overlay-toggle btn-open"></i>
@@ -114,14 +112,96 @@
             </a>
         </div>
 
-        <div carousel-directive></div>
+        <div class="tourCarousel">
+            <div class="carouselDiv" ng-controller="carouselCtrl as CCtrl">
+                <div id="owlTour" class="owl-carousel">
+                    <div class="itemHolder">
+                        <div class="imageHolder">
+                            <a class="imageLink" ng-href="{{urlBegin()}}/">
+                                <img class="img-responsive center-block" ng-src="logos/tours/home.jpg" alt="claudian">
+                            </a>
+                        </div>
+                        <div class="textHolder">
+                            <div class="text">{{'TOURS.HOME' | translate}}</div>
+                            <div class="line"></div>
+                        </div>
+                    </div>
+                    <div class="itemHolder">
+                        <div class="imageHolder">
+                            <a class="imageLink" ng-href="{{urlBegin()}}/{{localizedPage(0)}}">
+                                <img class="img-responsive center-block" ng-src="logos/tours/period_1.jpg" alt="claudian">
+                            </a>
+                        </div>
+                        <div class="textHolder">
+                            <div class="text">{{'TOURS.CLAUDIAN' | translate}}</div>
+                            <div class="line"></div>
+                        </div>
+                    </div>
+                    <div class="itemHolder">
+                        <div class="imageHolder">
+                            <a class="imageLink" ng-href="{{urlBegin()}}/{{localizedPage(1)}}">
+                                <img class="img-responsive center-block" ng-src="logos/tours/period_2.jpg" alt="claudian">
+                            </a>
+                        </div>
+                        <div class="textHolder">
+                            <div class="text">{{'TOURS.TRAJANIC' | translate}}</div>
+                            <div class="line"></div>
+                        </div>
+                    </div>
+                    <div class="itemHolder">
+                        <div class="imageHolder">
+                            <a class="imageLink" ng-href="{{urlBegin()}}/{{localizedPage(2)}}">
+                                <img class="img-responsive center-block" ng-src="logos/tours/period_3.jpg" alt="claudian">
+                            </a>
+                        </div>
+                        <div class="textHolder">
+                            <div class="text">{{'TOURS.SEVERAN' | translate}}</div>
+                            <div class="line"></div>
+                        </div>
+                    </div>
+                    <div class="itemHolder">
+                        <div class="imageHolder">
+                            <a class="imageLink" ng-href="{{urlBegin()}}/{{localizedPage(3)}}">
+                                <img class="img-responsive center-block" ng-src="logos/tours/period_4.jpg" alt="claudian">
+                            </a>
+                        </div>
+                        <div class="textHolder">
+                            <div class="text">{{'TOURS.FIFTHSEVENTH' | translate}}</div>
+                            <div class="line"></div>
+                        </div>
+                    </div>
+                    <div class="itemHolder">
+                        <div class="imageHolder">
+                            <a class="imageLink" ng-href="{{urlBegin()}}/{{localizedPage(4)}}">
+                                <img class="img-responsive center-block" ng-src="logos/tours/period_5.jpg" alt="claudian">
+                            </a>
+                        </div>
+                        <div class="textHolder">
+                            <div class="text">{{'TOURS.MODERN' | translate}}</div>
+                            <div class="line"></div>
+                        </div>
+                    </div>
+                    <div class="itemHolder">
+                        <div class="imageHolder">
+                            <a class="imageLink" ng-href="{{urlBegin()}}/{{localizedPage(5)}}">
+                                <img class="img-responsive center-block" ng-src="logos/tours/period_6.jpg" alt="claudian">
+                            </a>
+                        </div>
+                        <div class="textHolder">
+                            <div class="text">{{'TOURS.TIMELINE' | translate}}</div>
+                            <div class="line"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <!-- Navigation Bar -->
         <nav class="navbar">
             <div class="container-fluid">
                 <div id="navbar">
                     <div class="scrollable-nav">
-                        <ul class="nav navbar-nav text-center" role="menu" ng-controller="regionCtrl">
+                        <ul class="nav navbar-nav text-center" role="menu" ng-controller="RegionCtrl">
                             <li class="mobile text-center" role="presentation">
                                 <a ng-href="{{urlBegin()}}/about">{{'MENU.ABOUT' | translate | uppercase}}</a>
                             </li>
@@ -129,7 +209,7 @@
                                 <a ng-href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">{{'MENU.SELECTALANG' | translate}}<span class="caret"></span></a>
                                 <ul class="dropdown-menu" role="menu">
                                     <li class="mobile text-center" ng-repeat="country in region.countries()">
-                                      <a ng-href="#!/{{country.language}}/{{remainingUrl(country.language)}}" tooltip="{{country.languageLabel() | translate}}">{{country.languageLabel() | uppercase}}
+                                      <a ng-href="/{{country.language}}/{{remainingUrl(country.language)}}" tooltip="{{country.languageLabel() | translate}}">{{country.languageLabel() | uppercase}}
                                       </a>
                                       <hr>
                                     </li>
@@ -186,12 +266,12 @@
                         <a href="https://twitter.com/PortusProject" target="_blank"><i class="fa fa-twitter-square fa-2x"></i></a>
                         <a href="http://www.portusproject.org/" target="_blank"><i class="fa fa-wordpress fa-2x"></i></a>
                     </div>
-                    <div class="col-md-4 col-lg-4 text-right hidden-xs hidden-sm" ng-controller="regionCtrl">
+                    <div class="col-md-4 col-lg-4 text-right hidden-xs hidden-sm" ng-controller="RegionCtrl">
                         
                         <ol class="list-unstyled list-inline">
                             <li class="mobile" style="margin-right:15px;"><a ng-href="{{urlBegin()}}/about">{{'FOOTER.ABOUT' | translate}}</a></li>
                             <li ng-repeat="country in region.countries()">
-                                <a class="lang" ng-href="#!/{{country.language}}/{{remainingUrl(country.language)}}" tooltip="{{country.languageLabel() | translate}}">
+                                <a class="lang" ng-href="/{{country.language}}/{{remainingUrl(country.language)}}" tooltip="{{country.languageLabel() | translate}}">
                                     <img ng-src="logos/{{country.language}}.png">
                                 </a>
                             </li>

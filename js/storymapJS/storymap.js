@@ -6999,9 +6999,9 @@ VCO.Slide = VCO.Class.extend({
 			pad_right 	= 0 + "px";
 			new_width	= this.options.width - 0 + "px";
 		} else if (layout == "landscape") {
-			pad_left 	= 40 + "px";
-			pad_right	= 75 + "px";
-			new_width	= this.options.width - (75 + 40) + "px";
+			pad_left 	= 30 + "px";
+			pad_right	= 30 + "px";
+			new_width	= this.options.width - (30 + 30) + "px";
 		
 		} else if (this.options.width <= this.options.skinny_size) {
 			pad_left 	= this.options.slide_padding_lr + "px";
@@ -7823,10 +7823,10 @@ VCO.StorySlider = VCO.Class.extend({
 		}
 		
 		if (localStorage.getItem("ls.locale.main").contains("en")) {
-			this._startmessage.updateMessage("<div class='message-tours'>Select the previous or next tour<br><div class='itemHolderMessage'><div class='imageHolder'><a href='#!/" + prevTour() + "'><img src='logos/mini-tours/" + this._prevTour + ".png' ng-src='logos/mini-tours/" + this._prevTour + ".png'></a></div><div class='textHolderWhite'><div class='text'>" + this._prevTour + "</div></div></div><div class='itemHolderMessage'><div class='imageHolder'><a href='#!/" + nextTour() + "'><img src='logos/mini-tours/" + nextTour().split('/')[1] + ".png' ng-src='logos/mini-tours/" + nextTour().split('/')[1] + ".png'></a></div><div class='textHolderWhite'><div class='text'>" + nextTour().split('/')[1] + "</div></div></div><br><span class='vco-button'>CLOSE</span></div>");
+			this._startmessage.updateMessage("<div class='message-tours'>Select the previous or next tour<br><div class='itemHolderMessage'><div class='imageHolder'><a href='/" + prevTour() + "'><img src='logos/mini-tours/" + this._prevTour + ".png' ng-src='logos/mini-tours/" + this._prevTour + ".png'></a></div><div class='textHolderWhite'><div class='text'>" + this._prevTour + "</div></div></div><div class='itemHolderMessage'><div class='imageHolder'><a href='/" + nextTour() + "'><img src='logos/mini-tours/" + nextTour().split('/')[1] + ".png' ng-src='logos/mini-tours/" + nextTour().split('/')[1] + ".png'></a></div><div class='textHolderWhite'><div class='text'>" + nextTour().split('/')[1] + "</div></div></div><br><span class='vco-button'>CLOSE</span></div>");
 		}
 		else {
-			this._startmessage.updateMessage("<div class='message-tours'>Select the previous or next tour<br><div class='itemHolderMessage'><div class='imageHolder'><a href='#!/" + prevTour() + "'><img src='logos/mini-tours/" + this._prevTour + ".png' ng-src='logos/mini-tours/" + this._prevTour + ".png'></a></div><div class='textHolderWhite'><div class='text'>" + this._prevTour + "</div></div></div><div class='itemHolderMessage'><div class='imageHolder'><a href='#!/" + nextTour() + "'><img src='logos/mini-tours/" + nextTour().split('/')[1] + ".png' ng-src='logos/mini-tours/" + nextTour().split('/')[1] + ".png'></a></div><div class='textHolderWhite'><div class='text'>" + nextTour().split('/')[1] + "</div></div></div><br><span class='vco-button'>CLOSE</span></div>");
+			this._startmessage.updateMessage("<div class='message-tours'>Select the previous or next tour<br><div class='itemHolderMessage'><div class='imageHolder'><a href='/" + prevTour() + "'><img src='logos/mini-tours/" + this._prevTour + ".png' ng-src='logos/mini-tours/" + this._prevTour + ".png'></a></div><div class='textHolderWhite'><div class='text'>" + this._prevTour + "</div></div></div><div class='itemHolderMessage'><div class='imageHolder'><a href='/" + nextTour() + "'><img src='logos/mini-tours/" + nextTour().split('/')[1] + ".png' ng-src='logos/mini-tours/" + nextTour().split('/')[1] + ".png'></a></div><div class='textHolderWhite'><div class='text'>" + nextTour().split('/')[1] + "</div></div></div><br><span class='vco-button'>CLOSE</span></div>");
 		}	
 				this._startmessage.addTo(this._el.container);
 			
@@ -7848,10 +7848,10 @@ VCO.StorySlider = VCO.Class.extend({
 		}
 
 		if (localStorage.getItem("ls.locale.main").contains("en")) {
-			this._finalmessage.updateMessage("<div class='message-tours'>Select the previous or next tour<br><div class='itemHolderMessage'><div class='imageHolder'><a href='#!/" + prevTour() + "'><img src='logos/mini-tours/" + this._prevTour + ".png' ng-src='logos/mini-tours/" + this._prevTour + ".png'></a></div><div class='textHolderWhite'><div class='text'>" + this._prevTour + "</div></div></div><div class='itemHolderMessage'><div class='imageHolder'><a href='#!/" + nextTour() + "'><img src='logos/mini-tours/" + nextTour().split('/')[1] + ".png' ng-src='logos/mini-tours/" + nextTour().split('/')[1] + ".png'></a></div><div class='textHolderWhite'><div class='text'>" + nextTour().split('/')[1] + "</div></div></div><br><span class='vco-button'>CLOSE</span></div>");
+			this._finalmessage.updateMessage("<div class='message-tours'>Select the previous or next tour<br><div class='itemHolderMessage'><div class='imageHolder'><a href='/" + prevTour() + "'><img src='logos/mini-tours/" + this._prevTour + ".png' ng-src='logos/mini-tours/" + this._prevTour + ".png'></a></div><div class='textHolderWhite'><div class='text'>" + this._prevTour + "</div></div></div><div class='itemHolderMessage'><div class='imageHolder'><a href='/" + nextTour() + "'><img src='logos/mini-tours/" + nextTour().split('/')[1] + ".png' ng-src='logos/mini-tours/" + nextTour().split('/')[1] + ".png'></a></div><div class='textHolderWhite'><div class='text'>" + nextTour().split('/')[1] + "</div></div></div><br><span class='vco-button'>CLOSE</span></div>");
 		}
 		else {
-			this._finalmessage.updateMessage("<div class='message-tours'>Select the previous or next tour<br><div class='itemHolderMessage'><div class='imageHolder'><a href='#!/" + prevTour() + "'><img src='logos/mini-tours/" + this._prevTour + ".png' ng-src='logos/mini-tours/" + this._prevTour + ".png'></a></div><div class='textHolderWhite'><div class='text'>" + this._prevTour + "</div></div></div><div class='itemHolderMessage'><div class='imageHolder'><a href='#!/" + nextTour() + "'><img src='logos/mini-tours/" + nextTour().split('/')[1] + ".png' ng-src='logos/mini-tours/" + nextTour().split('/')[1] + ".png'></a></div><div class='textHolderWhite'><div class='text'>" + nextTour().split('/')[1] + "</div></div></div><br><span class='vco-button'>CLOSE</span></div>");
+			this._finalmessage.updateMessage("<div class='message-tours'>Select the previous or next tour<br><div class='itemHolderMessage'><div class='imageHolder'><a href='/" + prevTour() + "'><img src='logos/mini-tours/" + this._prevTour + ".png' ng-src='logos/mini-tours/" + this._prevTour + ".png'></a></div><div class='textHolderWhite'><div class='text'>" + this._prevTour + "</div></div></div><div class='itemHolderMessage'><div class='imageHolder'><a href='/" + nextTour() + "'><img src='logos/mini-tours/" + nextTour().split('/')[1] + ".png' ng-src='logos/mini-tours/" + nextTour().split('/')[1] + ".png'></a></div><div class='textHolderWhite'><div class='text'>" + nextTour().split('/')[1] + "</div></div></div><br><span class='vco-button'>CLOSE</span></div>");
 		}
 				this._finalmessage.updateMessageOpen(true);
 
@@ -17001,7 +17001,8 @@ VCO.Map = VCO.Class.extend({
 		this.options = {
 			
 			map_background_color: "#d9d9d9",
-			skinny_size: 		650,
+			small_size:         768, 
+			skinny_size: 		375,
 			less_bounce: 		true,
 			path_gfx: 			"gfx",
 			start_at_slide: 	0,
@@ -18742,7 +18743,8 @@ VCO.StoryMap = VCO.Class.extend({
 			call_to_action: 		false,
 			call_to_action_text: 	"",
 			menubar_height: 		0,
-			skinny_size: 			650,
+			small_size:             768, 
+			skinny_size: 		    375,
 			relative_date: 			false, 			// Use momentjs to show a relative date from the slide.text.date.created_time field
 			// animation
 			duration: 				1000,
@@ -19039,11 +19041,11 @@ VCO.StoryMap = VCO.Class.extend({
 		// Update width and height
 		this.options.width = this._el.container.offsetWidth;
 		this.options.height = this._el.container.offsetHeight;
-		
+
 		// Check if skinny
-		if (this.options.width <= this.options.skinny_size) {
+		if (this.options.width <= this.options.small_size) {
 			this.options.layout = "portrait";
-			//display_class += " vco-skinny";
+			// display_class += " vco-small";
 		} else {
 			this.options.layout = "landscape";
 		}
@@ -19066,7 +19068,17 @@ VCO.StoryMap = VCO.Class.extend({
 		
 		// LAYOUT
 		if (this.options.layout == "portrait") {
-			display_class += " vco-skinny";
+
+			if (this.options.width <= this.options.skinny_size) {
+				display_class += " vco-skinny";
+				console.log(display_class);
+			}
+				else if (this.options.width <= this.options.small_size) {
+				display_class += " vco-small";
+				console.log(display_class);
+			}
+
+			// display_class += " vco-skinny";
 			// Map Offset
 			this._map.setMapOffset(0, 0);
 
