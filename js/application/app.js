@@ -4,7 +4,8 @@ var angtranslations = {
 			TITLE: "Portus Tour",
 			HEADLINE: "Explore the history of Portus through the interactive storymaps and timeline",
 			SELECTTOUR: "Select a Tour",
-			LEARNMORE: "Explore More"
+			LEARNMORE: "Explore More",
+			START: "START"
 		},
 		ABOUT: {
 			ABOUT: "· ABOUT ·",
@@ -20,7 +21,8 @@ var angtranslations = {
 			ABOUTFS: "the decline of the port from the 5th century onwards.",
 			ABOUTMOD: "the site and the ruins of Portus as it is today.",
 			ABOUTTIME: "a timeline of the work that has been carried out at Portus, from antiquarians to the present day.",
-			ABOUTEND: "Or select continue below to start the tour"
+			ABOUTEND: "Or select continue below to start the tour",
+			CONTINUE: "CONTINUE"
 		},
 		LANGUAGES: {
 			ENGLISH: "English",
@@ -63,12 +65,13 @@ var angtranslations = {
 				TITLE: "Portus Visita",
 				HEADLINE: "Esplora la storia di Porto attraverso i storymaps interattivi e cronologia",
 				SELECTTOUR: "Selezionare un Tour",
-				LEARNMORE: "Esplorare"
+				LEARNMORE: "Esplorare",
+				START: "ENTRA"
 		},
 		ABOUT: {
-				ABOUT: "· ABOUT ·",
-				ABOUTTEXT: "Portus was the maritime port of Imperial Rome between the mid-1st century AD and the 6th century AD. It was the focus of a network of ports and, together with the neighbouring river port at Ostia, it was the commercial hub that connected the city to the rest of the Mediterranean world. It played a key role in re-distributing imports from other Mediterranean ports to supply the city and, to a lesser extent, exporting products from the Tiber valley. It was established under the emperor Claudius, subsequently enlarged by Trajan and successive emperors into the 4th century AD, until its gradual decline in the later 5th and 6th centuries AD",
-				ABOUTSUBTEXT: "Porto (l’antico Portus) era il porto marittimo di Roma antica e, con il vicino porto fluviale di Ostia, è stato al centro di una rete di porti che collegavano Roma Imperiale tra la metà del I secolo e il VI secolo d.C. Questo tour fa parte del sito web della Soprintendenza Speciale per i Beni Archeologici di Roma (SSBAR), organo periferico del Ministero per i Beni e le Attività Culturali (MIBAC), ed è stato creato in collaborazione con il",
+				ABOUT: "· INFORMAZIONE ·",
+				ABOUTTEXT: "",
+				ABOUTSUBTEXT: "Porto (l’antico Portus) era il porto marittimo di Roma antica e, con il vicino porto fluviale di Ostia, è stato al centro di una rete di porti che collegavano Roma Imperiale tra la metà del I secolo e il VI secolo d.C. Questo tour fa parte del sito web della Soprintendenza Speciale per i Beni Archeologici di Roma (SSBAR), organo periferico del Ministero per i Beni e le Attività Culturali (MIBAC), ed è stato creato in collaborazione con il.",
 			ABOUTSUBSUBTEXT: "Each tour covers a different period in time. These are:",
 			ABOUTCLA: " - stretching from the beginning of the port's construction in c. AD 46 until its inauguration under the Emperor Nero in AD 64.",
 			ABOUTTRA: " - covering the development of the port during the reign of the emperor Trajan, with the majority of work probably concentrated between AD 110-117.",
@@ -76,7 +79,8 @@ var angtranslations = {
 			ABOUTFS: " - the decline of the port from the 5th century onwards.",
 			ABOUTMOD: " - the site and the ruins of Portus as it is today.",
 			ABOUTTIME: " - a timeline of the work that has been carried out at Portus, from antiquarians to the present day.",
-			ABOUTEND: "Or select continue below to start the tour"	
+			ABOUTEND: "Or select continue below to start the tour",
+			CONTINUE: "CONTINUA"	
 		},
 		LANGUAGES: {
 			ENGLISH: "English",
@@ -95,7 +99,7 @@ var angtranslations = {
 			SELECTALANG: "LINGUA",
 			SELECTATOUR: "VISTA",
 			GEOLOCATION: "GEOLOCATION",
-			ABOUT: "ABOUT",
+			ABOUT: "INFORMAZIONE",
 			GEOON: "On",
 			GEOOFF: "Off",
 			MAPS: "Mappe",
@@ -106,7 +110,7 @@ var angtranslations = {
 			USING: "con"
 		},
 		FOOTER: {
-			ABOUT: "About",
+			ABOUT: "Informazione",
 			CREATEDBY: "Creato da ",
 			USING: "con",
 			SUPPORT: "Sostenuto da",
@@ -629,7 +633,7 @@ new t1.o.Page(
 	}
 )];
 
-var app = angular.module('Map_View', ['ui.router', 'ui.bootstrap', 'pascalprecht.translate', 'ngSanitize', 'LocalStorageModule', 'ngAnimate', 'ocNgRepeat', 'ngGeolocation']);
+var app = angular.module('Map_View', ['ui.router', 'ui.bootstrap', 'pascalprecht.translate', 'ngSanitize', 'LocalStorageModule', 'ngAnimate', 'ocNgRepeat']);
 
 app.config(function($stateProvider, $urlRouterProvider, $locationProvider) {
 
@@ -910,9 +914,7 @@ app.controller("RegionCtrl", ["$scope", "$rootScope", "$log", "$translate", "$lo
                     console.log(a.region.country());
                 }
                 a.region.country(b.user.getLocale().main);
-                console.log(a.region.country());
             }
-            console.log(a.region.country());
         }),
 
         b.$on("$locationChangeStart", function() {
@@ -983,7 +985,9 @@ app.controller("RegionCtrl", ["$scope", "$rootScope", "$log", "$translate", "$lo
         };
 	});
 	
-	app.run(function($state, $rootScope, $urlRouter, $location) {
+	app.run(function($state, $rootScope, $urlRouter, $location, $window) {
+
+		$window.ga('create', 'UA-17304354-25', 'auto');
 		
 		$rootScope
 			.$on('$stateChangeStart',
@@ -999,6 +1003,7 @@ app.controller("RegionCtrl", ["$scope", "$rootScope", "$log", "$translate", "$lo
 					// console.log("stateChangeSuccess:");
 					// console.log(event);
 					// console.log(toState);
+					$window.ga('send', 'pageview', $location.path());
 		});	
 
 		$rootScope
@@ -1032,34 +1037,6 @@ app.controller("RegionCtrl", ["$scope", "$rootScope", "$log", "$translate", "$lo
 	});
 
 
- 	app.controller('GeoCtrl', ['$scope', '$state', '$stateParams', 'geolocator', function($scope, $state, $stateParams, geolocator){
-
- 		// $scope.DeviceCheck = function(){
- 		// 	if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
- 		// 		console.log("false");
- 		// 		return false;
-	 	// 	}
-	 	// 	else
-	 	// 	{
-	 	// 		console.log("true");
-	 	// 		return true;
-	 	// 	}
- 		// };
-
- 		$scope.GeoOnOff = function(){
-	 		if($scope.toggle === true){
-	 			geolocator.StartGeoLocation();
-	 			// geolocator.GetLocationNumber();
-	 			// GeoGo();
-	 		}
-	 		else
-	 		{
-	 			geolocator.StopGeoLocation();
-	 		}
- 		};
-
- 	}]);
-
  	app.factory('tourLoader', function($q, $timeout, options){
  		return function(options){
  			var deferred = $q.defer(),
@@ -1078,112 +1055,6 @@ app.controller("RegionCtrl", ["$scope", "$rootScope", "$log", "$translate", "$lo
  			return deferred.promise;
  		};
  	});
-
-
-	app.service('geolocator', ['$rootScope', '$state', '$geolocation',
-		function($rootScope, $state, $geolocation){
-
-		errorHandler = function (err){
-			if(err.code == 1) 
-				{
-					alert("Error: Access is denied");
-				}
-				else if(err.code == 2)
-				{
-					alert("Error: Position is unavailable");
-				}
-			};
-
-		
-
-		// Display a map centered at the specified coordinate with a marker and InfoWindow.
-		ClosestLocation = function (lat, lon){
-
-		        // Find the closest feature to the user's location
-		        var closest = 0;
-		        var mindist = 99999;
-
-		        for(var i = 0; i < locations.length; i++) 
-			        {
-			            // get the distance between user's location and this point
-			            var dist = Haversine(locations[i].lat, locations[i].lon, lat, lon);
-
-			            // check if this is the shortest distance so far
-			            if (dist < mindist)
-			            {
-			                closest = i;
-			                mindist = dist;
-			            }
-			        }
-				
-					// Get feature Index for closest location
-					slideIndex = locations[closest];
-					return slideIndex;
-
-					// Get that feature ID's period number
-					// var e = locations.length;
-					// while(e--){
-					// 	if(locations[e].id === slide)
-					// 	break;
-					// 	}	
-					// slideNumber = e;
-		};
-
-		UserLocation = function (position)
-		    {
-		        ClosestLocation(position.coords.latitude, position.coords.longitude);
-		    };
-
-		
-
-		this.StartGeoLocation = function(){
-			// if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-				if(navigator.geolocation)
-					{
-							var options = {timeout: 10000, enableHighAccuracy: true};
-							// watchID = navigator.geolocation.watchPosition(UserLocation, errorHandler, options);
-							watchID = $geolocation.watchPosition(options);
-							// alert("Geolocation has been turned on" + watchID);
-					}
-					else
-					{	
-			            	// ClosestLocation(50.928977, -1.403055);
-							alert("Geolocation is not supported in your browser");
-					}
-
-					$rootScope.$watch('myPosition.coords', function (newValue, oldValue){
-						console.log(newValue);
-					});
-				
-			
-		};
-
-		GetLocationNumber = function(){
-
-			var slideNumber = ClosestLocation();
-			var slideNumberPeriods = slideNumber.periods;
-
-			var tourPeriod = $state.current.data.tourPeriod;
-
-			// Get that feature ID's period number
-			if(slideNumberPeriods.hasOwnProperty(tourPeriod)){
-    			var slideID = slideNumberPeriods[tourPeriod];
- 				return slideID;
-    		}
-		};
-
-		GeoGo = function(){
-			console.log(GetLocationNumber());
-			goTo(GetLocationNumber());
-		};  
-			
-		this.StopGeoLocation = function(){
-			navigator.geolocation.clearWatch(watchID);
-			watchID = null;
-			alert("Geolocation has been turned off" + watchID);
-		};
-	
-	}]);
 
 	app.controller('carouselCtrl', ['$scope', function(a) {
 
@@ -1206,7 +1077,6 @@ app.controller("RegionCtrl", ["$scope", "$rootScope", "$log", "$translate", "$lo
         }(),
 
 		ctrl.NavEN = a.tour.tours(),
-		console.log(ctrl.NavEN);
 
       	ctrl.carouselInitializer = function() {
 	        $(".carouselDiv").owlCarousel({
@@ -1218,28 +1088,8 @@ app.controller("RegionCtrl", ["$scope", "$rootScope", "$log", "$translate", "$lo
       	
     }]);
 
-    app.controller('menuCtrl', ['$scope', '$controller', function($scope, $controller){
-
-	$controller('RegionCtrl', {$scope: $scope});
-	var a = $scope.region.country();
-
-	$scope.test = a;
-	// console.log(a);
-
-    }]);
-
-    app.directive('menuLoad', [function(){
-
-    	var menuTemplate = '<nav class="navbar"><div class="container-fluid"><div id="menuOpener" class ="col-xs-1 col-xs-offset-11 col-sm-1 col-sm-offset-11 col-md-1 col-md- offset-11 col-lg-1 col-lg-offset-11"><button type="button" class="navbar- toggle collapse visible" data-toggle="push" data-target="#navbar"aria- expanded="false" aria-controls="navbar"><span class="sr-only">Toggle navigation</span><i class="fa fa-bars fa-2x"></i></button></div><div id="navbar"><ul class="nav navbar-nav" role="menu"><h3>Portus Tour</h3><hr/><li class="dropdown open">  <a ng-href="#" class="dropdown- toggle" data-toggle="dropdown" role="button" aria- expanded="false">Switch Language <span class="caret"></span></a> <ul class="dropdown-menu" role="menu"><li><a ng-href="#">English</a></li><li class="divider"></li><li><a ng-href="#">Italian</a></li><li class="divider"></li> </ul>   </li>   <li class="dropdown"> <a ng-href="#" class="dropdown-toggle" data- toggle="dropdown" role="button" aria- expanded="false">Select Tour <span class="caret"></span></a> <ul class ="dropdown-menu" role="menu">   <li><a ng-href="#">Claudian</a></li>   <li class="divider"></li>   <li><a ng- href="#">Trajanic</a></li>   <li class="divider"></li>   <li><a ng-href="#">Severan</a></li>   <li class="divider"></li>   <li><a ng-href="#">Fifth-Seventh</a></li>   <li class="divider"></li>   <li><a ng- href="#">Virtual Tour</a></li>   <li class="divider"></li>   <li><a ng-href="#">Modern Tour</a></li>   <li class="divider"></li> </ul>   </li>   <li class="dropdown open"> <a class ="dropdown-toggle" data-toggle="dropdown"role="button" aria- expanded="false">Geolocation <span class="caret"></span></a> <ul class ="dropdown-menu"role="menu">   <li><a ng-click="GeoOn()">On</a></li> <li class="divider"></li>   <li><a ng- click="toggleGeo()">Off</a></li> <li class="divider"></li> </ul>   </li>   <li class="dropdown open"> <a ng-href="#"class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Maps <span class="caret"></span></a> <ul class ="dropdown-menu" role="menu">   <li><a class="leaflet-control-layers- selector"name="leaflet-base-layers" onclick="onInputClick();" ng- href="#">Drawing</a></li>   <li class="divider"></li> <li><a class ="leaflet-control-layers-selector" name="leaflet-base-layers" ng- href="#">Satellite</a></li>   <li class="divider"></li> </ul>   </li> </ul> <div id"vcomenubar"></div> </div>   </div> </nav>';
-
-    	return {
-
-    	};
-
-    }]);
-
-	app.controller('storymapCtrl', ['$scope', '$state', '$stateParams', '$location', 'geolocator', "$translate", "$translatePartialLoader",
-      function($scope, $state, $stateParams, $location, geolocator, $translate, $translatePartialLoader) {
+	app.controller('storymapCtrl', ['$scope', '$state', '$stateParams', '$location', "$translate", "$translatePartialLoader",
+      function($scope, $state, $stateParams, $location, $translate, $translatePartialLoader) {
 
       	paramVal = $stateParams.start_at_slide;
 
@@ -1285,6 +1135,10 @@ app.controller("RegionCtrl", ["$scope", "$rootScope", "$log", "$translate", "$lo
 
 		window.onresize = function(event) {
 		storymap.updateDisplay();
+		};
+
+		currentTour = function(){
+			return tourPeriod;
 		};
 
 		nextTour = function(){

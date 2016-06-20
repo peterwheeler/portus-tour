@@ -286,20 +286,6 @@
     border: 1px solid #faebcc;
 }
 
-@media only screen and (max-width:800px),only screen and (max-device-width:800px) {
-    .vco-storymap h1,.vco-storymap h2,.vco-storymap h3 {
-        font-size: 36px;
-        line-height: 36px;
-    }
-}
-
-@media only screen and (max-width:500px),only screen and (max-device-width:500px) {
-    .vco-storymap h1,.vco-storymap h2,.vco-storymap h3 {
-        font-size: 32px;
-        line-height: 32px;
-    }
-}
-
 .vco-small h2 {
     margin-top: 0;
     padding-top: 10px;
@@ -329,180 +315,12 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
-.vco-icon-vine:after {
-    content: "\e64d";
-}
-
-.vco-icon-wikipedia:after {
-    content: "\e64e";
-}
-
 .vco-icon-chevron-right:after {
     content: "\e64f";
 }
 
 .vco-icon-chevron-left:after {
     content: "\e650";
-}
-
-.vco-icon-youtube-logo:after {
-    content: "\e651";
-}
-
-.vco-icon-foursquare:after {
-    content: "\e652";
-}
-
-.vco-icon-camera-retro:after {
-    content: "\e653";
-}
-
-.vco-icon-doc:after {
-    content: "\e654";
-}
-
-.vco-icon-weibo:after {
-    content: "\e655";
-}
-
-.vco-icon-resize-horizontal:after {
-    content: "\e656";
-}
-
-.vco-icon-resize-vertical:after {
-    content: "\e657";
-}
-
-.vco-icon-resize-full:after {
-    content: "\e658";
-}
-
-.vco-icon-resize-small:after {
-    content: "\e659";
-}
-
-.vco-icon-twitter:after {
-    content: "\e62b";
-}
-
-.vco-icon-google-plus:after {
-    content: "\e62c";
-}
-
-.vco-icon-video:after {
-    content: "\e62d";
-}
-
-.vco-icon-youtube:after {
-    content: "\e62d";
-}
-
-.vco-icon-plaintext:after {
-    content: "\e62e";
-}
-
-.vco-icon-storify:after {
-    content: "\e62e";
-}
-
-.vco-icon-image-v2:after {
-    content: "\e62f";
-}
-
-.vco-icon-quote-v2:after {
-    content: "\e630";
-}
-
-.vco-icon-zoom-in:after {
-    content: "\e631";
-}
-
-.vco-icon-zoom-out:after {
-    content: "\e632";
-}
-
-.vco-icon-list:after {
-    content: "\e633";
-}
-
-.vco-icon-music:after {
-    content: "\e634";
-}
-
-.vco-icon-location:after {
-    content: "\e635";
-}
-
-.vco-icon-web:after {
-    content: "\e636";
-}
-
-.vco-icon-share-v2:after {
-    content: "\e637";
-}
-
-.vco-icon-soundcloud:after {
-    content: "\e639";
-}
-
-.vco-icon-video-v2:after {
-    content: "\e63a";
-}
-
-.vco-icon-dailymotion:after {
-    content: "\e63a";
-}
-
-.vco-icon-tumblr:after {
-    content: "\e63b";
-}
-
-.vco-icon-lastfm:after {
-    content: "\e63c";
-}
-
-.vco-icon-github:after {
-    content: "\e63d";
-}
-
-.vco-icon-goback:after {
-    content: "\e63e";
-}
-
-.vco-icon-doc-v2:after {
-    content: "\e63f";
-}
-
-.vco-icon-googledrive:after {
-    content: "\e640";
-}
-
-.vco-icon-facebook:after {
-    content: "\e641";
-}
-
-.vco-icon-flickr:after {
-    content: "\e642";
-}
-
-.vco-icon-dribbble:after {
-    content: "\e643";
-}
-
-.vco-icon-image:after {
-    content: "\e605";
-}
-
-.vco-icon-vimeo:after {
-    content: "\e606";
-}
-
-.vco-icon-instagram:after {
-    content: "\e644";
-}
-
-.vco-icon-pinterest:after {
-    content: "\e645";
 }
 
 .vco-icon-arrow-left:after {
@@ -521,20 +339,8 @@
     content: "\e649";
 }
 
-.vco-icon-share:after {
-    content: "\e64a";
-}
-
 .vco-icon-blockquote:after {
     content: "\e64b";
-}
-
-.vco-icon-evernote:after {
-    content: "\e64c";
-}
-
-.vco-icon-mappin:after {
-    content: "\e600";
 }
 
 .vco-icon-swipe-right:after {
@@ -664,7 +470,7 @@
 .menubar, .menubar a, .menubar p, .menubar label {
     line-height: normal;
     text-align: center;
-    font-family: 'Forum', cursive !important;
+    font-family: 'Forum', cursive;
     font-size: 14px;
     font-weight: 600;
     text-transform: uppercase;

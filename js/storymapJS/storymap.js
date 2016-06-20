@@ -4946,7 +4946,6 @@ VCO.MenuBar = VCO.Class.extend({
 	},
 	
 	_initEvents: function () {
-		trace(1);
 	},
 	
 	// Update Display
@@ -17224,7 +17223,6 @@ VCO.Map = VCO.Class.extend({
 	},
 
 	createLayerControl: function() {
-		trace(2);
 		return this._createLayerControl();
 	},
 	
@@ -18772,6 +18770,7 @@ VCO.StoryMap = VCO.Class.extend({
 			show_history_line: 		true,
 			api_key_flickr: 		"f2cc870b4d233dd0a5bfe73fd0d64ef0",
 			language:               "",
+			current_slide: 			0, 
 			maps: [{
 					// map config
 					map_type: 				"stamen:toner-lite",
@@ -18802,7 +18801,8 @@ VCO.StoryMap = VCO.Class.extend({
 		
 		// Current Slide
 		this.current_slide = this.options.start_at_slide;
-		
+		this.current_slide = this.options.current_slide;
+
 		// Animation Objects
 		this.animator_map = null;
 		this.animator_storyslider = null;
@@ -18980,7 +18980,7 @@ VCO.StoryMap = VCO.Class.extend({
 					this._message.updateMessage("<span class='arrow-menu'>Menu</span><div class='menuOpenerWhite'><i class='fa fa-bars fa-inverse'></i></div><div class='vco-icon-swipe-left'></div><span>Swipe to Navigate</span>");
 				}
 				else {
-					this._message.updateMessage("<span class='arrow-menu'>Menu</span><div class='menuOpenerWhite'><i class='fa fa-bars fa-inverse'></i></div><div class='vco-icon-swipe-left'></div><span>Swipe to Navigate</span>");
+					this._message.updateMessage("<span class='arrow-menu'>Menu</span><div class='menuOpenerWhite'><i class='fa fa-bars fa-inverse'></i></div><div class='vco-icon-swipe-left'></div><span>Passage e Continua</span>");
 				}
 				this._message.addTo(this._el.container);
 			}
@@ -19071,11 +19071,9 @@ VCO.StoryMap = VCO.Class.extend({
 
 			if (this.options.width <= this.options.skinny_size) {
 				display_class += " vco-skinny";
-				console.log(display_class);
 			}
 				else if (this.options.width <= this.options.small_size) {
 				display_class += " vco-small";
-				console.log(display_class);
 			}
 
 			// display_class += " vco-skinny";
@@ -19197,6 +19195,12 @@ VCO.StoryMap = VCO.Class.extend({
 			this.current_slide = e.current_slide;
 			this._map.goTo(this.current_slide);
 			this.fire("change", {current_slide: this.current_slide}, this);
+			ga('send', 'event', {
+						  eventCategory: 'Slide',
+						  eventAction: 'change',
+						  eventLabel: currentTour(),
+						  eventValue: this.current_slide
+						});
 		}
 	},
 	

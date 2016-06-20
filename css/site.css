@@ -10,12 +10,12 @@ body{
 }
 
 h1, h2, h3, p, a {
-    font-family: 'Forum', cursive !important;
-    /*font-weight: 600;*/
+    font-family: 'Forum', cursive;
+    font-weight: 400;
     color: #333;
     text-decoration: none;
 }
-s
+
 a:hover, a:active, a:focus, p:hover, p:active, p:focus {
     text-decoration: none;
 }
@@ -59,7 +59,6 @@ html, #mainDiv {
   position: absolute;
   margin: 15px;
   margin-left: 20px;
-  z-index: 10000;
 }
 
 .titleBox-mobile {
@@ -188,7 +187,12 @@ html, #mainDiv {
 
 .footer p {
     margin: 5px;
+    font-size: 16px;
 }
+
+/*.footer a {
+  font-size: 16px;
+}*/
 
 .logoHolder li {
         width:120px;
@@ -307,9 +311,9 @@ html, #mainDiv {
 .textHolder {
   line-height: normal;
   text-align: center;
-  font-family: 'Forum', cursive !important;
-  font-size: 14px;
-  font-weight: 600;
+  font-family: 'Forum', cursive;
+  font-size: 18px;
+  font-weight: 400;
   text-transform: uppercase;
   color: #333;
 }
@@ -357,6 +361,7 @@ html, #mainDiv {
 }
 
 .aboutText {
+  font-size: 18px;
 }
 
 .aboutSubtext {
@@ -767,9 +772,9 @@ hr.style {
 .textHolderWhite{
   line-height: normal;
   text-align: center;
-  font-family: 'Forum', cursive !important;
-  font-size: 14px;
-  font-weight: 600;
+  font-family: 'Forum', cursive;
+  font-size: 18px;
+  font-weight: 400;
   text-transform: uppercase;
   color: #fff;
 }
@@ -789,13 +794,11 @@ hr.style {
 ============================================================================= 
 ============================================================================= */
 
-
 @media (min-width: 320px) and (max-width: 380px) {
 
     .thebody {
         padding-bottom: 0px;
         margin-bottom: 60px;
-        background-size: auto 80%;
     }
 
     .thebody {
@@ -916,6 +919,34 @@ hr.style {
         position: relative;
         height: 100px;
     }
+
+    .beginText {
+      font-size: 24px;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 360px) {
+
+  .thebody {
+        background-image: url(../images/back-mobile.jpg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: 90%;
+        background-color: #fff;
+    }
+}
+
+@media (min-width: 361px) and (max-width: 380px) {
+
+  .thebody {
+        background-image: url(../images/back-mobile.jpg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: 100%;
+        background-color: #fff;
+    }
 }
 
 @media (min-width: 381px) and (max-width: 768px) {
@@ -925,14 +956,14 @@ hr.style {
         margin-bottom: 60px
     }
 
-    /*.thebody {
+    .thebody {
         background-image: url(../images/back-mobile.jpg);
         background-position: center center;
         background-repeat: no-repeat;
         background-attachment: fixed;
         background-size: cover;
         background-color: #fff;
-    }*/
+    }
 
     .thebody:before {
         margin-bottom: 64px;
@@ -946,6 +977,15 @@ hr.style {
     .navbar {
         display: block;
         margin-top: 50%;
+    }
+
+    .navbar-nav {
+        margin: 0;
+        float: none;
+    }
+
+    .navbar-nav li {
+        float: none;
     }
 
     .headerText {
@@ -996,7 +1036,6 @@ hr.style {
         overflow-y: auto; 
     }
     
-    /*Footer*/
     .footer {
         height: 60px;
         padding: 5px 0 5px 0;
@@ -1040,7 +1079,6 @@ hr.style {
         font-size: 24px;
     }
 
-    /*Footer*/
     .footer {
         height: 64px;
     }
