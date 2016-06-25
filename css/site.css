@@ -323,11 +323,47 @@ html, #mainDiv {
 }
 
 .line {
-    height: 50px;
-    width: 3px;
-    background: #333;
-    margin: 0 auto;
+  height: 50px;
+  width: 3px;
+  background: #333;
+  margin: 0 auto;
 }
+
+/* Share Button and Copy Popup
+============================================================================= */
+.shareButton {
+  display: block;
+  position: absolute;
+  right: 20px;
+  bottom: 10px;
+  z-index: 999;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.popupContent {
+  margin: 70px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  width: 30%;
+  position: relative;
+  transition: all 5s ease-in-out;
+}
+
+.popupContent h2 {
+  margin-top: 0;
+  color: #333;
+  font-family: Tahoma, Arial, sans-serif;
+}
+
+.clipboardContainer {
+  max-height: 30%;
+  overflow: auto;
+  display: block;
+  padding: 0;
+}
+
 
 /* About
 ============================================================================= */
@@ -868,6 +904,10 @@ hr.style {
         -webkit-overflow-scrolling: touch;
         max-height: 400px;
     }
+
+    .shareButton {
+        display: none;
+    }
     
     /* Overlay */
     .tourCarousel {
@@ -998,6 +1038,10 @@ hr.style {
 
     .logoHolder li {
         width: 100px;
+    }
+
+    .shareButton {
+        display: none;
     }
 
     /* Overlay */

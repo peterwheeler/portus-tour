@@ -1,4 +1,23 @@
 <head>
-   <title>Portus Tour - Severan Period</title>
+    <title>Portus Tour - Severan Period</title>
 </head>
-<div id="storymap_period_3" ng-animate></div>
+<div id="storymap_period_3" ng-animate>
+    <div class="shareButton">
+        <i class="fa fa-share-alt" aria-hidden="true" data-toggle="modal" data-target="#copyPopup" onclick="currentSlide()"></i>
+    </div>
+    <!-- Modal -->
+    <div id="copyPopup" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <p>Copy link to share this slide</p>
+                    <div class="input-group clipboardContainer">
+                        <input type="text" class="form-control" value="{{location}}{{urlBegin()}}/{{localizedPage(2)}}{{slideNo}}" aria-label="Share this link with {{location}}{{urlBegin()}}/{{localizedPage(0)}}?start_at_slide='{{slideNo}}'" autofocus="" onfocus="this.select();">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

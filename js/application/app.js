@@ -208,7 +208,37 @@ new t1.o.Page(
 				"height": 5844,
 				"tolerance": 0.9,
 				"attribution": "Digital Globe 2014"
-			},
+			},	
+		},
+		{
+			map_type: "zoomify",
+			map_name: "Magnetometry",
+			map_mini: true,
+			map_as_image: false,
+			calculate_zoom: false, 
+			zoomify: {
+				"name": "Plan",
+				"path": "maps/mag/",
+				"width": 5200,
+				"height": 5844,
+				"tolerance": 0.9,
+				"attribution": "Kris Strutt / University of Southampton"
+			}
+		},
+		{
+			map_type: "zoomify",
+			map_name: "Magnetometry Interpretation",
+			map_mini: true,
+			map_as_image: false,
+			calculate_zoom: false, 
+			zoomify: {
+				"name": "Plan",
+				"path": "maps/mag_int/",
+				"width": 5200,
+				"height": 5844,
+				"tolerance": 0.9,
+				"attribution": "Kris Strutt / University of Southampton"
+			}
 		}],
 		it: [{
 			map_type: "zoomify",
@@ -253,6 +283,36 @@ new t1.o.Page(
 				"height": 5844,
 				"tolerance": 0.9,
 				"attribution": "Digital Globe 2014"
+			}
+		},
+		{
+			map_type: "zoomify",
+			map_name: "Magnetometry",
+			map_mini: true,
+			map_as_image: false,
+			calculate_zoom: false, 
+			zoomify: {
+				"name": "Plan",
+				"path": "maps/mag/",
+				"width": 5200,
+				"height": 5844,
+				"tolerance": 0.9,
+				"attribution": "Kris Strutt / University of Southampton"
+			}
+		},
+		{
+			map_type: "zoomify",
+			map_name: "Magnetometry Interpretation",
+			map_mini: true,
+			map_as_image: false,
+			calculate_zoom: false, 
+			zoomify: {
+				"name": "Plan",
+				"path": "maps/mag_int/",
+				"width": 5200,
+				"height": 5844,
+				"tolerance": 0.9,
+				"attribution": "Kris Strutt / University of Southampton"
 			}
 		}]
 	}
@@ -310,6 +370,36 @@ new t1.o.Page(
 				"tolerance": 0.9,
 				"attribution": "Digital Globe 2014"
 			}
+		},
+		{
+			map_type: "zoomify",
+			map_name: "Magnetometry",
+			map_mini: true,
+			map_as_image: false,
+			calculate_zoom: false, 
+			zoomify: {
+				"name": "Plan",
+				"path": "maps/mag/",
+				"width": 5200,
+				"height": 5844,
+				"tolerance": 0.9,
+				"attribution": "Kris Strutt / University of Southampton"
+			}
+		},
+		{
+			map_type: "zoomify",
+			map_name: "Magnetometry Interpretation",
+			map_mini: true,
+			map_as_image: false,
+			calculate_zoom: false, 
+			zoomify: {
+				"name": "Plan",
+				"path": "maps/mag_int/",
+				"width": 5200,
+				"height": 5844,
+				"tolerance": 0.9,
+				"attribution": "Kris Strutt / University of Southampton"
+			}
 		}],
 		it: [{
 			map_type: "zoomify",
@@ -354,6 +444,36 @@ new t1.o.Page(
 				"height": 5844,
 				"tolerance": 0.9,
 				"attribution": "Digital Globe 2014"
+			}
+		},
+		{
+			map_type: "zoomify",
+			map_name: "Magnetometry",
+			map_mini: true,
+			map_as_image: false,
+			calculate_zoom: false, 
+			zoomify: {
+				"name": "Plan",
+				"path": "maps/mag/",
+				"width": 5200,
+				"height": 5844,
+				"tolerance": 0.9,
+				"attribution": "Kris Strutt / University of Southampton"
+			}
+		},
+		{
+			map_type: "zoomify",
+			map_name: "Magnetometry Interpretation",
+			map_mini: true,
+			map_as_image: false,
+			calculate_zoom: false, 
+			zoomify: {
+				"name": "Plan",
+				"path": "maps/mag_int/",
+				"width": 5200,
+				"height": 5844,
+				"tolerance": 0.9,
+				"attribution": "Kris Strutt / University of Southampton"
 			}
 		}]
 	}
@@ -411,6 +531,36 @@ new t1.o.Page(
 				"tolerance": 0.9,
 				"attribution": "Digital Globe 2014"
 			}
+		},
+		{
+			map_type: "zoomify",
+			map_name: "Magnetometry",
+			map_mini: true,
+			map_as_image: false,
+			calculate_zoom: false, 
+			zoomify: {
+				"name": "Plan",
+				"path": "maps/mag/",
+				"width": 5200,
+				"height": 5844,
+				"tolerance": 0.9,
+				"attribution": "Kris Strutt / University of Southampton"
+			}
+		},
+		{
+			map_type: "zoomify",
+			map_name: "Magnetometry Interpretation",
+			map_mini: true,
+			map_as_image: false,
+			calculate_zoom: false, 
+			zoomify: {
+				"name": "Plan",
+				"path": "maps/mag_int/",
+				"width": 5200,
+				"height": 5844,
+				"tolerance": 0.9,
+				"attribution": "Kris Strutt / University of Southampton"
+			}
 		}],
 		it: [{
 			map_type: "zoomify",
@@ -455,6 +605,36 @@ new t1.o.Page(
 				"height": 5844,
 				"tolerance": 0.9,
 				"attribution": "Digital Globe 2014"
+			}
+		},
+		{
+			map_type: "zoomify",
+			map_name: "Magnetometry",
+			map_mini: true,
+			map_as_image: false,
+			calculate_zoom: false, 
+			zoomify: {
+				"name": "Plan",
+				"path": "maps/mag/",
+				"width": 5200,
+				"height": 5844,
+				"tolerance": 0.9,
+				"attribution": "Kris Strutt / University of Southampton"
+			}
+		},
+		{
+			map_type: "zoomify",
+			map_name: "Magnetometry Interpretation",
+			map_mini: true,
+			map_as_image: false,
+			calculate_zoom: false, 
+			zoomify: {
+				"name": "Plan",
+				"path": "maps/mag_int/",
+				"width": 5200,
+				"height": 5844,
+				"tolerance": 0.9,
+				"attribution": "Kris Strutt / University of Southampton"
 			}
 		}]
 	}
@@ -512,6 +692,36 @@ new t1.o.Page(
 				"tolerance": 0.9,
 				"attribution": "Digital Globe 2014"
 			}
+		},
+		{
+			map_type: "zoomify",
+			map_name: "Magnetometry",
+			map_mini: true,
+			map_as_image: false,
+			calculate_zoom: false, 
+			zoomify: {
+				"name": "Plan",
+				"path": "maps/mag/",
+				"width": 5200,
+				"height": 5844,
+				"tolerance": 0.9,
+				"attribution": "Kris Strutt / University of Southampton"
+			}
+		},
+		{
+			map_type: "zoomify",
+			map_name: "Magnetometry Interpretation",
+			map_mini: true,
+			map_as_image: false,
+			calculate_zoom: false, 
+			zoomify: {
+				"name": "Plan",
+				"path": "maps/mag_int/",
+				"width": 5200,
+				"height": 5844,
+				"tolerance": 0.9,
+				"attribution": "Kris Strutt / University of Southampton"
+			}
 		}],
 		it: [{
 			map_type: "zoomify",
@@ -556,6 +766,36 @@ new t1.o.Page(
 				"height": 5844,
 				"tolerance": 0.9,
 				"attribution": "Digital Globe 2014"
+			}
+		},
+		{
+			map_type: "zoomify",
+			map_name: "Magnetometry",
+			map_mini: true,
+			map_as_image: false,
+			calculate_zoom: false, 
+			zoomify: {
+				"name": "Plan",
+				"path": "maps/mag/",
+				"width": 5200,
+				"height": 5844,
+				"tolerance": 0.9,
+				"attribution": "Kris Strutt / University of Southampton"
+			}
+		},
+		{
+			map_type: "zoomify",
+			map_name: "Magnetometry Interpretation",
+			map_mini: true,
+			map_as_image: false,
+			calculate_zoom: false, 
+			zoomify: {
+				"name": "Plan",
+				"path": "maps/mag_int/",
+				"width": 5200,
+				"height": 5844,
+				"tolerance": 0.9,
+				"attribution": "Kris Strutt / University of Southampton"
 			}
 		}]
 	}
@@ -1099,9 +1339,6 @@ app.controller("RegionCtrl", ["$scope", "$rootScope", "$log", "$translate", "$lo
 		var tourMap = $state.current.data.tourMap;
 		var storymap_data = "json/" + tourLang + "/" + tourPeriod + ".json";
 
-		// var nextTourID = tourLang + "/" + (t1.c.pages[(tourID + 1)].path[tourLang]);
-		// var prevTourID = tourLang + "/" + (t1.c.pages[(tourID - 1)].path[tourLang]);
-
 		var storymap_options = {
 			script_path: "js/storymapJS",
 			width: "100%",
@@ -1127,14 +1364,18 @@ app.controller("RegionCtrl", ["$scope", "$rootScope", "$log", "$translate", "$lo
 
 		var storymap = new VCO.StoryMap("storymap_" + tourPeriod, storymap_data, storymap_options);
 
-
-
 		goTo = function(n){
 			storymap.goTo(n);
 		};
 
 		window.onresize = function(event) {
 		storymap.updateDisplay();
+		};
+
+		currentSlide = function(){
+			$scope.location = $location.host();
+			$scope.slideNo = "?start_at_slide=" + storymap.slideChange();
+			$scope.$apply();
 		};
 
 		currentTour = function(){

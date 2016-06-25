@@ -1,12 +1,39 @@
 <head>
-   <title>Portus Tour - Claudian Period</title>
+    <title>Portus Tour - Claudian Period</title>
 </head>
+<div id="storymap_period_1">
+    <div class="shareButton">
+        <i class="fa fa-share-alt" aria-hidden="true" data-toggle="modal" data-target="#copyPopup" onclick="currentSlide()"></i>
+    </div>
+    <!-- Modal -->
+    <div id="copyPopup" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <p>Copy link to share this slide</p>
+                    <div class="input-group clipboardContainer">
+                        <input type="text" class="form-control" value="http://{{location}}{{urlBegin()}}/{{localizedPage(0)}}{{slideNo}}" aria-label="Share this link with {{location}}{{urlBegin()}}/{{localizedPage(0)}}?start_at_slide='{{slideNo}}'" autofocus="" onfocus="this.select();">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
-<div id="storymap_period_1"></div>
-
-
-
-
-
-
-
+<!-- <script type="text/javascript">
+     $(document).ready(function() {
+            $(".vco-slide").scroll(function() {
+                alert("The Bottom");
+                // if($(".vco-slide-content").scrollTop() + $(window).height() >= $(".vco-slide-content").height())
+                // {
+                //     alert("The Bottom");
+                //     $(".shareButton").show();
+                // }
+                // else {
+                //     $(".shareButton").hide();
+                // }
+            });
+        });
+</script> -->

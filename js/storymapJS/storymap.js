@@ -18738,6 +18738,7 @@ VCO.StoryMap = VCO.Class.extend({
 			default_bg_color: 		{r:256, g:256, b:256},
 			less_bounce: 			false, 			// Less map bounce when calculating zoom, false is good when there are clusters of tightly grouped markers
 			start_at_slide: 		0,
+			current_slide:          0,
 			call_to_action: 		false,
 			call_to_action_text: 	"",
 			menubar_height: 		0,
@@ -18877,6 +18878,11 @@ VCO.StoryMap = VCO.Class.extend({
 		if (this.ready) {
 			this._updateDisplay();
 		}
+	},
+
+	slideChange: function() {
+		console.log(this.current_slide);
+		return this.current_slide;
 	},
 
 	/*	Private Methods
@@ -19194,6 +19200,7 @@ VCO.StoryMap = VCO.Class.extend({
 		if (this.current_slide != e.current_slide) {
 			this.current_slide = e.current_slide;
 			this._map.goTo(this.current_slide);
+			this.slideChange();
 			this.fire("change", {current_slide: this.current_slide}, this);
 			ga('send', 'event', {
 						  eventCategory: 'Slide',
