@@ -1,2 +1,3 @@
-/maps/
-/images/
+/dist/maps/*
+/dist/images/*
+/node_modules/*

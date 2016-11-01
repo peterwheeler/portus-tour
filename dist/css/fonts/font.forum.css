@@ -1,0 +1,146 @@
+/*@font-face {
+  font-family: 'Forum';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Forum'), url(http://fonts.gstatic.com/s/forum/v7/eMDvaUkVr_spjjcEeqYI5A.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 800;
+  src: local('Open Sans'), local('OpenSans'), url(http://fonts.gstatic.com/s/opensans/v13/cJZKeOuBrn4kERxqtaUH3VtXRa8TVwTICgirnJhmVJw.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}*/
+
+.vco-storymap {
+    font-family: 'Forum', cursive;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    color: #333;
+}
+
+.vco-storymap h1,
+.vco-storymap h2,
+.vco-storymap h3,
+.vco-storymap h4,
+.vco-storymap h5,
+.vco-storymap h6 {
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 40px
+}
+
+.vco-storymap h2.vco-headline-title {
+    font-size: 50px;
+    line-height: 50px
+}
+
+.vco-storymap p {
+    font-family: 'Forum', cursive;
+    font-size: 18px;
+    line-height: 25px
+}
+
+.vco-storymap ul {
+    font-family: 'Forum', cursive;
+}
+
+.vco-storymap .vco-media .vco-media-wikipedia h4 a {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 28px
+}
+
+.vco-storymap .vco-caption,
+.vco-storymap .vco-credit {
+    font-family: 'Forum', cursive
+}
+
+.vco-storymap .vcard {
+    font-family: 'Forum', cursive;
+    font-weight: 400
+}
+
+.vco-storymap .vco-menubar,
+.vco-storymap .vco-slidenav-next,
+.vco-storymap .vco-slidenav-previous {
+    font-family: 'Forum', cursive;
+    font-weight: 400;
+    text-transform: uppercase
+}
+
+.vco-storymap .vco-menubar .vco-menubar-button {
+    font-weight: 400
+}
+
+.vco-storymap blockquote,
+.vco-storymap blockquote p {
+    font-family: 'Forum', cursive;
+    font-style: italic
+}
+
+input[type="text"].editor-headline {
+    font-family: 'Forum', cursive;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 40px
+}
+
+@media only screen and (max-width:800px),only screen and (max-device-width:800px) {
+    /*.vco-storymap h1, .vco-storymap h2, .vco-storymap h3 {
+        font-size: 36px;
+        line-height: 36px;
+        font-weight: 600;
+    }*/
+
+    .vco-storymap h1,
+	.vco-storymap h2,
+	.vco-storymap h3,
+	.vco-storymap h4,
+	.vco-storymap h5,
+	.vco-storymap h6 {
+	    font-family: 'Open Sans', sans-serif;
+	    text-transform: uppercase;
+	    font-weight: 600;
+	    font-size: 36px;
+	    line-height: 36px
+	}
+
+	.vco-storymap h2.vco-headline-title {
+	    font-size: 40px;
+	    line-height: 40px
+	}
+}
+
+@media only screen and (max-width:500px),only screen and (max-device-width:500px) {
+    /*.vco-storymap h1, .vco-storymap h2, .vco-storymap h3 {
+        font-size: 32px;
+        line-height: 32px;
+        font-weight: 600;
+    }*/
+
+    .vco-storymap h1,
+	.vco-storymap h2,
+	.vco-storymap h3,
+	.vco-storymap h4,
+	.vco-storymap h5,
+	.vco-storymap h6 {
+	    font-family: 'Open Sans', sans-serif;
+	    text-transform: uppercase;
+	    font-weight: 600;
+	    font-size: 32px;
+	    line-height: 32px
+	}
+
+	.vco-storymap h2.vco-headline-title {
+	    font-size: 36px;
+	    line-height: 36px
+	}
+}
