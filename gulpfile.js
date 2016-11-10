@@ -21,8 +21,9 @@ gulp.task("css", function() {
 
 // Compile js & reload browsers
 gulp.task("scripts", function() {
-  gulp.src("./build/js/storymap/storymap.js")
-    .pipe(gulp.dest("./dist/js/storymap/"));  
+  gulp.src("./build/js/storymapJS/storymap.js")
+    .pipe(rename("storymap.js"))
+    .pipe(gulp.dest("./dist/js/storymapJS/"));  
 });
 
 // Compile js & reload browsers
@@ -66,7 +67,7 @@ gulp.task("serve", [], function() {
     gulp.watch("./build/css/**/*.css", ["css"]);
     gulp.watch("./build/js/**/*.js", ["js-watch"]);
     gulp.watch("./build/*.html", ["checkHTML"]);
-    gulp.watch("./index.html").on("change", browserSync.reload);
+    gulp.watch("./dist/index.html").on("change", browserSync.reload);
 });
 
 gulp.task("default", ["serve"]);

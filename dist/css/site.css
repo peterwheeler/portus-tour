@@ -7,12 +7,17 @@ body{
     height: 100%;
     padding: 0;
     margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
 }
 
-h1, h2, h3, p, a {
-    font-family: 'Forum', cursive;
+h1, h2, h3 {
+    font-weight: 700;
+    text-decoration: none;
+}
+
+p, a {
     font-weight: 400;
-    color: #333;
     text-decoration: none;
 }
 
@@ -21,8 +26,11 @@ a:hover, a:active, a:focus, p:hover, p:active, p:focus {
 }
 
 html, #mainDiv {
-    overflow-y: hidden;
     cursor: default;
+}
+
+.thebody, #storymap_period_1, #storymap_period_2, #storymap_period_3, #storymap_period_4, #storymap_period_5, #storymap_period_6, #storymap_periodo_1, #storymap_periodo_2, #storymap_periodo_3, #storymap_periodo_4, #storymap_periodo_5, #storymap_periodo_6  {
+    overflow-y: hidden;
 }
 
 .headerText {
@@ -77,31 +85,40 @@ html, #mainDiv {
 }
 
 .thebody {
-    font-family: 'Open Sans',sans-serif;
-    font-size: 14px;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-flex-direction: column;
-    flex-direction: column;
+    width: 100%;
+    height: 100%;
     min-height: 100%;
     overflow: hidden;
-    padding-bottom: 64px;
-    /*padding-top: 32px;*/
-    transition: all 600ms cubic-bezier(0.23, 1, .32, 1)
-}
-
-.thebody:before {
-    margin-bottom: 32px;
-    padding: 0 32px 32px
-}
-
-.thebody {
-    background-image: url(../images/back.jpg);
+    background-image: url(../images/harbour.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    background-color: #fff;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+}
+
+.thebody:after {
+    content: '';
+    position: absolute;
+    background-color: #000;
+    top: 0; left: 0; bottom: 0; right: 0;
+    background: radial-gradient(circle, transparent 25%, black 200%);
+    -webkit-filter: blur(10px) opacity(20%);
+}
+
+.body-content {
+    margin: 40px 0px 10px 0px;
+    color: #fff;
+}
+
+.body-header {
+    padding: 40px 20px 20px 20px;
+}
+
+.body-content .btn-large {
+    font-size: 20px;
 }
 
 /* Responsive Menu
@@ -178,35 +195,27 @@ html, #mainDiv {
 
 .footer {
   position: absolute;
-  bottom: 0;
+  bottom: 0px;
+  height: 35px;
   width: 100%;
-  background-color: #fff;
-  padding: 10px 0px 10px 0px;
-  height: 54px;
+  background-color: rgba(0, 0, 0, 0);
+  margin: 5px 0px 1px 0px;
+  
 }
 
 .footer p {
-    margin: 5px;
-    font-size: 16px;
+  margin: 5px;
+  font-size: 16px;
 }
 
-/*.footer a {
-  font-size: 16px;
-}*/
-
-.logoHolder li {
-        width:120px;
-        margin-right: 30px;
-    }
+.logoHolder {
+  margin-left: 10px;
+}
 
 .logoHolder img {
-    width: 100%;
+  width: auto;
+  max-height: 30px;
 } 
-
-.caret.caret-reversed {
-    border-top-width: 0;
-    border-bottom: 4px solid #000000;
-}
 
 /* Images Animation
 ============================================================================= */
@@ -244,13 +253,39 @@ html, #mainDiv {
 /* Overlay
 ============================================================================= */
 
-.menuOpener {
+.menu-opener {
     display: block;
     position: absolute;
     right: 20px;
     top: 10px;
-    z-index: 1001;
-    font-size: 30px;
+    z-index: 998;
+    cursor: pointer;
+}
+
+.menu-opener a {
+    color: #000;
+}
+
+.menubar-opener {
+    display: block;
+    position: absolute;
+    left: 20px;
+    top: 10px;
+    z-index: 998;
+    cursor: pointer;
+}
+
+.menubar-opener a {
+    color: #000;
+}
+
+.view-switch {
+    display: block;
+    position: absolute;
+    width: 40px;
+    right: 50%;
+    margin: auto;
+    z-index: 998;
     cursor: pointer;
 }
 
@@ -367,52 +402,30 @@ html, #mainDiv {
 
 /* About
 ============================================================================= */
-.aboutBody {
-    overflow: hidden;
-    min-height: 100%;
-    padding-bottom: 64px;
+
+.about-body {
+    overflow: auto;
 }
 
-/*.aboutBody {
-    background-image: url(../images/about.jpg);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    background-color: #fff;
+.about-body h1, h2, h3 {
+    font-weight: 400;
+}
+
+.image-container {
+    width: 100px;
+    height: 100px;
+    margin: 0px 20px;
+}
+
+.image-container img {
+    height: auto;
+    max-width: 200px;
+}
+
+/*.image-container img {
+  height: 60px;
+  width: auto;
 }*/
-
-.scrollable {
-
-}
-
-.aboutTextBody {
-    position: relative;
-    width: 100%;
-    margin-top: 20%;
-}
-
-.aboutTitle {
-
-}
-
-.aboutText {
-  font-size: 18px;
-}
-
-.aboutSubtext {
-    margin-top: 10px;
-}
-
-hr.style {
-    width: 75%;
-    border: 0; 
-    height: 1px; 
-    background-image: -webkit-linear-gradient(left, #fff, #8c8b8b, #fff);
-    background-image: -moz-linear-gradient(left, #fff, #8c8b8b, #fff);
-    background-image: -ms-linear-gradient(left, #fff, #8c8b8b, #fff);
-    background-image: -o-linear-gradient(left, #fff, #8c8b8b, #fff); 
-}
 
 /* horizontal timeline
 ============================================================================= */
@@ -494,136 +507,6 @@ hr.style {
     color: #444;
 }
 
-/* vertical timeline
-============================================================================= */
-
-
-.timeline {
-  list-style: none;
-  padding: 20px 0 20px;
-  position: relative;
-}
-.timeline:before {
-  top: 0;
-  bottom: 0;
-  position: absolute;
-  content: " ";
-  width: 3px;
-  background-color: #eeeeee;
-  left: 50%;
-  margin-left: -1.5px;
-}
-.timeline > li {
-  margin-bottom: 20px;
-  position: relative;
-}
-.timeline > li:before,
-.timeline > li:after {
-  content: " ";
-  display: table;
-}
-.timeline > li:after {
-  clear: both;
-}
-.timeline > li:before,
-.timeline > li:after {
-  content: " ";
-  display: table;
-}
-.timeline > li:after {
-  clear: both;
-}
-.timeline > li > .timeline-panel {
-  width: 46%;
-  float: left;
-  border: 1px solid #d4d4d4;
-  border-radius: 2px;
-  padding: 20px;
-  position: relative;
-  -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
-  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
-}
-.timeline > li > .timeline-panel:before {
-  position: absolute;
-  top: 26px;
-  right: -15px;
-  display: inline-block;
-  border-top: 15px solid transparent;
-  border-left: 15px solid #ccc;
-  border-right: 0 solid #ccc;
-  border-bottom: 15px solid transparent;
-  content: " ";
-}
-.timeline > li > .timeline-panel:after {
-  position: absolute;
-  top: 27px;
-  right: -14px;
-  display: inline-block;
-  border-top: 14px solid transparent;
-  border-left: 14px solid #fff;
-  border-right: 0 solid #fff;
-  border-bottom: 14px solid transparent;
-  content: " ";
-}
-.timeline > li > .timeline-badge {
-  color: #fff;
-  width: 50px;
-  height: 50px;
-  line-height: 50px;
-  font-size: 1.4em;
-  text-align: center;
-  position: absolute;
-  top: 16px;
-  left: 50%;
-  margin-left: -25px;
-  background-color: #999999;
-  z-index: 100;
-  border-top-right-radius: 50%;
-  border-top-left-radius: 50%;
-  border-bottom-right-radius: 50%;
-  border-bottom-left-radius: 50%;
-}
-.timeline > li.timeline-inverted > .timeline-panel {
-  float: right;
-}
-.timeline > li.timeline-inverted > .timeline-panel:before {
-  border-left-width: 0;
-  border-right-width: 15px;
-  left: -15px;
-  right: auto;
-}
-.timeline > li.timeline-inverted > .timeline-panel:after {
-  border-left-width: 0;
-  border-right-width: 14px;
-  left: -14px;
-  right: auto;
-}
-.timeline-badge.primary {
-  background-color: #2e6da4 !important;
-}
-.timeline-badge.success {
-  background-color: #3f903f !important;
-}
-.timeline-badge.warning {
-  background-color: #f0ad4e !important;
-}
-.timeline-badge.danger {
-  background-color: #d9534f !important;
-}
-.timeline-badge.info {
-  background-color: #5bc0de !important;
-}
-.timeline-title {
-  margin-top: 0;
-  color: inherit;
-}
-.timeline-body > p,
-.timeline-body > ul {
-  margin-bottom: 0;
-}
-.timeline-body > p + p {
-  margin-top: 5px;
-}
 
 /* ngView Animation
 ============================================================================= */
@@ -687,16 +570,49 @@ hr.style {
     opacity: 1;
 }
 
-/* Arrows
+/* Message Overlays
 ============================================================================= */
 
-.menuOpenerWhite {
-    display: block;
+.vco-message-full {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.submenu-tooltip {
     position: absolute;
-    right: 20px;
-    top: 10px;
-    font-size: 30px;
+    left: 40px;
+    top: 20px;
     margin-top: 4px;
+}
+
+.menu-tooltip {
+    position: absolute;
+    right: 40px;
+    top: 20px;
+    margin-top: 4px;
+}
+
+.left-tooltip {
+    position: absolute;
+    left: 60px;
+    top: 50%;
+}
+
+.right-tooltip {
+    position: absolute;
+    right: 60px;
+    top: 50%;
+}
+
+.swipe-tooltip {
+    position: absolute;
+    right: 50%;
+    top: 50%;
+}
+
+.close-tooltip-btn {
+    position: absolute;
+    right: 50%;
+    top: 75%;
 }
 
 .map-icon {
@@ -826,25 +742,66 @@ hr.style {
     margin: 0 auto;
 }
 
+/* Vendor Overrides
+============================================================================= */
+
+.vco-menu .buttons-header{
+  margin-top: 60px;
+  margin-bottom: 20px;
+}
+
+.vco-menu a {
+  text-decoration: none;
+  color: black;
+}
+
+.vco-menu span.link {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.vco-layout-landscape .vco-storyslider .vco-slidenav-next .vco-slidenav-icon:before,.vco-layout-landscape .vco-storyslider .vco-slidenav-end .vco-slidenav-icon:before,.vco-layout-landscape .vco-storyslider .vco-slidenav-previous .vco-slidenav-icon:before, .vco-layout-landscape .vco-storyslider .vco-slidenav-start .vco-slidenav-icon:before {
+    background-color: rgba(0, 0, 0, 0);
+    padding: 20px;
+    border: none;
+}
+
+.side-nav .collapsible-body li a {
+  font-weight: 400;
+  padding: 0 37.5px 0 45px;
+}
+
+.vco-message-content .message-tooltip, .vco-message-content .message-tooltip a, .vco-message-content .message-tooltip i {
+    color: #000;
+}
+
+.vco-message-content .message-tooltip a:hover {
+    text-decoration: none;
+}
+
+i.new-medium {
+  font-size: 2.5rem;
+}
+
 /* Media & Device Queries
 ============================================================================= 
 ============================================================================= */
 
 @media (min-width: 320px) and (max-width: 380px) {
 
-    .thebody {
+    /*.thebody {
         padding-bottom: 0px;
         margin-bottom: 60px;
-    }
+    }*/
 
-    .thebody {
-        background-image: url(../images/back-mobile.jpg);
+    /*.thebody {
+        background-image: url(../images/harbour.jpg);
         background-position: center center;
         background-repeat: no-repeat;
         background-attachment: fixed;
         background-size: 110%;
         background-color: #fff;
-    }
+    }*/
 
     .logoDiv {
       position: absolute;
@@ -967,52 +924,52 @@ hr.style {
 
 @media (min-width: 320px) and (max-width: 360px) {
 
-  .thebody {
-        background-image: url(../images/back-mobile.jpg);
+  /*.thebody {
+        background-image: url(../images/harbour.jpg);
         background-position: center center;
         background-repeat: no-repeat;
         background-attachment: fixed;
         background-size: 90%;
         background-color: #fff;
-    }
+    }*/
 }
 
 @media (min-width: 361px) and (max-width: 380px) {
 
-  .thebody {
-        background-image: url(../images/back-mobile.jpg);
+  /*.thebody {
+        background-image: url(../images/harbour.jpg);
         background-position: center center;
         background-repeat: no-repeat;
         background-attachment: fixed;
         background-size: 100%;
         background-color: #fff;
-    }
+    }*/
 }
 
 @media (min-width: 381px) and (max-width: 768px) {
 
-    .thebody {
+    /*.thebody {
         padding-bottom: 0px;
         margin-bottom: 60px
-    }
+    }*/
 
-    .thebody {
-        background-image: url(../images/back-mobile.jpg);
+    /*.thebody {
+        background-image: url(../images/harbour.jpg);
         background-position: center center;
         background-repeat: no-repeat;
         background-attachment: fixed;
         background-size: cover;
         background-color: #fff;
-    }
+    }*/
 
-    .thebody:before {
+    /*.thebody:before {
         margin-bottom: 64px;
         padding: 0 64px 64px
-    }
+    }*/
 
-    .thebody>.background {
+    /*.thebody>.background {
         margin-top: -64px
-    }
+    }*/
 
     .navbar {
         display: block;
@@ -1095,10 +1052,10 @@ hr.style {
 }
 
 @media (min-width: 769px) and (max-width: 1024px) {
-    .thebody {
+    /*.thebody {
         padding-bottom: 0px;
         margin-bottom: 60px
-    }
+    }*/
 
     .logoHolder li {
         width:120px;

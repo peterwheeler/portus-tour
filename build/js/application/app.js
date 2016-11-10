@@ -38,10 +38,10 @@ var angtranslations = {
 			TIMELINE: "Timeline"
 		},
 		MENU: {
-			SELECTALANG: "LANGUAGE",
-			SELECTATOUR: "TOUR",
-			GEOLOCATION: "GEOLOCATION",
-			ABOUT: "ABOUT",
+			SELECTALANG: "Language",
+			SELECTATOUR: "Tours",
+			GEOLOCATION: "Geolocation",
+			ABOUT: "About",
 			GEOON: "On",
 			GEOOFF: "Off",
 			MAPS: "Maps",
@@ -96,10 +96,10 @@ var angtranslations = {
 			TIMELINE: "Cronologia"
 		},
 		MENU: {
-			SELECTALANG: "LINGUA",
-			SELECTATOUR: "VISTA",
-			GEOLOCATION: "GEOLOCATION",
-			ABOUT: "INFORMAZIONE",
+			SELECTALANG: "Lingua",
+			SELECTATOUR: "Vistas",
+			GEOLOCATION: "Geolocation",
+			ABOUT: "Informazione",
 			GEOON: "On",
 			GEOOFF: "Off",
 			MAPS: "Mappe",
@@ -166,153 +166,99 @@ new t1.o.Page(
 	},
 	{
 		en: [{
-			map_type: "zoomify",
-			map_name: "Drawing",
+			map_type: "mapTiler",
+			map_name: "Reconstruction",
 			map_mini: true,
 			map_as_image: false,
 			calculate_zoom: false, 
-			zoomify: {
-				"name": "Drawing",
-				"path": "maps/en/period_1/",
-				"width": 5200,
-				"height": 5844,
-				"tolerance": 0.9,
-				"attribution": "Peter Wheeler / University of Southampton"
-			}
+			mapTiler: {
+				path: 				"maps/period_01/",
+				lat:				"",
+				lng: 				"",
+				zoom: 				14,
+				minZoom:        	14,
+				maxZoom:        	17,
+				attribution: 		""
+			}	
 		},
 		{
-			map_type: "zoomify",
+			map_type: "mapTiler",
 			map_name: "Plan",
 			map_mini: true,
 			map_as_image: false,
 			calculate_zoom: false, 
-			zoomify: {
-				"name": "Plan",
-				"path": "maps/en/plan_1/",
-				"width": 5200,
-				"height": 5844,
-				"tolerance": 0.9,
-				"attribution": "Maria del Carmen Moreno Escobar / University of Southampton"
+			mapTiler: {
+				path: 				"maps/plan_en_01/",
+				lat:				"",
+				lng: 				"",
+				zoom: 				14,
+				minZoom:        	14,
+				maxZoom:        	17,
+				attribution: 		""
 			}
 		},
 		{
-			map_type: "zoomify",
+			map_type: "mapTiler",
 			map_name: "Satellite",
 			map_mini: true,
 			map_as_image: false,
 			calculate_zoom: false, 
-			zoomify: {
-				"name": "Satellite",
-				"path": "maps/en/satellite/",
-				"width": 5200,
-				"height": 5844,
-				"tolerance": 0.9,
-				"attribution": "Digital Globe 2014"
-			},	
-		},
-		{
-			map_type: "zoomify",
-			map_name: "Magnetometry",
-			map_mini: true,
-			map_as_image: false,
-			calculate_zoom: false, 
-			zoomify: {
-				"name": "Plan",
-				"path": "maps/mag/",
-				"width": 5200,
-				"height": 5844,
-				"tolerance": 0.9,
-				"attribution": "Kris Strutt / University of Southampton"
-			}
-		},
-		{
-			map_type: "zoomify",
-			map_name: "Magnetometry Interpretation",
-			map_mini: true,
-			map_as_image: false,
-			calculate_zoom: false, 
-			zoomify: {
-				"name": "Plan",
-				"path": "maps/mag_int/",
-				"width": 5200,
-				"height": 5844,
-				"tolerance": 0.9,
-				"attribution": "Kris Strutt / University of Southampton"
+			mapTiler: {
+				path: 				"maps/satellite/",
+				lat:				"",
+				lng: 				"",
+				zoom: 				14,
+				minZoom:        	14,
+				maxZoom:        	17,
+				attribution: 		"Digital Globe 2014"
 			}
 		}],
 		it: [{
-			map_type: "zoomify",
-			map_name: "Drawing",
+			map_type: "mapTiler",
+			map_name: "Ricostruzione",
 			map_mini: true,
 			map_as_image: false,
-			calculate_zoom: false,
-			zoomify: {
-				"name": "Drawing",
-				"path": "maps/en/period_1/",
-				"width": 5200,
-				"height": 5844,
-				"tolerance": 0.9,
-				"attribution": "Peter Wheeler / University of Southampton"
-			}
+			calculate_zoom: false, 
+			mapTiler: {
+				path: 				"maps/period_01/",
+				lat:				"",
+				lng: 				"",
+				zoom: 				14,
+				minZoom:        	14,
+				maxZoom:        	17,
+				attribution: 		""
+			}	
 		},
 		{
-			map_type: "zoomify",
+			map_type: "mapTiler",
 			map_name: "Plan",
 			map_mini: true,
 			map_as_image: false,
 			calculate_zoom: false, 
-			zoomify: {
-				"name": "Plan",
-				"path": "maps/en/plan_1/",
-				"width": 5200,
-				"height": 5844,
-				"tolerance": 0.9,
-				"attribution": "Maria del Carmen Moreno Escobar / University of Southampton"
+			mapTiler: {
+				path: 				"maps/plan_en_01/",
+				lat:				"",
+				lng: 				"",
+				zoom: 				14,
+				minZoom:        	14,
+				maxZoom:        	17,
+				attribution: 		""
 			}
 		},
 		{
-			map_type: "zoomify",
+			map_type: "mapTiler",
 			map_name: "Satellite",
 			map_mini: true,
 			map_as_image: false,
 			calculate_zoom: false, 
-			zoomify: {
-				"name": "Satellite",
-				"path": "maps/en/satellite/",
-				"width": 5200,
-				"height": 5844,
-				"tolerance": 0.9,
-				"attribution": "Digital Globe 2014"
-			}
-		},
-		{
-			map_type: "zoomify",
-			map_name: "Magnetometry",
-			map_mini: true,
-			map_as_image: false,
-			calculate_zoom: false, 
-			zoomify: {
-				"name": "Plan",
-				"path": "maps/mag/",
-				"width": 5200,
-				"height": 5844,
-				"tolerance": 0.9,
-				"attribution": "Kris Strutt / University of Southampton"
-			}
-		},
-		{
-			map_type: "zoomify",
-			map_name: "Magnetometry Interpretation",
-			map_mini: true,
-			map_as_image: false,
-			calculate_zoom: false, 
-			zoomify: {
-				"name": "Plan",
-				"path": "maps/mag_int/",
-				"width": 5200,
-				"height": 5844,
-				"tolerance": 0.9,
-				"attribution": "Kris Strutt / University of Southampton"
+			mapTiler: {
+				path: 				"maps/satellite/",
+				lat:				"",
+				lng: 				"",
+				zoom: 				14,
+				minZoom:        	14,
+				maxZoom:        	17,
+				attribution: 		"Digital Globe 2014"
 			}
 		}]
 	}
@@ -327,154 +273,100 @@ new t1.o.Page(
 	},
 	{
 		en: [{
-			map_type: "zoomify",
-			map_name: "Drawing",
+			map_type: "mapTiler",
+			map_name: "Reconstruction",
 			map_mini: true,
 			map_as_image: false,
 			calculate_zoom: false, 
-			zoomify: {
-				"name": "Drawing",
-				"path": "maps/en/period_2/",
-				"width": 5200,
-				"height": 5844,
-				"tolerance": 0.9,
-				"attribution": "Peter Wheeler / University of Southampton"
-			}
+			mapTiler: {
+				path: 				"maps/period_02/",
+				lat:				"",
+				lng: 				"",
+				zoom: 				14,
+				minZoom:        	14,
+				maxZoom:        	17,
+				attribution: 		""
+			}	
 		},
 		{
-			map_type: "zoomify",
+			map_type: "mapTiler",
 			map_name: "Plan",
 			map_mini: true,
 			map_as_image: false,
 			calculate_zoom: false, 
-			zoomify: {
-				"name": "Plan",
-				"path": "maps/en/plan_2/",
-				"width": 5200,
-				"height": 5844,
-				"tolerance": 0.9,
-				"attribution": "Maria del Carmen Moreno Escobar / University of Southampton"
+			mapTiler: {
+				path: 				"maps/plan_en_02/",
+				lat:				"",
+				lng: 				"",
+				zoom: 				14,
+				minZoom:        	14,
+				maxZoom:        	17,
+				attribution: 		""
 			}
 		},
 		{
-			map_type: "zoomify",
+			map_type: "mapTiler",
 			map_name: "Satellite",
 			map_mini: true,
 			map_as_image: false,
 			calculate_zoom: false, 
-			zoomify: {
-				"name": "Satellite",
-				"path": "maps/en/satellite/",
-				"width": 5200,
-				"height": 5844,
-				"tolerance": 0.9,
-				"attribution": "Digital Globe 2014"
-			}
-		},
-		{
-			map_type: "zoomify",
-			map_name: "Magnetometry",
-			map_mini: true,
-			map_as_image: false,
-			calculate_zoom: false, 
-			zoomify: {
-				"name": "Plan",
-				"path": "maps/mag/",
-				"width": 5200,
-				"height": 5844,
-				"tolerance": 0.9,
-				"attribution": "Kris Strutt / University of Southampton"
-			}
-		},
-		{
-			map_type: "zoomify",
-			map_name: "Magnetometry Interpretation",
-			map_mini: true,
-			map_as_image: false,
-			calculate_zoom: false, 
-			zoomify: {
-				"name": "Plan",
-				"path": "maps/mag_int/",
-				"width": 5200,
-				"height": 5844,
-				"tolerance": 0.9,
-				"attribution": "Kris Strutt / University of Southampton"
-			}
+			mapTiler: {
+				path: 				"maps/satellite/",
+				lat:				"",
+				lng: 				"",
+				zoom: 				14,
+				minZoom:        	14,
+				maxZoom:        	17,
+				attribution: 		"Digital Globe 2014"
+			}	
 		}],
 		it: [{
-			map_type: "zoomify",
-			map_name: "Drawing",
+			map_type: "mapTiler",
+			map_name: "Ricostruzione",
 			map_mini: true,
 			map_as_image: false,
 			calculate_zoom: false, 
-			zoomify: {
-				"name": "Drawing",
-				"path": "maps/en/period_2/",
-				"width": 5200,
-				"height": 5844,
-				"tolerance": 0.9,
-				"attribution": "Peter Wheeler / University of Southampton"
-			}
+			mapTiler: {
+				path: 				"maps/period_02/",
+				lat:				"",
+				lng: 				"",
+				zoom: 				14,
+				minZoom:        	14,
+				maxZoom:        	17,
+				attribution: 		""
+			}	
 		},
 		{
-			map_type: "zoomify",
+			map_type: "mapTiler",
 			map_name: "Plan",
 			map_mini: true,
 			map_as_image: false,
 			calculate_zoom: false, 
-			zoomify: {
-				"name": "Plan",
-				"path": "maps/en/plan_2/",
-				"width": 5200,
-				"height": 5844,
-				"tolerance": 0.9,
-				"attribution": "Maria del Carmen Moreno Escobar / University of Southampton"
+			mapTiler: {
+				path: 				"maps/plan_en_02/",
+				lat:				"",
+				lng: 				"",
+				zoom: 				14,
+				minZoom:        	14,
+				maxZoom:        	17,
+				attribution: 		""
 			}
 		},
 		{
-			map_type: "zoomify",
+			map_type: "mapTiler",
 			map_name: "Satellite",
 			map_mini: true,
 			map_as_image: false,
 			calculate_zoom: false, 
-			zoomify: {
-				"name": "Satellite",
-				"path": "maps/en/satellite/",
-				"width": 5200,
-				"height": 5844,
-				"tolerance": 0.9,
-				"attribution": "Digital Globe 2014"
-			}
-		},
-		{
-			map_type: "zoomify",
-			map_name: "Magnetometry",
-			map_mini: true,
-			map_as_image: false,
-			calculate_zoom: false, 
-			zoomify: {
-				"name": "Plan",
-				"path": "maps/mag/",
-				"width": 5200,
-				"height": 5844,
-				"tolerance": 0.9,
-				"attribution": "Kris Strutt / University of Southampton"
-			}
-		},
-		{
-			map_type: "zoomify",
-			map_name: "Magnetometry Interpretation",
-			map_mini: true,
-			map_as_image: false,
-			calculate_zoom: false, 
-			zoomify: {
-				"name": "Plan",
-				"path": "maps/mag_int/",
-				"width": 5200,
-				"height": 5844,
-				"tolerance": 0.9,
-				"attribution": "Kris Strutt / University of Southampton"
-			}
+			mapTiler: {
+				path: 				"maps/satellite/",
+				lat:				"",
+				lng: 				"",
+				zoom: 				14,
+				minZoom:        	14,
+				maxZoom:        	17,
+				attribution: 		"Digital Globe 2014"
+			}	
 		}]
 	}
 ),
@@ -488,154 +380,100 @@ new t1.o.Page(
 	},
 	{
 		en: [{
-			map_type: "zoomify",
-			map_name: "Drawing",
+			map_type: "mapTiler",
+			map_name: "Reconstruction",
 			map_mini: true,
 			map_as_image: false,
 			calculate_zoom: false, 
-			zoomify: {
-				"name": "Drawing",
-				"path": "maps/en/period_3/",
-				"width": 5200,
-				"height": 5844,
-				"tolerance": 0.9,
-				"attribution": "Peter Wheeler / University of Southampton"
-			}
+			mapTiler: {
+				path: 				"maps/period_03/",
+				lat:				"",
+				lng: 				"",
+				zoom: 				14,
+				minZoom:        	14,
+				maxZoom:        	17,
+				attribution: 		""
+			}	
 		},
 		{
-			map_type: "zoomify",
+			map_type: "mapTiler",
 			map_name: "Plan",
 			map_mini: true,
 			map_as_image: false,
 			calculate_zoom: false, 
-			zoomify: {
-				"name": "Plan",
-				"path": "maps/en/plan_3/",
-				"width": 5200,
-				"height": 5844,
-				"tolerance": 0.9,
-				"attribution": "Maria del Carmen Moreno Escobar / University of Southampton"
+			mapTiler: {
+				path: 				"maps/plan_en_03/",
+				lat:				"",
+				lng: 				"",
+				zoom: 				14,
+				minZoom:        	14,
+				maxZoom:        	17,
+				attribution: 		""
 			}
-		},		
+		},
 		{
-			map_type: "zoomify",
+			map_type: "mapTiler",
 			map_name: "Satellite",
 			map_mini: true,
 			map_as_image: false,
 			calculate_zoom: false, 
-			zoomify: {
-				"name": "Satellite",
-				"path": "maps/en/satellite/",
-				"width": 5200,
-				"height": 5844,
-				"tolerance": 0.9,
-				"attribution": "Digital Globe 2014"
-			}
-		},
-		{
-			map_type: "zoomify",
-			map_name: "Magnetometry",
-			map_mini: true,
-			map_as_image: false,
-			calculate_zoom: false, 
-			zoomify: {
-				"name": "Plan",
-				"path": "maps/mag/",
-				"width": 5200,
-				"height": 5844,
-				"tolerance": 0.9,
-				"attribution": "Kris Strutt / University of Southampton"
-			}
-		},
-		{
-			map_type: "zoomify",
-			map_name: "Magnetometry Interpretation",
-			map_mini: true,
-			map_as_image: false,
-			calculate_zoom: false, 
-			zoomify: {
-				"name": "Plan",
-				"path": "maps/mag_int/",
-				"width": 5200,
-				"height": 5844,
-				"tolerance": 0.9,
-				"attribution": "Kris Strutt / University of Southampton"
-			}
+			mapTiler: {
+				path: 				"maps/satellite/",
+				lat:				"",
+				lng: 				"",
+				zoom: 				14,
+				minZoom:        	14,
+				maxZoom:        	17,
+				attribution: 		"Digital Globe 2014"
+			}	
 		}],
 		it: [{
-			map_type: "zoomify",
-			map_name: "Drawing",
+			map_type: "mapTiler",
+			map_name: "Ricostruzione",
 			map_mini: true,
 			map_as_image: false,
 			calculate_zoom: false, 
-			zoomify: {
-				"name": "Drawing",
-				"path": "maps/en/period_3/",
-				"width": 5200,
-				"height": 5844,
-				"tolerance": 0.9,
-				"attribution": "Peter Wheeler / University of Southampton"
-			}
+			mapTiler: {
+				path: 				"maps/period_03/",
+				lat:				"",
+				lng: 				"",
+				zoom: 				14,
+				minZoom:        	14,
+				maxZoom:        	17,
+				attribution: 		""
+			}	
 		},
 		{
-			map_type: "zoomify",
+			map_type: "mapTiler",
 			map_name: "Plan",
 			map_mini: true,
 			map_as_image: false,
 			calculate_zoom: false, 
-			zoomify: {
-				"name": "Plan",
-				"path": "maps/en/plan_3/",
-				"width": 5200,
-				"height": 5844,
-				"tolerance": 0.9,
-				"attribution": "Maria del Carmen Moreno Escobar / University of Southampton"
+			mapTiler: {
+				path: 				"maps/plan_en_03/",
+				lat:				"",
+				lng: 				"",
+				zoom: 				14,
+				minZoom:        	14,
+				maxZoom:        	17,
+				attribution: 		""
 			}
-		},		
+		},
 		{
-			map_type: "zoomify",
+			map_type: "mapTiler",
 			map_name: "Satellite",
 			map_mini: true,
 			map_as_image: false,
 			calculate_zoom: false, 
-			zoomify: {
-				"name": "Satellite",
-				"path": "maps/en/satellite/",
-				"width": 5200,
-				"height": 5844,
-				"tolerance": 0.9,
-				"attribution": "Digital Globe 2014"
-			}
-		},
-		{
-			map_type: "zoomify",
-			map_name: "Magnetometry",
-			map_mini: true,
-			map_as_image: false,
-			calculate_zoom: false, 
-			zoomify: {
-				"name": "Plan",
-				"path": "maps/mag/",
-				"width": 5200,
-				"height": 5844,
-				"tolerance": 0.9,
-				"attribution": "Kris Strutt / University of Southampton"
-			}
-		},
-		{
-			map_type: "zoomify",
-			map_name: "Magnetometry Interpretation",
-			map_mini: true,
-			map_as_image: false,
-			calculate_zoom: false, 
-			zoomify: {
-				"name": "Plan",
-				"path": "maps/mag_int/",
-				"width": 5200,
-				"height": 5844,
-				"tolerance": 0.9,
-				"attribution": "Kris Strutt / University of Southampton"
-			}
+			mapTiler: {
+				path: 				"maps/satellite/",
+				lat:				"",
+				lng: 				"",
+				zoom: 				14,
+				minZoom:        	14,
+				maxZoom:        	17,
+				attribution: 		"Digital Globe 2014"
+			}	
 		}]
 	}
 ),
@@ -649,154 +487,100 @@ new t1.o.Page(
 	},
 	{
 		en: [{
-			map_type: "zoomify",
-			map_name: "Drawing",
+			map_type: "mapTiler",
+			map_name: "Reconstruction",
 			map_mini: true,
 			map_as_image: false,
 			calculate_zoom: false, 
-			zoomify: {
-				"name": "Drawing",
-				"path": "maps/en/period_4/",
-				"width": 5200,
-				"height": 5844,
-				"tolerance": 0.9,
-				"attribution": "Peter Wheeler / University of Southampton"
-			}
+			mapTiler: {
+				path: 				"maps/period_04/",
+				lat:				"",
+				lng: 				"",
+				zoom: 				14,
+				minZoom:        	14,
+				maxZoom:        	17,
+				attribution: 		""
+			}	
 		},
 		{
-			map_type: "zoomify",
+			map_type: "mapTiler",
 			map_name: "Plan",
 			map_mini: true,
 			map_as_image: false,
 			calculate_zoom: false, 
-			zoomify: {
-				"name": "Plan",
-				"path": "maps/en/plan_4/",
-				"width": 5200,
-				"height": 5844,
-				"tolerance": 0.9,
-				"attribution": "Maria del Carmen Moreno Escobar / University of Southampton"
+			mapTiler: {
+				path: 				"maps/plan_en_04/",
+				lat:				"",
+				lng: 				"",
+				zoom: 				14,
+				minZoom:        	14,
+				maxZoom:        	17,
+				attribution: 		""
 			}
-		},		
+		},
 		{
-			map_type: "zoomify",
+			map_type: "mapTiler",
 			map_name: "Satellite",
 			map_mini: true,
 			map_as_image: false,
 			calculate_zoom: false, 
-			zoomify: {
-				"name": "Satellite",
-				"path": "maps/en/satellite/",
-				"width": 5200,
-				"height": 5844,
-				"tolerance": 0.9,
-				"attribution": "Digital Globe 2014"
-			}
-		},
-		{
-			map_type: "zoomify",
-			map_name: "Magnetometry",
-			map_mini: true,
-			map_as_image: false,
-			calculate_zoom: false, 
-			zoomify: {
-				"name": "Plan",
-				"path": "maps/mag/",
-				"width": 5200,
-				"height": 5844,
-				"tolerance": 0.9,
-				"attribution": "Kris Strutt / University of Southampton"
-			}
-		},
-		{
-			map_type: "zoomify",
-			map_name: "Magnetometry Interpretation",
-			map_mini: true,
-			map_as_image: false,
-			calculate_zoom: false, 
-			zoomify: {
-				"name": "Plan",
-				"path": "maps/mag_int/",
-				"width": 5200,
-				"height": 5844,
-				"tolerance": 0.9,
-				"attribution": "Kris Strutt / University of Southampton"
+			mapTiler: {
+				path: 				"maps/satellite/",
+				lat:				"",
+				lng: 				"",
+				zoom: 				14,
+				minZoom:        	14,
+				maxZoom:        	17,
+				attribution: 		"Digital Globe 2014"
 			}
 		}],
 		it: [{
-			map_type: "zoomify",
-			map_name: "Drawing",
+			map_type: "mapTiler",
+			map_name: "Ricostruzione",
 			map_mini: true,
 			map_as_image: false,
 			calculate_zoom: false, 
-			zoomify: {
-				"name": "Drawing",
-				"path": "maps/en/period_4/",
-				"width": 5200,
-				"height": 5844,
-				"tolerance": 0.9,
-				"attribution": "Peter Wheeler / University of Southampton"
-			}
+			mapTiler: {
+				path: 				"maps/period_04/",
+				lat:				"",
+				lng: 				"",
+				zoom: 				14,
+				minZoom:        	14,
+				maxZoom:        	17,
+				attribution: 		""
+			}	
 		},
 		{
-			map_type: "zoomify",
+			map_type: "mapTiler",
 			map_name: "Plan",
 			map_mini: true,
 			map_as_image: false,
 			calculate_zoom: false, 
-			zoomify: {
-				"name": "Plan",
-				"path": "maps/en/plan_4/",
-				"width": 5200,
-				"height": 5844,
-				"tolerance": 0.9,
-				"attribution": "Maria del Carmen Moreno Escobar / University of Southampton"
+			mapTiler: {
+				path: 				"maps/plan_en_04/",
+				lat:				"",
+				lng: 				"",
+				zoom: 				14,
+				minZoom:        	14,
+				maxZoom:        	17,
+				attribution: 		""
 			}
-		},		
+		},
 		{
-			map_type: "zoomify",
+			map_type: "mapTiler",
 			map_name: "Satellite",
 			map_mini: true,
 			map_as_image: false,
 			calculate_zoom: false, 
-			zoomify: {
-				"name": "Satellite",
-				"path": "maps/en/satellite/",
-				"width": 5200,
-				"height": 5844,
-				"tolerance": 0.9,
-				"attribution": "Digital Globe 2014"
-			}
-		},
-		{
-			map_type: "zoomify",
-			map_name: "Magnetometry",
-			map_mini: true,
-			map_as_image: false,
-			calculate_zoom: false, 
-			zoomify: {
-				"name": "Plan",
-				"path": "maps/mag/",
-				"width": 5200,
-				"height": 5844,
-				"tolerance": 0.9,
-				"attribution": "Kris Strutt / University of Southampton"
-			}
-		},
-		{
-			map_type: "zoomify",
-			map_name: "Magnetometry Interpretation",
-			map_mini: true,
-			map_as_image: false,
-			calculate_zoom: false, 
-			zoomify: {
-				"name": "Plan",
-				"path": "maps/mag_int/",
-				"width": 5200,
-				"height": 5844,
-				"tolerance": 0.9,
-				"attribution": "Kris Strutt / University of Southampton"
-			}
+			mapTiler: {
+				path: 				"maps/satellite/",
+				lat:				"",
+				lng: 				"",
+				zoom: 				14,
+				minZoom:        	14,
+				maxZoom:        	17,
+				attribution: 		"Digital Globe 2014"
+			}	
 		}]
 	}
 ),
@@ -810,33 +594,99 @@ new t1.o.Page(
 	},
 	{
 		en: [{
-			map_type: "zoomify",
+			map_type: "mapTiler",
 			map_name: "Satellite",
 			map_mini: true,
 			map_as_image: false,
 			calculate_zoom: false, 
-			zoomify: {
-				"name": "Drawing",
-				"path": "maps/en/satellite/",
-				"width": 5200,
-				"height": 5844,
-				"tolerance": 0.9,
-				"attribution": "Digital Globe 2014"
+			mapTiler: {
+				path: 				"maps/satellite/",
+				lat:				"",
+				lng: 				"",
+				zoom: 				14,
+				minZoom:        	14,
+				maxZoom:        	17,
+				attribution: 		"Digital Globe 2014"
+			}
+		},
+		{
+			map_type: "mapTiler",
+			map_name: "Reconstruction",
+			map_mini: true,
+			map_as_image: false,
+			calculate_zoom: false, 
+			mapTiler: {
+				path: 				"maps/period_05/",
+				lat:				"",
+				lng: 				"",
+				zoom: 				14,
+				minZoom:        	14,
+				maxZoom:        	17,
+				attribution: 		""
+			}	
+		},
+		{
+			map_type: "mapTiler",
+			map_name: "Plan",
+			map_mini: true,
+			map_as_image: false,
+			calculate_zoom: false, 
+			mapTiler: {
+				path: 				"maps/plan_en_05/",
+				lat:				"",
+				lng: 				"",
+				zoom: 				14,
+				minZoom:        	14,
+				maxZoom:        	17,
+				attribution: 		""
 			}
 		}],
 		it: [{
-			map_type: "zoomify",
+			map_type: "mapTiler",
 			map_name: "Satellite",
 			map_mini: true,
 			map_as_image: false,
 			calculate_zoom: false, 
-			zoomify: {
-				"name": "Drawing",
-				"path": "maps/en/satellite/",
-				"width": 5200,
-				"height": 5844,
-				"tolerance": 0.9,
-				"attribution": "Digital Globe 2014"
+			mapTiler: {
+				path: 				"maps/satellite/",
+				lat:				"",
+				lng: 				"",
+				zoom: 				14,
+				minZoom:        	14,
+				maxZoom:        	17,
+				attribution: 		"Digital Globe 2014"
+			}
+		},
+		{
+			map_type: "mapTiler",
+			map_name: "Ricostruzione",
+			map_mini: true,
+			map_as_image: false,
+			calculate_zoom: false, 
+			mapTiler: {
+				path: 				"maps/period_05/",
+				lat:				"",
+				lng: 				"",
+				zoom: 				14,
+				minZoom:        	14,
+				maxZoom:        	17,
+				attribution: 		""
+			}	
+		},
+		{
+			map_type: "mapTiler",
+			map_name: "Plan",
+			map_mini: true,
+			map_as_image: false,
+			calculate_zoom: false, 
+			mapTiler: {
+				path: 				"maps/plan_en_05/",
+				lat:				"",
+				lng: 				"",
+				zoom: 				14,
+				minZoom:        	14,
+				maxZoom:        	17,
+				attribution: 		""
 			}
 		}]
 	}
@@ -1227,7 +1077,7 @@ app.controller("RegionCtrl", ["$scope", "$rootScope", "$log", "$translate", "$lo
 	
 	app.run(function($state, $rootScope, $urlRouter, $location, $window) {
 
-		$window.ga('create', 'UA-17304354-25', 'auto');
+		// $window.ga('create', 'UA-17304354-25', 'auto');
 		
 		$rootScope
 			.$on('$stateChangeStart',
@@ -1243,7 +1093,7 @@ app.controller("RegionCtrl", ["$scope", "$rootScope", "$log", "$translate", "$lo
 					// console.log("stateChangeSuccess:");
 					// console.log(event);
 					// console.log(toState);
-					$window.ga('send', 'pageview', $location.path());
+					// $window.ga('send', 'pageview', $location.path());
 		});	
 
 		$rootScope
@@ -1401,6 +1251,18 @@ app.controller("RegionCtrl", ["$scope", "$rootScope", "$log", "$translate", "$lo
 			}
 			
 		};
+		setTimeout(function() {
+			$('.menubar-collapse').sideNav({
+		        menuWidth: 300, // Default is 240
+		        edge: 'left', // Choose the horizontal origin
+		        closeOnClick: true, // Closes side-nav on <a> clicks, useful for Angular/Meteor
+		        draggable: false // Choose whether you can drag to open on touch screens
+		     }); 
+		    $('.collapsible-menubar').collapsible();
+		    $('.modal').modal();
+		    $('.tooltipped').tooltip({delay: 50});
+		    console.log("done");
+	    }, 1000);
 
 	}]);
 	

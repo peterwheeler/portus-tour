@@ -10,9 +10,9 @@
                     "name": "location",
                     "image": "images/tiny_icon.png",
                     "icon_size": 1,
-                    "lat": 60,
-                    "lon": -100,
-                    "zoom": 3,
+                    "lat": 41.7786,
+                    "lon": 12.2582,
+                    "zoom": 14,
                     "line": false
                 },
                 "media": {
@@ -30,9 +30,9 @@
                     "name": "location",
                     "image": "images/tiny_icon.png",
                     "icon_size": 1,
-                    "lat": 60,
-                    "lon": -100,
-                    "zoom": 3,
+                    "lat": 41.7786,
+                    "lon": 12.2582,
+                    "zoom": 14,
                     "line": false
                 },
                 "media": {
@@ -48,9 +48,9 @@
                 },
                 "location": {
                     "name": "location",
-                    "lat": 46.5,
-                    "lon": -136.5,
-                    "zoom": 4,
+                    "lat": 41.775109,
+                    "lon": 12.234263, 
+                    "zoom": 14,
                     "line": false
                 },
                 "media": {
@@ -66,9 +66,9 @@
                 },
                 "location": {
                     "name": "location",
-                    "lat": 53,
-                    "lon": -115,
-                    "zoom": 4,
+                    "lat": 41.778086,
+                    "lon": 12.246366,
+                    "zoom": 14,
                     "line": false
                 },
                 "media": {
@@ -84,9 +84,9 @@
                 },
                 "location": {
                     "name": "location",
-                    "lat": 65,
-                    "lon": -104.25,
-                    "zoom": 4,
+                    "lat": 41.787238,
+                    "lon": 12.248726,
+                    "zoom": 14,
                     "line": false
                 },
                 "media": {
@@ -102,9 +102,9 @@
                 },
                 "location": {
                     "name": "location",
-                    "lat": 68.5,
-                    "lon": -99,
-                    "zoom": 4,
+                    "lat": 41.791430,
+                    "lon": 12.251644,
+                    "zoom": 14,
                     "line": false
                 },
                 "media": {
@@ -120,9 +120,9 @@
                 },
                 "location": {
                     "name": "location",
-                    "lat": 63,
-                    "lon": -89,
-                    "zoom": 4,
+                    "lat": 41.787046,
+                    "lon": 12.257009,
+                    "zoom": 14,
                     "line": false
                 },
                 "media": {
@@ -138,9 +138,9 @@
                 },
                 "location": {
                     "name": "location",
-                    "lat": 59,
-                    "lon": -83,
-                    "zoom": 4,
+                    "lat": 41.784614,
+                    "lon": 12.259240,
+                    "zoom": 14,
                     "line": false
                 },
                 "media": {
@@ -156,9 +156,9 @@
                 },
                 "location": {
                     "name": "location",
-                    "lat": 56,
-                    "lon": -86,
-                    "zoom": 4,
+                    "lat": 41.781382,
+                    "lon": 12.257738,
+                    "zoom": 14,
                     "line": false
                 },
                 "media": {
@@ -174,9 +174,9 @@
                 },
                 "location": {
                     "name": "location",
-                    "lat": 51,
-                    "lon": -102.25,
-                    "zoom": 4,
+                    "lat": 41.777382,
+                    "lon": 12.252674,
+                    "zoom": 14,
                     "line": true
                 },
                 "media": {
@@ -192,9 +192,9 @@
                 },
                 "location": {
                     "name": "location",
-                    "lat": 44,
-                    "lon": -96,
-                    "zoom": 4,
+                    "lat": 41.775539,
+                    "lon": 12.253945,
+                    "zoom": 14,
                     "line": false
                 },
                 "media": {
@@ -210,9 +210,9 @@
                 },
                 "location": {
                     "name": "location",
-                    "lat": 49.75,
-                    "lon": -94.5,
-                    "zoom": 4,
+                    "lat": 41.777822,
+                    "lon": 12.254519,
+                    "zoom": 14,
                     "line": false
                 },
                 "media": {
@@ -228,9 +228,9 @@
                 },
                 "location": {
                     "name": "location",
-                    "lat": 48,
-                    "lon": -88.25,
-                    "zoom": 4,
+                    "lat": 41.776654,
+                    "lon": 12.256054,
+                    "zoom": 14,
                     "line": false
                 },
                 "media": {
@@ -246,9 +246,9 @@
                 },
                 "location": {
                     "name": "location",
-                    "lat": 45.5,
-                    "lon": -86.5,
-                    "zoom": 4,
+                    "lat": 41.776219,
+                    "lon": 12.259970,
+                    "zoom": 14,
                     "line": false
                 },
                 "media": {
@@ -264,9 +264,9 @@
                 },
                 "location": {
                     "name": "location",
-                    "lat": 47,
-                    "lon": -70.75,
-                    "zoom": 4,
+                    "lat": 41.776891,
+                    "lon": 12.265313,
+                    "zoom": 14,
                     "line": false
                 },
                 "media": {
@@ -282,9 +282,9 @@
                 },
                 "location": {
                     "name": "location",
-                    "lat": 48.5,
-                    "lon": -57,
-                    "zoom": 4,
+                    "lat": 41.777227,
+                    "lon": 12.268939,
+                    "zoom": 14,
                     "line": false
                 },
                 "media": {
@@ -300,9 +300,9 @@
                 },
                 "location": {
                     "name": "location",
-                    "lat": 51,
-                    "lon": -43.5,
-                    "zoom": 4,
+                    "lat": 41.780827,
+                    "lon": 12.278016,
+                    "zoom": 14,
                     "line": false
                 },
                 "media": {
@@ -318,9 +318,9 @@
                 },
                 "location": {
                     "name": "location",
-                    "lat": 58,
-                    "lon": -35,
-                    "zoom": 4,
+                    "lat": 41.784012,
+                    "lon": 12.281213,
+                    "zoom": 14,
                     "line": false
                 },
                 "media": {
@@ -336,9 +336,9 @@
                 },
                 "location": {
                     "name": "location",
-                    "lat": 71,
-                    "lon": -2,
-                    "zoom": 4,
+                    "lat": 41.799193,
+                    "lon": 12.306662,
+                    "zoom": 14,
                     "line": false
                 },
                 "media": {
@@ -354,9 +354,9 @@
                 },
                 "location": {
                     "name": "location",
-                    "lat": 66.5,
-                    "lon": -57,
-                    "zoom": 4,
+                    "lat": 41.788699,
+                    "lon": 12.273102,
+                    "zoom": 14,
                     "line": false
                 },
                 "media": {
@@ -372,9 +372,9 @@
                 },
                 "location": {
                     "name": "location",
-                    "lat": 80,
-                    "lon": -62,
-                    "zoom": 4,
+                    "lat": 41.804952,
+                    "lon": 12.268724,
+                    "zoom": 14,
                     "line": false
                 },
                 "media": {
@@ -390,9 +390,9 @@
                 },
                 "location": {
                     "name": "location",
-                    "lat": 75,
-                    "lon": -28,
-                    "zoom": 4,
+                    "lat": 41.797402,
+                    "lon": 12.278681,
+                    "zoom": 14,
                     "line": false
                 },
                 "media": {
@@ -408,9 +408,9 @@
                 },
                 "location": {
                     "name": "location",
-                    "lat": 35,
-                    "lon": 14,
-                    "zoom": 4,
+                    "lat": 41.769433,
+                    "lon": 12.305374,
+                    "zoom": 14,
                     "line": false
                 },
                 "media": {
@@ -426,9 +426,9 @@
                 },
                 "location": {
                     "name": "location",
-                    "lat": 30,
-                    "lon": -60,
-                    "zoom": 4,
+                    "lat": 41.768729,
+                    "lon": 12.269154,
+                    "zoom": 14,
                     "line": false
                 },
                 "media": {
@@ -444,9 +444,9 @@
                 },
                 "location": {
                     "name": "location",
-                    "lat": -4,
-                    "lon": -33,
-                    "zoom": 4,
+                    "lat": 41.756501,
+                    "lon": 12.281256,
+                    "zoom": 14,
                     "line": false
                 },
                 "media": {
@@ -462,9 +462,9 @@
                 },
                 "location": {
                     "name": "location",
-                    "lat": -14,
-                    "lon": -22,
-                    "zoom": 4,
+                    "lat": 41.754644,
+                    "lon": 12.289495,
+                    "zoom": 14,
                     "line": false
                 },
                 "media": {
@@ -480,9 +480,9 @@
                 },
                 "location": {
                     "name": "location",
-                    "lat": -16,
-                    "lon": -41,
-                    "zoom": 4,
+                    "lat": 41.753427,
+                    "lon": 12.281342,
+                    "zoom": 14,
                     "line": false
                 },
                 "media": {
@@ -498,9 +498,9 @@
                 },
                 "location": {
                     "name": "location",
-                    "lat": -26,
-                    "lon": -13,
-                    "zoom": 4,
+                    "lat": 41.751955,
+                    "lon": 12.294388,
+                    "zoom": 14,
                     "line": false
                 },
                 "media": {
@@ -518,9 +518,9 @@
                     "name": "location",
                     "image": "images/tiny_icon.png",
                     "icon_size": 1,
-                    "lat": 60,
-                    "lon": -100,
-                    "zoom": 3,
+                    "lat": 41.7786,
+                    "lon": 12.2582,
+                    "zoom": 14,
                     "line": false
                 },
                 "media": {

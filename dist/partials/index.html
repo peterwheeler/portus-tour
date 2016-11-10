@@ -1,43 +1,28 @@
-
-   <title>Portus Tour - Explore the history of Portus</title>
+<title>Portus Tour - Explore the history of Portus</title>
 
 <div class="thebody">
-	<div class="desktop-display hidden-xs hidden-sm">
-		<div class="container">
-			<div class="logoDivstartDiv col-xs-2 col-xs-push-9 col-sm-2 col-sm-push-9 col-md-3 col-md-push-9 col-lg-2 col-lg-push-9 text-center">
-		    	<div class="logoDiv">
-		      		<a ng-href="{{urlBegin()}}/"><img class="beginLogo" src="logos/logo.png"></img></a>
-		    	</div> 
-		    	<div class="startDiv">
-		    		<a ng-href="{{urlBegin()}}/about" class="beginText">START</a>
-		    	</div>      
-			</div>
-		</div>
-	</div>
 
-	<div class="desktop-mobile hidden-md hidden-lg">
-    	<div class="titleBox">
-			<a ng-href="{{urlBegin()}}/">
-    			<div class="logoBox"></div>
-			</a>
+<!-- <div class="container"> -->
+<div class="body-content">
+  <h1 class="body-header center">Portus Tour</h1>
+  <div class="row center">
+    <h4 class="header col s12 light center">A virtual tour of ancient Portus</h4>
+  </div>
+  <div class="row center">
+    <a ng-href="{{urlBegin()}}/{{localizedPage(0)}}" class="btn-large waves-effect waves-light #b2dfdb lighten-4">Start</a>
+  </div>
+  <div class="row center">
+ 	<a class="text-lighten-4" ng-href="{{urlBegin()}}/about">About</a>
+  </div>
+</div>
+<!-- </div> -->
+
+<footer class="footer">
+	<div class="left-align">
+		<div class="logoHolder">
+		Image by <a ng-href="https://artasmedia.com/" target="_blank"><img src="logos/artas.jpg" alt="ArtasMedia"></a>
 		</div>
-		<footer class="footer">
-			<div class="container-fluid">
-	    		<div class="startDiv-mobile col-xs-12 col-sm-10 col-sm-push-1 col-md-6 col-md-push-3 col-lg-6 col-lg-push-3 text-right">
-	    			<a ng-href="{{urlBegin()}}/about" class="beginText">START</a>
-	    		</div>
-	   		</div>
-    	</footer>      
 	</div>
+</footer>
 
 </div>
-
-
-
-
-
-    
-
-
-
-

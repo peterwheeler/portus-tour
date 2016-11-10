@@ -4715,6 +4715,7 @@ VCO.MenuBar = VCO.Class.extend({
 			button_overview: {},
 			button_backtostart: {},
 			button_collapse_toggle: {},
+			button_layers_toggle: {},
 			button_layers: {},
 			control_layer: {},
 			arrow: {},
@@ -4757,28 +4758,13 @@ VCO.MenuBar = VCO.Class.extend({
 	/*	Public
 	================================================== */
 	show: function(d) {
-		
 		var duration = this.options.duration;
 		if (d) {
 			duration = d;
 		}
-		/*
-		this.animator = VCO.Animate(this._el.container, {
-			top: 		this.options.menubar_default_y + "px",
-			duration: 	duration,
-			easing: 	VCO.Ease.easeOutStrong
-		});
-		*/
 	},
 	
 	hide: function(top) {
-		/*
-		this.animator = VCO.Animate(this._el.container, {
-			top: 		top,
-			duration: 	this.options.duration,
-			easing: 	VCO.Ease.easeOutStrong
-		});
-		*/
 	},
 		
 	
@@ -4801,7 +4787,6 @@ VCO.MenuBar = VCO.Class.extend({
 	updateDisplay: function(w, h, a, l) {
 		this._updateDisplay(w, h, a, l);
 	},
-	
 
 	/*	Events
 	================================================== */
@@ -4904,41 +4889,29 @@ VCO.MenuBar = VCO.Class.extend({
 	_initLayout: function () {
 		// Create Layout
 
-		this._el.button_container						= VCO.Dom.create('div', 'buttons-container', this._el.container);
+		this._el.button_container = VCO.Dom.create('div', 'buttons-container', this._el.container);
 
-		// Buttons
-		this._el.button_collapse_toggle 				= VCO.Dom.create('div', 'menubar-button button-collapse_toggle', this._el.button_container);
+		this._el.buttons_header = VCO.Dom.create('div', 'buttons-header', this._el.button_container);
+		this._el.buttons_header.innerHTML = '<h4 class="bold"><i class="material-icons">settings</i>Settings</h4><li><div class="divider"></div></li>';
+
+		this._el.button_collapse_toggle = VCO.Dom.create('li', 'bold', this._el.button_container);
+		this._el.button_collapse_toggle.innerHTML = '<a class="collapsible-header waves-effect"><i class="material-icons">cloud</i>Switch Story/Maps</a>';
 		VCO.DomEvent.addListener(this._el.button_collapse_toggle, 'click', this._onButtonCollapseMap, this);
 
-		this._el.button_backtostart 					= VCO.Dom.create('div', 'menubar-button button-backtostart', this._el.button_container);
-		VCO.DomEvent.addListener(this._el.button_backtostart, 'click', this._onButtonBackToStart, this);
+		this._el.button_geolocation = VCO.Dom.create('li', 'bold', this._el.button_container);
+		// this._el.button_geolocation.innerHTML = '<a class="collapsible-header waves-effect switch"><i class="material-icons">location_on</i>Geolocation<label><input type="checkbox"><span class="lever"></span></label></a>';
+		// VCO.DomEvent.addListener(this._el.button_collapse_toggle, 'click', this._onButtonCollapseMap, this);
 
-		this._el.button_overview 						= VCO.Dom.create('div', 'menubar-button button-overview', this._el.button_container);
+		this._el.button_layers = VCO.Dom.create('ul', 'collapsible collapsible-menubar collapsible-accordion', this._el.button_container);
+		VCO.DomEvent.addListener(this._el.button_layers, 'click', this._onButtonLayers, this);
+
+		this._el.button_overview = VCO.Dom.create('li', 'bold', this._el.button_container);
+		this._el.button_overview.innerHTML = '<a ng-href="#!" class="collapsible-header waves-effect"><i class="material-icons">location_on</i>Overview</a>';
 		VCO.DomEvent.addListener(this._el.button_overview, 'click', this._onButtonOverview, this);
 
-		this._el.button_layers 							= VCO.Dom.create('div', 'menubar-button button-layers', this._el.button_container);
-		VCO.DomEvent.addListener(this._el.button_layers, 'click', this._onButtonLayers, this);
-		
-		// if (this.options.maps[0].map_as_image) {
-		// 	this._el.button_overview.innerHTML			= "<i class='fa fa-compass fa-lg'></i>";
-		// } else {
-		// 	this._el.button_overview.innerHTML			= "<i class='fa fa-compass fa-lg'></i>";
-		// }
-
-		this._el.button_overview.innerHTML				= "<i class='fa fa-external-link fa-lg'></i>";
-		this._el.button_backtostart.innerHTML			= "<i class='fa fa-reply fa-lg'></i>";
-
-		if (VCO.Browser.mobile) {
-			this._el.button_collapse_toggle.innerHTML	= "<i class='fa fa-map-o fa-lg'></i>";
-			this._el.button_collapse_toggle.title = VCO.Language.buttons.uncollapse_toggle;
-			this._el.button_overview.style.color = "grey";
-
-			this._el.button_layers.setAttribute("map", " ");
-			this._el.container.setAttribute("ontouchstart"," ");
-		}
-		else {
-			this._el.button_collapse_toggle.style.display = "none";
-		}
+		this._el.button_backtostart = VCO.Dom.create('li', 'bold', this._el.button_container);
+		this._el.button_backtostart.innerHTML = '<a ng-href="#!" class="collapsible-header waves-effect"><i class="material-icons">language</i>Back to Start</a>';
+		VCO.DomEvent.addListener(this._el.button_backtostart, 'click', this._onButtonBackToStart, this);
 
 		this._el.button_backtostart.title 				= VCO.Language.buttons.backtostart;
 		this._el.button_overview.title 					= VCO.Language.buttons.overview;
@@ -4969,6 +4942,10 @@ VCO.MenuBar = VCO.Class.extend({
 
 	controlLayers: function (layers) {
 		this._el.button_layers.appendChild(layers);
+	},
+
+	geolocationLayer: function(layer) {
+		this._el.button_container.appendChild(layer)
 	}
 	
 });
@@ -4991,7 +4968,6 @@ VCO.Message = VCO.Class.extend({
 			parent: {},
 			container: {},
 			message_container: {},
-			next_tour_icon: {},
 			message: {}
 		};
 	
@@ -5071,7 +5047,6 @@ VCO.Message = VCO.Class.extend({
 		
 		// Create Layout
 		this._el.message_container = VCO.Dom.create("div", "vco-message-container", this._el.container);
-		// this._el.next_tour_icon = VCO.Dom.create("div", this.options.message_icon_class, this._el.message_container);
 		this._el.message = VCO.Dom.create("div", "vco-message-content", this._el.message_container);
 		
 		this._updateMessage();
@@ -5087,6 +5062,110 @@ VCO.Message = VCO.Class.extend({
 		
 	}
 	
+});
+
+
+VCO.TourMessage = VCO.Class.extend({
+	
+	includes: [VCO.Events, VCO.DomMixins],
+	
+	_el: {},
+
+	/*	Constructor
+	================================================== */
+	initialize: function(data, options, add_to_container) {
+		// DOM ELEMENTS
+		this._el = {
+			container: {},
+			message_container: {},
+			message: {}
+		};
+	
+		//Options
+		this.options = {
+			message_class: 			"vco-message",
+			message_id:             "",
+			message_open:           false, 
+			message_type: 			"", 
+		};
+		
+		// Merge Data and Options
+		VCO.Util.mergeData(this.data, data);
+		VCO.Util.mergeData(this.options, options);
+		
+		this._el.container = VCO.Dom.create("div", "modal");
+		this._el.container.id = this.options.message_id;
+		
+		if (add_to_container) {
+			add_to_container.appendChild(this._el.container);
+			this._el.parent = add_to_container;
+		};
+		
+		
+		// Animation
+		this.animator = {};
+		
+		this._initLayout();
+		this._initEvents();
+	},
+
+	/*	Public
+	================================================== */
+	updateMessage: function(t) {
+		this._updateMessage(t);
+	},
+
+	updateMessageOpen: function(e){
+		this._updateMessageOpen(e);
+	},
+
+	/*	Update Display
+	================================================== */
+	updateDisplay: function(w, h) {
+		this._updateDisplay(w, h);
+	},
+	
+	_updateMessage: function(t) {
+		if (!t) {
+			if (VCO.Language) {
+				this._el.message.innerHTML = VCO.Language.messages.loading;
+			} else {
+				this._el.message.innerHTML = "Loading";
+			}
+		} else {
+			this._el.message.innerHTML = t;
+		}
+	},
+
+	_updateMessageOpen: function(e){
+		this.options.message_open == e;
+	},
+
+	/*	Events
+	================================================== */
+
+	
+	_onMouseClick: function() {
+		this.fire("clicked", this.options);
+	},
+
+	
+	/*	Private Methods
+	================================================== */
+	_initLayout: function () {
+		
+		// Create Layout
+		this._el.message_container = VCO.Dom.create("div", "modal-content", this._el.container);
+		this._el.message = VCO.Dom.create("div", "vco-message-content", this._el.message_container);
+		
+		this._updateMessage();
+		
+	},
+	
+	_initEvents: function () {
+		VCO.DomEvent.addListener(this._el.container, 'click', this._onMouseClick, this);
+	}
+
 });
 
 /*	VCO.MediaType
@@ -7079,7 +7158,8 @@ VCO.SlideNav = VCO.Class.extend({
 	
 		//Options
 		this.options = {
-			direction: 			"previous"
+			direction: 			"previous",
+			target: 			null
 		};
 	
 		this.animator = null;
@@ -7202,6 +7282,11 @@ VCO.SlideNav = VCO.Class.extend({
 		this._el.icon						= VCO.Dom.create("div", "vco-slidenav-icon", this._el.content_container);
 		this._el.title						= VCO.Dom.create("div", "vco-slidenav-title", this._el.content_container);
 		this._el.description				= VCO.Dom.create("div", "vco-slidenav-description", this._el.content_container);
+
+		if(this.options.activates !== ""){
+			this._el.icon.id = this.options.target;
+			this._el.icon.setAttribute("data-target", this.options.target);
+		}
 		
 		this._el.icon.innerHTML				= "&nbsp;"
 		
@@ -7758,8 +7843,8 @@ VCO.StorySlider = VCO.Class.extend({
 		// Create Navigation
 		this._nav.previous = new VCO.SlideNav({title: "Previous", description: "description"}, {direction:"previous"});
 		this._nav.next = new VCO.SlideNav({title: "Next",description: "description"}, {direction:"next"});
-		this._nav.start = new VCO.SlideNav({title: "Start",description: "description"}, {direction:"start"}); 
- 		this._nav.end = new VCO.SlideNav({title: "End",description: "description"}, {direction:"end"});
+		this._nav.start = new VCO.SlideNav({title: "Start",description: "description"}, {direction:"start" , target: "start-modal"}); 
+ 		this._nav.end = new VCO.SlideNav({title: "End",description: "description"}, {direction:"end", target: "end-modal"});
 
 
 		// add the navigation to the dom
@@ -7769,8 +7854,6 @@ VCO.StorySlider = VCO.Class.extend({
  		this._nav.end.addTo(this._el.container);
 				
 		this._el.slider_container.style.left="0px";
-
-		// this._showMessage();
 
 		
 		if (VCO.Browser.touch) {
@@ -7783,81 +7866,56 @@ VCO.StorySlider = VCO.Class.extend({
 		}
 	},
 
-	// _showMessage: function() {
-	// 	if (document.cookie.replace(/(?:(?:^|.*;\s*)introMessageShown\s*\=\s*([^;]*).*$)|^.*$/, "$1") !== "true") {
-	// 		if (VCO.Browser.touch) {
-	// 			//Touchscreen Message
-	// 			this._message = new VCO.Message({}, {
+	// _startMessage: function(){
+	// 	this._startmessage = new VCO.Message({}, {
 	// 				message_class: 		"vco-message-full",
-	// 				message_icon_class: "vco-icon-swipe-left"
+	// 				message_open: 		false
 	// 			});
-	// 			this._message.updateMessage("Swipe to Navigate<br>Turn On/Off the geolocation<br><span class='vco-button'>OK</span>");
-	// 			this._message.addTo(this._el.container);
-	// 		}
-	// 		else
-	// 		{
- //  				// Message
-	// 			this._message = new VCO.Message({}, {
-	// 				message_class: 		"vco-message-full",
-	// 			});
-	// 			this._message.updateMessage("Navigate the tour by using the arrows <a href='{{urlBegin()}}/{{localizedPage(0)}}'><img class='img-responsive center-block' src='images/copy.jpg' alt='claudian'></a>.<br>Use the <i class='fa fa-bars'></i> to select options<br>Select from different maps<br><span class='vco-button'>OK</span>");
-	// 			this._message.addTo(this._el.container);
-	// 		}
- //  			document.cookie = "introMessageShown=true; path=/";
+
+	// 	if (prevTour().split('/')[1] == "") {
+	// 		this._prevTour = "home";
+	// 	}
+	// 	else{
+	// 		this._prevTour = prevTour().split('/')[1];
 	// 	}
 		
-	// },
-
-	_startMessage: function(){
-		this._startmessage = new VCO.Message({}, {
-					message_class: 		"vco-message-full",
-					message_open: 		false
-				});
-
-		if (prevTour().split('/')[1] == "") {
-			this._prevTour = "home";
-		}
-		else{
-			this._prevTour = prevTour().split('/')[1];
-		}
-		
-		if (localStorage.getItem("ls.locale.main").contains("en")) {
-			this._startmessage.updateMessage("<div class='message-tours'>Select the previous or next tour<br><div class='itemHolderMessage'><div class='imageHolder'><a href='/" + prevTour() + "'><img src='logos/mini-tours/" + this._prevTour + ".png' ng-src='logos/mini-tours/" + this._prevTour + ".png'></a></div><div class='textHolderWhite'><div class='text'>" + this._prevTour + "</div></div></div><div class='itemHolderMessage'><div class='imageHolder'><a href='/" + nextTour() + "'><img src='logos/mini-tours/" + nextTour().split('/')[1] + ".png' ng-src='logos/mini-tours/" + nextTour().split('/')[1] + ".png'></a></div><div class='textHolderWhite'><div class='text'>" + nextTour().split('/')[1] + "</div></div></div><br><span class='vco-button'>CLOSE</span></div>");
-		}
-		else {
-			this._startmessage.updateMessage("<div class='message-tours'>Select the previous or next tour<br><div class='itemHolderMessage'><div class='imageHolder'><a href='/" + prevTour() + "'><img src='logos/mini-tours/" + this._prevTour + ".png' ng-src='logos/mini-tours/" + this._prevTour + ".png'></a></div><div class='textHolderWhite'><div class='text'>" + this._prevTour + "</div></div></div><div class='itemHolderMessage'><div class='imageHolder'><a href='/" + nextTour() + "'><img src='logos/mini-tours/" + nextTour().split('/')[1] + ".png' ng-src='logos/mini-tours/" + nextTour().split('/')[1] + ".png'></a></div><div class='textHolderWhite'><div class='text'>" + nextTour().split('/')[1] + "</div></div></div><br><span class='vco-button'>CLOSE</span></div>");
-		}	
-				this._startmessage.addTo(this._el.container);
+	// 	if (localStorage.getItem("ls.locale.main").contains("en")) {
+	// 		this._startmessage.updateMessage("<div class='message-tours'>Select the previous or next tour<br><div class='itemHolderMessage'><div class='imageHolder'><a href='/" + prevTour() + "'><img src='logos/mini-tours/" + this._prevTour + ".png' ng-src='logos/mini-tours/" + this._prevTour + ".png'></a></div><div class='textHolderWhite'><div class='text'>" + this._prevTour + "</div></div></div><div class='itemHolderMessage'><div class='imageHolder'><a href='/" + nextTour() + "'><img src='logos/mini-tours/" + nextTour().split('/')[1] + ".png' ng-src='logos/mini-tours/" + nextTour().split('/')[1] + ".png'></a></div><div class='textHolderWhite'><div class='text'>" + nextTour().split('/')[1] + "</div></div></div><br><span class='vco-button'>CLOSE</span></div>");
+	// 	}
+	// 	else {
+	// 		this._startmessage.updateMessage("<div class='message-tours'>Select the previous or next tour<br><div class='itemHolderMessage'><div class='imageHolder'><a href='/" + prevTour() + "'><img src='logos/mini-tours/" + this._prevTour + ".png' ng-src='logos/mini-tours/" + this._prevTour + ".png'></a></div><div class='textHolderWhite'><div class='text'>" + this._prevTour + "</div></div></div><div class='itemHolderMessage'><div class='imageHolder'><a href='/" + nextTour() + "'><img src='logos/mini-tours/" + nextTour().split('/')[1] + ".png' ng-src='logos/mini-tours/" + nextTour().split('/')[1] + ".png'></a></div><div class='textHolderWhite'><div class='text'>" + nextTour().split('/')[1] + "</div></div></div><br><span class='vco-button'>CLOSE</span></div>");
+	// 	}	
+	// 			this._startmessage.addTo(this._el.container);
 			
 
-		this._startmessage.on('clicked', this._onStartMessageClick, this);
-	},
+	// 	this._startmessage.on('clicked', this._onStartMessageClick, this);
+	// },
 
-	_finalMessage: function(){
-		this._finalmessage = new VCO.Message({}, {
-					message_class: 		"vco-message-full",
-					message_open: 		false
-				});
+	// _finalMessage: function(){
+	// 	this._finalmessage = new VCO.Message({}, {
+	// 				message_class: 		"vco-message-full",
+	// 				message_open: 		false
+	// 			});
 
-		if (prevTour().split('/')[1] == "") {
-			this._prevTour = "home";
-		}
-		else{
-			this._prevTour = prevTour().split('/')[1];
-		}
+	// 	if (prevTour().split('/')[1] == "") {
+	// 		this._prevTour = "home";
+	// 	}
+	// 	else{
+	// 		this._prevTour = prevTour().split('/')[1];
+	// 	}
 
-		if (localStorage.getItem("ls.locale.main").contains("en")) {
-			this._finalmessage.updateMessage("<div class='message-tours'>Select the previous or next tour<br><div class='itemHolderMessage'><div class='imageHolder'><a href='/" + prevTour() + "'><img src='logos/mini-tours/" + this._prevTour + ".png' ng-src='logos/mini-tours/" + this._prevTour + ".png'></a></div><div class='textHolderWhite'><div class='text'>" + this._prevTour + "</div></div></div><div class='itemHolderMessage'><div class='imageHolder'><a href='/" + nextTour() + "'><img src='logos/mini-tours/" + nextTour().split('/')[1] + ".png' ng-src='logos/mini-tours/" + nextTour().split('/')[1] + ".png'></a></div><div class='textHolderWhite'><div class='text'>" + nextTour().split('/')[1] + "</div></div></div><br><span class='vco-button'>CLOSE</span></div>");
-		}
-		else {
-			this._finalmessage.updateMessage("<div class='message-tours'>Select the previous or next tour<br><div class='itemHolderMessage'><div class='imageHolder'><a href='/" + prevTour() + "'><img src='logos/mini-tours/" + this._prevTour + ".png' ng-src='logos/mini-tours/" + this._prevTour + ".png'></a></div><div class='textHolderWhite'><div class='text'>" + this._prevTour + "</div></div></div><div class='itemHolderMessage'><div class='imageHolder'><a href='/" + nextTour() + "'><img src='logos/mini-tours/" + nextTour().split('/')[1] + ".png' ng-src='logos/mini-tours/" + nextTour().split('/')[1] + ".png'></a></div><div class='textHolderWhite'><div class='text'>" + nextTour().split('/')[1] + "</div></div></div><br><span class='vco-button'>CLOSE</span></div>");
-		}
-				this._finalmessage.updateMessageOpen(true);
+	// 	if (localStorage.getItem("ls.locale.main").contains("en")) {
+	// 		this._finalmessage.updateMessage("<div class='message-tours'>Select the previous or next tour<br><div class='itemHolderMessage'><div class='imageHolder'><a href='/" + prevTour() + "'><img src='logos/mini-tours/" + this._prevTour + ".png' ng-src='logos/mini-tours/" + this._prevTour + ".png'></a></div><div class='textHolderWhite'><div class='text'>" + this._prevTour + "</div></div></div><div class='itemHolderMessage'><div class='imageHolder'><a href='/" + nextTour() + "'><img src='logos/mini-tours/" + nextTour().split('/')[1] + ".png' ng-src='logos/mini-tours/" + nextTour().split('/')[1] + ".png'></a></div><div class='textHolderWhite'><div class='text'>" + nextTour().split('/')[1] + "</div></div></div><br><span class='vco-button'>CLOSE</span></div>");
+	// 	}
+	// 	else {
+	// 		this._finalmessage.updateMessage("<div class='message-tours'>Select the previous or next tour<br><div class='itemHolderMessage'><div class='imageHolder'><a href='/" + prevTour() + "'><img src='logos/mini-tours/" + this._prevTour + ".png' ng-src='logos/mini-tours/" + this._prevTour + ".png'></a></div><div class='textHolderWhite'><div class='text'>" + this._prevTour + "</div></div></div><div class='itemHolderMessage'><div class='imageHolder'><a href='/" + nextTour() + "'><img src='logos/mini-tours/" + nextTour().split('/')[1] + ".png' ng-src='logos/mini-tours/" + nextTour().split('/')[1] + ".png'></a></div><div class='textHolderWhite'><div class='text'>" + nextTour().split('/')[1] + "</div></div></div><br><span class='vco-button'>CLOSE</span></div>");
+	// 	}
+	// 			this._finalmessage.updateMessageOpen(true);
 
-				this._finalmessage.addTo(this._el.container);
+	// 			this._finalmessage.addTo(this._el.container);
 
-		this._finalmessage.on('clicked', this._onFinalMessageClick, this);
-	},
+	// 	this._finalmessage.on('clicked', this._onFinalMessageClick, this);
+	// },
 
 	_initEvents: function () {
 		this._nav.next.on('clicked', this._onNavigation, this);
@@ -7924,7 +7982,9 @@ VCO.StorySlider = VCO.Class.extend({
 			}
 			else if (e.direction == "start") {
 				if  (this.current_slide == 0){
-					this._startMessage();
+					// this._startMessage();
+					document.getElementById("start-modal").click();
+					console.log("start");
 				}
 				else {
 					this.previous();
@@ -7932,7 +7992,9 @@ VCO.StorySlider = VCO.Class.extend({
 			}
 			else if (e.direction == "previous" || e.direction == "right") {
 				if  (this.current_slide == 0){
-					this._startMessage();
+					// this._startMessage();
+					this._nav.start.click();
+					console.log("starts");
 				}
 				else {
 					this.previous();
@@ -7965,23 +8027,6 @@ VCO.StorySlider = VCO.Class.extend({
 
 		this.fire("nav_" + e.direction, this.data);
 	},
-	
-	// _onNavigation: function(e) {
-		
-	// 	if (e.direction == "next" || e.direction == "left") {
-	// 		this.next();
-	// 	}
-	// 	else if (e.direction == "start" || e.direction == "back") {
-	// 		this._startMessage();
-	// 	}
-	// 	else if (e.direction == "previous" || e.direction == "right") {
-	// 		this.previous();
-	// 	}
-	// 	else if (e.direction == "end" || e.direction == "forward") {
-	// 		this._finalMessage();
-	// 	} 
-	// 	this.fire("nav_" + e.direction, this.data);
-	// },
 	
 	_onSlideAdded: function(e) {
 		trace("slideadded")
@@ -8030,7 +8075,6 @@ VCO.StorySlider = VCO.Class.extend({
 		this.fire("title", {title:this._slides[0].title});
 		
 	}
-	
 	
 });
 
@@ -15346,6 +15390,553 @@ L.control.layers = function (baseLayers, overlays, options) {
 	return new L.Control.Layers(baseLayers, overlays, options);
 };
 
+/*!
+Copyright (c) 2016 Peter Wheeler
+
+This file is licensed under the MIT license.
+
+Forked from leaflet-locatecontrol: https://github.com/domoritz/leaflet-locatecontrol
+*/
+L.Control.GeoLocate = L.Control.extend({
+        options: {
+            /** Position of the control */
+            position: 'topleft',
+            /** The layer that the user's location should be drawn on. By default creates a new layer. */
+            layer: undefined,
+            /**
+             * Automatically sets the map view (zoom and pan) to the user's location as it updates.
+             * While the map is following the user's location, the control is in the `following` state,
+             * which changes the style of the control and the circle marker.
+             *
+             * Possible values:
+             *  - false: never updates the map view when location changes.
+             *  - 'once': set the view when the location is first determined
+             *  - 'always': always updates the map view when location changes.
+             *              The map view follows the users location.
+             *  - 'untilPan': (default) like 'always', except stops updating the
+             *                view if the user has manually panned the map.
+             *                The map view follows the users location until she pans.
+             */
+            setView: 'untilPan',
+            /** Keep the current map zoom level when setting the view and only pan. */
+            keepCurrentZoomLevel: false,
+            /** Smooth pan and zoom to the location of the marker. Only works in Leaflet 1.0+. */
+            flyTo: false,
+            /**
+             * The user location can be inside and outside the current view when the user clicks on the
+             * control that is already active. Both cases can be configures separately.
+             * Possible values are:
+             *  - 'setView': zoom and pan to the current location
+             *  - 'stop': stop locating and remove the location marker
+             */
+            clickBehavior: {
+                /** What should happen if the user clicks on the control while the location is within the current view. */
+                inView: 'stop',
+                /** What should happen if the user clicks on the control while the location is outside the current view. */
+                outOfView: 'setView',
+            },
+            /**
+             * If set, save the map bounds just before centering to the user's
+             * location. When control is disabled, set the view back to the
+             * bounds that were saved.
+             */
+            returnToPrevBounds: false,
+            /** If set, a circle that shows the location accuracy is drawn. */
+            drawCircle: true,
+            /** If set, the marker at the users' location is drawn. */
+            drawMarker: true,
+            /** The class to be used to create the marker. For example L.CircleMarker or L.Marker */
+            markerClass: L.CircleMarker,
+            /** Accuracy circle style properties. */
+            circleStyle: {
+                color: '#136AEC',
+                fillColor: '#136AEC',
+                fillOpacity: 0.15,
+                weight: 2,
+                opacity: 0.5
+            },
+            /** Inner marker style properties. */
+            markerStyle: {
+                color: '#136AEC',
+                fillColor: '#2A93EE',
+                fillOpacity: 0.7,
+                weight: 2,
+                opacity: 0.9,
+                radius: 5
+            },
+            /**
+             * Changes to accuracy circle and inner marker while following.
+             * It is only necessary to provide the properties that should change.
+             */
+            followCircleStyle: {},
+            followMarkerStyle: {
+                // color: '#FFA500',
+                // fillColor: '#FFB000'
+            },
+            /** The CSS class for the icon. For example fa-location-arrow or fa-map-marker */
+            // icon: 'fa fa-map-marker',
+            icon: 'fa-map-marker',
+            // iconLoading: 'fa fa-spinner fa-spin',
+            iconLoading: 'fa-spinner',
+            /** The element to be created for icons. For example span or i */
+            iconElementTag: 'span',
+            /** Padding around the accuracy circle. */
+            circlePadding: [0, 0],
+            /** Use metric units. */
+            metric: true,
+            /** This event is called in case of any location error that is not a time out error. */
+            onLocationError: function(err, control) {
+                alert(err.message);
+            },
+            /**
+             * This even is called when the user's location is outside the bounds set on the map.
+             * The event is called repeatedly when the location changes.
+             */
+            onLocationOutsideMapBounds: function(control) {
+                control.stop();
+                alert(control.options.strings.outsideMapBoundsMsg);
+            },
+            /** Display a pop-up when the user click on the inner marker. */
+            showPopup: true,
+            strings: {
+                title: "Show me where I am",
+                metersUnit: "meters",
+                feetUnit: "feet",
+                popup: "You are within {distance} {unit} from this point",
+                outsideMapBoundsMsg: "You seem located outside the boundaries of the map"
+            },
+            /** The default options passed to leaflets locate method. */
+            locateOptions: {
+                maxZoom: Infinity,
+                watch: true,  // if you overwrite this, visualization cannot be updated
+                setView: false // have to set this to false because we have to
+                               // do setView manually
+            }
+        },
+
+        initialize: function (options) {
+            // set default options if nothing is set (merge one step deep)
+            for (var i in options) {
+                if (typeof this.options[i] === 'object') {
+                    L.extend(this.options[i], options[i]);
+                } else {
+                    this.options[i] = options[i];
+                }
+            }
+
+            // extend the follow marker style and circle from the normal style
+            this.options.followMarkerStyle = L.extend({}, this.options.markerStyle, this.options.followMarkerStyle);
+            this.options.followCircleStyle = L.extend({}, this.options.circleStyle, this.options.followCircleStyle);
+        },
+
+        /**
+         * Add control to map. Returns the container for the control.
+         */
+        onAdd: function (map) {
+            // this._container = VCO.Dom.create('div', 'switch');
+            this._container = VCO.Dom.create('li', 'bold');
+
+            this._layer = this.options.layer || new L.LayerGroup();
+            this._layer.addTo(map);
+            this._event = undefined;
+            this._prevBounds = null;
+
+
+   //          this._link = VCO.Dom.create('span', 'collapsible-header', this._container);
+   //          // this._link.setAttribute("ng-href", "#!");
+			// this._link.innerHTML = '<div class="switch"><i class="material-icons">location_on</i>Geolocation<label>Off<input type="checkbox" class="geo-checkbox"><span class="lever"></span>On</label></div>';
+			// this._icon = this._link.getElementsByClassName('geo-checkbox');
+
+
+			// this._linkText = VCO.Dom.create('li', 'bold', this._container);
+			this._linkText = VCO.Dom.create('div', 'switch', this._container);
+			this._linkText.innerHTML = '<a class="collapsible-header"><i class="material-icons">location_on</i>Geolocation</a>';
+			this._link = VCO.Dom.create('label', '', this._linkText);
+			this._icon = VCO.Dom.create('input', 'geo-checkbox', this._link);
+			this._icon.type = 'checkbox';
+			this._iconText = VCO.Dom.create('span', 'lever', this._link);
+
+            L.DomEvent
+                .on(this._link, 'click', L.DomEvent.stopPropagation)
+                .on(this._link, 'click', L.DomEvent.preventDefault)
+                .on(this._link, 'click', this._onClick, this)
+                .on(this._link, 'dblclick', L.DomEvent.stopPropagation);
+
+            this._resetVariables();
+
+            this._map.on('unload', this._unload, this);
+
+            return this._container;
+        },
+
+        /**
+         * This method is called when the user clicks on the control.
+         */
+        _onClick: function() {
+            this._justClicked = true;
+            this._userPanned = false;
+
+            if (this._active && !this._event) {
+                // click while requesting
+                console.log("stop");
+                this.stop();
+            } else if (this._active && this._event !== undefined) {
+                var behavior = this._map.getBounds().contains(this._event.latlng) ?
+                    this.options.clickBehavior.inView : this.options.clickBehavior.outOfView;
+                switch (behavior) {
+                    case 'setView':
+                    console.log("setview");
+                        this.setView();
+                        break;
+                    case 'stop':
+                    console.log("stopstop");
+                        this.stop();
+                        if (this.options.returnToPrevBounds) {
+                            var f = this.options.flyTo ? this._map.flyToBounds : this._map.fitBounds;
+                            f.bind(this._map)(this._prevBounds);
+                        }
+                        break;
+                }
+            } else {
+                if (this.options.returnToPrevBounds) {
+                  this._prevBounds = this._map.getBounds();
+                }
+                console.log("start");
+                this.start();
+            }
+
+            this._updateContainerStyle();
+        },
+
+        /**
+         * Starts the plugin:
+         * - activates the engine
+         * - draws the marker (if coordinates available)
+         */
+        start: function() {
+            this._activate();
+
+            if (this._event) {
+                this._drawMarker(this._map);
+
+                // if we already have a location but the user clicked on the control
+                if (this.options.setView) {
+                    this.setView();
+                }
+            }
+            this._icon.checked = true;
+            this._updateContainerStyle();
+        },
+
+        /**
+         * Stops the plugin:
+         * - deactivates the engine
+         * - reinitializes the button
+         * - removes the marker
+         */
+        stop: function() {
+            this._deactivate();
+
+            this._cleanClasses();
+            this._resetVariables();
+
+            this._removeMarker();
+            this._icon.checked = false;
+        },
+
+        /**
+         * This method launches the location engine.
+         * It is called before the marker is updated,
+         * event if it does not mean that the event will be ready.
+         *
+         * Override it if you want to add more functionalities.
+         * It should set the this._active to true and do nothing if
+         * this._active is true.
+         */
+        _activate: function() {
+            if (!this._active) {
+                this._map.locate(this.options.locateOptions);
+                this._active = true;
+
+                // bind event listeners
+                this._map.on('locationfound', this._onLocationFound, this);
+                this._map.on('locationerror', this._onLocationError, this);
+                this._map.on('dragstart', this._onDrag, this);
+            }
+        },
+
+        /**
+         * Called to stop the location engine.
+         *
+         * Override it to shutdown any functionalities you added on start.
+         */
+        _deactivate: function() {
+            this._map.stopLocate();
+            this._active = false;
+
+            // unbind event listeners
+            this._map.off('locationfound', this._onLocationFound, this);
+            this._map.off('locationerror', this._onLocationError, this);
+            this._map.off('dragstart', this._onDrag, this);
+        },
+
+        /**
+         * Zoom (unless we should keep the zoom level) and an to the current view.
+         */
+        setView: function() {
+            this._drawMarker();
+            if (this._isOutsideMapBounds()) {
+                this.options.onLocationOutsideMapBounds(this);
+            } else {
+                if (this.options.keepCurrentZoomLevel) {
+                    var f = this.options.flyTo ? this._map.flyTo : this._map.panTo;
+                    f.bind(this._map)([this._event.latitude, this._event.longitude]);
+                } else {
+                    var f = this.options.flyTo ? this._map.flyToBounds : this._map.fitBounds;
+                    f.bind(this._map)(this._event.bounds, {
+                        padding: this.options.circlePadding,
+                        maxZoom: this.options.locateOptions.maxZoom
+                    });
+                }
+            }
+        },
+
+        /**
+         * Draw the marker and accuracy circle on the map.
+         *
+         * Uses the event retrieved from onLocationFound from the map.
+         */
+        _drawMarker: function() {
+            if (this._event.accuracy === undefined) {
+                this._event.accuracy = 0;
+            }
+
+            var radius = this._event.accuracy;
+            var latlng = this._event.latlng;
+
+            // circle with the radius of the location's accuracy
+            if (this.options.drawCircle) {
+                var style = this._isFollowing() ? this.options.followCircleStyle : this.options.circleStyle;
+
+                if (!this._circle) {
+                    this._circle = L.circle(latlng, radius, style).addTo(this._layer);
+                } else {
+                    this._circle.setLatLng(latlng).setRadius(radius).setStyle(style);
+                }
+            }
+
+            var distance, unit;
+            if (this.options.metric) {
+                distance = radius.toFixed(0);
+                unit =  this.options.strings.metersUnit;
+            } else {
+                distance = (radius * 3.2808399).toFixed(0);
+                unit = this.options.strings.feetUnit;
+            }
+
+            // small inner marker
+            if (this.options.drawMarker) {
+                var mStyle = this._isFollowing() ? this.options.followMarkerStyle : this.options.markerStyle;
+
+                if (!this._marker) {
+                    this._marker = new this.options.markerClass(latlng, mStyle).addTo(this._layer);
+                } else {
+                    this._marker.setLatLng(latlng).setStyle(mStyle);
+                }
+            }
+
+            var t = this.options.strings.popup;
+            // if (this.options.showPopup && t && this._marker) {
+            //     this._marker.bindPopup(L.Util.template(t, {distance: distance, unit: unit}))
+            //     this._marker._popup.setLatLng(latlng);
+            // }
+        },
+
+        /**
+         * Remove the marker from map.
+         */
+        _removeMarker: function() {
+            this._layer.clearLayers();
+            this._marker = undefined;
+            this._circle = undefined;
+        },
+
+        /**
+         * Unload the plugin and all event listeners.
+         * Kind of the opposite of onAdd.
+         */
+        _unload: function() {
+            this.stop();
+            this._map.off('unload', this._unload, this);
+        },
+
+        /**
+         * Calls deactivate and dispatches an error.
+         */
+        _onLocationError: function(err) {
+            // ignore time out error if the location is watched
+            if (err.code == 3 && this.options.locateOptions.watch) {
+                return;
+            }
+
+            this.stop();
+            this.options.onLocationError(err, this);
+        },
+
+        /**
+         * Stores the received event and updates the marker.
+         */
+        _onLocationFound: function(e) {
+            // no need to do anything if the location has not changed
+            if (this._event &&
+                (this._event.latlng.lat === e.latlng.lat &&
+                 this._event.latlng.lng === e.latlng.lng &&
+                     this._event.accuracy === e.accuracy)) {
+                return;
+            }
+
+            if (!this._active) {
+                // we may have a stray event
+                return;
+            }
+
+            this._event = e;
+
+            this._drawMarker();
+            this._updateContainerStyle();
+
+            switch (this.options.setView) {
+                case 'once':
+                    if (this._justClicked) {
+                        this.setView();
+                    }
+                    break;
+                case 'untilPan':
+                    if (!this._userPanned) {
+                        this.setView();
+                    }
+                    break;
+                case 'always':
+                    this.setView();
+                    break;
+                case false:
+                    // don't set the view
+                    break;
+            }
+
+            this._justClicked = false;
+        },
+
+        /**
+         * When the user drags. Need a separate even so we can bind and unbind even listeners.
+         */
+        _onDrag: function() {
+            // only react to drags once we have a location
+            if (this._event) {
+                this._userPanned = true;
+                this._updateContainerStyle();
+                this._drawMarker();
+            }
+        },
+
+        /**
+         * Compute whether the map is following the user location with pan and zoom.
+         */
+        _isFollowing: function() {
+            if (!this._active) {
+                return false;
+            }
+
+            if (this.options.setView === 'always') {
+                return true;
+            } else if (this.options.setView === 'untilPan') {
+                return !this._userPanned;
+            }
+        },
+
+        /**
+         * Check if location is in map bounds
+         */
+        _isOutsideMapBounds: function() {
+            if (this._event === undefined) {
+                return false;
+            }
+            return this._map.options.maxBounds &&
+                !this._map.options.maxBounds.contains(this._event.latlng);
+        },
+
+        /**
+         * Toggles button class between following and active.
+         */
+        _updateContainerStyle: function() {
+            if (!this._container) {
+                return;
+            }
+
+            if (this._active && !this._event) {
+                // active but don't have a location yet
+                this._setClasses('requesting');
+            } else if (this._isFollowing()) {
+                this._setClasses('following');
+            } else if (this._active) {
+                this._setClasses('active');
+            } else {
+                this._cleanClasses();
+            }
+        },
+
+        /**
+         * Sets the CSS classes for the state.
+         */
+        _setClasses: function(state) {
+            if (state == 'requesting') {
+                L.DomUtil.removeClass(this._container, "active");
+                L.DomUtil.removeClass(this._container, "following");
+                L.DomUtil.addClass(this._container, "requesting");
+
+            } else if (state == 'active') {
+                L.DomUtil.removeClass(this._container, "requesting");
+                L.DomUtil.removeClass(this._container, "following");
+                L.DomUtil.addClass(this._container, "active");
+
+
+            } else if (state == 'following') {
+                L.DomUtil.removeClass(this._container, "requesting");
+                L.DomUtil.addClass(this._container, "active");
+                L.DomUtil.addClass(this._container, "following");
+
+            }
+        },
+
+        /**
+         * Removes all classes from button.
+         */
+        _cleanClasses: function() {
+            L.DomUtil.removeClass(this._container, "requesting");
+            L.DomUtil.removeClass(this._container, "active");
+            L.DomUtil.removeClass(this._container, "following");
+        },
+
+        /**
+         * Reinitializes state variables.
+         */
+        _resetVariables: function() {
+            // whether locate is active or not
+            this._active = false;
+
+            // true if the control was clicked for the first time
+            // we need this so we can pan and zoom once we have the location
+            this._justClicked = false;
+
+            // true if the user has panned the map after clicking the control
+            this._userPanned = false;
+        }
+    });
+
+    L.control.locate = function (options) {
+        return new L.Control.Locate(options);
+    };
+
 /*
  * L.Control.CustomLayers is a control to allow users to switch between different layers on the map.
  */
@@ -15386,7 +15977,7 @@ L.Control.CustomLayers = L.Control.extend({
 		return this._update();
 	},
 
-	addOverlay: function (layer, name) {
+	addOverlay: function (layer, name) {``
 		this._addLayer(layer, name, true);
 		return this._update();
 	},
@@ -15400,80 +15991,19 @@ L.Control.CustomLayers = L.Control.extend({
 
 	_initLayout: function () {
 		var className = 'leaflet-control-layers',
-		    container = this._container = L.DomUtil.create('li', 'dropdown');
+		    container = this._container = L.DomUtil.create('li', 'bold active');
 
-		// makes this work on IE touch devices by stopping it from firing a mouseout event when the touch is released
-		// container.setAttribute('aria-haspopup', true);
-		container.style.listStyleType = "none";
+		var link = this._layersLink = L.DomUtil.create('a', 'collapsible-header waves-effect waves-teal', container);
+		link.innerHTML = '<i class="material-icons left">layers</i>Layers<i class="material-icons">arrow_drop_down</i>'
 
-		if (!L.Browser.touch) {
-			L.DomEvent
-				.disableClickPropagation(container)
-				.disableScrollPropagation(container);
-		} else {
-			L.DomEvent.on(container, 'click', L.DomEvent.stopPropagation);
-		}
+		this._layersList = this._form = L.DomUtil.create('div', 'collapsible-body', container);
+		this._form = L.DomUtil.create('ul', '', this._layersList);
+		this._baseLayersList = L.DomUtil.create('form', 'baselayers', this._form);
+		this._baseLayersList.innerHTML = '<li><div class="divider"></div></li><li><a class="subheader">Baselayers</a></li>';
+		this._overlaysList = L.DomUtil.create('div', 'overlays', this._form);
+		this._overlaysList.innerHTML = '<li><div class="divider"></div></li><li><a class="subheader">Overlays</a></li>'
 
-		// var form = this._form = L.DomUtil.create('form', className + '-list');
-
-		if (this.options.collapsed) {
-			if (!L.Browser.android) {
-				L.DomEvent.on(container, {
-					mouseenter: this._expand,
-					mouseleave: this._collapse
-				}, this);
-			}
-
-			var link = this._layersLink = L.DomUtil.create('a', 'controlLink dropdown-toggle', container);
-			link.role = 'button';
-			link.setAttribute('ng-href', '#');
-			link.setAttribute('data-toggle', 'dropdown');
-			link.setAttribute('data-target', '#');
-			link.setAttribute('aria-haspopup', 'true');
-			link.setAttribute('aria-expanded', 'false');
-
-			if (L.Browser.mobile) {
-				link.innerHTML = "<i class='fa fa-clone fa-lg'></i>";
-				if (link.parentElement.hasAttribute("map")){
-					link.style.color = "grey";
-				}
-				else{
-					link.style.color = "#333";
-				}
-			}
-			else{
-				link.innerHTML = "Layers<span class='caret'></span>";
-			}
-			
-
-			if (L.Browser.touch) {
-				L.DomEvent
-				    .on(link, 'click', L.DomEvent.stop)
-				    .on(link, 'click', this._expand, this);
-			} else {
-				L.DomEvent.on(link, 'focus', this._expand, this);
-			}
-
-			// work around for Firefox Android issue https://github.com/Leaflet/Leaflet/issues/2033
-			// L.DomEvent.on(this._layersList, 'click', function () {
-			// 	setTimeout(L.bind(this._onInputClick, this), 0);
-			// }, this);
-
-			this._map.on('click', this._collapse, this);
-
-			// TODO keyboard accessibility
-		} else {
-			this._expand();
-		}
-		this._layersList = this._form = L.DomUtil.create('ul', 'dropdown-menu', container);
-		this._layersList.setAttribute('role', 'menu');
-		this._baseLayersList = L.DomUtil.create('div', 'baselayers', this._layersList);
-		this._separator = L.DomUtil.create('li', 'divider', this._layersList);
-		this._separator.role = "separator";
-		this._overlaysList = L.DomUtil.create('div', 'overlays', this._layersList);
-
-		L.DomEvent.on(this._layersList, 'click', this._collapse, this);
-		// container.appendChild(form);
+		// L.DomEvent.on(this._layersList, 'click', this._collapse, this);
 	},
 
 	_addLayer: function (layer, name, overlay) {
@@ -15496,9 +16026,6 @@ L.Control.CustomLayers = L.Control.extend({
 	_update: function () {
 		if (!this._container) { return this; }
 
-		//L.DomUtil.empty(this._baseLayersList);
-		//L.DomUtil.empty(this._overlaysList);
-
 		var baseLayersPresent, overlaysPresent, i, obj, baseLayersCount = 0;
 
 		for (i in this._layers) {
@@ -15514,9 +16041,6 @@ L.Control.CustomLayers = L.Control.extend({
 			baseLayersPresent = baseLayersPresent && baseLayersCount > 1;
 			this._baseLayersList.style.display = baseLayersPresent ? '' : 'none';
 		}
-
-		this._separator.style.display = overlaysPresent && baseLayersPresent ? '' : 'none';
-
 		return this;
 	},
 
@@ -15536,10 +16060,14 @@ L.Control.CustomLayers = L.Control.extend({
 		}
 	},
 
-	// IE7 bugs out if you create a radio dynamically, so you have to do it this hacky way (see http://bit.ly/PqYLBe)
-	_createRadioElement: function (name, checked) {
+	_hasClass: function (el, cls) {
+  		return el.className && new RegExp("(\\s|^)" + cls + "(\\s|$)").test(el.className);
+	},
 
-		var radioHtml = '<input type="radio"  name="' +
+	// IE7 bugs out if you create a radio dynamically, so you have to do it this hacky way (see http://bit.ly/PqYLBe)
+	_createRadioElement: function (name, id, checked) {
+
+		var radioHtml = '<input type="radio" class="with-gap" id="radio' + id + '" name="' +
 				name + '"' + (checked ? ' checked="checked"' : '') + '/>';
 
 		var radioFragment = document.createElement('div');
@@ -15548,45 +16076,41 @@ L.Control.CustomLayers = L.Control.extend({
 		return radioFragment.firstChild;
 	},
 
-	_hasClass: function (el, cls) {
-  		return el.className && new RegExp("(\\s|^)" + cls + "(\\s|$)").test(el.className);
-	},
-
 	_addItem: function (obj) {
-		var item = L.DomUtil.create('li', 'list-group-item'),
-		input,
-		checked = this._map.hasLayer(obj.layer);
+		var label = document.createElement('li'),
+		    checked = this._map.hasLayer(obj.layer),
+		    layerId = L.stamp(obj.layer),
+		    input;
 
 		if (obj.overlay) {
-			input = L.DomUtil.create('input', 'overlay-input', item);
+			input = document.createElement('input');
 			input.type = 'checkbox';
+			input.className = 'filled-in';
 			input.defaultChecked = checked;
-		}
-		else {
-			input = this._createRadioElement('leaflet-base-layers', checked);
+		} else {
+			input = this._createRadioElement('leaflet-base-layers', layerId, checked);
 		}
 
-		input.layerId = L.stamp(obj.layer);
+		input.layerId = layerId
 
 		L.DomEvent.on(input, 'click', this._onInputClick, this);
 
-		var label = document.createElement('label');
-		var name = document.createElement('span');
+		var name = document.createElement('label');
+		name.setAttribute('for', 'radio' + input.layerId);
 		name.innerHTML = ' ' + obj.name;
 
-		item.appendChild(label);
 		label.appendChild(input);
 		label.appendChild(name);
 
 		var container = obj.overlay ? this._overlaysList : this._baseLayersList;
-		container.appendChild(item);
+		container.appendChild(label);
 
-		return item;
+		return label;
 	},
 
 	_onInputClick: function () {
 		var inputs = this._form.getElementsByTagName('input'),
-		    input, item, layer, hasLayer;
+		    input, layer, hasLayer;
 		var addedLayers = [],
 		    removedLayers = [];
 
@@ -15598,11 +16122,11 @@ L.Control.CustomLayers = L.Control.extend({
 			hasLayer = this._map.hasLayer(layer);
 
 			if (input.checked && !hasLayer) {
-			addedLayers.push(layer);
+				addedLayers.push(layer);
 
 			} else if (!input.checked && hasLayer) {
 				removedLayers.push(layer);
-			}			
+			}
 		}
 
 		// Bugfix issue 2318: Should remove all old layers before readding new ones
@@ -15895,6 +16419,104 @@ L.PosAnimation = L.DomUtil.TRANSITION ? L.PosAnimation : L.PosAnimation.extend({
 	}
 });
 
+/*
+ * Provides L.Map with convenient shortcuts for using browser geolocation features.
+ */
+
+L.Map.include({
+	_defaultLocateOptions: {
+		watch: false,
+		setView: false,
+		maxZoom: Infinity,
+		timeout: 10000,
+		maximumAge: 0,
+		enableHighAccuracy: false
+	},
+
+	locate: function (/*Object*/ options) {
+
+		options = this._locateOptions = L.extend(this._defaultLocateOptions, options);
+
+		if (!navigator.geolocation) {
+			this._handleGeolocationError({
+				code: 0,
+				message: 'Geolocation not supported.'
+			});
+			return this;
+		}
+
+		var onResponse = L.bind(this._handleGeolocationResponse, this),
+			onError = L.bind(this._handleGeolocationError, this);
+
+		if (options.watch) {
+			this._locationWatchId =
+			        navigator.geolocation.watchPosition(onResponse, onError, options);
+		} else {
+			navigator.geolocation.getCurrentPosition(onResponse, onError, options);
+		}
+		return this;
+	},
+
+	stopLocate: function () {
+		if (navigator.geolocation) {
+			navigator.geolocation.clearWatch(this._locationWatchId);
+		}
+		if (this._locateOptions) {
+			this._locateOptions.setView = false;
+		}
+		return this;
+	},
+
+	_handleGeolocationError: function (error) {
+		var c = error.code,
+		    message = error.message ||
+		            (c === 1 ? 'permission denied' :
+		            (c === 2 ? 'position unavailable' : 'timeout'));
+
+		if (this._locateOptions.setView && !this._loaded) {
+			this.fitWorld();
+		}
+
+		this.fire('locationerror', {
+			code: c,
+			message: 'Geolocation error: ' + message + '.'
+		});
+	},
+
+	_handleGeolocationResponse: function (pos) {
+		var lat = pos.coords.latitude,
+		    lng = pos.coords.longitude,
+		    latlng = new L.LatLng(lat, lng),
+
+		    latAccuracy = 180 * pos.coords.accuracy / 40075017,
+		    lngAccuracy = latAccuracy / Math.cos(L.LatLng.DEG_TO_RAD * lat),
+
+		    bounds = L.latLngBounds(
+		            [lat - latAccuracy, lng - lngAccuracy],
+		            [lat + latAccuracy, lng + lngAccuracy]),
+
+		    options = this._locateOptions;
+
+		if (options.setView) {
+			var zoom = Math.min(this.getBoundsZoom(bounds), options.maxZoom);
+			this.setView(latlng, zoom);
+		}
+
+		var data = {
+			latlng: latlng,
+			bounds: bounds,
+			timestamp: pos.timestamp
+		};
+
+		for (var i in pos.coords) {
+			if (typeof pos.coords[i] === 'number') {
+				data[i] = pos.coords[i];
+			}
+		}
+
+		this.fire('locationfound', data);
+	}
+});
 
 /*
  * Extends L.Map to handle zoom animations.
@@ -16933,7 +17555,7 @@ VCO.Map = VCO.Class.extend({
 	
 	/*	Constructor
 	================================================== */
-	initialize: function(elem, data, options, add_options) {
+	initialize: function(elem, data, options) {
 		// DOM ELEMENTS
 		this._el = {
 			container: {},
@@ -17038,12 +17660,14 @@ VCO.Map = VCO.Class.extend({
 					tolerance: 		0.8,
 					attribution: 	""
 				},
-				google: {
-						type: 				"",
-						lat:				"",
-						lng: 				"", 
-						zoom: 				"",
-						subdomains: 		""
+				mapTiler: {
+					path: 			"",
+					lat:			"",
+					lng: 			"",
+					zoom: 			13,
+					minZoom:        13,
+					maxZoom:        17,
+					attribution: 	""
 				}		
 			}
 		};
@@ -17224,6 +17848,10 @@ VCO.Map = VCO.Class.extend({
 
 	createLayerControl: function() {
 		return this._createLayerControl();
+	},
+
+	createGeolocation:function(){
+		return this._createGeolocation();
 	},
 	
 	setMapOffset: function(left, top) {
@@ -17777,19 +18405,23 @@ VCO.Map.Leaflet = VCO.Map.extend({
 
 		// Create Additional Tile layers and add to Layer Control
 		for (var i = 0, iLen = _newoptions.length; i < iLen; i++) {	
-			_layergroup[_newoptions[i].map_name] = this._createAddTileLayer(_newoptions[i].map_type, _newoptions[i]);	
+			_layergroup[_newoptions[i].map_name] = this._createAddTileLayer(_newoptions[i].map_type, _newoptions[i]);
 		}		
 
 		// Create Layer Control
-		this._layer_control = new L.control.customlayers(_layergroup, null, {position: 'topleft'});
-		// .addTo(this._map);
+		this._layer_control = new L.control.customlayers(_layergroup, null);
 		
 		this._layer_control._map = this._map;
 
-		var controlBox = this._layer_control.onAdd(this._map);
+		return this._layer_control.onAdd(this._map);
+	},
 
-		return controlBox;
+	_createGeolocation: function(){
+		this._geolocator = new L.Control.GeoLocate({});
 
+		this._geolocator._map = this._map;
+
+		return this._geolocator.onAdd(this._map);
 	},
 	
 	/*	Create Background Map
@@ -17865,66 +18497,6 @@ VCO.Map.Leaflet = VCO.Map.extend({
 		}
 		
 	},
-	
-	/*	Create Tile Layer
-	================================================== */
-	// _createTileLayer: function(map_type, options) {
-		// var _layergroup = [];
-		// var _tilelayer = null,
-		// 	// _map_type_arr = this.options.maps[0].map_type.split(':'),
-		// 	_maps_type_arr = null,
-		// 	_options = {},
-		// 	_attribution_knightlab = "<a href='http://leafletjs.com' title='A JS library for interactive maps'>Leaflet</a> | "
-		
-		// if (options) {
-		// 	_options = options;
-		// }
-
-		// if (map_type) {
-		// 	_maps_type_arr = map_type.split(':');
-		// }
-	
-		// 	// Set Tiles
-		// 	switch(_maps_type_arr[0]) {
-		// 		case 'mapbox':
-		// 			var mapbox_name = _map_type_arr[1] || 'nuknightlab.hif6ioi4';
-		// 			_options.subdomains 	= 'abcd';
-		// 			_options.attribution 	= _attribution_knightlab + "<div class='mapbox-maplogo'></div><a href='https://www.mapbox.com/about/maps/' target='_blank'>© Mapbox © OpenStreetMap</a>";
-		// 			_tilelayer = new L.TileLayer("https://{s}.tiles.mapbox.com/v2/" + mapbox_name + "/{z}/{x}/{y}.png", _options);
-		// 			break;
-		// 		case 'stamen':
-		// 			_tilelayer = new L.StamenTileLayer(_map_type_arr[1] || 'toner-lite', _options);
-		// 			this._map.getContainer().style.backgroundColor = "#FFFFFF";
-		// 			break;
-		// 		case 'zoomify':
-		// 			_options.width			= _options.zoomify.width;
-		// 			_options.height 		= this.options.maps[0].zoomify.height;
-		// 			_options.tolerance 		= this.options.maps[0].zoomify.tolerance;
-		// 			_options.attribution 	= _attribution_knightlab + this.options.maps[0].zoomify.attribution;
-					
-		// 			_tilelayer = new L.tileLayer.zoomify(this.options.maps[0].zoomify.path, _options);
-		// 			//this._image_layer = new L.imageOverlay(this.options.maps[0].zoomify.path + "TileGroup0/0-0-0.jpg", _tilelayer.getZoomifyBounds(this._map));
-		// 			break;
-		// 		case 'osm':
-		// 			_options.subdomains = 'ab';
-		// 			_options.attribution = _attribution_knightlab + "© <a target='_blank' href='http://www.openstreetmap.org'>OpenStreetMap</a> and contributors, under an <a target='_blank' href='http://www.openstreetmap.org/copyright'>open license</a>";
-		// 			_tilelayer = new L.TileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', _options); 
-		// 			break;
-			    
-		// 		case 'http':
-		// 		case 'https':
-		// 			_options.subdomains = this.options.maps[0].map_subdomains;
-		// 			_tilelayer = new L.TileLayer(this.options.maps[0].map_type, _options);
-		// 			break;
-			        
-		// 		default:
-		// 			_tilelayer = new L.StamenTileLayer('toner', _options);
-		// 			break;		
-		// 	}
-		
-		// 	return _tilelayer;
-	
-	// },
 
 	/*	Create Intial Tile Layer and Additional Tile Layers
 	================================================== */
@@ -17964,6 +18536,15 @@ VCO.Map.Leaflet = VCO.Map.extend({
 					_addtilelayer = new L.tileLayer.zoomify(_addoptions.zoomify.path, _zoomify);
 					//this._image_layer = new L.imageOverlay(this.options.maps[0].zoomify.path + "TileGroup0/0-0-0.jpg", _tilelayer.getZoomifyBounds(this._map));
 					break;
+				case 'mapTiler':
+					_addoptions.mapTiler.attribution 	= _attribution_knightlab + _addoptions.mapTiler.attribution;
+					_addtilelayer = new L.tileLayer(_addoptions.mapTiler.path + '{z}/{x}/{y}.jpg', {
+										errorTileUrl: './images/tiny_icon.png'
+										// center: [_addoptions.mapTiler.lat, _addoptions.mapTiler.lon],
+										// minZoom: _addoptions.mapTiler.minZoom,
+										// maxZoom: _addoptions.mapTiler.maxZoom
+									});
+					break;	
 				case 'osm':
 					_addoptions.subdomains = 'ab';
 					_addoptions.attribution = _attribution_knightlab + "© <a target='_blank' href='http://www.openstreetmap.org'>OpenStreetMap</a> and contributors, under an <a target='_blank' href='http://www.openstreetmap.org/copyright'>open license</a>";
@@ -18669,6 +19250,7 @@ L.TileLayer.include({
 VCO.StoryMap = VCO.Class.extend({
 	
 	includes: VCO.Events,
+	// includes: Materialize,
 	
 	/*	Private Methods
 	================================================== */
@@ -18790,13 +19372,15 @@ VCO.StoryMap = VCO.Class.extend({
 						tolerance: 			0.8,
 						attribution: 		""
 					},
-					google: {
-						type: 				"",
+					mapTiler: {
+						path: 				"",
 						lat:				"",
-						lng: 				"", 
-						zoom: 				"",
-						subdomains: 		""
-					}
+						lng: 				"",
+						zoom: 				13,
+						minZoom:        	13,
+						maxZoom:        	17,
+						attribution: 		""
+				}	
 			}]
 		};
 		
@@ -18920,7 +19504,8 @@ VCO.StoryMap = VCO.Class.extend({
 		this.options.base_class = this._el.container.className;
 		
 		// Create Layout
-		this._el.menubar		= VCO.Dom.create('div', 'menubar', this._el.container);
+		this._menubarContainer 	= VCO.Dom.create('div', 'vco-menu', this._el.container);
+		this._el.menubar		= VCO.Dom.create('ul', 'side-nav', this._menubarContainer);
 		this._el.map 			= VCO.Dom.create('div', 'vco-map', this._el.container);
 		this._el.storyslider 	= VCO.Dom.create('div', 'vco-storyslider', this._el.container);
 		this._el.messages 		= VCO.Dom.create('div', 'vco-messages', this._el.container);
@@ -18940,12 +19525,19 @@ VCO.StoryMap = VCO.Class.extend({
 		this._el.map.style.backgroundColor = this.options.map_background_color;
 		
 		// Create Menu Bar
+		this._el.menubar.id = 'slide-out-menubar';
 		this._menubar = new VCO.MenuBar(this._el.menubar, this._menubarContainer, this.options);
+		this._el.menubarOpen = VCO.Dom.create('div', 'menubar-opener', this._menubarContainer);
+		this._el.menubarOpen.innerHTML = '<a data-activates="slide-out-menubar" class="menubar-collapse show-on-small"><i class="material-icons new-medium">tune</i></a>';
+		this._el.viewSwitch = VCO.Dom.create('div', 'view-switch hide-on-med-and-up', this._menubarContainer);
+		this._el.viewSwitch.innerHTML = '<a class="switch-view-layer show-on-small"><i class="material-icons new-medium">&#xE25D;</i></a>';
+
 		this.layer_control = this._map.createLayerControl();
 		this._menubar.controlLayers(this.layer_control);
+		this.geo_layer = this._map.createGeolocation();
+		this._menubar.geolocationLayer(this.geo_layer);
 
 		this._showMessage();
-		this._finalmessage;
 
 		// Create StorySlider
 		this._storyslider = new VCO.StorySlider(this._el.storyslider, this.data, this.options);
@@ -18971,22 +19563,23 @@ VCO.StoryMap = VCO.Class.extend({
 		this._updateDisplay(this.options.map_height, true, 2000);
 		
 		// Animate Menu Bar to Default Location
-		this._menubar.show(2000);
+		// this._menubar.show(2000);
 		
 	},
 
 	_showMessage: function() {
-		if (document.cookie.replace(/(?:(?:^|.*;\s*)introMessageShown\s*\=\s*([^;]*).*$)|^.*$/, "$1") !== "true") {
+		// if (document.cookie.replace(/(?:(?:^|.*;\s*)introMessageShown\s*\=\s*([^;]*).*$)|^.*$/, "$1") !== "true") {
 			if (VCO.Browser.touch) {
 				//Touchscreen Message
 				this._message = new VCO.Message({}, {
 					message_class: 		"vco-message-full"
 				});
 				if (localStorage.getItem("ls.locale.main").contains("en")) {
-					this._message.updateMessage("<span class='arrow-menu'>Menu</span><div class='menuOpenerWhite'><i class='fa fa-bars fa-inverse'></i></div><div class='vco-icon-swipe-left'></div><span>Swipe to Navigate</span>");
+					this._message.updateMessage('<div class="message-tooltip submenu-tooltip"><a class="btn-floating btn-large waves-effect waves-dark white tooltipped" data-position="right" data-delay="50" data-tooltip="Map menu"><i class="material-icons new-medium">&#xE145;</i></a></div><div class="message-tooltip menu-tooltip"><a class="btn-floating btn-large waves-effect waves-dark white tooltipped" data-position="left" data-delay="50" data-tooltip="Main menu"><i class="material-icons new-medium">&#xE145;</i><a/></div><div class="message-tooltip swipe-tooltip"><a class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="Swipe to begin"><i class="material-icons large md-light">&#xE913;</i><a/></div><div class="message-tooltip close-tooltip-btn" id="close-overlay"><a class="waves-effect waves-teal btn white">Close</a></div>');
 				}
+
 				else {
-					this._message.updateMessage("<span class='arrow-menu'>Menu</span><div class='menuOpenerWhite'><i class='fa fa-bars fa-inverse'></i></div><div class='vco-icon-swipe-left'></div><span>Passage e Continua</span>");
+					this._message.updateMessage('<div class="message-tooltip submenu-tooltip"><a class="btn-floating btn-large waves-effect waves-dark white tooltipped" data-position="right" data-delay="50" data-tooltip="Map menu"><i class="material-icons new-medium">&#xE145;</i></a></div><div class="message-tooltip menu-tooltip"><a class="btn-floating btn-large waves-effect waves-dark white tooltipped" data-position="left" data-delay="50" data-tooltip="Main menu"><i class="material-icons new-medium">&#xE145;</i><a/></div><div class="message-tooltip swipe-tooltip"><a class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="Swipe to begin"><i class="material-icons large md-light">&#xE913;</i><a/></div><div class="message-tooltip close-tooltip-btn" id="close-overlay"><a class="waves-effect waves-teal btn white">Esci</a></div>');
 				}
 				this._message.addTo(this._el.container);
 			}
@@ -18994,19 +19587,38 @@ VCO.StoryMap = VCO.Class.extend({
 			{
   				// Message
 				this._message = new VCO.Message({}, {
-					message_class: 		"vco-message-full",
+					message_class: 		"vco-message-full"
 				});
 				if (localStorage.getItem("ls.locale.main").contains("en")) {
-					this._message.updateMessage("<span class='arrow-maps'>Change Maps</span><span class='arrow-menu'>Click Here For The Main Menu</span><div class='menuOpenerWhite'><i class='fa fa-bars fa-inverse'></i></div><span class='arrow-goleft'>Go to Previous Slide</span><span class='arrow-goright'>Go to Next Slide</span><div class='map-info'><i class='fa fa-map-o fa-3x map-icon'></i><br/>Drag and Double-Click the Map to Zoom</div><div class='story-info'><i class='fa fa-newspaper-o fa-3x map-icon'></i><br/>Navigate the slides by using the arrows</div><div class='pin-info'><i class='fa fa-map-marker fa-3x map-icon'></i><br/>Click on a Pin to go to the Slide</div>");
+					this._message.updateMessage('<div class="message-tooltip submenu-tooltip"><a class="btn-floating btn-large waves-effect waves-dark white tooltipped" data-position="right" data-delay="50" data-tooltip="Map menu"><i class="material-icons new-medium">&#xE145;</i></a></div><div class="message-tooltip menu-tooltip"><a class="btn-floating btn-large waves-effect waves-dark white tooltipped" data-position="left" data-delay="50" data-tooltip="Main menu"><i class="material-icons new-medium">&#xE145;</i><a/></div><div class="message-tooltip left-tooltip"><a class="btn-floating btn-large waves-effect waves-dark white tooltipped" data-position="right" data-delay="50" data-tooltip="Go to previous slide"><i class="material-icons new-medium">&#xE314;</i><a/></div><div class="message-tooltip right-tooltip"><a class="btn-floating btn-large waves-effect waves-dark white tooltipped" data-position="left" data-delay="50" data-tooltip="Go to next slide"><i class="material-icons new-medium">&#xE315;</i><a/></div><div class="message-tooltip close-tooltip-btn" id="close-overlay"><a class="btn waves-effect waves-teal white">Close</a></div>');
 				}
 				else {
-					this._message.updateMessage("<span class='arrow-maps'>Cambia Maps</span><span class='arrow-menu'>Clicca Qui per il Menu Principale</span><div class='menuOpenerWhite'><i class='fa fa-bars fa-inverse'></i></div><span class='arrow-goleft'>Vai alla Diapositiva Precedente</span><span class='arrow-goright'>Vai alla Diapositiva Successiva</span><div class='map-info'><i class='fa fa-map-o fa-3x map-icon'></i><br/>Trascinare e fare doppio clic sulla mappa per ingrandirla</div><div class='story-info'><i class='fa fa-newspaper-o fa-3x map-icon'></i><br/>Naviga le diapositive con le frecce</div><div class='pin-info'><i class='fa fa-map-marker fa-3x map-icon'></i><br/>Clicca sul segnaposto per passare alla diapositiva</div>");
+					this._message.updateMessage('<div class="message-tooltip submenu-tooltip"><a class="btn-floating btn-large waves-effect waves-dark white tooltipped" data-position="right" data-delay="50" data-tooltip="Menu menu"><i class="material-icons new-medium">&#xE145;</i></a></div><div class="message-tooltip menu-tooltip"><a class="btn-floating btn-large waves-effect waves-dark white tooltipped" data-position="left" data-delay="50" data-tooltip="Menu principale"><i class="material-icons new-medium">&#xE145;</i><a/></div><div class="message-tooltip left-tooltip"><a class="btn-floating btn-large waves-effect waves-dark white tooltipped" data-position="right" data-delay="50" data-tooltip="Go to previous slide"><i class="material-icons new-medium">&#xE314;</i><a/></div><div class="message-tooltip right-tooltip"><a class="btn-floating btn-large waves-effect waves-dark white tooltipped" data-position="left" data-delay="50" data-tooltip="Go to next slide"><i class="material-icons new-medium">&#xE315;</i><a/></div><div class="message-tooltip close-tooltip-btn" id="close-overlay"><a class="btn waves-effect waves-teal white">Esci</a></div>');
 				}
 				this._message.addTo(this._el.container);
 				
 			}
-  			document.cookie = "introMessageShown=true; path=/";
-		}
+  			// document.cookie = "introMessageShown=true; path=/";
+		// }
+
+		this._startmessage = new VCO.TourMessage({}, {
+					message_id:         "start-modal"
+	// 				message_class: 		"vco-message-full",
+	// 				message_open: 		false
+		});
+
+		this._startmessage.updateMessage('<div class="row"><div class="col s6">Test</div><div class="col s6">Test</div></div>');
+
+		this._finalmessage = new VCO.TourMessage({}, {
+					message_id:         "end-modal"
+	// 				message_class: 		"vco-message-full",
+	// 				message_open: 		false
+		});
+
+		this._finalmessage.updateMessage('<div class="row"><div class="col s6">Test</div><div class="col s6">Test</div></div>');
+
+		this._startmessage.addTo(this._el.messages);
+		this._finalmessage.addTo(this._el.messages);
 		
 	},
 
@@ -19016,8 +19628,9 @@ VCO.StoryMap = VCO.Class.extend({
 	
 	_initEvents: function () {
 		
-		// Sidebar Events
-		this._menubar.on('collapse', this._onMapToggle, this);
+		// Menu Interaction Events
+		// this._menubar.on('collapse', this._onMapToggle, this);
+		VCO.DomEvent.addListener(this._el.viewSwitch, 'click', this._onMapToggle, this);
 		this._menubar.on('back_to_start', this._onBackToStart, this);
 		this._menubar.on('overview', this._onOverview, this);
 		
@@ -19030,7 +19643,8 @@ VCO.StoryMap = VCO.Class.extend({
 		this._map.on('markerclicked', this._onIconClick, this);
 
 		if (this._message) {
-			this._message.on('clicked', this._onMessageClick, this);
+			this.closeBtn = VCO.Dom.get('close-overlay');
+			VCO.DomEvent.addListener(this.closeBtn, 'click', this._onMessageClick, this);
 		}
 	},
 	
@@ -19202,12 +19816,12 @@ VCO.StoryMap = VCO.Class.extend({
 			this._map.goTo(this.current_slide);
 			this.slideChange();
 			this.fire("change", {current_slide: this.current_slide}, this);
-			ga('send', 'event', {
-						  eventCategory: 'Slide',
-						  eventAction: 'change',
-						  eventLabel: currentTour(),
-						  eventValue: this.current_slide
-						});
+			// ga('send', 'event', {
+			// 			  eventCategory: 'Slide',
+			// 			  eventAction: 'change',
+			// 			  eventLabel: currentTour(),
+			// 			  eventValue: this.current_slide
+			// 			});
 		}
 	},
 	
@@ -19308,9 +19922,5 @@ VCO.StoryMap = VCO.Class.extend({
 			}
 		}
 	}
-	
-	
+		
 });
-
-
-

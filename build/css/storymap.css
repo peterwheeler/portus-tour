@@ -128,7 +128,7 @@
 }
 
 .vco-storymap {
-    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 .vco-storymap h1,.vco-storymap h2,.vco-storymap h3 {
@@ -205,7 +205,7 @@
 }
 
 .vco-storymap blockquote,.vco-storymap blockquote p {
-    font-family: "Georgia",Times New Roman,Times,serif;
+    font-family: "Georgia", Times New Roman, Times, serif;
     color: #999;
     font-size: 24px;
     line-height: 24px;
@@ -216,7 +216,7 @@
 }
 
 .vco-storymap blockquote cite,.vco-storymap blockquote p cite {
-    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 11px;
     color: #666;
     display: block;
@@ -255,7 +255,7 @@
 }
 
 .vco-storymap .vcard {
-    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 15px;
     line-height: 15px;
 }
@@ -272,7 +272,7 @@
 
 .vco-storymap .vco-note {
     display: block;
-    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-style: italic;
     background-color: #e6e6e6;
     font-size: 15px;
@@ -470,7 +470,7 @@
 .menubar, .menubar a, .menubar p, .menubar label {
     line-height: normal;
     text-align: center;
-    font-family: 'Forum', cursive;
+    font-family: "Roboto", sans-serif;
     font-size: 14px;
     font-weight: 600;
     text-transform: uppercase;
@@ -2007,7 +2007,7 @@
 }
 
 .leaflet-container {
-    font: 12px/1.5 "Helvetica Neue",Arial,Helvetica,sans-serif;
+    font: 12px/1.5 "Roboto", "Helvetica Neue", Arial, Helvetica, sans-serif;
 }
 
 .leaflet-bar {
