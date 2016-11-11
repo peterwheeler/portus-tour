@@ -2,13 +2,14 @@ var angtranslations = {
 	enUK: {
 		HOMEPAGE: {
 			TITLE: "Portus Tour",
-			HEADLINE: "Explore the history of Portus through the interactive storymaps and timeline",
+			HEADLINE: "Explore the history of Portus",
 			SELECTTOUR: "Select a Tour",
 			LEARNMORE: "Explore More",
-			START: "START"
+			START: "Start",
+			ABOUT: "About"
 		},
 		ABOUT: {
-			ABOUT: "· ABOUT ·",
+			ABOUT: "About",
 			ABOUTTEXT: "Portus was the maritime port of Imperial Rome between the mid-1st century AD and the 6th century AD. It was the focus of a network of ports and, together with the neighbouring river port at Ostia, it was the commercial hub that connected the city to the rest of the Mediterranean world. It played a key role in re-distributing imports from other Mediterranean ports to supply the city and, to a lesser extent, exporting products from the Tiber valley. It was established under the emperor Claudius, subsequently enlarged by Trajan and successive emperors into the 4th century AD, until its gradual decline in the later 5th and 6th centuries AD.",
 			ABOUTSUBTEXT: "This tour has been constructed by the Portus Project to help visualise the different phases of the port over time. It also consists of a modern tour of the site and a history of the archaeological investigations that have been carried out at the site. It was built in collaboration with the Soprintendenza Speciale per il Colosseo, il Museo Nazionale Romano e l’Area Archeologica di Roma, which is part of the Ministero per i Beni e le Attività Culturali (MIBAC).",
 			ABOUTSUBSUBTEXT: "Each tour covers a different period in time. These are:",
@@ -25,8 +26,8 @@ var angtranslations = {
 			CONTINUE: "CONTINUE"
 		},
 		LANGUAGES: {
-			ENGLISH: "English",
-			ITALIAN: "Italian"
+			ENGLISH: "{{language}}",
+			ITALIAN: "{{language}}"
 		},
 		TOURS: {
 			HOME: "Home",
@@ -62,14 +63,15 @@ var angtranslations = {
 	},
 	itIT: {
 		HOMEPAGE: {
-				TITLE: "Portus Visita",
-				HEADLINE: "Esplora la storia di Porto attraverso i storymaps interattivi e cronologia",
+				TITLE: "Visita Portus",
+				HEADLINE: "Esplora la storia di Porto",
 				SELECTTOUR: "Selezionare un Tour",
 				LEARNMORE: "Esplorare",
-				START: "ENTRA"
+				START: "Inizio",
+				ABOUT: "Informazioni"
 		},
 		ABOUT: {
-				ABOUT: "· INFORMAZIONE ·",
+				ABOUT: "Informazioni",
 				ABOUTTEXT: "",
 				ABOUTSUBTEXT: "Porto (l’antico Portus) era il porto marittimo di Roma antica e, con il vicino porto fluviale di Ostia, è stato al centro di una rete di porti che collegavano Roma Imperiale tra la metà del I secolo e il VI secolo d.C. Questo tour fa parte del sito web della Soprintendenza Speciale per i Beni Archeologici di Roma (SSBAR), organo periferico del Ministero per i Beni e le Attività Culturali (MIBAC), ed è stato creato in collaborazione con il.",
 			ABOUTSUBSUBTEXT: "Each tour covers a different period in time. These are:",
@@ -83,7 +85,7 @@ var angtranslations = {
 			CONTINUE: "CONTINUA"	
 		},
 		LANGUAGES: {
-			ENGLISH: "English",
+			ENGLISH: "Inglese",
 			ITALIAN: "Italiano"
 		},
 		TOURS: {
@@ -99,7 +101,7 @@ var angtranslations = {
 			SELECTALANG: "Lingua",
 			SELECTATOUR: "Vistas",
 			GEOLOCATION: "Geolocation",
-			ABOUT: "Informazione",
+			ABOUT: "Informazioni",
 			GEOON: "On",
 			GEOOFF: "Off",
 			MAPS: "Mappe",
@@ -110,7 +112,7 @@ var angtranslations = {
 			USING: "con"
 		},
 		FOOTER: {
-			ABOUT: "Informazione",
+			ABOUT: "Informazioni",
 			CREATEDBY: "Creato da ",
 			USING: "con",
 			SUPPORT: "Sostenuto da",
@@ -168,97 +170,101 @@ new t1.o.Page(
 		en: [{
 			map_type: "mapTiler",
 			map_name: "Reconstruction",
-			map_mini: true,
+			map_mini: false,
 			map_as_image: false,
-			calculate_zoom: false, 
+			calculate_zoom: false,
+			attribution: 		"Maps designed by <a href='https://artasmedia.com/'' target='_blank' class='vco-knightlab-brand'>ArtasMedia</a>",
 			mapTiler: {
 				path: 				"maps/period_01/",
 				lat:				"",
 				lng: 				"",
 				zoom: 				14,
 				minZoom:        	14,
-				maxZoom:        	17,
-				attribution: 		""
+				maxZoom:        	17
 			}	
 		},
 		{
 			map_type: "mapTiler",
 			map_name: "Plan",
-			map_mini: true,
+			map_mini: false,
 			map_as_image: false,
-			calculate_zoom: false, 
+			calculate_zoom: false,
+			attribution: 		'Maps designed by <a href="https://artasmedia.com/" target="_blank" class="vco-knightlab-brand">ArtasMedia</a>',
 			mapTiler: {
 				path: 				"maps/plan_en_01/",
 				lat:				"",
 				lng: 				"",
 				zoom: 				14,
 				minZoom:        	14,
-				maxZoom:        	17,
-				attribution: 		""
+				maxZoom:        	17
+				
 			}
 		},
 		{
 			map_type: "mapTiler",
 			map_name: "Satellite",
-			map_mini: true,
+			map_mini: false,
 			map_as_image: false,
-			calculate_zoom: false, 
+			calculate_zoom: false,
+			attribution: 		"Satellite &#9400; Digital Globe 2014",
 			mapTiler: {
 				path: 				"maps/satellite/",
 				lat:				"",
 				lng: 				"",
 				zoom: 				14,
 				minZoom:        	14,
-				maxZoom:        	17,
-				attribution: 		"Digital Globe 2014"
+				maxZoom:        	17
 			}
 		}],
 		it: [{
 			map_type: "mapTiler",
 			map_name: "Ricostruzione",
-			map_mini: true,
+			map_mini: false,
 			map_as_image: false,
-			calculate_zoom: false, 
+			calculate_zoom: false,
+			attribution: 		'Maps designed by <a href="https://artasmedia.com/" target="_blank" class="vco-knightlab-brand">ArtasMedia</a>',
 			mapTiler: {
 				path: 				"maps/period_01/",
 				lat:				"",
 				lng: 				"",
 				zoom: 				14,
 				minZoom:        	14,
-				maxZoom:        	17,
-				attribution: 		""
+				maxZoom:        	17
+				
 			}	
 		},
 		{
 			map_type: "mapTiler",
 			map_name: "Plan",
-			map_mini: true,
+			map_mini: false,
 			map_as_image: false,
-			calculate_zoom: false, 
+			calculate_zoom: false,
+			attribution: 		'Maps designed by <a href="https://artasmedia.com/" target="_blank" class="vco-knightlab-brand">ArtasMedia</a>',
 			mapTiler: {
-				path: 				"maps/plan_en_01/",
+				path: 				"maps/plan_it_01/",
 				lat:				"",
 				lng: 				"",
 				zoom: 				14,
 				minZoom:        	14,
-				maxZoom:        	17,
-				attribution: 		""
+				maxZoom:        	17
+				
 			}
 		},
 		{
 			map_type: "mapTiler",
 			map_name: "Satellite",
-			map_mini: true,
+			map_mini: false,
 			map_as_image: false,
-			calculate_zoom: false, 
+			calculate_zoom: false,
+			attribution: 		"Satellite &#9400; Digital Globe 2014", 
 			mapTiler: {
 				path: 				"maps/satellite/",
 				lat:				"",
 				lng: 				"",
 				zoom: 				14,
 				minZoom:        	14,
-				maxZoom:        	17,
-				attribution: 		"Digital Globe 2014"
+				maxZoom:        	17
+				
 			}
 		}]
 	}
@@ -275,97 +281,103 @@ new t1.o.Page(
 		en: [{
 			map_type: "mapTiler",
 			map_name: "Reconstruction",
-			map_mini: true,
+			map_mini: false,
 			map_as_image: false,
-			calculate_zoom: false, 
+			calculate_zoom: false,
+			attribution: 		'Maps designed by <a href="https://artasmedia.com/" target="_blank" class="vco-knightlab-brand">ArtasMedia</a>',
 			mapTiler: {
-				path: 				"maps/period_02/",
+				path: 				"maps/period_03/",
 				lat:				"",
 				lng: 				"",
 				zoom: 				14,
 				minZoom:        	14,
-				maxZoom:        	17,
-				attribution: 		""
+				maxZoom:        	17
+				
 			}	
 		},
 		{
 			map_type: "mapTiler",
 			map_name: "Plan",
-			map_mini: true,
+			map_mini: false,
 			map_as_image: false,
-			calculate_zoom: false, 
+			calculate_zoom: false,
+			attribution: 		'Maps designed by <a href="https://artasmedia.com/" target="_blank" class="vco-knightlab-brand">ArtasMedia</a>',
 			mapTiler: {
-				path: 				"maps/plan_en_02/",
+				path: 				"maps/plan_en_03/",
 				lat:				"",
 				lng: 				"",
 				zoom: 				14,
 				minZoom:        	14,
-				maxZoom:        	17,
-				attribution: 		""
+				maxZoom:        	17
+				
 			}
 		},
 		{
 			map_type: "mapTiler",
 			map_name: "Satellite",
-			map_mini: true,
+			map_mini: false,
 			map_as_image: false,
-			calculate_zoom: false, 
+			calculate_zoom: false,
+			attribution: 		"Satellite &#9400; Digital Globe 2014",
 			mapTiler: {
 				path: 				"maps/satellite/",
 				lat:				"",
 				lng: 				"",
 				zoom: 				14,
 				minZoom:        	14,
-				maxZoom:        	17,
-				attribution: 		"Digital Globe 2014"
+				maxZoom:        	17
+				
 			}	
 		}],
 		it: [{
 			map_type: "mapTiler",
 			map_name: "Ricostruzione",
-			map_mini: true,
+			map_mini: false,
 			map_as_image: false,
-			calculate_zoom: false, 
+			calculate_zoom: false,
+			attribution: 		'Maps designed by <a href="https://artasmedia.com/" target="_blank" class="vco-knightlab-brand">ArtasMedia</a>', 
 			mapTiler: {
-				path: 				"maps/period_02/",
+				path: 				"maps/period_03/",
 				lat:				"",
 				lng: 				"",
 				zoom: 				14,
 				minZoom:        	14,
-				maxZoom:        	17,
-				attribution: 		""
+				maxZoom:        	17
+				
 			}	
 		},
 		{
 			map_type: "mapTiler",
 			map_name: "Plan",
-			map_mini: true,
+			map_mini: false,
 			map_as_image: false,
-			calculate_zoom: false, 
+			calculate_zoom: false,
+			attribution: 		'Maps designed by <a href="https://artasmedia.com/" target="_blank" class="vco-knightlab-brand">ArtasMedia</a>',
 			mapTiler: {
-				path: 				"maps/plan_en_02/",
+				path: 				"maps/plan_it_03/",
 				lat:				"",
 				lng: 				"",
 				zoom: 				14,
 				minZoom:        	14,
-				maxZoom:        	17,
-				attribution: 		""
+				maxZoom:        	17
+				
 			}
 		},
 		{
 			map_type: "mapTiler",
 			map_name: "Satellite",
-			map_mini: true,
+			map_mini: false,
 			map_as_image: false,
-			calculate_zoom: false, 
+			calculate_zoom: false,
+			attribution: 		"Satellite &#9400; Digital Globe 2014",
 			mapTiler: {
 				path: 				"maps/satellite/",
 				lat:				"",
 				lng: 				"",
 				zoom: 				14,
 				minZoom:        	14,
-				maxZoom:        	17,
-				attribution: 		"Digital Globe 2014"
+				maxZoom:        	17
+				
 			}	
 		}]
 	}
@@ -382,97 +394,103 @@ new t1.o.Page(
 		en: [{
 			map_type: "mapTiler",
 			map_name: "Reconstruction",
-			map_mini: true,
+			map_mini: false,
 			map_as_image: false,
-			calculate_zoom: false, 
+			calculate_zoom: false,
+			attribution: 		'Maps designed by <a href="https://artasmedia.com/" target="_blank" class="vco-knightlab-brand">ArtasMedia</a>', 
 			mapTiler: {
-				path: 				"maps/period_03/",
+				path: 				"maps/period_05/",
 				lat:				"",
 				lng: 				"",
 				zoom: 				14,
 				minZoom:        	14,
-				maxZoom:        	17,
-				attribution: 		""
+				maxZoom:        	17
+				
 			}	
 		},
 		{
 			map_type: "mapTiler",
 			map_name: "Plan",
-			map_mini: true,
+			map_mini: false,
 			map_as_image: false,
-			calculate_zoom: false, 
+			calculate_zoom: false,
+			attribution: 		'Maps designed by <a href="https://artasmedia.com/" target="_blank" class="vco-knightlab-brand">ArtasMedia</a>',
 			mapTiler: {
-				path: 				"maps/plan_en_03/",
+				path: 				"maps/plan_en_05/",
 				lat:				"",
 				lng: 				"",
 				zoom: 				14,
 				minZoom:        	14,
-				maxZoom:        	17,
-				attribution: 		""
+				maxZoom:        	17
+				
 			}
 		},
 		{
 			map_type: "mapTiler",
 			map_name: "Satellite",
-			map_mini: true,
+			map_mini: false,
 			map_as_image: false,
-			calculate_zoom: false, 
+			calculate_zoom: false,
+			attribution: 		"Satellite &#9400; Digital Globe 2014",
 			mapTiler: {
 				path: 				"maps/satellite/",
 				lat:				"",
 				lng: 				"",
 				zoom: 				14,
 				minZoom:        	14,
-				maxZoom:        	17,
-				attribution: 		"Digital Globe 2014"
+				maxZoom:        	17
+				
 			}	
 		}],
 		it: [{
 			map_type: "mapTiler",
 			map_name: "Ricostruzione",
-			map_mini: true,
+			map_mini: false,
 			map_as_image: false,
-			calculate_zoom: false, 
+			calculate_zoom: false,
+			attribution: 		'Maps designed by <a href="https://artasmedia.com/" target="_blank" class="vco-knightlab-brand">ArtasMedia</a>',
 			mapTiler: {
-				path: 				"maps/period_03/",
+				path: 				"maps/period_05/",
 				lat:				"",
 				lng: 				"",
 				zoom: 				14,
 				minZoom:        	14,
-				maxZoom:        	17,
-				attribution: 		""
+				maxZoom:        	17
+				
 			}	
 		},
 		{
 			map_type: "mapTiler",
 			map_name: "Plan",
-			map_mini: true,
+			map_mini: false,
 			map_as_image: false,
-			calculate_zoom: false, 
+			calculate_zoom: false,
+			attribution: 		'Maps designed by <a href="https://artasmedia.com/" target="_blank" class="vco-knightlab-brand">ArtasMedia</a>', 
 			mapTiler: {
-				path: 				"maps/plan_en_03/",
+				path: 				"maps/plan_it_05/",
 				lat:				"",
 				lng: 				"",
 				zoom: 				14,
 				minZoom:        	14,
-				maxZoom:        	17,
-				attribution: 		""
+				maxZoom:        	17
+				
 			}
 		},
 		{
 			map_type: "mapTiler",
 			map_name: "Satellite",
-			map_mini: true,
+			map_mini: false,
 			map_as_image: false,
-			calculate_zoom: false, 
+			calculate_zoom: false,
+			attribution: 		"Satellite &#9400; Digital Globe 2014",
 			mapTiler: {
 				path: 				"maps/satellite/",
 				lat:				"",
 				lng: 				"",
 				zoom: 				14,
 				minZoom:        	14,
-				maxZoom:        	17,
-				attribution: 		"Digital Globe 2014"
+				maxZoom:        	17
+				
 			}	
 		}]
 	}
@@ -489,41 +507,44 @@ new t1.o.Page(
 		en: [{
 			map_type: "mapTiler",
 			map_name: "Reconstruction",
-			map_mini: true,
+			map_mini: false,
 			map_as_image: false,
-			calculate_zoom: false, 
+			calculate_zoom: false,
+			attribution: 		'Maps designed by <a href="https://artasmedia.com/" target="_blank" class="vco-knightlab-brand">ArtasMedia</a>',
 			mapTiler: {
-				path: 				"maps/period_04/",
+				path: 				"maps/period_06/",
 				lat:				"",
 				lng: 				"",
 				zoom: 				14,
 				minZoom:        	14,
-				maxZoom:        	17,
-				attribution: 		""
+				maxZoom:        	17
+				
 			}	
 		},
 		{
 			map_type: "mapTiler",
 			map_name: "Plan",
-			map_mini: true,
+			map_mini: false,
 			map_as_image: false,
-			calculate_zoom: false, 
+			calculate_zoom: false,
+			attribution: 		'Maps designed by <a href="https://artasmedia.com/" target="_blank" class="vco-knightlab-brand">ArtasMedia</a>',
 			mapTiler: {
-				path: 				"maps/plan_en_04/",
+				path: 				"maps/plan_en_06/",
 				lat:				"",
 				lng: 				"",
 				zoom: 				14,
 				minZoom:        	14,
-				maxZoom:        	17,
-				attribution: 		""
+				maxZoom:        	17
+				
 			}
 		},
 		{
 			map_type: "mapTiler",
 			map_name: "Satellite",
-			map_mini: true,
+			map_mini: false,
 			map_as_image: false,
-			calculate_zoom: false, 
+			calculate_zoom: false,
+			attribution: 		"Satellite &#9400; Digital Globe 2014",
 			mapTiler: {
 				path: 				"maps/satellite/",
 				lat:				"",
@@ -531,55 +552,58 @@ new t1.o.Page(
 				zoom: 				14,
 				minZoom:        	14,
 				maxZoom:        	17,
-				attribution: 		"Digital Globe 2014"
+				
 			}
 		}],
 		it: [{
 			map_type: "mapTiler",
 			map_name: "Ricostruzione",
-			map_mini: true,
+			map_mini: false,
 			map_as_image: false,
-			calculate_zoom: false, 
+			calculate_zoom: false,
+			attribution: 		'Maps designed by <a href="https://artasmedia.com/" target="_blank" class="vco-knightlab-brand">ArtasMedia</a>',
 			mapTiler: {
-				path: 				"maps/period_04/",
+				path: 				"maps/period_06/",
 				lat:				"",
 				lng: 				"",
 				zoom: 				14,
 				minZoom:        	14,
-				maxZoom:        	17,
-				attribution: 		""
+				maxZoom:        	17
+				
 			}	
 		},
 		{
 			map_type: "mapTiler",
 			map_name: "Plan",
-			map_mini: true,
+			map_mini: false,
 			map_as_image: false,
-			calculate_zoom: false, 
+			calculate_zoom: false,
+			attribution: 		'Maps designed by <a href="https://artasmedia.com/" target="_blank" class="vco-knightlab-brand">ArtasMedia</a>',
 			mapTiler: {
-				path: 				"maps/plan_en_04/",
+				path: 				"maps/plan_it_06/",
 				lat:				"",
 				lng: 				"",
 				zoom: 				14,
 				minZoom:        	14,
-				maxZoom:        	17,
-				attribution: 		""
+				maxZoom:        	17
+				
 			}
 		},
 		{
 			map_type: "mapTiler",
 			map_name: "Satellite",
-			map_mini: true,
+			map_mini: false,
 			map_as_image: false,
-			calculate_zoom: false, 
+			calculate_zoom: false,
+			attribution: 		"Satellite &#9400; Digital Globe 2014", 
 			mapTiler: {
 				path: 				"maps/satellite/",
 				lat:				"",
 				lng: 				"",
 				zoom: 				14,
 				minZoom:        	14,
-				maxZoom:        	17,
-				attribution: 		"Digital Globe 2014"
+				maxZoom:        	17
+				
 			}	
 		}]
 	}
@@ -596,9 +620,10 @@ new t1.o.Page(
 		en: [{
 			map_type: "mapTiler",
 			map_name: "Satellite",
-			map_mini: true,
+			map_mini: false,
 			map_as_image: false,
-			calculate_zoom: false, 
+			calculate_zoom: false,
+			attribution: 		"Satellite &#9400; Digital Globe 2014", 
 			mapTiler: {
 				path: 				"maps/satellite/",
 				lat:				"",
@@ -606,87 +631,91 @@ new t1.o.Page(
 				zoom: 				14,
 				minZoom:        	14,
 				maxZoom:        	17,
-				attribution: 		"Digital Globe 2014"
+				
 			}
 		},
 		{
 			map_type: "mapTiler",
 			map_name: "Reconstruction",
-			map_mini: true,
+			map_mini: false,
 			map_as_image: false,
-			calculate_zoom: false, 
+			calculate_zoom: false,
+			attribution: 		'Maps designed by <a href="https://artasmedia.com/" target="_blank" class="vco-knightlab-brand">ArtasMedia</a>',
 			mapTiler: {
 				path: 				"maps/period_05/",
 				lat:				"",
 				lng: 				"",
 				zoom: 				14,
 				minZoom:        	14,
-				maxZoom:        	17,
-				attribution: 		""
+				maxZoom:        	17
 			}	
 		},
 		{
 			map_type: "mapTiler",
 			map_name: "Plan",
-			map_mini: true,
+			map_mini: false,
 			map_as_image: false,
-			calculate_zoom: false, 
+			calculate_zoom: false,
+			attribution: 		'Maps designed by <a href="https://artasmedia.com/" target="_blank" class="vco-knightlab-brand">ArtasMedia</a>',
 			mapTiler: {
 				path: 				"maps/plan_en_05/",
 				lat:				"",
 				lng: 				"",
 				zoom: 				14,
 				minZoom:        	14,
-				maxZoom:        	17,
-				attribution: 		""
+				maxZoom:        	17
+				
 			}
 		}],
 		it: [{
 			map_type: "mapTiler",
 			map_name: "Satellite",
-			map_mini: true,
+			map_mini: false,
 			map_as_image: false,
-			calculate_zoom: false, 
+			calculate_zoom: false,
+			attribution: 		"Satellite &#9400; Digital Globe 2014",
 			mapTiler: {
 				path: 				"maps/satellite/",
 				lat:				"",
 				lng: 				"",
 				zoom: 				14,
 				minZoom:        	14,
-				maxZoom:        	17,
-				attribution: 		"Digital Globe 2014"
+				maxZoom:        	17
+				
 			}
 		},
 		{
 			map_type: "mapTiler",
 			map_name: "Ricostruzione",
-			map_mini: true,
+			map_mini: false,
 			map_as_image: false,
-			calculate_zoom: false, 
+			calculate_zoom: false,
+			attribution: 		'Maps designed by <a href="https://artasmedia.com/" target="_blank" class="vco-knightlab-brand">ArtasMedia</a>',
 			mapTiler: {
 				path: 				"maps/period_05/",
 				lat:				"",
 				lng: 				"",
 				zoom: 				14,
 				minZoom:        	14,
-				maxZoom:        	17,
-				attribution: 		""
+				maxZoom:        	17
+				
 			}	
 		},
 		{
 			map_type: "mapTiler",
 			map_name: "Plan",
-			map_mini: true,
+			map_mini: false,
 			map_as_image: false,
-			calculate_zoom: false, 
+			calculate_zoom: false,
+			attribution: 		'Maps designed by <a href="https://artasmedia.com/" target="_blank" class="vco-knightlab-brand">ArtasMedia</a>',
 			mapTiler: {
 				path: 				"maps/plan_en_05/",
 				lat:				"",
 				lng: 				"",
 				zoom: 				14,
 				minZoom:        	14,
-				maxZoom:        	17,
-				attribution: 		""
+				maxZoom:        	17
+				
 			}
 		}]
 	}
@@ -1077,7 +1106,7 @@ app.controller("RegionCtrl", ["$scope", "$rootScope", "$log", "$translate", "$lo
 	
 	app.run(function($state, $rootScope, $urlRouter, $location, $window) {
 
-		// $window.ga('create', 'UA-17304354-25', 'auto');
+		$window.ga('create', 'UA-17304354-25', 'auto');
 		
 		$rootScope
 			.$on('$stateChangeStart',
@@ -1093,7 +1122,7 @@ app.controller("RegionCtrl", ["$scope", "$rootScope", "$log", "$translate", "$lo
 					// console.log("stateChangeSuccess:");
 					// console.log(event);
 					// console.log(toState);
-					// $window.ga('send', 'pageview', $location.path());
+					$window.ga('send', 'pageview', $location.path());
 		});	
 
 		$rootScope
@@ -1229,7 +1258,7 @@ app.controller("RegionCtrl", ["$scope", "$rootScope", "$log", "$translate", "$lo
 		};
 
 		currentTour = function(){
-			return tourPeriod;
+			return tourLang + "/" + (t1.c.pages[(tourID)].path[tourLang]);
 		};
 
 		nextTour = function(){
@@ -1251,12 +1280,22 @@ app.controller("RegionCtrl", ["$scope", "$rootScope", "$log", "$translate", "$lo
 			}
 			
 		};
+
+		closeModal = function(){
+			console.log("close");
+			$('.modal-overlay').hide();
+		};
+
+		closeModalLink = function(){
+			return closeModal();
+		};
+
 		setTimeout(function() {
 			$('.menubar-collapse').sideNav({
-		        menuWidth: 300, // Default is 240
+		        menuWidth: 280, // Default is 240
 		        edge: 'left', // Choose the horizontal origin
 		        closeOnClick: true, // Closes side-nav on <a> clicks, useful for Angular/Meteor
-		        draggable: false // Choose whether you can drag to open on touch screens
+		        draggable: true // Choose whether you can drag to open on touch screens
 		     }); 
 		    $('.collapsible-menubar').collapsible();
 		    $('.modal').modal();

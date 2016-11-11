@@ -18,7 +18,7 @@
     <!--*****CSS*****-->
 
     <!-- Latest minified bootstrapCSS -->
-    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"> -->
     <!-- Latest minified font-awesome & MaterialIcons -->
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -47,7 +47,7 @@
     <!-- Latest minified version of jqueryui -->
     <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
     <!-- Minified bootstrapJS -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script> -->
     <!-- Materialize -->
     <script type="text/javascript" src="/js/materialize/materialize.js"></script>  
 
@@ -73,22 +73,19 @@
 <body ng-controller="MainCtrl">
     <ul id="slide-out" class="side-nav" style="transform: translateX(30%);" ng-controller="RegionCtrl">
         <div class="close-slide-out">
-            <a data-activates="slide-out" class="show-on-small">
+            <a ng-href="#" data-activates="slide-out" class="show-on-small">
                 <i class="material-icons new-medium">&#xE315;</i>
             </a>
         </div>
-        <li class="bold">
-            <div class="userView">
-                <a ng-href="{{urlBegin()}}/" class="brand-logo center logo-container">
-                    <img class="responsive-img" src="logos/logo.png" alt="logo" style="width: 80px; height: 80px;">
-                </a>
-            </div>
-        </li>
+        <div class="menu-header">
+            <a ng-href="{{urlBegin()}}/" class="brand-logo center logo-container">
+                <h3 class="center">{{'HOMEPAGE.TITLE' | translate}}</h3>
+            </a>
+        </div>
         <li>
             <div class="divider" style="margin: 15px 0px;"></div>
         </li>
         <li class="bold"><a ng-href="{{urlBegin()}}/about" class="collapsible-header waves-effect waves-teal"><i class="material-icons">&#xE88F;</i>{{'MENU.ABOUT' | translate}}</a></li>
-        <!-- <li class="bold active"><a class="collapsible-header waves-effect waves-teal"><i class="material-icons">location_on</i>{{'MENU.GEOLOCATION' | translate}}</a></li> -->
         <ul class="collapsible collapsible-accordion">
             <li class="bold"><a class="collapsible-header waves-effect waves-teal"><i class="material-icons">language</i>{{'MENU.SELECTALANG' | translate}}</a>
                 <div class="collapsible-body">
@@ -136,59 +133,32 @@
     </div>
     <ui-view class="fade" id="mainDiv" style="width:100%; height: 100%;"></ui-view>
     <script type="text/javascript">
-    // $(document).ready(function() {
-    //     $(".btn-open").click(function() {
-    //         $(".overlay").fadeToggle(200);
-    //         $(this).toggleClass('fa-bars').toggleClass('fa-times');
-    //         $(this).toggleClass('btn-open').toggleClass('btn-close');
-    //         $("#owlTour").owlCarousel({
-    //           pagination: false,
-    //           center: true,
-    //           loop: false,
-    //           items: 2,
-    //           itemsDesktop: [1000, 2], //5 items between 1000px and 901px
-    //           itemsDesktopSmall: [900, 3], // betweem 900px and 601px
-    //           itemsTablet: [600, 2], //2 items between 600 and 0
-    //           itemsMobile: false // itemsMobile disabled - inherit from itemsTablet option
-    //         });
-    //     });
-    // });
-    // $(document).ready(function() {
-    //     $(".btn-close , .mobile , .imageLink , .lang , .titleBox").on('click', function() {
-    //         $(".overlay").fadeToggle(100);
-    //         $(".btn-close").toggleClass('fa-times').toggleClass('fa-bars');
-    //         $(".btn-close").toggleClass('btn-open').toggleClass('btn-close');
-    //         open = false;
-    //     });
-    // });
-    // 
-
     $(document).ready(function() {
         // Initialize collapse button
         $(".menu-collapse").sideNav({
-            menuWidth: 300, // Default is 240
+            menuWidth: 280, // Default is 240
             edge: 'right', // Choose the horizontal origin
             closeOnClick: true, // Closes side-nav on <a> clicks, useful for Angular/Meteor
-            draggable: false // Choose whether you can drag to open on touch screens
+            draggable: true // Choose whether you can drag to open on touch screen
         });
         $('.collapsible').collapsible();
     });
     </script>
     <script type="text/javascript">
-    // (function(i, s, o, g, r, a, m) {
-    //     i['GoogleAnalyticsObject'] = r;
-    //     i[r] = i[r] || function() {
-    //         (i[r].q = i[r].q || []).push(arguments);
-    //     }, i[r].l = 1 * new Date();
-    //     a = s.createElement(o),
-    //         m = s.getElementsByTagName(o)[0];
-    //     a.async = 1;
-    //     a.src = g;
-    //     m.parentNode.insertBefore(a, m);
-    // })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+    (function(i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function() {
+            (i[r].q = i[r].q || []).push(arguments);
+        }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m);
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
 
-    // ga('create', 'UA-75231811-1', 'none');
-    // ga('send', 'pageview');
+    ga('create', 'UA-75231811-1', 'none');
+    ga('send', 'pageview');
     </script>
     
     <!-- timelineJS -->

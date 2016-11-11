@@ -4882,7 +4882,6 @@ VCO.MenuBar = VCO.Class.extend({
 			}
         }
     },
-
 	
 	/*	Private Methods
 	================================================== */
@@ -4890,13 +4889,20 @@ VCO.MenuBar = VCO.Class.extend({
 		// Create Layout
 
 		this._el.button_container = VCO.Dom.create('div', 'buttons-container', this._el.container);
-
 		this._el.buttons_header = VCO.Dom.create('div', 'buttons-header', this._el.button_container);
-		this._el.buttons_header.innerHTML = '<h4 class="bold"><i class="material-icons">settings</i>Settings</h4><li><div class="divider"></div></li>';
+		this._el.buttons_header.innerHTML = '<div class="close-slide-out"><a ng-href="#" data-activates="slide-out" class="show-on-small"><i class="material-icons new-medium right">&#xE314;</i></a></div><div class="menu-header"><h3>Settings</h3></div><li><div class="divider"></div></li>';
 
-		this._el.button_collapse_toggle = VCO.Dom.create('li', 'bold', this._el.button_container);
-		this._el.button_collapse_toggle.innerHTML = '<a class="collapsible-header waves-effect"><i class="material-icons">cloud</i>Switch Story/Maps</a>';
-		VCO.DomEvent.addListener(this._el.button_collapse_toggle, 'click', this._onButtonCollapseMap, this);
+		// this._el.button_collapse_toggle = VCO.Dom.create('li', 'bold', this._el.button_container);
+		// this._el.button_collapse_toggle.innerHTML = '<a class="collapsible-header waves-effect"><i class="material-icons">cloud</i>Switch Story/Maps</a>';
+		// VCO.DomEvent.addListener(this._el.button_collapse_toggle, 'click', this._onButtonCollapseMap, this);
+
+		this._el.button_overview = VCO.Dom.create('li', 'bold', this._el.button_container);
+		this._el.button_overview.innerHTML = '<a ng-href="#!" class="collapsible-header waves-effect"><i class="material-icons">&#xE56B;</i>' + VCO.Language.buttons.overview + '</a>';
+		VCO.DomEvent.addListener(this._el.button_overview, 'click', this._onButtonOverview, this);
+
+		this._el.button_backtostart = VCO.Dom.create('li', 'bold', this._el.button_container);
+		this._el.button_backtostart.innerHTML = '<a ng-href="#!" class="collapsible-header waves-effect"><i class="material-icons">&#xE166;</i>' + VCO.Language.buttons.backtostart + '</a>';
+		VCO.DomEvent.addListener(this._el.button_backtostart, 'click', this._onButtonBackToStart, this);
 
 		this._el.button_geolocation = VCO.Dom.create('li', 'bold', this._el.button_container);
 		// this._el.button_geolocation.innerHTML = '<a class="collapsible-header waves-effect switch"><i class="material-icons">location_on</i>Geolocation<label><input type="checkbox"><span class="lever"></span></label></a>';
@@ -4904,20 +4910,8 @@ VCO.MenuBar = VCO.Class.extend({
 
 		this._el.button_layers = VCO.Dom.create('ul', 'collapsible collapsible-menubar collapsible-accordion', this._el.button_container);
 		VCO.DomEvent.addListener(this._el.button_layers, 'click', this._onButtonLayers, this);
-
-		this._el.button_overview = VCO.Dom.create('li', 'bold', this._el.button_container);
-		this._el.button_overview.innerHTML = '<a ng-href="#!" class="collapsible-header waves-effect"><i class="material-icons">location_on</i>Overview</a>';
-		VCO.DomEvent.addListener(this._el.button_overview, 'click', this._onButtonOverview, this);
-
-		this._el.button_backtostart = VCO.Dom.create('li', 'bold', this._el.button_container);
-		this._el.button_backtostart.innerHTML = '<a ng-href="#!" class="collapsible-header waves-effect"><i class="material-icons">language</i>Back to Start</a>';
-		VCO.DomEvent.addListener(this._el.button_backtostart, 'click', this._onButtonBackToStart, this);
-
-		this._el.button_backtostart.title 				= VCO.Language.buttons.backtostart;
-		this._el.button_overview.title 					= VCO.Language.buttons.overview;
-		
 	},
-	
+
 	_initEvents: function () {
 	},
 	
@@ -7350,6 +7344,7 @@ VCO.StorySlider = VCO.Class.extend({
 		// Preload Timer
 		this.preloadTimer;
 
+		this._currentTour;
 		this._nextTour;
 		this._prevTour;
 
@@ -7866,57 +7861,6 @@ VCO.StorySlider = VCO.Class.extend({
 		}
 	},
 
-	// _startMessage: function(){
-	// 	this._startmessage = new VCO.Message({}, {
-	// 				message_class: 		"vco-message-full",
-	// 				message_open: 		false
-	// 			});
-
-	// 	if (prevTour().split('/')[1] == "") {
-	// 		this._prevTour = "home";
-	// 	}
-	// 	else{
-	// 		this._prevTour = prevTour().split('/')[1];
-	// 	}
-		
-	// 	if (localStorage.getItem("ls.locale.main").contains("en")) {
-	// 		this._startmessage.updateMessage("<div class='message-tours'>Select the previous or next tour<br><div class='itemHolderMessage'><div class='imageHolder'><a href='/" + prevTour() + "'><img src='logos/mini-tours/" + this._prevTour + ".png' ng-src='logos/mini-tours/" + this._prevTour + ".png'></a></div><div class='textHolderWhite'><div class='text'>" + this._prevTour + "</div></div></div><div class='itemHolderMessage'><div class='imageHolder'><a href='/" + nextTour() + "'><img src='logos/mini-tours/" + nextTour().split('/')[1] + ".png' ng-src='logos/mini-tours/" + nextTour().split('/')[1] + ".png'></a></div><div class='textHolderWhite'><div class='text'>" + nextTour().split('/')[1] + "</div></div></div><br><span class='vco-button'>CLOSE</span></div>");
-	// 	}
-	// 	else {
-	// 		this._startmessage.updateMessage("<div class='message-tours'>Select the previous or next tour<br><div class='itemHolderMessage'><div class='imageHolder'><a href='/" + prevTour() + "'><img src='logos/mini-tours/" + this._prevTour + ".png' ng-src='logos/mini-tours/" + this._prevTour + ".png'></a></div><div class='textHolderWhite'><div class='text'>" + this._prevTour + "</div></div></div><div class='itemHolderMessage'><div class='imageHolder'><a href='/" + nextTour() + "'><img src='logos/mini-tours/" + nextTour().split('/')[1] + ".png' ng-src='logos/mini-tours/" + nextTour().split('/')[1] + ".png'></a></div><div class='textHolderWhite'><div class='text'>" + nextTour().split('/')[1] + "</div></div></div><br><span class='vco-button'>CLOSE</span></div>");
-	// 	}	
-	// 			this._startmessage.addTo(this._el.container);
-			
-
-	// 	this._startmessage.on('clicked', this._onStartMessageClick, this);
-	// },
-
-	// _finalMessage: function(){
-	// 	this._finalmessage = new VCO.Message({}, {
-	// 				message_class: 		"vco-message-full",
-	// 				message_open: 		false
-	// 			});
-
-	// 	if (prevTour().split('/')[1] == "") {
-	// 		this._prevTour = "home";
-	// 	}
-	// 	else{
-	// 		this._prevTour = prevTour().split('/')[1];
-	// 	}
-
-	// 	if (localStorage.getItem("ls.locale.main").contains("en")) {
-	// 		this._finalmessage.updateMessage("<div class='message-tours'>Select the previous or next tour<br><div class='itemHolderMessage'><div class='imageHolder'><a href='/" + prevTour() + "'><img src='logos/mini-tours/" + this._prevTour + ".png' ng-src='logos/mini-tours/" + this._prevTour + ".png'></a></div><div class='textHolderWhite'><div class='text'>" + this._prevTour + "</div></div></div><div class='itemHolderMessage'><div class='imageHolder'><a href='/" + nextTour() + "'><img src='logos/mini-tours/" + nextTour().split('/')[1] + ".png' ng-src='logos/mini-tours/" + nextTour().split('/')[1] + ".png'></a></div><div class='textHolderWhite'><div class='text'>" + nextTour().split('/')[1] + "</div></div></div><br><span class='vco-button'>CLOSE</span></div>");
-	// 	}
-	// 	else {
-	// 		this._finalmessage.updateMessage("<div class='message-tours'>Select the previous or next tour<br><div class='itemHolderMessage'><div class='imageHolder'><a href='/" + prevTour() + "'><img src='logos/mini-tours/" + this._prevTour + ".png' ng-src='logos/mini-tours/" + this._prevTour + ".png'></a></div><div class='textHolderWhite'><div class='text'>" + this._prevTour + "</div></div></div><div class='itemHolderMessage'><div class='imageHolder'><a href='/" + nextTour() + "'><img src='logos/mini-tours/" + nextTour().split('/')[1] + ".png' ng-src='logos/mini-tours/" + nextTour().split('/')[1] + ".png'></a></div><div class='textHolderWhite'><div class='text'>" + nextTour().split('/')[1] + "</div></div></div><br><span class='vco-button'>CLOSE</span></div>");
-	// 	}
-	// 			this._finalmessage.updateMessageOpen(true);
-
-	// 			this._finalmessage.addTo(this._el.container);
-
-	// 	this._finalmessage.on('clicked', this._onFinalMessageClick, this);
-	// },
-
 	_initEvents: function () {
 		this._nav.next.on('clicked', this._onNavigation, this);
 		this._nav.previous.on('clicked', this._onNavigation, this);
@@ -7969,12 +7913,13 @@ VCO.StorySlider = VCO.Class.extend({
 
 	_onNavigation: function(e){
 
-		if (!this._startmessage || !this._finalmessage){
+		// if (!this._startmessage || !this._finalmessage){
 
 			if (e.direction == "next" || e.direction == "left") {
 				if (this.current_slide == (this._slides.length - 1)) {
-					this._finalMessage();
-					this.next();
+					console.log("end-swipe");
+					this._onSwipeNoDirection();
+					document.getElementById("end-modal").click();
 				}
 				else {
 					this.next();
@@ -7982,9 +7927,9 @@ VCO.StorySlider = VCO.Class.extend({
 			}
 			else if (e.direction == "start") {
 				if  (this.current_slide == 0){
-					// this._startMessage();
-					document.getElementById("start-modal").click();
 					console.log("start");
+					this._onSwipeNoDirection();
+					document.getElementById("start-modal").click();
 				}
 				else {
 					this.previous();
@@ -7992,9 +7937,10 @@ VCO.StorySlider = VCO.Class.extend({
 			}
 			else if (e.direction == "previous" || e.direction == "right") {
 				if  (this.current_slide == 0){
-					// this._startMessage();
-					this._nav.start.click();
-					console.log("starts");
+					console.log("start-swipe");
+					this._onSwipeNoDirection();
+					document.getElementById("start-modal").click();
+					
 				}
 				else {
 					this.previous();
@@ -8002,28 +7948,29 @@ VCO.StorySlider = VCO.Class.extend({
 			}
 			else if (e.direction == "end") {
 				if (this.current_slide == (this._slides.length - 1)) {
-					this._finalMessage();
-					this.next();
+					console.log("end");
+					this._onSwipeNoDirection();
+					document.getElementById("end-modal").click();
 				}
 				else {
 					this.next();
 				}
 			}			
-		}
-		else if (this._startmessage || this._finalmessage){
-			if (e.direction == "next" || e.direction == "left") {
-				this.next();
-			}
-			else if (e.direction == "start" || e.direction == "back") {
-				this._onSwipeNoDirection();
-			}
-			else if (e.direction == "previous" || e.direction == "right") {
-				this.previous();
-			}
-			else if (e.direction == "end" || e.direction == "forward") {
-				this._onSwipeNoDirection();
-			}
-		}		
+		// }
+		// else if (this._startmessage || this._finalmessage){
+		// 	if (e.direction == "next" || e.direction == "left") {
+		// 		this.next();
+		// 	}
+		// 	else if (e.direction == "start" || e.direction == "back") {
+		// 		this._onSwipeNoDirection();
+		// 	}
+		// 	else if (e.direction == "previous" || e.direction == "right") {
+		// 		this.previous();
+		// 	}
+		// 	else if (e.direction == "end" || e.direction == "forward") {
+		// 		this._onSwipeNoDirection();
+		// 	}
+		// }		
 
 		this.fire("nav_" + e.direction, this.data);
 	},
@@ -14922,7 +14869,7 @@ if (L.Browser.touch && !L.Browser.pointer) {
 
 L.Control.Zoom = L.Control.extend({
 	options: {
-		position: 'topleft',
+		position: 'bottomleft',
 		zoomInText: '+',
 		zoomInTitle: 'Zoom in',
 		zoomOutText: '-',
@@ -15541,17 +15488,10 @@ L.Control.GeoLocate = L.Control.extend({
             this._event = undefined;
             this._prevBounds = null;
 
-
-   //          this._link = VCO.Dom.create('span', 'collapsible-header', this._container);
-   //          // this._link.setAttribute("ng-href", "#!");
-			// this._link.innerHTML = '<div class="switch"><i class="material-icons">location_on</i>Geolocation<label>Off<input type="checkbox" class="geo-checkbox"><span class="lever"></span>On</label></div>';
-			// this._icon = this._link.getElementsByClassName('geo-checkbox');
-
-
-			// this._linkText = VCO.Dom.create('li', 'bold', this._container);
 			this._linkText = VCO.Dom.create('div', 'switch', this._container);
-			this._linkText.innerHTML = '<a class="collapsible-header"><i class="material-icons">location_on</i>Geolocation</a>';
-			this._link = VCO.Dom.create('label', '', this._linkText);
+			this._linkAnchor = VCO.Dom.create('a', 'collapsible-header', this._linkText);
+			this._linkAnchor.innerHTML = '<i class="material-icons">&#xE0C8;</i>Geolocation';
+			this._link = VCO.Dom.create('label', '', this._linkAnchor);
 			this._icon = VCO.Dom.create('input', 'geo-checkbox', this._link);
 			this._icon.type = 'checkbox';
 			this._iconText = VCO.Dom.create('span', 'lever', this._link);
@@ -15993,8 +15933,8 @@ L.Control.CustomLayers = L.Control.extend({
 		var className = 'leaflet-control-layers',
 		    container = this._container = L.DomUtil.create('li', 'bold active');
 
-		var link = this._layersLink = L.DomUtil.create('a', 'collapsible-header waves-effect waves-teal', container);
-		link.innerHTML = '<i class="material-icons left">layers</i>Layers<i class="material-icons">arrow_drop_down</i>'
+		var link = this._layersLink = L.DomUtil.create('a', 'active collapsible-header waves-effect waves-teal', container);
+		link.innerHTML = '<i class="material-icons left">&#xE53B;</i>Layers'
 
 		this._layersList = this._form = L.DomUtil.create('div', 'collapsible-body', container);
 		this._form = L.DomUtil.create('ul', '', this._layersList);
@@ -16937,7 +16877,7 @@ L.Control.MiniMap = L.Control.extend({
 
 
         this._miniMap = new L.Map(this._container, {
-            attributionControl: false,
+            attributionControl: true,
             zoomControl: false,
             zoomAnimation: this.options.zoomAnimation,
             autoToggleDisplay: this.options.autoToggleDisplay,
@@ -17650,9 +17590,10 @@ VCO.Map = VCO.Class.extend({
 				map_as_image: 		false,
 				map_mini: 			false,
 				map_subdomains: 	"",
-				map_center_offset:  	null, 			// takes object {top:0,left:0}
-				zoom_distance: 			100,
-				calculate_zoom: 		true,   		// Allow map to determine best zoom level between markers (recommended)	
+				map_center_offset:  null, 			// takes object {top:0,left:0}
+				zoom_distance: 		100,
+				calculate_zoom: 	true,   		// Allow map to determine best zoom level between markers (recommended)
+				attribution: 	    "",
 				zoomify: {
 					path: 			"",
 					width: 			"",
@@ -17666,8 +17607,7 @@ VCO.Map = VCO.Class.extend({
 					lng: 			"",
 					zoom: 			13,
 					minZoom:        13,
-					maxZoom:        17,
-					attribution: 	""
+					maxZoom:        17
 				}		
 			}
 		};
@@ -18323,18 +18263,14 @@ VCO.Map.Leaflet = VCO.Map.extend({
 	_createMap: function() {
 		
 		
-		this._map = new L.map(this._el.map, {scrollWheelZoom:false, zoomControl:!this.options.maps[0].map_mini});
+		this._map = new L.map(this._el.map, {scrollWheelZoom:false, zoomControl:!this.options.maps[0].map_mini, attributionControl: true});
 		this._map.on("load", this._onMapLoaded, this);
 		
 		
 		this._map.on("moveend", this._onMapMoveEnd, this);
-		this._map.attributionControl.setPrefix("<a href='http://storymap.knightlab.com/' target='_blank' class='vco-knightlab-brand'><span>&FilledSmallSquare;</span> StoryMapJS</a>");
-			
-		// var map_type_arr = this.options.maps[0].map_type.split(':');		
-
+		this._map.attributionControl.setPrefix("<a href='http://storymap.knightlab.com/' target='_blank' class='vco-knightlab-brand'>StoryMapJS</a>");
 
 		// Create Tile Layer
-		// this._tile_layer = this._createTileLayer(this.options.maps[0].map_type,  this.options.maps[0]);
 		this._tile_layer = this._createAddTileLayer(this.options.maps[0].map_type, this.options.maps[0]);
 		this._tile_layer.on("load", this._onTilesLoaded, this);
 
@@ -18402,10 +18338,10 @@ VCO.Map.Leaflet = VCO.Map.extend({
 		// Add Initialized layer to Layer Control
 		_layergroup[this.options.maps[0].map_name] = this._tile_layer;
 
-
 		// Create Additional Tile layers and add to Layer Control
 		for (var i = 0, iLen = _newoptions.length; i < iLen; i++) {	
 			_layergroup[_newoptions[i].map_name] = this._createAddTileLayer(_newoptions[i].map_type, _newoptions[i]);
+			this._map.attributionControl.addAttribution(_newoptions[i].attribution);
 		}		
 
 		// Create Layer Control
@@ -18537,12 +18473,12 @@ VCO.Map.Leaflet = VCO.Map.extend({
 					//this._image_layer = new L.imageOverlay(this.options.maps[0].zoomify.path + "TileGroup0/0-0-0.jpg", _tilelayer.getZoomifyBounds(this._map));
 					break;
 				case 'mapTiler':
-					_addoptions.mapTiler.attribution 	= _attribution_knightlab + _addoptions.mapTiler.attribution;
+					_addoptions.attribution = _addoptions.attribution;
 					_addtilelayer = new L.tileLayer(_addoptions.mapTiler.path + '{z}/{x}/{y}.jpg', {
-										errorTileUrl: './images/tiny_icon.png'
+										errorTileUrl: './images/tiny_icon.png',
 										// center: [_addoptions.mapTiler.lat, _addoptions.mapTiler.lon],
-										// minZoom: _addoptions.mapTiler.minZoom,
-										// maxZoom: _addoptions.mapTiler.maxZoom
+										minZoom: _addoptions.mapTiler.minZoom,
+										maxZoom: _addoptions.mapTiler.maxZoom
 									});
 					break;	
 				case 'osm':
@@ -19364,7 +19300,8 @@ VCO.StoryMap = VCO.Class.extend({
 					map_background_color: 	"#d9d9d9",
 					map_center_offset:  	null, 			// takes object {top:0,left:0}
 					zoom_distance: 			100,
-					calculate_zoom: 		true,   		// Allow map to determine best zoom level between markers (recommended)	
+					calculate_zoom: 		true,   		// Allow map to determine best zoom level between markers (recommended)
+					attribution: 		    "",
 					zoomify: {
 						path: 				"",
 						width: 				"",
@@ -19378,8 +19315,7 @@ VCO.StoryMap = VCO.Class.extend({
 						lng: 				"",
 						zoom: 				13,
 						minZoom:        	13,
-						maxZoom:        	17,
-						attribution: 		""
+						maxZoom:        	17
 				}	
 			}]
 		};
@@ -19532,10 +19468,10 @@ VCO.StoryMap = VCO.Class.extend({
 		this._el.viewSwitch = VCO.Dom.create('div', 'view-switch hide-on-med-and-up', this._menubarContainer);
 		this._el.viewSwitch.innerHTML = '<a class="switch-view-layer show-on-small"><i class="material-icons new-medium">&#xE25D;</i></a>';
 
-		this.layer_control = this._map.createLayerControl();
-		this._menubar.controlLayers(this.layer_control);
 		this.geo_layer = this._map.createGeolocation();
 		this._menubar.geolocationLayer(this.geo_layer);
+		this.layer_control = this._map.createLayerControl();
+		this._menubar.controlLayers(this.layer_control);
 
 		this._showMessage();
 
@@ -19567,37 +19503,41 @@ VCO.StoryMap = VCO.Class.extend({
 		
 	},
 
+	_capitalizeFirstLetter: function(string) {
+    	return string.charAt(0).toUpperCase() + string.slice(1);
+	},
+
 	_showMessage: function() {
 		// if (document.cookie.replace(/(?:(?:^|.*;\s*)introMessageShown\s*\=\s*([^;]*).*$)|^.*$/, "$1") !== "true") {
-			if (VCO.Browser.touch) {
-				//Touchscreen Message
-				this._message = new VCO.Message({}, {
-					message_class: 		"vco-message-full"
-				});
-				if (localStorage.getItem("ls.locale.main").contains("en")) {
-					this._message.updateMessage('<div class="message-tooltip submenu-tooltip"><a class="btn-floating btn-large waves-effect waves-dark white tooltipped" data-position="right" data-delay="50" data-tooltip="Map menu"><i class="material-icons new-medium">&#xE145;</i></a></div><div class="message-tooltip menu-tooltip"><a class="btn-floating btn-large waves-effect waves-dark white tooltipped" data-position="left" data-delay="50" data-tooltip="Main menu"><i class="material-icons new-medium">&#xE145;</i><a/></div><div class="message-tooltip swipe-tooltip"><a class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="Swipe to begin"><i class="material-icons large md-light">&#xE913;</i><a/></div><div class="message-tooltip close-tooltip-btn" id="close-overlay"><a class="waves-effect waves-teal btn white">Close</a></div>');
-				}
+			// if (VCO.Browser.touch) {
+			// 	//Touchscreen Message
+			// 	this._message = new VCO.Message({}, {
+			// 		message_class: 		"vco-message-full"
+			// 	});
+			// 	if (localStorage.getItem("ls.locale.main").contains("en")) {
+			// 		this._message.updateMessage('<div class="message-tooltip submenu-tooltip"><a class="btn-floating btn-large waves-effect waves-dark white tooltipped" data-position="right" data-delay="50" data-tooltip="Map menu"><i class="material-icons new-medium">&#xE145;</i></a></div><div class="message-tooltip menu-tooltip"><a class="btn-floating btn-large waves-effect waves-dark white tooltipped" data-position="left" data-delay="50" data-tooltip="Main menu"><i class="material-icons new-medium">&#xE145;</i><a/></div><div class="message-tooltip swipe-tooltip"><a class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="Swipe to begin"><i class="material-icons large md-light">&#xE913;</i><a/></div><div class="message-tooltip close-tooltip-btn" id="close-overlay"><a class="waves-effect waves-teal btn white">Close</a></div>');
+			// 	}
 
-				else {
-					this._message.updateMessage('<div class="message-tooltip submenu-tooltip"><a class="btn-floating btn-large waves-effect waves-dark white tooltipped" data-position="right" data-delay="50" data-tooltip="Map menu"><i class="material-icons new-medium">&#xE145;</i></a></div><div class="message-tooltip menu-tooltip"><a class="btn-floating btn-large waves-effect waves-dark white tooltipped" data-position="left" data-delay="50" data-tooltip="Main menu"><i class="material-icons new-medium">&#xE145;</i><a/></div><div class="message-tooltip swipe-tooltip"><a class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="Swipe to begin"><i class="material-icons large md-light">&#xE913;</i><a/></div><div class="message-tooltip close-tooltip-btn" id="close-overlay"><a class="waves-effect waves-teal btn white">Esci</a></div>');
-				}
-				this._message.addTo(this._el.container);
-			}
-			else
-			{
-  				// Message
-				this._message = new VCO.Message({}, {
-					message_class: 		"vco-message-full"
-				});
-				if (localStorage.getItem("ls.locale.main").contains("en")) {
-					this._message.updateMessage('<div class="message-tooltip submenu-tooltip"><a class="btn-floating btn-large waves-effect waves-dark white tooltipped" data-position="right" data-delay="50" data-tooltip="Map menu"><i class="material-icons new-medium">&#xE145;</i></a></div><div class="message-tooltip menu-tooltip"><a class="btn-floating btn-large waves-effect waves-dark white tooltipped" data-position="left" data-delay="50" data-tooltip="Main menu"><i class="material-icons new-medium">&#xE145;</i><a/></div><div class="message-tooltip left-tooltip"><a class="btn-floating btn-large waves-effect waves-dark white tooltipped" data-position="right" data-delay="50" data-tooltip="Go to previous slide"><i class="material-icons new-medium">&#xE314;</i><a/></div><div class="message-tooltip right-tooltip"><a class="btn-floating btn-large waves-effect waves-dark white tooltipped" data-position="left" data-delay="50" data-tooltip="Go to next slide"><i class="material-icons new-medium">&#xE315;</i><a/></div><div class="message-tooltip close-tooltip-btn" id="close-overlay"><a class="btn waves-effect waves-teal white">Close</a></div>');
-				}
-				else {
-					this._message.updateMessage('<div class="message-tooltip submenu-tooltip"><a class="btn-floating btn-large waves-effect waves-dark white tooltipped" data-position="right" data-delay="50" data-tooltip="Menu menu"><i class="material-icons new-medium">&#xE145;</i></a></div><div class="message-tooltip menu-tooltip"><a class="btn-floating btn-large waves-effect waves-dark white tooltipped" data-position="left" data-delay="50" data-tooltip="Menu principale"><i class="material-icons new-medium">&#xE145;</i><a/></div><div class="message-tooltip left-tooltip"><a class="btn-floating btn-large waves-effect waves-dark white tooltipped" data-position="right" data-delay="50" data-tooltip="Go to previous slide"><i class="material-icons new-medium">&#xE314;</i><a/></div><div class="message-tooltip right-tooltip"><a class="btn-floating btn-large waves-effect waves-dark white tooltipped" data-position="left" data-delay="50" data-tooltip="Go to next slide"><i class="material-icons new-medium">&#xE315;</i><a/></div><div class="message-tooltip close-tooltip-btn" id="close-overlay"><a class="btn waves-effect waves-teal white">Esci</a></div>');
-				}
-				this._message.addTo(this._el.container);
+			// 	else {
+			// 		this._message.updateMessage('<div class="message-tooltip submenu-tooltip"><a class="btn-floating btn-large waves-effect waves-dark white tooltipped" data-position="right" data-delay="50" data-tooltip="Map menu"><i class="material-icons new-medium">&#xE145;</i></a></div><div class="message-tooltip menu-tooltip"><a class="btn-floating btn-large waves-effect waves-dark white tooltipped" data-position="left" data-delay="50" data-tooltip="Main menu"><i class="material-icons new-medium">&#xE145;</i><a/></div><div class="message-tooltip swipe-tooltip"><a class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="Swipe to begin"><i class="material-icons large md-light">&#xE913;</i><a/></div><div class="message-tooltip close-tooltip-btn" id="close-overlay"><a class="waves-effect waves-teal btn white">Esci</a></div>');
+			// 	}
+			// 	this._message.addTo(this._el.container);
+			// }
+			// else
+			// {
+  	// 			// Message
+			// 	this._message = new VCO.Message({}, {
+			// 		message_class: 		"vco-message-full"
+			// 	});
+			// 	if (localStorage.getItem("ls.locale.main").contains("en")) {
+			// 		this._message.updateMessage('<div class="message-tooltip submenu-tooltip"><a class="btn-floating btn-large waves-effect waves-dark white tooltipped" data-position="right" data-delay="50" data-tooltip="Map menu"><i class="material-icons new-medium">&#xE145;</i></a></div><div class="message-tooltip menu-tooltip"><a class="btn-floating btn-large waves-effect waves-dark white tooltipped" data-position="left" data-delay="50" data-tooltip="Main menu"><i class="material-icons new-medium">&#xE145;</i><a/></div><div class="message-tooltip left-tooltip"><a class="btn-floating btn-large waves-effect waves-dark white tooltipped" data-position="right" data-delay="50" data-tooltip="Go to previous slide"><i class="material-icons new-medium">&#xE314;</i><a/></div><div class="message-tooltip right-tooltip"><a class="btn-floating btn-large waves-effect waves-dark white tooltipped" data-position="left" data-delay="50" data-tooltip="Go to next slide"><i class="material-icons new-medium">&#xE315;</i><a/></div><div class="message-tooltip close-tooltip-btn" id="close-overlay"><a class="btn waves-effect waves-teal white">Close</a></div>');
+			// 	}
+			// 	else {
+			// 		this._message.updateMessage('<div class="message-tooltip submenu-tooltip"><a class="btn-floating btn-large waves-effect waves-dark white tooltipped" data-position="right" data-delay="50" data-tooltip="Menu menu"><i class="material-icons new-medium">&#xE145;</i></a></div><div class="message-tooltip menu-tooltip"><a class="btn-floating btn-large waves-effect waves-dark white tooltipped" data-position="left" data-delay="50" data-tooltip="Menu principale"><i class="material-icons new-medium">&#xE145;</i><a/></div><div class="message-tooltip left-tooltip"><a class="btn-floating btn-large waves-effect waves-dark white tooltipped" data-position="right" data-delay="50" data-tooltip="Go to previous slide"><i class="material-icons new-medium">&#xE314;</i><a/></div><div class="message-tooltip right-tooltip"><a class="btn-floating btn-large waves-effect waves-dark white tooltipped" data-position="left" data-delay="50" data-tooltip="Go to next slide"><i class="material-icons new-medium">&#xE315;</i><a/></div><div class="message-tooltip close-tooltip-btn" id="close-overlay"><a class="btn waves-effect waves-teal white">Esci</a></div>');
+			// 	}
+			// 	this._message.addTo(this._el.container);
 				
-			}
+			// }
   			// document.cookie = "introMessageShown=true; path=/";
 		// }
 
@@ -19605,9 +19545,30 @@ VCO.StoryMap = VCO.Class.extend({
 					message_id:         "start-modal"
 	// 				message_class: 		"vco-message-full",
 	// 				message_open: 		false
-		});
+					});
 
-		this._startmessage.updateMessage('<div class="row"><div class="col s6">Test</div><div class="col s6">Test</div></div>');
+		if (prevTour().split('/')[1] == "") {
+			this._prevTour = "home";
+		}
+		else{
+			this._prevTour = prevTour().split('/')[1];
+		}
+
+		this._nextTour = nextTour().split('/')[1];
+		this._currentTour = currentTour().split('/')[1];
+
+		if (localStorage.getItem("ls.locale.main").contains("en")) {
+			// this._startmessage.updateMessage('<div class="row"><div class="col s12">Select the previous or next tour</div><div class="col s6">Test</div><div class="col s6">Test</div></div>');
+
+			this._startmessage.updateMessage('<div class="col s12 m7"><div class="card horizontal"><div class="card-stacked"><div class="card-content"><p>You have reached the start of the ' +  this._capitalizeFirstLetter(this._currentTour) + ' period.</p><div class="row"><a class="modal-action modal-close" href="/' + prevTour() + '"><div class="col s3"><i class="material-icons large">&#xE314;</i></div><div class="col s6"><h3 class="header">' + this._capitalizeFirstLetter(this._prevTour) + ' period</h3></div></a></div></div></div><div class="card-image"><img src="logos/mini-tours/' + this._prevTour + '.jpg"></div></div></div>');
+		}
+		else {
+			this._startmessage.updateMessage('<div class="col s12 m7"><div class="card horizontal"><div class="card-stacked"><div class="card-content"><p>You have reached the start of the ' +  this._capitalizeFirstLetter(this._currentTour) + ' period.</p><div class="row"><a class="modal-action modal-close" href="/' + prevTour() + '"><div class="col s3"><i class="material-icons large">&#xE314;</i></div><div class="col s6"><h3 class="header">' + this._capitalizeFirstLetter(this._prevTour) + ' period</h3></div></a></div></div></div><div class="card-image"><img src="logos/mini-tours/' + this._prevTour + '.jpg"></div></div></div>');
+		}
+		// this._closeLink = document.getElementsByClassName('modal-close');
+		// this._closeLink.addEventListener("click", closeModalLink());
+
+		this._startmessage.addTo(this._el.messages);
 
 		this._finalmessage = new VCO.TourMessage({}, {
 					message_id:         "end-modal"
@@ -19615,9 +19576,12 @@ VCO.StoryMap = VCO.Class.extend({
 	// 				message_open: 		false
 		});
 
-		this._finalmessage.updateMessage('<div class="row"><div class="col s6">Test</div><div class="col s6">Test</div></div>');
-
-		this._startmessage.addTo(this._el.messages);
+		if (localStorage.getItem("ls.locale.main").contains("en")) {
+			this._finalmessage.updateMessage('<div class="col s12 m7"><div class="card horizontal"><div class="card-image"><img src="logos/mini-tours/' + this._nextTour + '.jpg"></div><div class="card-stacked"><div class="card-content"><p>You have reached the end of the ' +  this._capitalizeFirstLetter(this._currentTour) + ' period.</p><div class="row"><a class="modal-action modal-close" href="/' + nextTour() + '"><div class="col s6"><h3 class="header">' + this._capitalizeFirstLetter(this._nextTour) + ' period</h3></div><div class="col s3"><i class="material-icons large">&#xE315;</i></div></a></div></div></div></div></div>');
+		}
+		else {
+			this._finalmessage.updateMessage('<div class="col s12 m7"><div class="card horizontal"><div class="card-image"><img src="logos/mini-tours/' + this._nextTour + '.jpg"></div><div class="card-stacked"><div class="card-content"><p>You have reached the end of the ' +  this._capitalizeFirstLetter(this._currentTour) + ' period.</p><div class="row"><a class="modal-action modal-close" href="/' + nextTour() + '"><div class="col s6"><h3 class="header">' + this._capitalizeFirstLetter(this._nextTour) + ' period</h3></div><div class="col s3"><i class="material-icons large">&#xE315;</i></div></a></div></div></div></div></div>');
+		}
 		this._finalmessage.addTo(this._el.messages);
 		
 	},
