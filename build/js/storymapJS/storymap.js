@@ -4890,7 +4890,7 @@ VCO.MenuBar = VCO.Class.extend({
 
 		this._el.button_container = VCO.Dom.create('div', 'buttons-container', this._el.container);
 		this._el.buttons_header = VCO.Dom.create('div', 'buttons-header', this._el.button_container);
-		this._el.buttons_header.innerHTML = '<div class="close-slide-out"><a ng-href="#" data-activates="slide-out" class="show-on-small"><i class="material-icons new-medium right">&#xE314;</i></a></div><div class="menu-header"><h3>Settings</h3></div><li><div class="divider"></div></li>';
+		this._el.buttons_header.innerHTML = '<div class="close-slide-out"><a ng-href="#" data-activates="slide-out" class="show-on-small"><i class="material-icons new-medium right">&#xE314;</i></a></div><div class="menu-header"><h3>Settings</h3></div><li style="padding: 0px;"><div class="divider" style="margin: 0px;"></div></li>';
 
 		// this._el.button_collapse_toggle = VCO.Dom.create('li', 'bold', this._el.button_container);
 		// this._el.button_collapse_toggle.innerHTML = '<a class="collapsible-header waves-effect"><i class="material-icons">cloud</i>Switch Story/Maps</a>';
@@ -7329,7 +7329,7 @@ VCO.StorySlider = VCO.Class.extend({
 		this._nav = {};
 		this._nav.previous = {};
 		this._nav.next = {};
-		this._nav.start = {}; 
+		this._nav.start = {}; 2
  		this._nav.end = {}; 
 		
 		// Slide Spacing
@@ -12199,15 +12199,18 @@ L.Marker = L.Class.extend({
 
 	options: {
 		icon: new L.Icon.Default(),
-		title: '',
-		alt: '',
+		title: "",
+		alt: "",
 		clickable: true,
 		draggable: false,
 		keyboard: true,
 		zIndexOffset: 0,
 		opacity: 1,
 		riseOnHover: false,
-		riseOffset: 250
+		riseOffset: 250,
+		analyticsEvent: "",
+		analyticsCat: "",
+		analyticsLabel: ""
 	},
 
 	initialize: function (latlng, options) {
@@ -12322,6 +12325,11 @@ L.Marker = L.Class.extend({
 		}
 
 		L.DomUtil.addClass(icon, classToAdd);
+		icon.setAttribute('angular-on', 'click');
+		icon.setAttribute('angular-event', options.angularEvent);
+		icon.setAttribute('analytics-category', options.angularCat);
+		icon.setAttribute('analytics-label', options.angularLabel);
+
 
 		if (options.keyboard) {
 			icon.tabIndex = '0';
@@ -14958,6 +14966,85 @@ L.control.zoom = function (options) {
 };
 
 
+/*
+ * L.Control.LayerOpacity is used for the default zoom buttons on the map.
+ */
+
+L.Control.LayerOpacity = L.Control.extend({
+	options: {
+		position: 'bottomleft',
+		zoomInText: '+',
+		zoomInTitle: 'Zoom in',
+		zoomOutText: '-',
+		zoomOutTitle: 'Zoom out'
+	},
+
+	initialize: function (layer, options) {
+		L.setOptions(this, options);
+
+		this._layer;
+		this._layers = {};
+		this._container = null;
+	},
+
+	onAdd: function () {
+		this._initLayout();
+
+		return this._container;		
+	},
+
+	_initLayout: function (map) {
+		this._container = L.DomUtil.create('div', 'leaflet-control-opacity leaflet-bar');
+		this._map = map;
+
+		this._label = L.DomUtil.create('label', 'leaflet-opacity-label', this._container);
+		this._label.innerHTML = "Overlay Transparency";
+
+		this._slider = L.DomUtil.create('input', 'leaflet-opacity-slider', this._container);
+		this._slider.type = "range";
+		this._slider.setAttribute("min", 1);
+		this._slider.setAttribute("max", 20);
+
+		this._container.style.display = 'none';
+
+		L.DomEvent
+			.on(this._slider, 'change', L.DomEvent.stopPropagation)
+			.on(this._slider, 'mousedown', L.DomEvent.stopPropagation)
+			.on(this._slider, 'dblclick', L.DomEvent.stopPropagation)
+			.on(this._slider, 'change', L.DomEvent.preventDefault)
+			.on(this._slider, 'change', this._slideChange, this);
+	},
+
+	onRemove: function (map) {
+		map.off('zoomend zoomlevelschange', this._updateDisabled, this);
+	},
+
+	_slideChange: function(){
+		this._layer.setOpacity((this._slider.value)/20);
+	},
+
+	_add: function(layer){
+		this._container.style.display = '';
+		this._layer = layer;
+	},
+
+	_remove: function(layer){
+		this._container.style.display = 'none';
+		this._layer = null;
+	},
+
+	add: function(layer){
+		this._add(layer);
+	},
+
+	remove: function(layer){
+		this._remove(layer);
+	}
+});
+
+L.control.layeropacity = function (layer, options) {
+	return new L.Control.LayerOpacity(layer, options);
+};
 
 /*
  * L.Control.Attribution is used for displaying attribution on the map (added by default).
@@ -15939,9 +16026,9 @@ L.Control.CustomLayers = L.Control.extend({
 		this._layersList = this._form = L.DomUtil.create('div', 'collapsible-body', container);
 		this._form = L.DomUtil.create('ul', '', this._layersList);
 		this._baseLayersList = L.DomUtil.create('form', 'baselayers', this._form);
-		this._baseLayersList.innerHTML = '<li><div class="divider"></div></li><li><a class="subheader">Baselayers</a></li>';
+		this._baseLayersList.innerHTML = '<li style="padding: 0px;"><div class="divider" style="margin: 0px;"></div></li><li><a class="subheader">Baselayers</a></li>';
 		this._overlaysList = L.DomUtil.create('div', 'overlays', this._form);
-		this._overlaysList.innerHTML = '<li><div class="divider"></div></li><li><a class="subheader">Overlays</a></li>'
+		this._overlaysList.innerHTML = '<li style="padding: 0px;"><div class="divider" style="margin: 0px;"></div></li><li><a class="subheader">Overlays</a></li>'
 
 		// L.DomEvent.on(this._layersList, 'click', this._collapse, this);
 	},
@@ -15981,6 +16068,11 @@ L.Control.CustomLayers = L.Control.extend({
 			baseLayersPresent = baseLayersPresent && baseLayersCount > 1;
 			this._baseLayersList.style.display = baseLayersPresent ? '' : 'none';
 		}
+
+		if(overlaysPresent) {
+			this._layerOpacity = new L.control.layeropacity().addTo(this._map);
+		}
+
 		return this;
 	},
 
@@ -16018,6 +16110,7 @@ L.Control.CustomLayers = L.Control.extend({
 
 	_addItem: function (obj) {
 		var label = document.createElement('li'),
+			name = document.createElement('label'),
 		    checked = this._map.hasLayer(obj.layer),
 		    layerId = L.stamp(obj.layer),
 		    input;
@@ -16025,19 +16118,20 @@ L.Control.CustomLayers = L.Control.extend({
 		if (obj.overlay) {
 			input = document.createElement('input');
 			input.type = 'checkbox';
+			input.layerId = layerId
+			input.id = 'checkbox' + input.layerId;
 			input.className = 'filled-in';
 			input.defaultChecked = checked;
+			name.setAttribute('for', 'checkbox' + input.layerId);
 		} else {
 			input = this._createRadioElement('leaflet-base-layers', layerId, checked);
+			input.layerId = layerId
+			name.setAttribute('for', 'radio' + input.layerId);
 		}
 
-		input.layerId = layerId
+		name.innerHTML = ' ' + obj.name;
 
 		L.DomEvent.on(input, 'click', this._onInputClick, this);
-
-		var name = document.createElement('label');
-		name.setAttribute('for', 'radio' + input.layerId);
-		name.innerHTML = ' ' + obj.name;
 
 		label.appendChild(input);
 		label.appendChild(name);
@@ -16061,11 +16155,17 @@ L.Control.CustomLayers = L.Control.extend({
 			layer = this._layers[input.layerId].layer;
 			hasLayer = this._map.hasLayer(layer);
 
-			if (input.checked && !hasLayer) {
+			if (input.checked && !hasLayer && input.type == 'checkbox') {
 				addedLayers.push(layer);
-
-			} else if (!input.checked && hasLayer) {
+				this._layerOpacity.add(layer);
+			} else if (input.checked && !hasLayer){
+				addedLayers.push(layer);	
+			} else if (!input.checked && hasLayer && input.type == 'checkbox') {
 				removedLayers.push(layer);
+				this._layerOpacity.remove(layer);
+			} else if (!input.checked && hasLayer){
+				removedLayers.push(layer);
+
 			}
 		}
 
@@ -16097,7 +16197,7 @@ L.control.customlayers = function (baseLayers, overlays, options) {
 
 /*
  * L.PosAnimation is used by Leaflet internally for pan animations.
- */
+*/
 
 L.PosAnimation = L.Class.extend({
 	includes: L.Mixin.Events,
@@ -16193,7 +16293,7 @@ L.PosAnimation = L.Class.extend({
 
 /*
  * Extends L.Map to handle panning animations.
- */
+*/
 
 L.Map.include({
 
@@ -17588,6 +17688,7 @@ VCO.Map = VCO.Class.extend({
 				map_type: 			"stamen:toner-lite",
 				map_name: 				"",
 				map_as_image: 		false,
+				map_as_overlay:     false,
 				map_mini: 			false,
 				map_subdomains: 	"",
 				map_center_offset:  null, 			// takes object {top:0,left:0}
@@ -18022,6 +18123,12 @@ VCO.Map = VCO.Class.extend({
 			this.goTo(e.marker_number);
 		}
 		this.fire("markerclicked");
+		ga('send', {
+		  hitType: 'event',
+		  eventCategory: (window.location.href.substr(window.location.href.lastIndexOf('/') + 1)) + ' markers',
+		  eventAction: 'clicked',
+		  eventLabel: e.target.data.text.headline
+		});
 	},
 	
 	_onMapLoaded: function(e) {
@@ -18171,7 +18278,10 @@ VCO.MapMarker.Leaflet = VCO.MapMarker.extend({
 			
 			this._marker = new L.marker([d.location.lat, d.location.lon], {
 				title: 		d.text.headline,
-				icon: 		this._icon
+				icon: 		this._icon,
+				angularEvent: 	d.text.headline,
+				angularCat: 	"",
+				angularLabel: 	d.text.headline,
 			});
 		
 			this._marker.on("click", this._onMarkerClick, this); 
@@ -18263,7 +18373,7 @@ VCO.Map.Leaflet = VCO.Map.extend({
 	_createMap: function() {
 		
 		
-		this._map = new L.map(this._el.map, {scrollWheelZoom:false, zoomControl:!this.options.maps[0].map_mini, attributionControl: true});
+		this._map = new L.map(this._el.map, {scrollWheelZoom:false, zoomControl:true, attributionControl: true});
 		this._map.on("load", this._onMapLoaded, this);
 		
 		
@@ -18333,19 +18443,26 @@ VCO.Map.Leaflet = VCO.Map.extend({
 	================================================== */
 	_createLayerControl: function() {
 		var _layergroup = {};
+		var _overlaygroup = {};
 		var _newoptions = this.options.maps.slice(1, this.options.maps.length);
 
 		// Add Initialized layer to Layer Control
 		_layergroup[this.options.maps[0].map_name] = this._tile_layer;
 
 		// Create Additional Tile layers and add to Layer Control
-		for (var i = 0, iLen = _newoptions.length; i < iLen; i++) {	
-			_layergroup[_newoptions[i].map_name] = this._createAddTileLayer(_newoptions[i].map_type, _newoptions[i]);
-			this._map.attributionControl.addAttribution(_newoptions[i].attribution);
+		for (var i = 0, iLen = _newoptions.length; i < iLen; i++) {
+			if(_newoptions[i].map_as_overlay == true){
+				_overlaygroup[_newoptions[i].map_name] = this._createAddTileLayer(_newoptions[i].map_type, _newoptions[i]);
+				this._map.attributionControl.addAttribution(_newoptions[i].attribution);
+			}
+			else {
+				_layergroup[_newoptions[i].map_name] = this._createAddTileLayer(_newoptions[i].map_type, _newoptions[i]);
+				this._map.attributionControl.addAttribution(_newoptions[i].attribution);
+			}
 		}		
 
 		// Create Layer Control
-		this._layer_control = new L.control.customlayers(_layergroup, null);
+		this._layer_control = new L.control.customlayers(_layergroup, _overlaygroup);
 		
 		this._layer_control._map = this._map;
 
@@ -19190,7 +19307,7 @@ VCO.StoryMap = VCO.Class.extend({
 	
 	/*	Private Methods
 	================================================== */
-	initialize: function (elem, data, options, add_options, listeners) {
+	initialize: function (elem, data, options, $, listeners) {
 		for (key in listeners) {
 			var callbacks = listeners[key];
 			if (typeof(callbacks) == 'function') {
@@ -19297,6 +19414,7 @@ VCO.StoryMap = VCO.Class.extend({
 					map_mini: 				true,
 					map_subdomains: 		"",
 					map_as_image: 			false,
+					map_as_overlay:         false,
 					map_background_color: 	"#d9d9d9",
 					map_center_offset:  	null, 			// takes object {top:0,left:0}
 					zoom_distance: 			100,
@@ -19401,7 +19519,6 @@ VCO.StoryMap = VCO.Class.extend({
 	},
 
 	slideChange: function() {
-		console.log(this.current_slide);
 		return this.current_slide;
 	},
 
@@ -19464,7 +19581,7 @@ VCO.StoryMap = VCO.Class.extend({
 		this._el.menubar.id = 'slide-out-menubar';
 		this._menubar = new VCO.MenuBar(this._el.menubar, this._menubarContainer, this.options);
 		this._el.menubarOpen = VCO.Dom.create('div', 'menubar-opener', this._menubarContainer);
-		this._el.menubarOpen.innerHTML = '<a data-activates="slide-out-menubar" class="menubar-collapse show-on-small"><i class="material-icons new-medium">tune</i></a>';
+		this._el.menubarOpen.innerHTML = '<a data-activates="slide-out-menubar" id="menubar-collapse-id" class="menubar-collapse show-on-small"><i class="material-icons new-medium">tune</i></a>';
 		this._el.viewSwitch = VCO.Dom.create('div', 'view-switch hide-on-med-and-up', this._menubarContainer);
 		this._el.viewSwitch.innerHTML = '<a class="switch-view-layer show-on-small"><i class="material-icons new-medium">&#xE25D;</i></a>';
 
@@ -19508,79 +19625,59 @@ VCO.StoryMap = VCO.Class.extend({
 	},
 
 	_showMessage: function() {
-		// if (document.cookie.replace(/(?:(?:^|.*;\s*)introMessageShown\s*\=\s*([^;]*).*$)|^.*$/, "$1") !== "true") {
-			// if (VCO.Browser.touch) {
-			// 	//Touchscreen Message
-			// 	this._message = new VCO.Message({}, {
-			// 		message_class: 		"vco-message-full"
-			// 	});
-			// 	if (localStorage.getItem("ls.locale.main").contains("en")) {
-			// 		this._message.updateMessage('<div class="message-tooltip submenu-tooltip"><a class="btn-floating btn-large waves-effect waves-dark white tooltipped" data-position="right" data-delay="50" data-tooltip="Map menu"><i class="material-icons new-medium">&#xE145;</i></a></div><div class="message-tooltip menu-tooltip"><a class="btn-floating btn-large waves-effect waves-dark white tooltipped" data-position="left" data-delay="50" data-tooltip="Main menu"><i class="material-icons new-medium">&#xE145;</i><a/></div><div class="message-tooltip swipe-tooltip"><a class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="Swipe to begin"><i class="material-icons large md-light">&#xE913;</i><a/></div><div class="message-tooltip close-tooltip-btn" id="close-overlay"><a class="waves-effect waves-teal btn white">Close</a></div>');
-			// 	}
-
-			// 	else {
-			// 		this._message.updateMessage('<div class="message-tooltip submenu-tooltip"><a class="btn-floating btn-large waves-effect waves-dark white tooltipped" data-position="right" data-delay="50" data-tooltip="Map menu"><i class="material-icons new-medium">&#xE145;</i></a></div><div class="message-tooltip menu-tooltip"><a class="btn-floating btn-large waves-effect waves-dark white tooltipped" data-position="left" data-delay="50" data-tooltip="Main menu"><i class="material-icons new-medium">&#xE145;</i><a/></div><div class="message-tooltip swipe-tooltip"><a class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="Swipe to begin"><i class="material-icons large md-light">&#xE913;</i><a/></div><div class="message-tooltip close-tooltip-btn" id="close-overlay"><a class="waves-effect waves-teal btn white">Esci</a></div>');
-			// 	}
-			// 	this._message.addTo(this._el.container);
-			// }
-			// else
-			// {
-  	// 			// Message
-			// 	this._message = new VCO.Message({}, {
-			// 		message_class: 		"vco-message-full"
-			// 	});
-			// 	if (localStorage.getItem("ls.locale.main").contains("en")) {
-			// 		this._message.updateMessage('<div class="message-tooltip submenu-tooltip"><a class="btn-floating btn-large waves-effect waves-dark white tooltipped" data-position="right" data-delay="50" data-tooltip="Map menu"><i class="material-icons new-medium">&#xE145;</i></a></div><div class="message-tooltip menu-tooltip"><a class="btn-floating btn-large waves-effect waves-dark white tooltipped" data-position="left" data-delay="50" data-tooltip="Main menu"><i class="material-icons new-medium">&#xE145;</i><a/></div><div class="message-tooltip left-tooltip"><a class="btn-floating btn-large waves-effect waves-dark white tooltipped" data-position="right" data-delay="50" data-tooltip="Go to previous slide"><i class="material-icons new-medium">&#xE314;</i><a/></div><div class="message-tooltip right-tooltip"><a class="btn-floating btn-large waves-effect waves-dark white tooltipped" data-position="left" data-delay="50" data-tooltip="Go to next slide"><i class="material-icons new-medium">&#xE315;</i><a/></div><div class="message-tooltip close-tooltip-btn" id="close-overlay"><a class="btn waves-effect waves-teal white">Close</a></div>');
-			// 	}
-			// 	else {
-			// 		this._message.updateMessage('<div class="message-tooltip submenu-tooltip"><a class="btn-floating btn-large waves-effect waves-dark white tooltipped" data-position="right" data-delay="50" data-tooltip="Menu menu"><i class="material-icons new-medium">&#xE145;</i></a></div><div class="message-tooltip menu-tooltip"><a class="btn-floating btn-large waves-effect waves-dark white tooltipped" data-position="left" data-delay="50" data-tooltip="Menu principale"><i class="material-icons new-medium">&#xE145;</i><a/></div><div class="message-tooltip left-tooltip"><a class="btn-floating btn-large waves-effect waves-dark white tooltipped" data-position="right" data-delay="50" data-tooltip="Go to previous slide"><i class="material-icons new-medium">&#xE314;</i><a/></div><div class="message-tooltip right-tooltip"><a class="btn-floating btn-large waves-effect waves-dark white tooltipped" data-position="left" data-delay="50" data-tooltip="Go to next slide"><i class="material-icons new-medium">&#xE315;</i><a/></div><div class="message-tooltip close-tooltip-btn" id="close-overlay"><a class="btn waves-effect waves-teal white">Esci</a></div>');
-			// 	}
-			// 	this._message.addTo(this._el.container);
-				
-			// }
-  			// document.cookie = "introMessageShown=true; path=/";
-		// }
 
 		this._startmessage = new VCO.TourMessage({}, {
 					message_id:         "start-modal"
-	// 				message_class: 		"vco-message-full",
-	// 				message_open: 		false
 					});
 
-		if (prevTour().split('/')[1] == "") {
-			this._prevTour = "home";
-		}
-		else{
-			this._prevTour = prevTour().split('/')[1];
-		}
-
-		this._nextTour = nextTour().split('/')[1];
-		this._currentTour = currentTour().split('/')[1];
-
 		if (localStorage.getItem("ls.locale.main").contains("en")) {
-			// this._startmessage.updateMessage('<div class="row"><div class="col s12">Select the previous or next tour</div><div class="col s6">Test</div><div class="col s6">Test</div></div>');
 
-			this._startmessage.updateMessage('<div class="col s12 m7"><div class="card horizontal"><div class="card-stacked"><div class="card-content"><p>You have reached the start of the ' +  this._capitalizeFirstLetter(this._currentTour) + ' period.</p><div class="row"><a class="modal-action modal-close" href="/' + prevTour() + '"><div class="col s3"><i class="material-icons large">&#xE314;</i></div><div class="col s6"><h3 class="header">' + this._capitalizeFirstLetter(this._prevTour) + ' period</h3></div></a></div></div></div><div class="card-image"><img src="logos/mini-tours/' + this._prevTour + '.jpg"></div></div></div>');
+			if (prevTour().split('/')[1] == "") {
+				this._prevTour = "home";
+				this._prevTourName = this._prevTour;
+			}
+			else{
+				this._prevTour = prevTour().split('/')[1];
+				this._prevTourName = tourText(this._prevTour + "_period");
+			}
+			this._startmessage.updateMessage('<div class="col s12 m7"><div class="card horizontal"><div class="card-stacked"><div class="card-content"><div class="row"><div class="link-section valign-wrapper"><div class="col s2 header-col valign"><a class="modal-action modal-close" href="/' + prevTour() + '"><i class="material-icons med-large left">&#xE314;</i></a></div><div class="col s10 header-col valign"><a class="modal-action modal-close" href="/' + prevTour() + '"><h3 class="header">' + this._capitalizeFirstLetter(this._prevTourName) + '</h3></a></div><div class="clearfix"></div></div><div class="col s12"><div class="divider"></div></div><div class="col s12 tour-text"><p class="summary-header" style="margin-bottom: 10px;">Summary</p><p class="summary-text">' + tourText(this._prevTour) + '</p></div></div></div></div><div class="card-image hide-on-small-only"><img src="logos/mini-tours/' + this._prevTour + '.jpg"></div></div></div>');
 		}
 		else {
-			this._startmessage.updateMessage('<div class="col s12 m7"><div class="card horizontal"><div class="card-stacked"><div class="card-content"><p>You have reached the start of the ' +  this._capitalizeFirstLetter(this._currentTour) + ' period.</p><div class="row"><a class="modal-action modal-close" href="/' + prevTour() + '"><div class="col s3"><i class="material-icons large">&#xE314;</i></div><div class="col s6"><h3 class="header">' + this._capitalizeFirstLetter(this._prevTour) + ' period</h3></div></a></div></div></div><div class="card-image"><img src="logos/mini-tours/' + this._prevTour + '.jpg"></div></div></div>');
+
+			if (prevTour().split('/')[1] == "") {
+				this._prevTour = "inicio";
+				this._prevTourName = this._prevTour;
+			}
+			else{
+				this._prevTour = prevTour().split('/')[1];
+				this._prevTourName = tourText(this._prevTour + "_period");
+			}
+			this._startmessage.updateMessage('<div class="col s12 m7"><div class="card horizontal"><div class="card-stacked"><div class="card-content"><div class="row"><div class="link-section valign-wrapper"><div class="col s2 header-col valign"><a class="modal-action modal-close" href="/' + prevTour() + '"><i class="material-icons med-large left">&#xE314;</i></a></div><div class="col s10 header-col valign"><a class="modal-action modal-close" href="/' + prevTour() + '"><h3 class="header">' + this._capitalizeFirstLetter(this._prevTourName) + '</h3></a></div><div class="clearfix"></div></div><div class="col s12"><div class="divider"></div></div><div class="col s12 tour-text"><p class="summary-header" style="margin-bottom: 10px;">Sommario</p><p class="summary-text">' + tourText(this._prevTour) + '</p></div></div></div></div><div class="card-image hide-on-small-only"><img src="logos/mini-tours/' + this._prevTour + '.jpg"></div></div></div>');
 		}
-		// this._closeLink = document.getElementsByClassName('modal-close');
-		// this._closeLink.addEventListener("click", closeModalLink());
 
 		this._startmessage.addTo(this._el.messages);
 
 		this._finalmessage = new VCO.TourMessage({}, {
 					message_id:         "end-modal"
-	// 				message_class: 		"vco-message-full",
-	// 				message_open: 		false
 		});
 
 		if (localStorage.getItem("ls.locale.main").contains("en")) {
-			this._finalmessage.updateMessage('<div class="col s12 m7"><div class="card horizontal"><div class="card-image"><img src="logos/mini-tours/' + this._nextTour + '.jpg"></div><div class="card-stacked"><div class="card-content"><p>You have reached the end of the ' +  this._capitalizeFirstLetter(this._currentTour) + ' period.</p><div class="row"><a class="modal-action modal-close" href="/' + nextTour() + '"><div class="col s6"><h3 class="header">' + this._capitalizeFirstLetter(this._nextTour) + ' period</h3></div><div class="col s3"><i class="material-icons large">&#xE315;</i></div></a></div></div></div></div></div>');
+
+			this._nextTour = nextTour().split('/')[1];
+			this._currentTour = currentTour().split('/')[1];
+			this._nextTourName = tourText(this._nextTour + "_period");
+			this._currentTourName = tourText(this._currentTour + "_period");
+
+			this._finalmessage.updateMessage('<div class="col s12 m7"><div class="card horizontal"><div class="card-image hide-on-small-only"><img src="logos/mini-tours/' + this._nextTour + '.jpg"></div><div class="card-stacked"><div class="card-content"><div class="row"><div class="link-section  valign-wrapper"><div class="col s10 header-col valign"><a class="modal-action modal-close" href="/' + nextTour() + '"><h3 class="header">' + this._capitalizeFirstLetter(this._nextTourName) + '</h3></a></div><div class="col s2 header-col valign"><a class="modal-action modal-close" href="/' + nextTour() + '"><i class="material-icons med-large right">&#xE315;</i></a></div><div class="clearfix"></div></div><div class="col s12"><div class="divider"></div></div><div class="col s12 tour-text"><p class="summary-header" style="margin-bottom: 10px;">Summary</p><p class="summary-text">' + tourText(this._nextTour) + '</p></div></div></div></div></div></div>');
 		}
 		else {
-			this._finalmessage.updateMessage('<div class="col s12 m7"><div class="card horizontal"><div class="card-image"><img src="logos/mini-tours/' + this._nextTour + '.jpg"></div><div class="card-stacked"><div class="card-content"><p>You have reached the end of the ' +  this._capitalizeFirstLetter(this._currentTour) + ' period.</p><div class="row"><a class="modal-action modal-close" href="/' + nextTour() + '"><div class="col s6"><h3 class="header">' + this._capitalizeFirstLetter(this._nextTour) + ' period</h3></div><div class="col s3"><i class="material-icons large">&#xE315;</i></div></a></div></div></div></div></div>');
+
+			this._nextTour = nextTour().split('/')[1];
+			this._currentTour = currentTour().split('/')[1];
+			this._nextTourName = tourText(this._nextTour + "_period");
+			this._currentTourName = tourText(this._currentTour + "_period");
+
+			this._finalmessage.updateMessage('<div class="col s12 m7"><div class="card horizontal"><div class="card-image hide-on-small-only"><img src="logos/mini-tours/' + this._nextTour + '.jpg"></div><div class="card-stacked"><div class="card-content"><div class="row"><div class="link-section  valign-wrapper"><div class="col s10 header-col valign"><a class="modal-action modal-close" href="/' + nextTour() + '"><h3 class="header">' + this._capitalizeFirstLetter(this._nextTourName) + '</h3></a></div><div class="col s2 header-col valign"><a class="modal-action modal-close" href="/' + nextTour() + '"><i class="material-icons med-large right">&#xE315;</i></a></div><div class="clearfix"></div></div><div class="col s12"><div class="divider"></div></div><div class="col s12 tour-text"><p class="summary-header" style="margin-bottom: 10px;">Sommario</p><p class="summary-text">' + tourText(this._nextTour) + '</p></div></div></div></div></div></div>');
 		}
 		this._finalmessage.addTo(this._el.messages);
 		
@@ -19780,12 +19877,12 @@ VCO.StoryMap = VCO.Class.extend({
 			this._map.goTo(this.current_slide);
 			this.slideChange();
 			this.fire("change", {current_slide: this.current_slide}, this);
-			// ga('send', 'event', {
-			// 			  eventCategory: 'Slide',
-			// 			  eventAction: 'change',
-			// 			  eventLabel: currentTour(),
-			// 			  eventValue: this.current_slide
-			// 			});
+			ga('send', {
+			  hitType: 'event',
+			  eventCategory: (window.location.href.substr(window.location.href.lastIndexOf('/') + 1)) + ' slides',
+			  eventAction: 'changed',
+			  eventLabel: e.target.data.slides[e.current_slide].text.headline
+			});
 		}
 	},
 	
@@ -19807,6 +19904,18 @@ VCO.StoryMap = VCO.Class.extend({
 				this.fire("change", {current_slide: this.current_slide}, this);
 			}
 		}
+	},
+
+	_menubarInit: function(){
+		$('.menubar-collapse').sideNav({
+		        menuWidth: 280, // Default is 240
+		        edge: 'left', // Choose the horizontal origin
+		        closeOnClick: true, // Closes side-nav on <a> clicks, useful for Angular/Meteor
+		        draggable: true // Choose whether you can drag to open on touch screen
+	    }); 
+	    $('.collapsible-menubar').collapsible();
+	    $('.modal').modal();
+	    $('.tooltipped').tooltip({delay: 50});
 	},
 	
 	_onOverview: function(e) {
@@ -19870,7 +19979,8 @@ VCO.StoryMap = VCO.Class.extend({
 	
 	_onMapLoaded: function() {
 		this._loaded.map = true;
-		this._onLoaded();
+		this._menubarInit();
+		this._onLoaded();		
 	},
 	
 	_onStorySliderLoaded: function() {

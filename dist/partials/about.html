@@ -2,66 +2,112 @@
    <title>Portus Tour - About</title>
 </head>
 
-<!--     <div class="titleBox">
-        <a ng-href="{{urlBegin()}}/">
-            <div class="logoBox"></div>
-        </a>
-    </div> -->
+<div class="section about-header">
+  <div class="container">
+    <div class="row">
+      <div class="col s12 m9">
+        <h1 class="header center-on-small-only white-text">{{'ABOUT.ABOUT' | translate}}</h1>
+        <h4 class="light lighten-5 center-on-small-only white-text">Learn about the tour website, sponsers and our project team.</h4>
+      </div>
+    </div>
+  </div>
+</div>
 
 <div class="about-body">
   <div class="container">
-  <div class="row">
-    <div class="col s12 m9 l10">  
+    <div class="row">
+    <div class="col s12 m9 l10"> 
+
       <div id="about-tour" class="section">
-          <h2 class="header">{{'ABOUT.ABOUT' | translate}}</h2>
+          <h3 class="header">Portus</h3>
           <p class="caption">{{'ABOUT.ABOUTTEXT' | translate}}</p>
           <p class="caption">{{'ABOUT.ABOUTSUBTEXT' | translate}}</p>
       </div>
 
-      <div id="sponsers-tour" class="section">
+      <div id="features-tour" class="section">
         <div class="row">
-          <h2 class="header">Sponsers</h2>
-        </div>
-        <br>
-
-        <div class="row">
-          <div class="col s12 m6 center-on-small-only">
-            <div class="image-container">
-              <img src="logos/soton.png">
+          <div class="col s12 m9 l10">
+            <h3 class="header">Features</h3>
+          </div>
+          <div class="col s4">
+            <div class="center">
+              <i class="material-icons new-medium">&#xE894;</i>
+              <p class="caption">Multi-language</p>
+              <p class="text center">Support for multiple languages makes the tour accessible to both English and Italian visitors.</p>
             </div>
           </div>
-          <div class="col s12 m6 center-on-small-only">
-            <h4>University of Southampton</h4>
+          <div class="col s4">
+            <div class="center">
+              <i class="material-icons new-medium">&#xE912;</i>
+              <p class="caption">Responsive Web App</p>
+              <p class="text center">Responsive design enables the tour to be viewed on a wide variety of devices, from desktop to mobile.</p>
+            </div>
+          </div>
+          <div class="col s4">
+            <div class="center">
+              <i class="material-icons new-medium">&#xE0C8;</i>
+              <p class="caption">Location Aware</p>
+              <p class="text center">On mobile the tour app has location aware capablities, allowing visitors to see exactly where they are on site in Portus.</p>
+            </div>
           </div>
         </div>
-
-        <div class="row">
-          <div class="col s12 m6 center-on-small-only">
-            <div class="image-container">
-              <img src="logos/ministero.png">
-              </div>
-          </div>
-          <div class="col s12 m6 center-on-small-only">
-            <h4>Ministero dei beni e delle attivita culturali e del turismo</h4>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col s12 m6 center-on-small-only">
-            <div class="image-container">
-            <img src="logos/SOP.png">
-              </div>
-          </div>
-          <div class="col s12 m6 center-on-small-only">
-            <h4>Soprintendenza Speciale per i Beni Archeologici di Roma</h4>
-          </div>
-        </div>
-
       </div>
+
+      <div id="sponsers-tour" class="section">
+        <div class="row">
+          <div class="col s12 m9 l10">
+            <h3 class="header">Sponsers</h3>
+          </div>
+          <div class="col s4">
+            <div class="center">
+              <a ng-href="http://www.southampton.ac.uk/" target="_blank"><img class="responsive-img" src="logos/soton.png"></a>
+            </div>
+          </div>
+          <div class="col s4">
+            <div class="center">
+              <a ng-href="http://www.beniculturali.it/" target="_blank"><img class="responsive-img" src="logos/ministero.png"></a>
+            </div>
+          </div>
+          <div class="col s4">
+            <div class="center">
+              <a ng-href="http://archeoroma.beniculturali.it/" target="_blank"><img class="responsive-img" src="logos/SOP.png"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="developers-tour" class="section">
+        <div class="row">
+          <div class="col s12 m9 l10">
+            <h3 class="header">Developer</h3>
+          </div>
+          <div class="col s12 m4 center-on-small-only">
+            <div class="image-container">
+              <img class="responsive-img" src="logos/avatar.jpg">
+            </div>
+          </div>
+          <div class="col s12 m8 center-on-small-only">
+            <h4>Peter Wheeler</h4>
+            <p>Peter has designed and developed the Portus tour app, taking inspiration from his master's degree work at Southampton. You can find more about him on <a ng-href="https://twitter.com/peter__wheeler" target="_blank">Twitter</a> or on his <a ng-href="https://github.com/peterwheeler" target="_blank">Github</a> account.</p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col s12 m4 center-on-small-only">
+            <div class="image-container">
+              <img class="responsive-img" src="logos/artas.jpg">
+              </div>
+          </div>
+          <div class="col s12 m8 center-on-small-only">
+            <h4>ArtasMedia</h4>
+            <p>Grant Cox at <a ng-href="https://artasmedia.com/" target="_blank">ArtasMedia</a> was commissioned to create the amazing plans and maps used in the tour. They are inspired from the 3D work he has been building in recent years.</p>
+          </div>
+        </div>
+      </div>
+
     </div>
   </div>
   </div>
-
 </div>
 <footer class="page-footer">
   <div class="container">

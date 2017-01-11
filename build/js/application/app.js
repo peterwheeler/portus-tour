@@ -172,6 +172,7 @@ new t1.o.Page(
 			map_name: "Reconstruction",
 			map_mini: false,
 			map_as_image: false,
+			map_as_overlay: false,
 			calculate_zoom: false,
 			attribution: 		"Maps designed by <a href='https://artasmedia.com/'' target='_blank' class='vco-knightlab-brand'>ArtasMedia</a>",
 			mapTiler: {
@@ -188,6 +189,7 @@ new t1.o.Page(
 			map_name: "Plan",
 			map_mini: false,
 			map_as_image: false,
+			map_as_overlay: false,
 			calculate_zoom: false,
 			attribution: 		'Maps designed by <a href="https://artasmedia.com/" target="_blank" class="vco-knightlab-brand">ArtasMedia</a>',
 			mapTiler: {
@@ -205,6 +207,24 @@ new t1.o.Page(
 			map_name: "Satellite",
 			map_mini: false,
 			map_as_image: false,
+			map_as_overlay: false,
+			calculate_zoom: false,
+			attribution: 		"Satellite &#9400; Digital Globe 2014",
+			mapTiler: {
+				path: 				"maps/satellite/",
+				lat:				"",
+				lng: 				"",
+				zoom: 				14,
+				minZoom:        	14,
+				maxZoom:        	17
+			}
+		},
+		{
+			map_type: "mapTiler",
+			map_name: "Satellite",
+			map_mini: false,
+			map_as_image: false,
+			map_as_overlay: true,
 			calculate_zoom: false,
 			attribution: 		"Satellite &#9400; Digital Globe 2014",
 			mapTiler: {
@@ -221,6 +241,7 @@ new t1.o.Page(
 			map_name: "Ricostruzione",
 			map_mini: false,
 			map_as_image: false,
+			map_as_overlay: false,
 			calculate_zoom: false,
 			attribution: 		'Maps designed by <a href="https://artasmedia.com/" target="_blank" class="vco-knightlab-brand">ArtasMedia</a>',
 			mapTiler: {
@@ -238,6 +259,7 @@ new t1.o.Page(
 			map_name: "Plan",
 			map_mini: false,
 			map_as_image: false,
+			map_as_overlay: false,
 			calculate_zoom: false,
 			attribution: 		'Maps designed by <a href="https://artasmedia.com/" target="_blank" class="vco-knightlab-brand">ArtasMedia</a>',
 			mapTiler: {
@@ -255,6 +277,7 @@ new t1.o.Page(
 			map_name: "Satellite",
 			map_mini: false,
 			map_as_image: false,
+			map_as_overlay: false,
 			calculate_zoom: false,
 			attribution: 		"Satellite &#9400; Digital Globe 2014", 
 			mapTiler: {
@@ -283,6 +306,7 @@ new t1.o.Page(
 			map_name: "Reconstruction",
 			map_mini: false,
 			map_as_image: false,
+			map_as_overlay: false,
 			calculate_zoom: false,
 			attribution: 		'Maps designed by <a href="https://artasmedia.com/" target="_blank" class="vco-knightlab-brand">ArtasMedia</a>',
 			mapTiler: {
@@ -300,6 +324,7 @@ new t1.o.Page(
 			map_name: "Plan",
 			map_mini: false,
 			map_as_image: false,
+			map_as_overlay: false,
 			calculate_zoom: false,
 			attribution: 		'Maps designed by <a href="https://artasmedia.com/" target="_blank" class="vco-knightlab-brand">ArtasMedia</a>',
 			mapTiler: {
@@ -317,6 +342,7 @@ new t1.o.Page(
 			map_name: "Satellite",
 			map_mini: false,
 			map_as_image: false,
+			map_as_overlay: false,
 			calculate_zoom: false,
 			attribution: 		"Satellite &#9400; Digital Globe 2014",
 			mapTiler: {
@@ -334,6 +360,7 @@ new t1.o.Page(
 			map_name: "Ricostruzione",
 			map_mini: false,
 			map_as_image: false,
+			map_as_overlay: false,
 			calculate_zoom: false,
 			attribution: 		'Maps designed by <a href="https://artasmedia.com/" target="_blank" class="vco-knightlab-brand">ArtasMedia</a>', 
 			mapTiler: {
@@ -351,6 +378,7 @@ new t1.o.Page(
 			map_name: "Plan",
 			map_mini: false,
 			map_as_image: false,
+			map_as_overlay: false,
 			calculate_zoom: false,
 			attribution: 		'Maps designed by <a href="https://artasmedia.com/" target="_blank" class="vco-knightlab-brand">ArtasMedia</a>',
 			mapTiler: {
@@ -368,6 +396,7 @@ new t1.o.Page(
 			map_name: "Satellite",
 			map_mini: false,
 			map_as_image: false,
+			map_as_overlay: false,
 			calculate_zoom: false,
 			attribution: 		"Satellite &#9400; Digital Globe 2014",
 			mapTiler: {
@@ -396,6 +425,7 @@ new t1.o.Page(
 			map_name: "Reconstruction",
 			map_mini: false,
 			map_as_image: false,
+			map_as_overlay: false,
 			calculate_zoom: false,
 			attribution: 		'Maps designed by <a href="https://artasmedia.com/" target="_blank" class="vco-knightlab-brand">ArtasMedia</a>', 
 			mapTiler: {
@@ -413,6 +443,7 @@ new t1.o.Page(
 			map_name: "Plan",
 			map_mini: false,
 			map_as_image: false,
+			map_as_overlay: false,
 			calculate_zoom: false,
 			attribution: 		'Maps designed by <a href="https://artasmedia.com/" target="_blank" class="vco-knightlab-brand">ArtasMedia</a>',
 			mapTiler: {
@@ -430,6 +461,7 @@ new t1.o.Page(
 			map_name: "Satellite",
 			map_mini: false,
 			map_as_image: false,
+			map_as_overlay: false,
 			calculate_zoom: false,
 			attribution: 		"Satellite &#9400; Digital Globe 2014",
 			mapTiler: {
@@ -447,6 +479,7 @@ new t1.o.Page(
 			map_name: "Ricostruzione",
 			map_mini: false,
 			map_as_image: false,
+			map_as_overlay: false,
 			calculate_zoom: false,
 			attribution: 		'Maps designed by <a href="https://artasmedia.com/" target="_blank" class="vco-knightlab-brand">ArtasMedia</a>',
 			mapTiler: {
@@ -464,6 +497,7 @@ new t1.o.Page(
 			map_name: "Plan",
 			map_mini: false,
 			map_as_image: false,
+			map_as_overlay: false,
 			calculate_zoom: false,
 			attribution: 		'Maps designed by <a href="https://artasmedia.com/" target="_blank" class="vco-knightlab-brand">ArtasMedia</a>', 
 			mapTiler: {
@@ -481,6 +515,7 @@ new t1.o.Page(
 			map_name: "Satellite",
 			map_mini: false,
 			map_as_image: false,
+			map_as_overlay: false,
 			calculate_zoom: false,
 			attribution: 		"Satellite &#9400; Digital Globe 2014",
 			mapTiler: {
@@ -509,6 +544,7 @@ new t1.o.Page(
 			map_name: "Reconstruction",
 			map_mini: false,
 			map_as_image: false,
+			map_as_overlay: false,
 			calculate_zoom: false,
 			attribution: 		'Maps designed by <a href="https://artasmedia.com/" target="_blank" class="vco-knightlab-brand">ArtasMedia</a>',
 			mapTiler: {
@@ -526,6 +562,7 @@ new t1.o.Page(
 			map_name: "Plan",
 			map_mini: false,
 			map_as_image: false,
+			map_as_overlay: false,
 			calculate_zoom: false,
 			attribution: 		'Maps designed by <a href="https://artasmedia.com/" target="_blank" class="vco-knightlab-brand">ArtasMedia</a>',
 			mapTiler: {
@@ -543,6 +580,7 @@ new t1.o.Page(
 			map_name: "Satellite",
 			map_mini: false,
 			map_as_image: false,
+			map_as_overlay: false,
 			calculate_zoom: false,
 			attribution: 		"Satellite &#9400; Digital Globe 2014",
 			mapTiler: {
@@ -560,6 +598,7 @@ new t1.o.Page(
 			map_name: "Ricostruzione",
 			map_mini: false,
 			map_as_image: false,
+			map_as_overlay: false,
 			calculate_zoom: false,
 			attribution: 		'Maps designed by <a href="https://artasmedia.com/" target="_blank" class="vco-knightlab-brand">ArtasMedia</a>',
 			mapTiler: {
@@ -577,6 +616,7 @@ new t1.o.Page(
 			map_name: "Plan",
 			map_mini: false,
 			map_as_image: false,
+			map_as_overlay: false,
 			calculate_zoom: false,
 			attribution: 		'Maps designed by <a href="https://artasmedia.com/" target="_blank" class="vco-knightlab-brand">ArtasMedia</a>',
 			mapTiler: {
@@ -594,6 +634,7 @@ new t1.o.Page(
 			map_name: "Satellite",
 			map_mini: false,
 			map_as_image: false,
+			map_as_overlay: false,
 			calculate_zoom: false,
 			attribution: 		"Satellite &#9400; Digital Globe 2014", 
 			mapTiler: {
@@ -622,6 +663,7 @@ new t1.o.Page(
 			map_name: "Satellite",
 			map_mini: false,
 			map_as_image: false,
+			map_as_overlay: false,
 			calculate_zoom: false,
 			attribution: 		"Satellite &#9400; Digital Globe 2014", 
 			mapTiler: {
@@ -639,6 +681,7 @@ new t1.o.Page(
 			map_name: "Reconstruction",
 			map_mini: false,
 			map_as_image: false,
+			map_as_overlay: false,
 			calculate_zoom: false,
 			attribution: 		'Maps designed by <a href="https://artasmedia.com/" target="_blank" class="vco-knightlab-brand">ArtasMedia</a>',
 			mapTiler: {
@@ -655,6 +698,7 @@ new t1.o.Page(
 			map_name: "Plan",
 			map_mini: false,
 			map_as_image: false,
+			map_as_overlay: false,
 			calculate_zoom: false,
 			attribution: 		'Maps designed by <a href="https://artasmedia.com/" target="_blank" class="vco-knightlab-brand">ArtasMedia</a>',
 			mapTiler: {
@@ -672,6 +716,7 @@ new t1.o.Page(
 			map_name: "Satellite",
 			map_mini: false,
 			map_as_image: false,
+			map_as_overlay: false,
 			calculate_zoom: false,
 			attribution: 		"Satellite &#9400; Digital Globe 2014",
 			mapTiler: {
@@ -689,6 +734,7 @@ new t1.o.Page(
 			map_name: "Ricostruzione",
 			map_mini: false,
 			map_as_image: false,
+			map_as_overlay: false,
 			calculate_zoom: false,
 			attribution: 		'Maps designed by <a href="https://artasmedia.com/" target="_blank" class="vco-knightlab-brand">ArtasMedia</a>',
 			mapTiler: {
@@ -706,6 +752,7 @@ new t1.o.Page(
 			map_name: "Plan",
 			map_mini: false,
 			map_as_image: false,
+			map_as_overlay: false,
 			calculate_zoom: false,
 			attribution: 		'Maps designed by <a href="https://artasmedia.com/" target="_blank" class="vco-knightlab-brand">ArtasMedia</a>',
 			mapTiler: {
@@ -779,7 +826,10 @@ app.config(function($stateProvider, $urlRouterProvider, $locationProvider) {
 	        $stateProvider.state(b.language + "-" + d.type, {
 	          	url: "/" + b.language + "/" + d.type,
 	            templateUrl: "partials/" + d.type + ".html",
-	            controller: "MainCtrl"
+	            controller: "MainCtrl",
+	            params: {
+	            	page: d.type
+	            }
 	        });
 	    }
     }
@@ -1104,24 +1154,15 @@ app.controller("RegionCtrl", ["$scope", "$rootScope", "$log", "$translate", "$lo
         };
 	});
 	
-	app.run(function($state, $rootScope, $urlRouter, $location, $window) {
+	app.run(function($state, $stateParams, $rootScope, $urlRouter, $location, $window) {
 
-		$window.ga('create', 'UA-17304354-25', 'auto');
-		
-		$rootScope
-			.$on('$stateChangeStart',
-				function(event, toState, toParams, fromState, fromParams){
-					console.log("stateChangeStart:");
-					console.log(event);
-					console.log(toState);
-			});	
+		$window.ga('create', 'UA-75231811-1', 'none');
+		$window.riveted.init();
 	
 		$rootScope
 			.$on('$stateChangeSuccess',
 				function(event, toState, toParams, fromState, fromParams){
-					// console.log("stateChangeSuccess:");
-					// console.log(event);
-					// console.log(toState);
+					$rootScope.page = $stateParams.page;
 					$window.ga('send', 'pageview', $location.path());
 		});	
 
@@ -1175,38 +1216,6 @@ app.controller("RegionCtrl", ["$scope", "$rootScope", "$log", "$translate", "$lo
  		};
  	});
 
-	app.controller('carouselCtrl', ['$scope', function(a) {
-
-		var ctrl;
-      	ctrl = this;
-
-		a.tour = function(){
-        	var d = function(){
-                	// for (var j = 0; j < t1.c.pages.length; j++) {
-                		var f = t1.c.pages;
-                				var g = f;
-                				return g;
-                		// }
-                	// }
-                };
-
-            return{
-                tours: d
-            };
-        }(),
-
-		ctrl.NavEN = a.tour.tours(),
-
-      	ctrl.carouselInitializer = function() {
-	        $(".carouselDiv").owlCarousel({
-	          items: 3,
-	          navigation: false,
-	          pagination: false,
-	          });
-      	};
-      	
-    }]);
-
 	app.controller('storymapCtrl', ['$scope', '$state', '$stateParams', '$location', "$translate", "$translatePartialLoader",
       function($scope, $state, $stateParams, $location, $translate, $translatePartialLoader) {
 
@@ -1241,7 +1250,7 @@ app.controller("RegionCtrl", ["$scope", "$rootScope", "$log", "$translate", "$lo
 			storymap_options.start_at_slide = 0;
 		}
 
-		var storymap = new VCO.StoryMap("storymap_" + tourPeriod, storymap_data, storymap_options);
+		var storymap = new VCO.StoryMap("storymap_" + tourPeriod, storymap_data, storymap_options, jQuery);
 
 		goTo = function(n){
 			storymap.goTo(n);
@@ -1281,28 +1290,48 @@ app.controller("RegionCtrl", ["$scope", "$rootScope", "$log", "$translate", "$lo
 			
 		};
 
+		tourText = function(tour){
+			var text = {
+				"home": "Return to the start menu where you can find out more about the Portus project, the developers, sponsers and the other educational projects that we are involed in...",
+				"claudian": "Portus has its origins in Rome’s need for a large and capacious harbour. The early colony of Ostia was not well-suited to large scale maritime traffic...",
+				"claudian_period": "Claudian period",
+				"trajanic": "In the Claudian period (the first century AD) we see the emergence of Portus. In this second phase of the site, dominated by the investment made by the Emperor Trajan...",
+				"trajanic_period": "Trajanic period",
+				"severan": "We are visiting Portus in the later second century AD. By this time, the Roman Empire had achieved an unprecedented degree of political cohesion...",
+				"severan_period": "Severan period",
+				"fifth-seventh": "This tour introduces you to Portus as it was in the period between the fifth and sixth centuries AD, with the character of the port changing, as it had several times before...",
+				"fifth-seventh_period": "5<sup>th</sup> &ndash; 7<sup>th</sup> century",
+				"virtual_tour": "This tour has been designed to give us an idea of the modern day archaeological site that exists at Portus. We will travel across the site and visit...",
+				"virtual_tour_period": "Modern tour",
+				"timeline": "This tour introduces you to the history of research at the site. Like so many archaeological sites in Rome and its surrounding countryside...",
+				"timeline_period": "Timeline",
+				"inicio": "Return to the start menu where you can find out more about the Portus project, the developers, sponsers and the other educational projects that we are involed in...",
+				"claudio": "Portus trova le sue origini nella necessità di Roma di un porto grande e capiente. L’insediamento iniziale di Ostia non era adatto al traffico marittimo...",
+				"claudio_period": "Il periodo di Claudio",
+				"traiano": "Mentre nel periodo Claudio (I secolo d.C.) si vede l'emergere di Portus, in questa seconda fase dominata dagli investimenti effettuati dall'Imperatore Traiano...",
+				"traiano_period": "Il periodo Traiano",
+				"severo": "Stiamo visitando Portus nel tardo II secolo d.C., nel periodo in cui l'impero romano aveva raggiunto un grado di coesione politica ed era stato governato...",
+				"severo_period": "Il periodo Severo",
+				"quinta-settima": "Questo tour vi presenta Portus nel periodo compreso tra la V e VII secolo d.C., con la caratteristica del porto che cambia, come aveva fatto più volte in precedenza...",
+				"quinta-settima_period": "Dal V al VII secolo",
+				"tour_virtuale": "Questo tour è stato progettato per dare un'idea del sito archeologico che esiste a Portus oggigiorno. Viaggeremo attraverso il sito e visiteremo molti...",
+				"tour_virtuale_period": "Tour Virtuale",
+				"cronologia": "Questo tour vi introduce alla storia della ricerca sul sito di Portus. Come tanti altri siti archeologici di Roma e delle zone circostanti, troviamo...",
+				"cronologia_period": "Cronologia"
+				};
+
+			if(tour){
+				return text[tour];
+			};
+		};
+
 		closeModal = function(){
-			console.log("close");
 			$('.modal-overlay').hide();
 		};
 
 		closeModalLink = function(){
 			return closeModal();
 		};
-
-		setTimeout(function() {
-			$('.menubar-collapse').sideNav({
-		        menuWidth: 280, // Default is 240
-		        edge: 'left', // Choose the horizontal origin
-		        closeOnClick: true, // Closes side-nav on <a> clicks, useful for Angular/Meteor
-		        draggable: true // Choose whether you can drag to open on touch screens
-		     }); 
-		    $('.collapsible-menubar').collapsible();
-		    $('.modal').modal();
-		    $('.tooltipped').tooltip({delay: 50});
-		    console.log("done");
-	    }, 1000);
-
 	}]);
 	
 	app.controller('timelineCtrl', ['$scope', '$state', '$stateParams', '$location',
