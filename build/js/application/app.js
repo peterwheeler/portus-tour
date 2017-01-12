@@ -177,6 +177,7 @@ new t1.o.Page(
 			attribution: 		"Maps designed by <a href='https://artasmedia.com/'' target='_blank' class='vco-knightlab-brand'>ArtasMedia</a>",
 			mapTiler: {
 				path: 				"maps/period_01/",
+				file_type:         ".jpg",
 				lat:				"",
 				lng: 				"",
 				zoom: 				14,
@@ -194,6 +195,7 @@ new t1.o.Page(
 			attribution: 		'Maps designed by <a href="https://artasmedia.com/" target="_blank" class="vco-knightlab-brand">ArtasMedia</a>',
 			mapTiler: {
 				path: 				"maps/plan_en_01/",
+				file_type:         ".jpg",
 				lat:				"",
 				lng: 				"",
 				zoom: 				14,
@@ -212,23 +214,7 @@ new t1.o.Page(
 			attribution: 		"Satellite &#9400; Digital Globe 2014",
 			mapTiler: {
 				path: 				"maps/satellite/",
-				lat:				"",
-				lng: 				"",
-				zoom: 				14,
-				minZoom:        	14,
-				maxZoom:        	17
-			}
-		},
-		{
-			map_type: "mapTiler",
-			map_name: "Satellite",
-			map_mini: false,
-			map_as_image: false,
-			map_as_overlay: true,
-			calculate_zoom: false,
-			attribution: 		"Satellite &#9400; Digital Globe 2014",
-			mapTiler: {
-				path: 				"maps/satellite/",
+				file_type:         ".jpg",
 				lat:				"",
 				lng: 				"",
 				zoom: 				14,
@@ -246,6 +232,7 @@ new t1.o.Page(
 			attribution: 		'Maps designed by <a href="https://artasmedia.com/" target="_blank" class="vco-knightlab-brand">ArtasMedia</a>',
 			mapTiler: {
 				path: 				"maps/period_01/",
+				file_type:         ".jpg",
 				lat:				"",
 				lng: 				"",
 				zoom: 				14,
@@ -264,6 +251,7 @@ new t1.o.Page(
 			attribution: 		'Maps designed by <a href="https://artasmedia.com/" target="_blank" class="vco-knightlab-brand">ArtasMedia</a>',
 			mapTiler: {
 				path: 				"maps/plan_it_01/",
+				file_type:         ".jpg",
 				lat:				"",
 				lng: 				"",
 				zoom: 				14,
@@ -282,6 +270,7 @@ new t1.o.Page(
 			attribution: 		"Satellite &#9400; Digital Globe 2014", 
 			mapTiler: {
 				path: 				"maps/satellite/",
+				file_type:         ".jpg",
 				lat:				"",
 				lng: 				"",
 				zoom: 				14,
@@ -311,6 +300,7 @@ new t1.o.Page(
 			attribution: 		'Maps designed by <a href="https://artasmedia.com/" target="_blank" class="vco-knightlab-brand">ArtasMedia</a>',
 			mapTiler: {
 				path: 				"maps/period_03/",
+				file_type:         ".jpg",
 				lat:				"",
 				lng: 				"",
 				zoom: 				14,
@@ -329,6 +319,7 @@ new t1.o.Page(
 			attribution: 		'Maps designed by <a href="https://artasmedia.com/" target="_blank" class="vco-knightlab-brand">ArtasMedia</a>',
 			mapTiler: {
 				path: 				"maps/plan_en_03/",
+				file_type:         ".jpg",
 				lat:				"",
 				lng: 				"",
 				zoom: 				14,
@@ -347,6 +338,7 @@ new t1.o.Page(
 			attribution: 		"Satellite &#9400; Digital Globe 2014",
 			mapTiler: {
 				path: 				"maps/satellite/",
+				file_type:         ".jpg",
 				lat:				"",
 				lng: 				"",
 				zoom: 				14,
@@ -365,6 +357,7 @@ new t1.o.Page(
 			attribution: 		'Maps designed by <a href="https://artasmedia.com/" target="_blank" class="vco-knightlab-brand">ArtasMedia</a>', 
 			mapTiler: {
 				path: 				"maps/period_03/",
+				file_type:         ".jpg",
 				lat:				"",
 				lng: 				"",
 				zoom: 				14,
@@ -383,6 +376,7 @@ new t1.o.Page(
 			attribution: 		'Maps designed by <a href="https://artasmedia.com/" target="_blank" class="vco-knightlab-brand">ArtasMedia</a>',
 			mapTiler: {
 				path: 				"maps/plan_it_03/",
+				file_type:         ".jpg",
 				lat:				"",
 				lng: 				"",
 				zoom: 				14,
@@ -401,6 +395,7 @@ new t1.o.Page(
 			attribution: 		"Satellite &#9400; Digital Globe 2014",
 			mapTiler: {
 				path: 				"maps/satellite/",
+				file_type:         ".jpg",
 				lat:				"",
 				lng: 				"",
 				zoom: 				14,
@@ -430,6 +425,7 @@ new t1.o.Page(
 			attribution: 		'Maps designed by <a href="https://artasmedia.com/" target="_blank" class="vco-knightlab-brand">ArtasMedia</a>', 
 			mapTiler: {
 				path: 				"maps/period_05/",
+				file_type:         ".jpg",
 				lat:				"",
 				lng: 				"",
 				zoom: 				14,
@@ -448,6 +444,7 @@ new t1.o.Page(
 			attribution: 		'Maps designed by <a href="https://artasmedia.com/" target="_blank" class="vco-knightlab-brand">ArtasMedia</a>',
 			mapTiler: {
 				path: 				"maps/plan_en_05/",
+				file_type:         ".jpg",
 				lat:				"",
 				lng: 				"",
 				zoom: 				14,
@@ -466,6 +463,7 @@ new t1.o.Page(
 			attribution: 		"Satellite &#9400; Digital Globe 2014",
 			mapTiler: {
 				path: 				"maps/satellite/",
+				file_type:         ".jpg",
 				lat:				"",
 				lng: 				"",
 				zoom: 				14,
@@ -484,6 +482,7 @@ new t1.o.Page(
 			attribution: 		'Maps designed by <a href="https://artasmedia.com/" target="_blank" class="vco-knightlab-brand">ArtasMedia</a>',
 			mapTiler: {
 				path: 				"maps/period_05/",
+				file_type:         ".jpg",
 				lat:				"",
 				lng: 				"",
 				zoom: 				14,
@@ -502,6 +501,7 @@ new t1.o.Page(
 			attribution: 		'Maps designed by <a href="https://artasmedia.com/" target="_blank" class="vco-knightlab-brand">ArtasMedia</a>', 
 			mapTiler: {
 				path: 				"maps/plan_it_05/",
+				file_type:         ".jpg",
 				lat:				"",
 				lng: 				"",
 				zoom: 				14,
@@ -520,6 +520,7 @@ new t1.o.Page(
 			attribution: 		"Satellite &#9400; Digital Globe 2014",
 			mapTiler: {
 				path: 				"maps/satellite/",
+				file_type:         ".jpg",
 				lat:				"",
 				lng: 				"",
 				zoom: 				14,
@@ -549,6 +550,7 @@ new t1.o.Page(
 			attribution: 		'Maps designed by <a href="https://artasmedia.com/" target="_blank" class="vco-knightlab-brand">ArtasMedia</a>',
 			mapTiler: {
 				path: 				"maps/period_06/",
+				file_type:         ".jpg",
 				lat:				"",
 				lng: 				"",
 				zoom: 				14,
@@ -567,6 +569,7 @@ new t1.o.Page(
 			attribution: 		'Maps designed by <a href="https://artasmedia.com/" target="_blank" class="vco-knightlab-brand">ArtasMedia</a>',
 			mapTiler: {
 				path: 				"maps/plan_en_06/",
+				file_type:         ".jpg",
 				lat:				"",
 				lng: 				"",
 				zoom: 				14,
@@ -585,6 +588,7 @@ new t1.o.Page(
 			attribution: 		"Satellite &#9400; Digital Globe 2014",
 			mapTiler: {
 				path: 				"maps/satellite/",
+				file_type:         ".jpg",
 				lat:				"",
 				lng: 				"",
 				zoom: 				14,
@@ -603,6 +607,7 @@ new t1.o.Page(
 			attribution: 		'Maps designed by <a href="https://artasmedia.com/" target="_blank" class="vco-knightlab-brand">ArtasMedia</a>',
 			mapTiler: {
 				path: 				"maps/period_06/",
+				file_type:         ".jpg",
 				lat:				"",
 				lng: 				"",
 				zoom: 				14,
@@ -621,6 +626,7 @@ new t1.o.Page(
 			attribution: 		'Maps designed by <a href="https://artasmedia.com/" target="_blank" class="vco-knightlab-brand">ArtasMedia</a>',
 			mapTiler: {
 				path: 				"maps/plan_it_06/",
+				file_type:         ".jpg",
 				lat:				"",
 				lng: 				"",
 				zoom: 				14,
@@ -639,6 +645,7 @@ new t1.o.Page(
 			attribution: 		"Satellite &#9400; Digital Globe 2014", 
 			mapTiler: {
 				path: 				"maps/satellite/",
+				file_type:         ".jpg",
 				lat:				"",
 				lng: 				"",
 				zoom: 				14,
@@ -668,6 +675,7 @@ new t1.o.Page(
 			attribution: 		"Satellite &#9400; Digital Globe 2014", 
 			mapTiler: {
 				path: 				"maps/satellite/",
+				file_type:         ".jpg",
 				lat:				"",
 				lng: 				"",
 				zoom: 				14,
@@ -686,6 +694,7 @@ new t1.o.Page(
 			attribution: 		'Maps designed by <a href="https://artasmedia.com/" target="_blank" class="vco-knightlab-brand">ArtasMedia</a>',
 			mapTiler: {
 				path: 				"maps/period_05/",
+				file_type:         ".jpg",
 				lat:				"",
 				lng: 				"",
 				zoom: 				14,
@@ -703,12 +712,31 @@ new t1.o.Page(
 			attribution: 		'Maps designed by <a href="https://artasmedia.com/" target="_blank" class="vco-knightlab-brand">ArtasMedia</a>',
 			mapTiler: {
 				path: 				"maps/plan_en_05/",
+				file_type:         ".jpg",
 				lat:				"",
 				lng: 				"",
 				zoom: 				14,
 				minZoom:        	14,
 				maxZoom:        	17
 				
+			}
+		},
+		{
+			map_type: "mapTiler",
+			map_name: "Magnetometry results",
+			map_mini: false,
+			map_as_image: false,
+			map_as_overlay: true,
+			calculate_zoom: false,
+			attribution: 		"Kris Strutt / Portus Project",
+			mapTiler: {
+				path: 				"maps/mag/",
+				file_type:         ".png",
+				lat:				"",
+				lng: 				"",
+				zoom: 				14,
+				minZoom:        	14,
+				maxZoom:        	17
 			}
 		}],
 		it: [{
@@ -721,6 +749,7 @@ new t1.o.Page(
 			attribution: 		"Satellite &#9400; Digital Globe 2014",
 			mapTiler: {
 				path: 				"maps/satellite/",
+				file_type:         ".jpg",
 				lat:				"",
 				lng: 				"",
 				zoom: 				14,
@@ -739,6 +768,7 @@ new t1.o.Page(
 			attribution: 		'Maps designed by <a href="https://artasmedia.com/" target="_blank" class="vco-knightlab-brand">ArtasMedia</a>',
 			mapTiler: {
 				path: 				"maps/period_05/",
+				file_type:         ".jpg",
 				lat:				"",
 				lng: 				"",
 				zoom: 				14,
@@ -757,6 +787,7 @@ new t1.o.Page(
 			attribution: 		'Maps designed by <a href="https://artasmedia.com/" target="_blank" class="vco-knightlab-brand">ArtasMedia</a>',
 			mapTiler: {
 				path: 				"maps/plan_en_05/",
+				file_type:         ".jpg",
 				lat:				"",
 				lng: 				"",
 				zoom: 				14,

@@ -15427,8 +15427,6 @@ L.control.layers = function (baseLayers, overlays, options) {
 /*!
 Copyright (c) 2016 Peter Wheeler
 
-This file is licensed under the MIT license.
-
 Forked from leaflet-locatecontrol: https://github.com/domoritz/leaflet-locatecontrol
 */
 L.Control.GeoLocate = L.Control.extend({
@@ -18591,7 +18589,7 @@ VCO.Map.Leaflet = VCO.Map.extend({
 					break;
 				case 'mapTiler':
 					_addoptions.attribution = _addoptions.attribution;
-					_addtilelayer = new L.tileLayer(_addoptions.mapTiler.path + '{z}/{x}/{y}.jpg', {
+					_addtilelayer = new L.tileLayer(_addoptions.mapTiler.path + '{z}/{x}/{y}' + _addoptions.mapTiler.file_type, {
 										errorTileUrl: './images/tiny_icon.png',
 										// center: [_addoptions.mapTiler.lat, _addoptions.mapTiler.lon],
 										minZoom: _addoptions.mapTiler.minZoom,
