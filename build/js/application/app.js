@@ -10,20 +10,22 @@ var angtranslations = {
 		},
 		ABOUT: {
 			ABOUT: "About",
+			ABOUTHEADER: "Learn about the tour website, sponsers and our project team.",
 			ABOUTTEXT: "Portus was the maritime port of Imperial Rome between the mid-1st century AD and the 6th century AD. It was the focus of a network of ports and, together with the neighbouring river port at Ostia, it was the commercial hub that connected the city to the rest of the Mediterranean world. It played a key role in re-distributing imports from other Mediterranean ports to supply the city and, to a lesser extent, exporting products from the Tiber valley. It was established under the emperor Claudius, subsequently enlarged by Trajan and successive emperors into the 4th century AD, until its gradual decline in the later 5th and 6th centuries AD.",
 			ABOUTSUBTEXT: "This tour has been constructed by the Portus Project to help visualise the different phases of the port over time. It also consists of a modern tour of the site and a history of the archaeological investigations that have been carried out at the site. It was built in collaboration with the Soprintendenza Speciale per il Colosseo, il Museo Nazionale Romano e l’Area Archeologica di Roma, which is part of the Ministero per i Beni e le Attività Culturali (MIBAC).",
-			ABOUTSUBSUBTEXT: "Each tour covers a different period in time. These are:",
-			ABOUTTOGGLE1: "Each tour covers a different period in time. To view these then click ",
-			ABOUTHERE: "here",
-			ABOUTTOGGLE2: ". Alternatively, to start the tour then click 'Continue' below",
-			ABOUTCLA: "stretching from the beginning of the port's construction in c. AD 46 until its inauguration under the Emperor Nero in AD 64.",
-			ABOUTTRA: "covering the development of the port during the reign of the emperor Trajan, with the majority of work probably concentrated between AD 110-117.",
-			ABOUTSEV: "the construction of new massive buildings around the port complex.",
-			ABOUTFS: "the decline of the port from the 5th century onwards.",
-			ABOUTMOD: "the site and the ruins of Portus as it is today.",
-			ABOUTTIME: "a timeline of the work that has been carried out at Portus, from antiquarians to the present day.",
-			ABOUTEND: "Or select continue below to start the tour",
-			CONTINUE: "CONTINUE"
+			FEATURES: "Features",
+				LANGUAGE: "Multi-language",
+					LANGUAGETEXT: "Support for multiple languages makes the tour accessible to both English and Italian speakers.",
+				APP: "Responsive Web App",
+					APPTEXT: "Responsive design enables the tour to be viewed on a wide variety of devices, from desktop to mobile.",
+				LOCATION: "Location Aware",
+					LOCATIONTEXT: "On mobile the tour app has location aware capablities, allowing visitors to see exactly where they are on site in Portus.",
+			SPONSORS: "Sponsors",
+			DEVELOPERS: "Developers",
+				PETERTEXT: "Peter has designed and developed the Portus tour app, taking inspiration from his master's degree work at Southampton. You can find more about him on <a ng-href='https://twitter.com/peter__wheeler' target='_blank'>Twitter</a> or on his <a ng-href='https://github.com/peterwheeler' target='_blank'>Github</a> account.",
+				ARTASMEDIATEXT: "Grant Cox at <a ng-href='https://artasmedia.com/' target='_blank'>ArtasMedia</a> was commissioned to create the amazing plans and maps used in the tour. They are inspired from the 3D work he has been building in recent years.",
+			RELATED: "Related links",
+			FOLLOWUS: "Follow us"
 		},
 		LANGUAGES: {
 			ENGLISH: "{{language}}",
@@ -72,17 +74,22 @@ var angtranslations = {
 		},
 		ABOUT: {
 				ABOUT: "Informazioni",
-				ABOUTTEXT: "",
-				ABOUTSUBTEXT: "Porto (l’antico Portus) era il porto marittimo di Roma antica e, con il vicino porto fluviale di Ostia, è stato al centro di una rete di porti che collegavano Roma Imperiale tra la metà del I secolo e il VI secolo d.C. Questo tour fa parte del sito web della Soprintendenza Speciale per i Beni Archeologici di Roma (SSBAR), organo periferico del Ministero per i Beni e le Attività Culturali (MIBAC), ed è stato creato in collaborazione con il.",
-			ABOUTSUBSUBTEXT: "Each tour covers a different period in time. These are:",
-			ABOUTCLA: " - stretching from the beginning of the port's construction in c. AD 46 until its inauguration under the Emperor Nero in AD 64.",
-			ABOUTTRA: " - covering the development of the port during the reign of the emperor Trajan, with the majority of work probably concentrated between AD 110-117.",
-			ABOUTSEV: " -  the construction of new massive buildings around the port complex.",
-			ABOUTFS: " - the decline of the port from the 5th century onwards.",
-			ABOUTMOD: " - the site and the ruins of Portus as it is today.",
-			ABOUTTIME: " - a timeline of the work that has been carried out at Portus, from antiquarians to the present day.",
-			ABOUTEND: "Or select continue below to start the tour",
-			CONTINUE: "CONTINUA"	
+				ABOUTHEADER: "Ulteriori informazioni sul tour, sponsor e il team del progetto.",
+				ABOUTTEXT: "Portus era il porto marittimo di Roma Imperiale e, con il vicino porto fluviale di Ostia, è stato al centro di una rete portuale che collegava Roma al resto del Mediterraneo tra la metà del I e il VI secolo d.C. Il porto ha svolto un ruolo chiave nella ridistribuzione delle importazioni dal Mediterraneo alla capitale e, in misura minore, nell'esportazione dei prodotti dalla valle del Tevere. Fondato sotto l'Imperatore Claudio, è stato successivamente ampliato da Traiano e dagli Imperatori successivi nel IV secolo d.C., fino al suo graduale declino nel V e nel tardo VI secolo d.C.",
+				ABOUTSUBTEXT: "Questo tour, creato dal Portus Project per visualizzare le fasi del porto nel tempo, include anche il tour del sito moderno e la cronologia delle indagini archeologiche effettuate. È stato creato in collaborazione con la Soprintendenza Speciale per il Colosseo, il Museo Nazionale Romano e l'Area Archeologica di Roma, che fanno parte del Ministero per i Beni e le Attività Culturali (MIBAC).",	
+				FEATURES: "Caratteristiche",
+					LANGUAGE: "Multi lingua",
+						LANGUAGETEXT: "Le traduzioni in inglese e in italiano lo rendono accessibile ai visitatori di diverse nazionalità.",
+					APP: "Design responsivo",
+						APPTEXT: "Il design responsivo consente la visualizzazione del tour su una vasta gamma di dispositivi, dal desktop al cellulare.",
+					LOCATION: "Riconoscimento della posizione",
+						LOCATIONTEXT: "L’applicazione riconosce la posizione consentendo ai visitatori di vedere esattamente dove si trovano sulla mappa mentre visitano Portus.",
+				SPONSORS: "Sponsors",
+				DEVELOPERS: "Sviluppatori",
+					PETERTEXT: "Peter ha progettato e sviluppato il tour di Portus prendendo spunto dal suo progetto di master a Southampton. Per maggiori informazioni consultate <a ng-href='https://twitter.com/peter__wheeler' target='_blank'>Twitter</a> o sul suo account <a ng-href='https://github.com/peterwheeler' target='_blank'>Github</a>.",
+					ARTASMEDIATEXT: "Grant Cox di <a ng-href='https://artasmedia.com/' target='_blank'>ArtasMedia</a> ha creato le piante e le mappe utilizzate nel tour ispirandosi alle ricostruzioni 3D che ha eseguito negli ultimi anni per il sito.",
+				RELATED: "Link correlati",
+				FOLLOWUS: "Seguici su"
 		},
 		LANGUAGES: {
 			ENGLISH: "Inglese",
@@ -1187,7 +1194,8 @@ app.controller("RegionCtrl", ["$scope", "$rootScope", "$log", "$translate", "$lo
 	
 	app.run(function($state, $stateParams, $rootScope, $urlRouter, $location, $window) {
 
-		$window.ga('create', 'UA-75231811-1', 'none');
+		// $window.ga('create', 'UA-75231811-1', 'none');
+		$window.ga('create', 'UA-17304354-25', 'auto');
 		$window.riveted.init();
 	
 		$rootScope

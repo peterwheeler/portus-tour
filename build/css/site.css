@@ -302,12 +302,12 @@ html, #app-view {
     color: #3b5263;
 }
 
-.features-tour .caption {
-    
+#features-tour .caption {
+    font-weight: 500;
 }
 
-.features-tour .text {
-    
+#features-tour .text {
+    font-weight: 400;
 }
 
 .image-container {
