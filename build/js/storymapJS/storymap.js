@@ -15004,15 +15004,23 @@ L.Control.LayerOpacity = L.Control.extend({
 		this._slider.type = "range";
 		this._slider.setAttribute("min", 1);
 		this._slider.setAttribute("max", 20);
+		this._slider.value = 20;
 
 		this._container.style.display = 'none';
 
-		L.DomEvent
-			.on(this._slider, 'change', L.DomEvent.stopPropagation)
-			.on(this._slider, 'mousedown', L.DomEvent.stopPropagation)
-			.on(this._slider, 'dblclick', L.DomEvent.stopPropagation)
-			.on(this._slider, 'change', L.DomEvent.preventDefault)
-			.on(this._slider, 'change', this._slideChange, this);
+
+		if (L.Browser.touch) {
+			L.DomEvent
+				.disableClickPropagation(this._slider)
+				.disableScrollPropagation(this._slider);
+		} else {
+			L.DomEvent
+				.on(this._slider, 'change', L.DomEvent.preventDefault)
+				.on(this._slider, 'mousedown', L.DomEvent.stopPropagation)
+				.on(this._slider, 'dblclick', L.DomEvent.stopPropagation)
+		}
+
+		L.DomEvent.on(this._slider, 'change', this._slideChange, this);
 	},
 
 	onRemove: function (map) {
@@ -16002,7 +16010,7 @@ L.Control.CustomLayers = L.Control.extend({
 		return this._update();
 	},
 
-	addOverlay: function (layer, name) {``
+	addOverlay: function (layer, name) {
 		this._addLayer(layer, name, true);
 		return this._update();
 	},
@@ -19580,7 +19588,7 @@ VCO.StoryMap = VCO.Class.extend({
 		this._menubar = new VCO.MenuBar(this._el.menubar, this._menubarContainer, this.options);
 		this._el.menubarOpen = VCO.Dom.create('div', 'menubar-opener', this._menubarContainer);
 		this._el.menubarOpen.innerHTML = '<a data-activates="slide-out-menubar" id="menubar-collapse-id" class="menubar-collapse show-on-small"><i class="material-icons new-medium">tune</i></a>';
-		this._el.viewSwitch = VCO.Dom.create('div', 'view-switch hide-on-med-and-up', this._menubarContainer);
+		this._el.viewSwitch = VCO.Dom.create('div', 'view-switch', this._menubarContainer);
 		this._el.viewSwitch.innerHTML = '<a class="switch-view-layer show-on-small"><i class="material-icons new-medium">&#xE25D;</i></a>';
 
 		this.geo_layer = this._map.createGeolocation();
@@ -19627,31 +19635,41 @@ VCO.StoryMap = VCO.Class.extend({
 		this._startmessage = new VCO.TourMessage({}, {
 					message_id:         "start-modal"
 					});
-
-		if (localStorage.getItem("ls.locale.main").contains("en")) {
-
-			if (prevTour().split('/')[1] == "") {
-				this._prevTour = "home";
-				this._prevTourName = this._prevTour;
-			}
-			else{
-				this._prevTour = prevTour().split('/')[1];
-				this._prevTourName = tourText(this._prevTour + "_period");
-			}
-			this._startmessage.updateMessage('<div class="col s12 m7"><div class="card horizontal"><div class="card-stacked"><div class="card-content"><div class="row"><div class="link-section valign-wrapper"><div class="col s2 header-col valign"><a class="modal-action modal-close" href="/' + prevTour() + '"><i class="material-icons med-large left">&#xE314;</i></a></div><div class="col s10 header-col valign"><a class="modal-action modal-close" href="/' + prevTour() + '"><h3 class="header">' + this._capitalizeFirstLetter(this._prevTourName) + '</h3></a></div><div class="clearfix"></div></div><div class="col s12"><div class="divider"></div></div><div class="col s12 tour-text"><p class="summary-header" style="margin-bottom: 10px;">Summary</p><p class="summary-text">' + tourText(this._prevTour) + '</p></div></div></div></div><div class="card-image hide-on-small-only"><img src="logos/mini-tours/' + this._prevTour + '.jpg"></div></div></div>');
-		}
-		else {
-
-			if (prevTour().split('/')[1] == "") {
-				this._prevTour = "inicio";
-				this._prevTourName = this._prevTour;
-			}
-			else{
-				this._prevTour = prevTour().split('/')[1];
-				this._prevTourName = tourText(this._prevTour + "_period");
-			}
-			this._startmessage.updateMessage('<div class="col s12 m7"><div class="card horizontal"><div class="card-stacked"><div class="card-content"><div class="row"><div class="link-section valign-wrapper"><div class="col s2 header-col valign"><a class="modal-action modal-close" href="/' + prevTour() + '"><i class="material-icons med-large left">&#xE314;</i></a></div><div class="col s10 header-col valign"><a class="modal-action modal-close" href="/' + prevTour() + '"><h3 class="header">' + this._capitalizeFirstLetter(this._prevTourName) + '</h3></a></div><div class="clearfix"></div></div><div class="col s12"><div class="divider"></div></div><div class="col s12 tour-text"><p class="summary-header" style="margin-bottom: 10px;">Sommario</p><p class="summary-text">' + tourText(this._prevTour) + '</p></div></div></div></div><div class="card-image hide-on-small-only"><img src="logos/mini-tours/' + this._prevTour + '.jpg"></div></div></div>');
-		}
+		// if (localStorage.getItem("ls.locale.main") !== null){
+		// 	if (localStorage.getItem("ls.locale.main").contains("en")) {
+				if (prevTour().split('/')[1] == "") {
+					this._prevTour = "home";
+					this._prevTourName = this._prevTour;
+				}
+				else{
+					this._prevTour = prevTour().split('/')[1];
+					this._prevTourName = tourText(this._prevTour + "_period");
+				}
+				this._startmessage.updateMessage('<div class="col s12 m7"><div class="card horizontal"><div class="card-stacked"><div class="card-content"><div class="row"><div class="link-section valign-wrapper"><div class="col s2 header-col valign"><a class="modal-action modal-close" href="/' + prevTour() + '"><i class="material-icons med-large left">&#xE314;</i></a></div><div class="col s10 header-col valign"><a class="modal-action modal-close" href="/' + prevTour() + '"><h3 class="header">' + this._capitalizeFirstLetter(this._prevTourName) + '</h3></a></div><div class="clearfix"></div></div><div class="col s12"><div class="divider"></div></div><div class="col s12 tour-text"><p class="summary-header" style="margin-bottom: 10px;">Summary</p><p class="summary-text">' + tourText(this._prevTour) + '</p></div></div></div></div><div class="card-image hide-on-small-only"><img src="logos/mini-tours/' + this._prevTour + '.jpg"></div></div></div>');
+			// }
+			// else {
+		// 		if (prevTour().split('/')[1] == "") {
+		// 			this._prevTour = "inicio";
+		// 			this._prevTourName = this._prevTour;
+		// 		}
+		// 		else{
+		// 			this._prevTour = prevTour().split('/')[1];
+		// 			this._prevTourName = tourText(this._prevTour + "_period");
+		// 		}
+		// 		this._startmessage.updateMessage('<div class="col s12 m7"><div class="card horizontal"><div class="card-stacked"><div class="card-content"><div class="row"><div class="link-section valign-wrapper"><div class="col s2 header-col valign"><a class="modal-action modal-close" href="/' + prevTour() + '"><i class="material-icons med-large left">&#xE314;</i></a></div><div class="col s10 header-col valign"><a class="modal-action modal-close" href="/' + prevTour() + '"><h3 class="header">' + this._capitalizeFirstLetter(this._prevTourName) + '</h3></a></div><div class="clearfix"></div></div><div class="col s12"><div class="divider"></div></div><div class="col s12 tour-text"><p class="summary-header" style="margin-bottom: 10px;">Sommario</p><p class="summary-text">' + tourText(this._prevTour) + '</p></div></div></div></div><div class="card-image hide-on-small-only"><img src="logos/mini-tours/' + this._prevTour + '.jpg"></div></div></div>');
+		// 	}
+		// }
+		// else {
+		// 	if (prevTour().split('/')[1] == "") {
+		// 		this._prevTour = "home";
+		// 		this._prevTourName = this._prevTour;
+		// 	}
+		// 	else{
+		// 		this._prevTour = prevTour().split('/')[1];
+		// 		this._prevTourName = tourText(this._prevTour + "_period");
+		// 	}
+		// 	this._startmessage.updateMessage('<div class="col s12 m7"><div class="card horizontal"><div class="card-stacked"><div class="card-content"><div class="row"><div class="link-section valign-wrapper"><div class="col s2 header-col valign"><a class="modal-action modal-close" href="/' + prevTour() + '"><i class="material-icons med-large left">&#xE314;</i></a></div><div class="col s10 header-col valign"><a class="modal-action modal-close" href="/' + prevTour() + '"><h3 class="header">' + this._capitalizeFirstLetter(this._prevTourName) + '</h3></a></div><div class="clearfix"></div></div><div class="col s12"><div class="divider"></div></div><div class="col s12 tour-text"><p class="summary-header" style="margin-bottom: 10px;">Summary</p><p class="summary-text">' + tourText(this._prevTour) + '</p></div></div></div></div><div class="card-image hide-on-small-only"><img src="logos/mini-tours/' + this._prevTour + '.jpg"></div></div></div>');
+		// }
 
 		this._startmessage.addTo(this._el.messages);
 
@@ -19659,24 +19677,33 @@ VCO.StoryMap = VCO.Class.extend({
 					message_id:         "end-modal"
 		});
 
-		if (localStorage.getItem("ls.locale.main").contains("en")) {
+		// if (localStorage.getItem("ls.locale.main") !== null){
+		// 	if (localStorage.getItem("ls.locale.main").contains("en")) {
+				this._nextTour = nextTour().split('/')[1];
+				this._currentTour = currentTour().split('/')[1];
+				this._nextTourName = tourText(this._nextTour + "_period");
+				this._currentTourName = tourText(this._currentTour + "_period");
 
-			this._nextTour = nextTour().split('/')[1];
-			this._currentTour = currentTour().split('/')[1];
-			this._nextTourName = tourText(this._nextTour + "_period");
-			this._currentTourName = tourText(this._currentTour + "_period");
+				this._finalmessage.updateMessage('<div class="col s12 m7"><div class="card horizontal"><div class="card-image hide-on-small-only"><img src="logos/mini-tours/' + this._nextTour + '.jpg"></div><div class="card-stacked"><div class="card-content"><div class="row"><div class="link-section  valign-wrapper"><div class="col s10 header-col valign"><a class="modal-action modal-close" href="/' + nextTour() + '"><h3 class="header">' + this._capitalizeFirstLetter(this._nextTourName) + '</h3></a></div><div class="col s2 header-col valign"><a class="modal-action modal-close" href="/' + nextTour() + '"><i class="material-icons med-large right">&#xE315;</i></a></div><div class="clearfix"></div></div><div class="col s12"><div class="divider"></div></div><div class="col s12 tour-text"><p class="summary-header" style="margin-bottom: 10px;">Summary</p><p class="summary-text">' + tourText(this._nextTour) + '</p></div></div></div></div></div></div>');
+		// 	}
+		// 	else {
+		// 		this._nextTour = nextTour().split('/')[1];
+		// 		this._currentTour = currentTour().split('/')[1];
+		// 		this._nextTourName = tourText(this._nextTour + "_period");
+		// 		this._currentTourName = tourText(this._currentTour + "_period");
 
-			this._finalmessage.updateMessage('<div class="col s12 m7"><div class="card horizontal"><div class="card-image hide-on-small-only"><img src="logos/mini-tours/' + this._nextTour + '.jpg"></div><div class="card-stacked"><div class="card-content"><div class="row"><div class="link-section  valign-wrapper"><div class="col s10 header-col valign"><a class="modal-action modal-close" href="/' + nextTour() + '"><h3 class="header">' + this._capitalizeFirstLetter(this._nextTourName) + '</h3></a></div><div class="col s2 header-col valign"><a class="modal-action modal-close" href="/' + nextTour() + '"><i class="material-icons med-large right">&#xE315;</i></a></div><div class="clearfix"></div></div><div class="col s12"><div class="divider"></div></div><div class="col s12 tour-text"><p class="summary-header" style="margin-bottom: 10px;">Summary</p><p class="summary-text">' + tourText(this._nextTour) + '</p></div></div></div></div></div></div>');
-		}
-		else {
+		// 		this._finalmessage.updateMessage('<div class="col s12 m7"><div class="card horizontal"><div class="card-image hide-on-small-only"><img src="logos/mini-tours/' + this._nextTour + '.jpg"></div><div class="card-stacked"><div class="card-content"><div class="row"><div class="link-section  valign-wrapper"><div class="col s10 header-col valign"><a class="modal-action modal-close" href="/' + nextTour() + '"><h3 class="header">' + this._capitalizeFirstLetter(this._nextTourName) + '</h3></a></div><div class="col s2 header-col valign"><a class="modal-action modal-close" href="/' + nextTour() + '"><i class="material-icons med-large right">&#xE315;</i></a></div><div class="clearfix"></div></div><div class="col s12"><div class="divider"></div></div><div class="col s12 tour-text"><p class="summary-header" style="margin-bottom: 10px;">Sommario</p><p class="summary-text">' + tourText(this._nextTour) + '</p></div></div></div></div></div></div>');
+		// 	}
+		// }
+		// else {
+		// 	this._nextTour = nextTour().split('/')[1];
+		// 	this._currentTour = currentTour().split('/')[1];
+		// 	this._nextTourName = tourText(this._nextTour + "_period");
+		// 	this._currentTourName = tourText(this._currentTour + "_period");
 
-			this._nextTour = nextTour().split('/')[1];
-			this._currentTour = currentTour().split('/')[1];
-			this._nextTourName = tourText(this._nextTour + "_period");
-			this._currentTourName = tourText(this._currentTour + "_period");
+		// 	this._finalmessage.updateMessage('<div class="col s12 m7"><div class="card horizontal"><div class="card-image hide-on-small-only"><img src="logos/mini-tours/' + this._nextTour + '.jpg"></div><div class="card-stacked"><div class="card-content"><div class="row"><div class="link-section  valign-wrapper"><div class="col s10 header-col valign"><a class="modal-action modal-close" href="/' + nextTour() + '"><h3 class="header">' + this._capitalizeFirstLetter(this._nextTourName) + '</h3></a></div><div class="col s2 header-col valign"><a class="modal-action modal-close" href="/' + nextTour() + '"><i class="material-icons med-large right">&#xE315;</i></a></div><div class="clearfix"></div></div><div class="col s12"><div class="divider"></div></div><div class="col s12 tour-text"><p class="summary-header" style="margin-bottom: 10px;">Summary</p><p class="summary-text">' + tourText(this._nextTour) + '</p></div></div></div></div></div></div>');
+		// }
 
-			this._finalmessage.updateMessage('<div class="col s12 m7"><div class="card horizontal"><div class="card-image hide-on-small-only"><img src="logos/mini-tours/' + this._nextTour + '.jpg"></div><div class="card-stacked"><div class="card-content"><div class="row"><div class="link-section  valign-wrapper"><div class="col s10 header-col valign"><a class="modal-action modal-close" href="/' + nextTour() + '"><h3 class="header">' + this._capitalizeFirstLetter(this._nextTourName) + '</h3></a></div><div class="col s2 header-col valign"><a class="modal-action modal-close" href="/' + nextTour() + '"><i class="material-icons med-large right">&#xE315;</i></a></div><div class="clearfix"></div></div><div class="col s12"><div class="divider"></div></div><div class="col s12 tour-text"><p class="summary-header" style="margin-bottom: 10px;">Sommario</p><p class="summary-text">' + tourText(this._nextTour) + '</p></div></div></div></div></div></div>');
-		}
 		this._finalmessage.addTo(this._el.messages);
 		
 	},

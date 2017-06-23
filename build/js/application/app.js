@@ -228,6 +228,24 @@ new t1.o.Page(
 				minZoom:        	14,
 				maxZoom:        	17
 			}
+		},
+		{
+			map_type: "mapTiler",
+			map_name: "Magnetometry results",
+			map_mini: false,
+			map_as_image: false,
+			map_as_overlay: true,
+			calculate_zoom: false,
+			attribution: 		"Kris Strutt / Portus Project",
+			mapTiler: {
+				path: 				"maps/mag/",
+				file_type:         ".png",
+				lat:				"",
+				lng: 				"",
+				zoom: 				14,
+				minZoom:        	14,
+				maxZoom:        	17
+			}
 		}],
 		it: [{
 			map_type: "mapTiler",
@@ -284,6 +302,24 @@ new t1.o.Page(
 				minZoom:        	14,
 				maxZoom:        	17
 				
+			}
+		},
+		{
+			map_type: "mapTiler",
+			map_name: "Risultati magnetometria",
+			map_mini: false,
+			map_as_image: false,
+			map_as_overlay: true,
+			calculate_zoom: false,
+			attribution: 		"Kris Strutt / Portus Project",
+			mapTiler: {
+				path: 				"maps/mag/",
+				file_type:         ".png",
+				lat:				"",
+				lng: 				"",
+				zoom: 				14,
+				minZoom:        	14,
+				maxZoom:        	17
 			}
 		}]
 	}
@@ -353,6 +389,24 @@ new t1.o.Page(
 				maxZoom:        	17
 				
 			}	
+		},
+		{
+			map_type: "mapTiler",
+			map_name: "Magnetometry results",
+			map_mini: false,
+			map_as_image: false,
+			map_as_overlay: true,
+			calculate_zoom: false,
+			attribution: 		"Kris Strutt / Portus Project",
+			mapTiler: {
+				path: 				"maps/mag/",
+				file_type:         ".png",
+				lat:				"",
+				lng: 				"",
+				zoom: 				14,
+				minZoom:        	14,
+				maxZoom:        	17
+			}
 		}],
 		it: [{
 			map_type: "mapTiler",
@@ -410,6 +464,24 @@ new t1.o.Page(
 				maxZoom:        	17
 				
 			}	
+		},
+		{
+			map_type: "mapTiler",
+			map_name: "Risultati magnetometria",
+			map_mini: false,
+			map_as_image: false,
+			map_as_overlay: true,
+			calculate_zoom: false,
+			attribution: 		"Kris Strutt / Portus Project",
+			mapTiler: {
+				path: 				"maps/mag/",
+				file_type:         ".png",
+				lat:				"",
+				lng: 				"",
+				zoom: 				14,
+				minZoom:        	14,
+				maxZoom:        	17
+			}
 		}]
 	}
 ),
@@ -478,6 +550,24 @@ new t1.o.Page(
 				maxZoom:        	17
 				
 			}	
+		},
+		{
+			map_type: "mapTiler",
+			map_name: "Magnetometry results",
+			map_mini: false,
+			map_as_image: false,
+			map_as_overlay: true,
+			calculate_zoom: false,
+			attribution: 		"Kris Strutt / Portus Project",
+			mapTiler: {
+				path: 				"maps/mag/",
+				file_type:         ".png",
+				lat:				"",
+				lng: 				"",
+				zoom: 				14,
+				minZoom:        	14,
+				maxZoom:        	17
+			}
 		}],
 		it: [{
 			map_type: "mapTiler",
@@ -535,6 +625,24 @@ new t1.o.Page(
 				maxZoom:        	17
 				
 			}	
+		},
+		{
+			map_type: "mapTiler",
+			map_name: "Risultati magnetometria",
+			map_mini: false,
+			map_as_image: false,
+			map_as_overlay: true,
+			calculate_zoom: false,
+			attribution: 		"Kris Strutt / Portus Project",
+			mapTiler: {
+				path: 				"maps/mag/",
+				file_type:         ".png",
+				lat:				"",
+				lng: 				"",
+				zoom: 				14,
+				minZoom:        	14,
+				maxZoom:        	17
+			}
 		}]
 	}
 ),
@@ -603,6 +711,24 @@ new t1.o.Page(
 				maxZoom:        	17,
 				
 			}
+		},
+		{
+			map_type: "mapTiler",
+			map_name: "Magnetometry results",
+			map_mini: false,
+			map_as_image: false,
+			map_as_overlay: true,
+			calculate_zoom: false,
+			attribution: 		"Kris Strutt / Portus Project",
+			mapTiler: {
+				path: 				"maps/mag/",
+				file_type:         ".png",
+				lat:				"",
+				lng: 				"",
+				zoom: 				14,
+				minZoom:        	14,
+				maxZoom:        	17
+			}
 		}],
 		it: [{
 			map_type: "mapTiler",
@@ -660,6 +786,24 @@ new t1.o.Page(
 				maxZoom:        	17
 				
 			}	
+		},
+		{
+			map_type: "mapTiler",
+			map_name: "Risultati magnetometria",
+			map_mini: false,
+			map_as_image: false,
+			map_as_overlay: true,
+			calculate_zoom: false,
+			attribution: 		"Kris Strutt / Portus Project",
+			mapTiler: {
+				path: 				"maps/mag/",
+				file_type:         ".png",
+				lat:				"",
+				lng: 				"",
+				zoom: 				14,
+				minZoom:        	14,
+				maxZoom:        	17
+			}
 		}]
 	}
 ),
@@ -793,7 +937,7 @@ new t1.o.Page(
 			calculate_zoom: false,
 			attribution: 		'Maps designed by <a href="https://artasmedia.com/" target="_blank" class="vco-knightlab-brand">ArtasMedia</a>',
 			mapTiler: {
-				path: 				"maps/plan_en_05/",
+				path: 				"maps/plan_it_05/",
 				file_type:         ".jpg",
 				lat:				"",
 				lng: 				"",
@@ -801,6 +945,24 @@ new t1.o.Page(
 				minZoom:        	14,
 				maxZoom:        	17
 				
+			}
+		},
+		{
+			map_type: "mapTiler",
+			map_name: "Risultati magnetometria",
+			map_mini: false,
+			map_as_image: false,
+			map_as_overlay: true,
+			calculate_zoom: false,
+			attribution: 		"Kris Strutt / Portus Project",
+			mapTiler: {
+				path: 				"maps/mag/",
+				file_type:         ".png",
+				lat:				"",
+				lng: 				"",
+				zoom: 				14,
+				minZoom:        	14,
+				maxZoom:        	17
 			}
 		}]
 	}
@@ -1279,7 +1441,9 @@ app.controller("RegionCtrl", ["$scope", "$rootScope", "$log", "$translate", "$lo
 			map_background_color: "#ffffff",
 			// map config
 			maps: tourMap
-		};				
+		};	
+
+
 
 		if(paramVal > 0) {
 			storymap_options.start_at_slide = parseInt(paramVal);
@@ -1288,9 +1452,8 @@ app.controller("RegionCtrl", ["$scope", "$rootScope", "$log", "$translate", "$lo
 		{
 			storymap_options.start_at_slide = 0;
 		}
-
 		var storymap = new VCO.StoryMap("storymap_" + tourPeriod, storymap_data, storymap_options, jQuery);
-
+		
 		goTo = function(n){
 			storymap.goTo(n);
 		};

@@ -209,7 +209,7 @@ html, #app-view {
 }
 
 .view-switch {
-    display: block;
+    display: none;
     position: absolute;
     width: 40px;
     right: 50%;
@@ -587,6 +587,12 @@ footer.page-footer {
     margin-left: 40px;
     float: right;
     max-width: 180px;
+    border: none;
+    margin-bottom: 0px;
+}
+
+.leaflet-bottom .leaflet-control-opacity input[type=range] {
+    border: none;
 }
 
 .leaflet-bottom .leaflet-control-opacity .thumb {
@@ -682,8 +688,8 @@ i.new-large {
         max-height: 400px;
     }
 
-    .shareButton {
-        display: none;
+    .view-switch {
+        display: block;
     }
     
     /* Overlay */
@@ -788,10 +794,6 @@ i.new-large {
         width: 100px;
     }
 
-    .shareButton {
-        display: none;
-    }
-
     /* Overlay */
 
     .tourCarousel {
@@ -802,6 +804,10 @@ i.new-large {
         height: 85px;
         width: 85px;
         background-size: 85px;
+    }
+
+    .view-switch {
+        display: block;
     }
 
     /* Begin Button Config */
