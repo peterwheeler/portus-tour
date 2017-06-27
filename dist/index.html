@@ -25,6 +25,7 @@
     <!-- StoryMap & Timeline -->
     <link rel="stylesheet" type="text/css" href="/js/timelineJS/css/timeline.css">
     <link rel="stylesheet" type="text/css" href="/css/storymap.css?v1">
+    <link rel="stylesheet" type="text/css" href="/css/juxtapose/juxtapose.min.css">
     
     <!-- Site styling -->
     <link rel="stylesheet" type="text/css" href="/css/site.css" />
@@ -119,6 +120,7 @@
                     </ul>
                 </div>
             </li>
+            <li class="bold"><a ng-href="{{urlBegin()}}/maps" class="about-link waves-effect waves-teal"><i class="material-icons">&#xE55B;</i>{{'MENU.MAPS' | translate}}</a></li>
         </ul>
     </ul>
     <div class="menu-opener" ng-class="(page=='about') ? 'white-opener' : 'black-opener'">
@@ -150,6 +152,8 @@
     <script type="text/javascript" src="/js/timelineJS/js/storyjs-embed.js"></script>
     <!-- storymapJS -->
     <script type="text/javascript" src="/js/storymapJS/storymap.js"></script>
+    <!-- juxtaposeJS -->
+    <script type="text/javascript" src="/js/juxtapose/juxtapose.js"></script>
     <!-- angularJS application -->
     <script type="text/javascript" src="/js/application/app.js"></script>
 </body>

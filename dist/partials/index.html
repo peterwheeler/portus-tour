@@ -7,11 +7,16 @@
 <!-- <div class="container"> -->
 <div class="body-content">
   <h1 class="body-header center" translate>{{'HOMEPAGE.TITLE'}}</h1>
-  <div class="row center">
+  <div class="body-title row center">
     <h4 class="header col s12 light center" translate>{{'HOMEPAGE.HEADLINE'}}</h4>
   </div>
-  <div class="row center">
-    <a ng-href="{{urlBegin()}}/{{localizedPage(0)}}" class="btn-large start-btn waves-effect waves-light" translate>{{'HOMEPAGE.START'}}</a>
+  <div class="row center body-select">
+    <div class="main-button">
+      <a ng-href="{{urlBegin()}}/{{localizedPage(0)}}" class="btn-large start-btn waves-effect waves-light"><i class="material-icons right">&#xE037;</i>{{'HOMEPAGE.MAINBUTTON' | translate}}</a>
+    </div>
+    <div class="second-button">
+      <a ng-href="{{urlBegin()}}/maps" class="btn-large start-btn waves-effect waves-light" translate>{{'HOMEPAGE.SECONDBUTTON'}}</a>
+    </div>
   </div>
   <div class="row center">
  	<a class="body-text text-lighten-4" ng-href="{{urlBegin()}}/about" translate>{{'HOMEPAGE.ABOUT'}}</a>

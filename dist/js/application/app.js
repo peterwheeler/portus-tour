@@ -6,7 +6,10 @@ var angtranslations = {
 			SELECTTOUR: "Select a Tour",
 			LEARNMORE: "Explore More",
 			START: "Start",
-			ABOUT: "About"
+			MAINBUTTON: "Take your tour",
+			SECONDBUTTON: "Compare the maps",
+			ABOUT: "About",
+			MAPS: "Maps"
 		},
 		ABOUT: {
 			ABOUT: "About",
@@ -40,6 +43,35 @@ var angtranslations = {
 			MODERN: "Modern",
 			TIMELINE: "Timeline"
 		},
+		MAPS: {
+			ID1: "",
+			LABEL1: "",
+			CREDIT1: "",
+			ID2: "",
+			LABEL2: "",
+			CREDIT2: "",
+			ID3: "",
+			LABEL3: "",
+			CREDIT3: "",
+			ID4: "",
+			LABEL4: "",
+			CREDIT4: "",
+			ID5: "",
+			LABEL5: "",
+			CREDIT5: "",
+			ID6: "",
+			LABEL6: "",
+			CREDIT6: "",
+			ID7: "",
+			LABEL7: "",
+			CREDIT7: "",
+			ID8: "",
+			LABEL8: "",
+			CREDIT8: "",
+			ID9: "",
+			LABEL9: "",
+			CREDIT9: "",
+		},
 		MENU: {
 			SELECTALANG: "Language",
 			SELECTATOUR: "Tours",
@@ -70,7 +102,10 @@ var angtranslations = {
 				SELECTTOUR: "Selezionare un Tour",
 				LEARNMORE: "Esplorare",
 				START: "Inizio",
-				ABOUT: "Informazioni"
+				MAINBUTTON: "Inizio un tour",
+				SECONDBUTTON: "Comparare le mappe",
+				ABOUT: "Informazioni",
+				MAPS: "Mappa"
 		},
 		ABOUT: {
 				ABOUT: "Informazioni",
@@ -92,8 +127,8 @@ var angtranslations = {
 				FOLLOWUS: "Seguici su"
 		},
 		LANGUAGES: {
-			ENGLISH: "Inglese",
-			ITALIAN: "Italiano"
+			ENGLISH: "{{language}}",
+			ITALIAN: "{{language}}"
 		},
 		TOURS: {
 			HOME: "Home",
@@ -103,6 +138,35 @@ var angtranslations = {
 			FIFTHSEVENTH: "Quinta al Settima",
 			MODERN: "Tour Virtuale",
 			TIMELINE: "Cronologia"
+		},
+		MAPS: {
+			ID1: "",
+			LABEL1: "",
+			CREDIT1: "",
+			ID2: "",
+			LABEL2: "",
+			CREDIT2: "",
+			ID3: "",
+			LABEL3: "",
+			CREDIT3: "",
+			ID4: "",
+			LABEL4: "",
+			CREDIT4: "",
+			ID5: "",
+			LABEL5: "",
+			CREDIT5: "",
+			ID6: "",
+			LABEL6: "",
+			CREDIT6: "",
+			ID7: "",
+			LABEL7: "",
+			CREDIT7: "",
+			ID8: "",
+			LABEL8: "",
+			CREDIT8: "",
+			ID9: "",
+			LABEL9: "",
+			CREDIT9: "",
 		},
 		MENU: {
 			SELECTALANG: "Lingua",
@@ -140,7 +204,7 @@ var t1 = {};
 t1.o = {},
 t1.c = {},
 t1.o.Menu = function (a, b) {
-	this.type = a;
+	this.type = a, this.controller = b;
 },
 t1.o.Country = function(a, b) {
    this.language = a, this.name = b;
@@ -163,7 +227,7 @@ t1.o.Page = function(a, b, c, d) {
 
 
 t1.c.countries = [new t1.o.Country("en", "en"), new t1.o.Country("it", "it")],
-t1.c.menu = [new t1.o.Menu("about")],
+t1.c.menu = [new t1.o.Menu("about", "MainCtrl"), new t1.o.Menu("maps", "mapsCtrl")],
 t1.c.pages = [
 new t1.o.Page(
 	{
@@ -1026,9 +1090,12 @@ app.config(function($stateProvider, $urlRouterProvider, $locationProvider) {
 	        $stateProvider.state(b.language + "-" + d.type, {
 	          	url: "/" + b.language + "/" + d.type,
 	            templateUrl: "partials/" + d.type + ".html",
-	            controller: "MainCtrl",
+	            controller: d.controller,
 	            params: {
 	            	page: d.type
+	            },
+	            data: {
+	            	mapLang: b.language
 	            }
 	        });
 	    }
@@ -1565,6 +1632,123 @@ app.controller("RegionCtrl", ["$scope", "$rootScope", "$log", "$translate", "$lo
 
 		createStoryJS(timeline_config);
 
+	}]);
+
+	app.controller('mapsCtrl', ['$scope', '$state', '$stateParams', '$location',
+		function($scope, $state, $stateParams, $location) {
+
+		var mapLang = $state.current.data.mapLang;
+
+		createDropdowns = function(){
+			$('#left-dropdown').dropdown({
+				inDuration: 300,
+				outDuration: 225,
+				constrainWidth: false,
+				hover: true,
+				gutter: 0,
+				belowOrigin: true,
+				alignment: 'right',
+				stopPropagation: false
+				}
+			);
+			$('#right-dropdown').dropdown({
+				inDuration: 300,
+				outDuration: 225,
+				constrainWidth: false,
+				hover: true,
+				gutter: 0,
+				belowOrigin: true,
+				alignment: 'left',
+				stopPropagation: false
+				}
+			);
+		};
+
+		var slider = new juxtapose.JXSlider('#juxtapose-maps',
+		    [
+		        {
+		            src: "images/maps/" + mapLang + "_Period_01.jpg",
+		            label: "Period 1",
+		            credit: "ArtasMedia",
+		            id: "image-1"
+		        },
+		        {
+		            src: "images/maps/" + mapLang + "_Period_02.jpg",
+		            label: "Period 2",
+		            credit: "ArtasMedia",
+		            id: "image-2"
+		        },
+		        {
+		            src: "images/maps/" + mapLang + "_Period_03.jpg",
+		            label: "Period 3",
+		            credit: "ArtasMedia",
+		            id: "image-3"
+		        },
+		        {
+		            src: "images/maps/" + mapLang + "_Period_04.jpg",
+		            label: "Period 4",
+		            credit: "ArtasMedia",
+		            id: "image-4"
+		        },
+		        {
+		            src: "images/maps/" + mapLang + "_Period_05.jpg",
+		            label: "Period 5",
+		            credit: "ArtasMedia",
+		            id: "image-5"
+		        },
+		        {
+		            src: "images/maps/" + mapLang + "_Period_06.jpg",
+		            label: "Period 6",
+		            credit: "ArtasMedia",
+		            id: "image-6"
+		        },
+		        {
+		            src: "images/maps/Period_01.jpg",
+		            label: "Period 1 - Reconstruction",
+		            credit: "ArtasMedia",
+		            id: "image-7"
+		        },
+		        {
+		            src: "images/maps/Period_02.jpg",
+		            label: "Period 2 - Reconstruction",
+		            credit: "ArtasMedia",
+		            id: "image-8"
+		        },
+		        {
+		            src: "images/maps/Period_03.jpg",
+		            label: "Period 3 - Reconstruction",
+		            credit: "ArtasMedia",
+		            id: "image-9"
+		        },
+		        {
+		            src: "images/maps/Period_04.jpg",
+		            label: "Period 4 - Reconstruction",
+		            credit: "ArtasMedia",
+		            id: "image-10"
+		        },
+		        {
+		            src: "images/maps/Period_05.jpg",
+		            label: "Period 5 - Reconstruction",
+		            credit: "ArtasMedia",
+		            id: "image-11"
+		        },
+		        {
+		            src: "images/maps/Period_06.jpg",
+		            label: "Period 6 - Reconstruction",
+		            credit: "ArtasMedia",
+		            id: "image-12"
+		        }
+		    ],
+		    {
+		        animate: true,
+		        showLabels: true,
+		        showCredits: true,
+		        startingPosition: "50%",
+		        makeResponsive: true,
+		        callback: function(){
+		        	createDropdowns();
+		        }
+		    });
 	}]);
 
 })();
