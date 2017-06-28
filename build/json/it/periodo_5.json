@@ -1,0 +1,558 @@
+{
+     "storymap": {
+		"slides": [
+            {
+                "text": {
+                    "headline": "Benvenuti a Portus",
+                    "text": "Questo tour è stato progettato per dare un'idea del sito archeologico che esiste a Portus oggigiorno. Viaggeremo attraverso il sito e visiteremo molti degli edifici che sono stati descritti nei tour precedenti. Le fotografie panoramiche ci permettono di vedere i resti e degli scavi che si verificano sul posto. Continuiamo il nostro tour."
+                },
+                "location": {
+                    "name": "location",
+                    "image": "images/tiny_icon.png",
+                    "icon_size": 1,
+                    "lat": 41.7786,
+                    "lon": 12.2582,
+                    "zoom": 14,
+                    "line": false
+                },
+                "media": {
+                    "url": "",
+                    "credit": "",
+                    "caption": ""
+                }
+            },
+            {
+                "id": 1,
+                "text": {
+                    "headline": "L’Ingresso",
+                    "text": "Nel I secolo d.C. ti saresti trovato al largo, in una nave nel grande bacino di Claudio, proprio di fronte alla banchina che forniva la prima occasione per l’attracco. Dando per scontato l’arrivo via nave, saresti dovuto passare nel bacino di Claudio da ovest, passando a nord o a sud del grande Pharos o faro, situato sulla propria isola artificiale.<br><br><a href='https://goo.gl/maps/tgNTS5aeHdR2' target='_blank'>Google Maps</a> or <a href='http://binged.it/1sAQSof' target='_blank'>Bing Maps</a><span style='font-size: 11px;'>  (Solo Desktop)</span>"
+                },
+                "location": {
+                    "name": "location",
+                    "lat": 41.774750,
+                    "lon": 12.254182,
+                    "zoom": 16,
+                    "line": false
+                },
+                "media": {
+                    "url": "images/images_5/entrance.jpg",
+                    "credit": "Simon Keay / University of Southampton",
+                    "caption": "Cancello d’ingresso del sito archeologico di Portus"
+                }
+            },
+			{
+                "id": 3,
+                "text": {
+                    "headline": "L’Antemurale",
+                    "text": "La banchina sulla facciata occidentale del porto, vicino al Portico di Claudio e ai magazzini adiacenti, che è stata utilizzata  intensamente tra la metà del I e il VII secolo d.C.<br><br>Un possibile ingresso nella parte settentrionale del bacino di Claudio vicino all'incrocio delle banchine settentrionali e orientali, identificato dai carotaggi geo-archeologici.<br><br><a href='https://goo.gl/maps/faKomPgivYC2' target='_blank'>Google Maps</a> or <a href='http://binged.it/1sAQAxJ' target='_blank'>Bing Maps</a><span style='font-size: 11px;'>  (Solo Desktop)</span>"
+                },
+                "location": {
+                    "name": "location",
+                    "lat": 41.775326,
+                    "lon": 12.254192,
+                    "zoom": 16,
+                    "line": false
+                },
+                "media": {
+                    "url": "images/images_4/antemurale.jpg",
+                    "credit": "Simon Keay / University of Southampton",
+                    "caption": "Vista guardando oltre all’antemurale e le mura tardo antiche"
+                }
+            },
+            {
+                "id": 2,
+                "text": {
+                    "headline": "Il Bacino di Claudio",
+                    "text": "Il bacino era delimitato da due moli lunghi in cemento, forse formati da arcate che si trovavano al di fuori dell'acqua. Queste banchine si estendevano verso ovest in mare aperto e possono ancora essere rintracciate nella forma del canale moderno di Fiumicino visibile dall’altra parte della strada, e nei resti visibili in alcune aree in direzione nord-ovest nelle vicinanze dell’Aeroporto moderno di Fiumicino.<br><br>In questo tour viaggerai attraverso il tempo e lo spazio, quindi immagina di saltare dal I al V secolo e di vedere una grande struttura ormai completamente distrutta, ma conosciuta grazie alle testimonianze epigrafica. Questa struttura era conosciuta come il Porticus Placidiana.<br><br><a href='https://goo.gl/maps/pd8tTrJFfW52' target='_blank'>Google Maps</a> or <a href='http://binged.it/1sAQSoh' target='_blank'>Bing Maps</a><span style='font-size: 11px;'>  (Solo Desktop)</span>"
+                },
+                "location": {
+                    "name": "location",
+                    "lat": 41.776246,
+                    "lon": 12.252830,
+                    "zoom": 16,
+                    "line": false
+                },
+                "media": {
+                    "url": "images/images_2/claudian_basin.jpg",
+                    "credit": "Simon Keay / University of Southampton",
+                    "caption": ""
+                }
+            },
+			{
+                "id": 4,
+                "text": {
+                    "headline": "Il Portico di Claudio",
+                    "text": "Colonnato monumentale della metá del I secolo d.C. nella facciata occidentale del porto che si affacciava sul bacino di Claudio.<br><br><a href='https://goo.gl/maps/NMr2ZnwFWwL2' target='_blank'>Google Maps</a> or <a href='http://binged.it/1sAQrKC' target='_blank'>Bing Maps</a><span style='font-size: 11px;'>  (Solo Desktop)</span>"
+                },
+                "location": {
+                    "name": "location",
+                    "lat": 41.775310,
+                    "lon": 12.254171,
+                    "zoom": 16,
+                    "line": false
+                },
+                "media": {
+                    "url": "<iframe width='100%' height='400px' src='https://www.thesphere.com/direct_embed/397494' class='sphere-direct_embed' type='text/html' frameborder=0 scrolling='no'  allowfullscreen='true' mozallowfullscreen='true' webkitallowfullscreen='true'></iframe>",
+                    "credit": "Stephen Kay / BSR & Portus Project",
+                    "caption": "Panorama a 360° dei resti del colonnato del Portico di Claudio"
+                }
+            },
+			{
+                "id": 5,
+                "text": {
+                    "headline": "La Darsena",
+                    "text": "La Darsena è un piccolo bacino portuale, nel cuore del Porto di Claudio, la cui funzione non è del tutto chiara, ma che potrebbe essere correlata all’attracco delle navi fluviali.Queste dovrebbero essere state caricate con il grano proveniente dai vicini Grandi Magazzini di Traiano e dal Foro Olitorio, per poi essere trasportati lungo i canali e ilTevere fino a Roma.<br/><br/>Il Canale di Comunicazione Trasverso, che correva verso sud dal bacino del porto, forniva l'accesso all'ingresso della Darsena e al Canale di Fiumicino."
+                },
+                "location": {
+                    "name": "location",
+                    "lat": 41.776110,
+                    "lon": 12.254965,
+                    "zoom": 16,
+                    "line": false
+                },
+                "media": {
+                    "url": "images/images_5/darsena.jpg",
+                    "credit": "Simon Keay / University of Southampton",
+                    "caption": "Vista della Darsena dall’angolo sud-ovest.<br><br><a href='https://goo.gl/maps/uR6Gw4CV7h12' target='_blank'>Google Maps</a> or <a href='http://binged.it/1sAQUMH' target='_blank'>Bing Maps</a><span style='font-size: 11px;'>  (Solo Desktop)</span>"
+                }
+            },
+			{
+                "id": 6,
+                "text": {
+                    "headline": "I Grandi Magazzini di Traiano",
+                    "text": "Sul lato nord della Darsena si trova un complesso di magazzini enormi: i Grandi Magazzini di Traiano. Costruiti durante il regno dell'Imperatore Traiano, probabilmente su magazzini precedenti, sono stati ampiamente sviluppati sotto gli Antonini e sotto il regno di Settimio Severo. É possibile che siano stati utilizzati per lo stoccaggio del grano.<br><br><a href='https://goo.gl/maps/M74wtznAeG42' target='_blank'>Google Maps</a> or <a href='http://binged.it/1sAR3zV' target='_blank'>Bing Maps</a><span style='font-size: 11px;'>  (Solo Desktop)</span>"
+                },
+                "location": {
+                    "name": "location",
+                    "lat": 41.776507,
+                    "lon": 12.254262,
+                    "zoom": 16,
+                    "line": false
+                },
+                "media": {
+                    "url": "images/images_2/magazzini_traiani.jpg",
+                    "credit": "Simon Keay / University of Southampton",
+                    "caption": ""
+                }
+            },
+			{
+                "id": 7,
+                "text": {
+                    "headline": "Il Canale d’imbocco al Porto di Traiano",
+                    "text": "Sei in piedi in quello che sarebbe stato il principale canale per le navi che entravano nella parte interna del bacino Claudio dalla parte esterna al di là della banchina. Questo sarebbe stato affollato nel pieno dei commerci. È possibile apprezzare ancora una volta la scala delle operazioni.<br><br>Se hai tempo di girare delicatamente in senso orario in questo luogo, potrai vedere le facciate interne della banchina a partire dai Grandi Magazzini di Traiano e dal piccolo complesso termale. Girando nuovamente, vedrai la lanterna alla fine del molo interno e poi, più vicino, un'altra lanterna. La base di questo può solo essere immaginata Eppure, girando ulteriormente puoi vedere la banchina che si estende a est, ricoperta con i resti delle Terme della Lanterna. Successivamente, vedrai il Casale moderno - il centro delle operazioni del Portus Project da molti anni. Da dietro il Casale vedrai i Grandi Magazzini di Settimio Severo. Infine rivolgiti verso est e immagina una chiara linea visiva in un altro bacino enorme  - questa volta il bacino esagonale di Traiano.<br><br>Per ora continueremo il nostro viaggio attraverso il percorso delle navi fino ad arrivare alla Lanterna.<br><br><a href='https://goo.gl/maps/tSrAUnTNHnr' target='_blank'>Google Maps</a> or <a href='http://binged.it/1sAR3Qm' target='_blank'>Bing Maps</a><span style='font-size: 11px;'>  (Solo Desktop)</span>"
+                },
+                "location": {
+                    "name": "location",
+                    "lat": 41.777510,
+                    "lon": 12.254933,
+                    "zoom": 16,
+                    "line": false
+                },
+                "media": {
+                    "url": "",
+                    "credit": "",
+                    "caption": ""
+                }
+            },
+			{
+                "id": 8,
+                "text": {
+                    "headline": "Il Molo della Lanterna",
+                    "text": "Una lunga banchina in cemento che correva da ovest a est e ha agito come il lato nord di un canale che garantiva di passaggio alle navi dirette verso il bacino di Traiano; era sormontata da una lanterna e da alcuni bagni.<br><br>Da qui si puoi immaginare la linea del molo interno - la banchina si estendeva all'incirca verso nord dal Portico di Claudio e terminava con un piccolo faro, simile a quello che si trovava direttamente di fronte a te in questo momento. Non é rimasto nulla del primo faro, ma possiamo immaginare che la lanterna interna e il Pharos esterno formavano una linea di tre luci che consentiva alle navi di entrare e navigare nel porto sia di giorno che di notte.<br><br><a href='https://goo.gl/maps/P6tMzNwwZkR2' target='_blank'>Google Maps</a> or <a href='http://binged.it/1sAQyWy' target='_blank'>Bing Maps</a><span style='font-size: 11px;'>  (Solo Desktop)</span>"
+                },
+                "location": {
+                    "name": "location",
+                    "lat": 41.777822,
+                    "lon": 12.254519,
+                    "zoom": 16,
+                    "line": false
+                },
+                "media": {
+                    "url": "images/images_1/mollo_della_lanterna.jpg",
+                    "credit": "Simon Keay / University of Southampton",
+                    "caption": "Vista dei resti del Molo della Lanterna da est"
+                }
+            },
+			{
+                "id": 9,
+                "text": {
+                    "headline": "Le Terme della Lanterna",
+                    "text": "Le terme sono formate da una serie di bagni sul lato nord del Canale di imbocco al Porto di Traiano, sul molo stretto,e che hanno continuato a essere in uso anche nel periodo tardoantico.<br><br>Situato sul molo interno (est-ovest) che separava il bacino di Claudio dal canale d’ingresso al bacino di Traiano, il complesso termale (circa 40 m per 30 m) era composto da stanze con il soffitto a volta a faccia vista. La struttura è stata scavata inizialmente  nel 1824, quando è stato rimosso il rivestimento. Lo scavo sistematico è attualmente in corso, sotto la direzione dalla Soprintendenza Speciale per il Colosseo, il Museo Nazionale Romano e l'Area Archeologica di Roma (Renato Sebastiani).<br><br><a href='https://goo.gl/maps/ihHNd2Pe6Z72' target='_blank'>Google Maps</a> or <a href='http://binged.it/1sAR1I7' target='_blank'>Bing Maps</a><span style='font-size: 11px;'>  (Solo Desktop)</span>"
+                },
+                "location": {
+                    "name": "location",
+                    "lat": 41.778345,
+                    "lon": 12.255512,
+                    "zoom": 16,
+                    "line": false
+                },
+                "media": {
+                    "url": "images/images_2/terme_della_lanterna.jpg",
+                    "credit": "Stephen Kay / University of Southampton",
+                    "caption": "Vista aerea delle Terme della Lanterna"
+                }
+            },
+			{
+                "id": 10,
+                "text": {
+                    "headline": "L’Edificio di funzione incerta",
+                    "text": "Torniamo di nuovo nel bacino di Claudio. La geofisica ci ha mostrato un grande edificio rettangolare di incerta funzione, tra i cespugli alla nostra destra. Mentre continuiamo lungo il sentiero vedremo emergere i Gandi Magazzini di Settimio Severo da dietro gli alberi.<br><br><a href='https://goo.gl/maps/U5L5YK9ohqP2' target='_blank'>Google Maps</a> or <a href='http://binged.it/1sAQZQJ' target='_blank'>Bing Maps</a><span style='font-size: 11px;'>  (Solo Desktop)</span>"
+                },
+                "location": {
+                    "name": "location",
+                    "lat": 41.778983,
+                    "lon": 12.256166,
+                    "zoom": 16,
+                    "line": false
+                },
+                "media": {
+                    "url": "<iframe width='100%' height='400px' src='https://www.thesphere.com/direct_embed/402811' class='sphere-direct_embed' type='text/html' frameborder=0 scrolling='no'  allowfullscreen='true' mozallowfullscreen='true' webkitallowfullscreen='true'></iframe>",
+                    "credit": "Stephen Kay / Portus Project",
+                    "caption": "Vista aerea delle Terme della Lanterna"
+                }
+            },
+			{
+                "id": 11,
+                "text": {
+                    "headline": "I Grandi Magazzini di Settimio Severo",
+                    "text": "Da qui si può vedere attraverso uno degli archi che collegavano la parte marittima e terrestre dei Grandi Magazzini di Settimio Severo. Nel periodo romano ci troveremmo nel bacino di Claudio.<br><br><a href='https://goo.gl/maps/sEF3MiqE3HP2' target='_blank'>Google Maps</a> or <a href='http://binged.it/1sAPVw3' target='_blank'>Bing Maps</a><span style='font-size: 11px;'>  (Solo Desktop)</span>"
+                },
+                "location": {
+                    "name": "location",
+                    "lat": 41.779502,
+                    "lon": 12.257330,
+                    "zoom": 16,
+                    "line": false
+                },
+                "media": {
+                    "url": "<iframe width='100%' height='400px' src='https://www.thesphere.com/direct_embed/402729' class='sphere-direct_embed' type='text/html' frameborder=0 scrolling='no'  allowfullscreen='true' mozallowfullscreen='true' webkitallowfullscreen='true'></iframe>",
+                    "credit": "Stephen Kay / BSR & Portus Project",
+                    "caption": ""
+                }
+            },
+			{
+                "id": 12,
+                "text": {
+                    "headline": "La Terrazza di Traiano",
+                    "text": "Mentre continuiamo lungo il sentiero, vediamo di una struttura ad archi che sostiene una facciata in mattoni. Questa struttura sosteneva la facciata colonnata (Terrazza di Traiano) del cosiddetto Palazzo Imperiale.<br><br><a href='https://goo.gl/maps/qwZgZQACfit' target='_blank'>Google Maps</a> or <a href='http://binged.it/1sAR5rm' target='_blank'>Bing Maps</a><span style='font-size: 11px;'>  (Solo Desktop)</span>"
+                },
+                "location": {
+                    "name": "location",
+                    "lat": 41.780023,
+                    "lon": 12.257690,
+                    "zoom": 16,
+                    "line": false
+                },
+                "media": {
+                    "url": "images/images_2/terrazza.jpg",
+                    "credit": "Stephen Kay / BSR & Portus Project",
+                    "caption": "Vista di fronte alla facciata in matoni della Terrazza di Traiano"
+                }
+            },
+			{
+                "id": 13,
+                "text": {
+                    "headline": "Il Palazzo Imperiale",
+                    "text": "Altri resti del Palazzo Imperiale appaiono appena giriamo l’angolo.<br><br>La collinetta ripida a destra era, una volta, un edificio alto almeno tre piani. Il Palazzo Imperiale era una struttura in mattoni e opus reticulatum che copriva quasi tre ettari. Dei suoi tre piani originali, rimangono solo le fondamenta e alcune parti del primo piano. La pianta trapezoidale del Palazzo ha dettato la pianificazione urbanistica dello sperone di terra tra i due bacini in cui era situato. Qua e là puoi vedere gli spazi con soffitti a volta che conducono ai piani interrati superstiti, tra cui il lungo tunnel o criptoportico che corre lungo la Terraza di Traiano.<br><br>La struttura è stata considerata di notevole interesse a partire dal XVI secolo grazie alla scoperta di numerose colonne, sculture e iscrizioni. Il complesso conteneva anche un bagno privato nell’angolo sud-ovest. I bolli laterizi presenti nell'edificio dimostrano che fosse una costruzione prevalentemente traianea con successive ristrutturazioni intraprese da Adriano e dagli Antonini. La posizione del palazzo, così come le prove della sua ricca decorazione marmorea suggeriscono una funzione riconducibile, presumibilmente, al quartier generale di un alto funzionario o, potenzialmente, dell'imperatore stesso durante i viaggi periodici all‘nterno e all’esterno del porto.<br><br><a href='https://goo.gl/maps/1jTQKd32zht' target='_blank'>Google Maps</a> or <a href='http://binged.it/1sAQm9O' target='_blank'>Bing Maps</a><span style='font-size: 11px;'>  (Solo Desktop)</span>"
+                },
+                "location": {
+                    "name": "location",
+                    "lat": 41.781231,
+                    "lon": 12.256950,
+                    "zoom": 16,
+                    "line": false
+                },
+                "media": {
+                    "url": "<iframe width='100%' height='400px' src='https://www.thesphere.com/direct_embed/412282' class='sphere-direct_embed' type='text/html' frameborder=0 scrolling='no'  allowfullscreen='true' mozallowfullscreen='true' webkitallowfullscreen='true'></iframe>",
+                    "credit": "Stephen Kay / BSR & Portus Project",
+                    "caption": "Panorama a 360° di fronte alla facciata in matoni della Terrazza di Traiano"
+                }
+            },
+            {
+                "id": 15,
+                "text": {
+                    "headline": "L’Edificio 3",
+                    "text": "Un'altra parte del Palazzo Imperiale, formata una stanza molto lunga (Edificio 3) che confinava un grande complesso di camere attorno a una cisterna/peristilio (Building 8), si trovava immediatamente a ovest del castellum aquae. Al centro della  stanza si trovava uno spazio aperto attorno al quale correva un portico su tre piani; le basi dei pilastri che sostenevano le volte si vedono ancora chiaramente.<br><br>La stanza aveva un pavimento in opus spicatum (con i mattoni a spina di pesce), tipico delle aree destinate a qualche tipo lavorazione o delle aree di servizio in edifici importanti come questo. Nei primi anni del III secolo è stato installato un piccolo forno per la produzione del vetro. A sud degli edifici 1 e 3 si trovava uno spazio aperto che forniva l'accesso alla facciata orientale del Palazzo Imperiale dal molo verso est.<br><br><a href='https://goo.gl/maps/RZ5MHwrZDz22' target='_blank'>Google Maps</a> or <a href='http://binged.it/1sAQYMu' target='_blank'>Bing Maps</a><span style='font-size: 11px;'>  (Solo Desktop)</span>"
+                },
+                "location": {
+                    "name": "location",
+                    "lat": 41.781797,
+                    "lon": 12.257617,
+                    "zoom": 16,
+                    "line": false
+                },
+                "media": {
+                    "url": "<iframe width='100%' height='400px' src='https://www.thesphere.com/direct_embed/396922' class='sphere-direct_embed' type='text/html' frameborder=0 scrolling='no'  allowfullscreen='true' mozallowfullscreen='true' webkitallowfullscreen='true'></iframe>",
+                    "credit": "Stephen Kay / BSR & Portus Project",
+                    "caption": "Panorama a 360° dei resti dell’Edificio 3"
+                }
+            },
+			{
+                "id": 14,
+                "text": {
+                    "headline": "Il Castellum Aquae",
+                    "text": "Sul lato nord-est del Palazzo Imperiale si trovava il castellum aquae, un edificio a tre piani in mattoni a faccia vista risalente allla fine del periodo traianeo. La fonte da cui proveniva l'acqua per il complesso non è ancora stata scoperta.<br><br>Il lato settentrionale della cisterna poggiava sul molo pre-traianeo che delineava il bacino di Claudio, menre quello meridionale poggiava sulla banchina di Traiano  In aggiunta, la cisterna definiva la parte nord di uno spazio aperto delimitato a ovest dal Palazzo Imperiale e a sud dal Cantiere Navale.<br><br><a href='https://goo.gl/maps/WD1Yw2fdizR2' target='_blank'>Google Maps</a> or <a href='http://binged.it/1sARhXL' target='_blank'>Bing Maps</a><span style='font-size: 11px;'>  (Solo Desktop)</span>"
+                },
+                "location": {
+                    "name": "location",
+                    "lat": 41.781943,
+                    "lon": 12.257808,
+                    "zoom": 16,
+                    "line": false
+                },
+                "media": {
+                    "url": "<iframe width='100%' height='400px' src='https://www.thesphere.com/direct_embed/412277' class='sphere-direct_embed' type='text/html' frameborder=0 scrolling='no'  allowfullscreen='true' mozallowfullscreen='true' webkitallowfullscreen='true'></iframe>",
+                    "credit": "Stephen Kay / BSR & Portus Project",
+                    "caption": "Panorama a 360° di una cisterna del  Castellum Aquae <i>Nota: ruota per vedere il resto della cisterna </i>"
+                }
+            },
+			{
+                "id": 16,
+                "text": {
+                    "headline": "Il Ludos",
+                    "text": "Nella prima metà del III secolo è stato costruito un ludus, o anfiteatro per l’allenamento, a pianta ovale (circa 42m per 38m) nello spazio aperto ad est del Palazzo Imperiale. Tutto ciò che rimane oggi sono le fondamenta, le quali rivelano che la sovrastruttura dell'edificio era composta da due pareti parallele distanziate di tre metri una dall’altra con una facciata supplementare presente solo nella metà occidentale dell'edificio. La struttura presenta la forma caratteristica di un anfiteatro, anche se è notevolmente più piccolo. L'ingresso era situato sul lato ovest. La struttura a forma di anfiteatro fu demolita sistematicamente nei primi anni del IV o V secolo.<br><br><a href='https://goo.gl/maps/rWe6P4GfDcA2' target='_blank'>Google Maps</a> or <a href='http://binged.it/1sAR5YB' target='_blank'>Bing Maps</a><span style='font-size: 11px;'>  (Solo Desktop)</span>"
+                },
+                "location": {
+                    "name": "location",
+                    "lat": 41.781735,
+                    "lon": 12.258022,
+                    "zoom": 16,
+                    "line": false
+                },
+                "media": {
+                    "url": "<iframe width='100%' height='400px' src='https://www.thesphere.com/direct_embed/412985' class='sphere-direct_embed' type='text/html' frameborder=0 scrolling='no'  allowfullscreen='true' mozallowfullscreen='true' webkitallowfullscreen='true'></iframe>",
+                    "credit": "Stephen Kay / BSR & Portus Project",
+                    "caption": "Panorama a 360° dei resti del Ludus"
+                }
+            },
+			{
+                "id": 17,
+                "text": {
+                    "headline": "Il Cantiere Navale Imperiale",
+                    "text": "Questo era un grande edificio che faceva parte della stessa concezione architettonica del Palazzo Imperiale,  che è stato interpretato come un cantiere navale, e che sarebbe stato utilizzato per la riparazione o la costruzione di navi commerciali e/o di navi da guerra.<br><br>Si tatta di una struttura (di circa 180m per 60m) della fine del periodo traianeo – inizio del periodo di Adriano che si trova a sud-est del Palazzo Imperiale. L'edificio era composto da pilastri in calcestruzzo in faccia vista che sostenevano una serie di archi in mattoni, che si estendevano da nord a sud lungo i moli formando delle baie parallele tra I bacini di Claudio e Traiano. Le aperture ad arco sono state successivamente chiuse, alla fine del II secolo d.C, con pareti in mattoni e reticolato. La maggior parte delle campate erano larghe circa 12 m. Nelle V secolo d.C. parte dell'edificio è stato utilizzato per lo stoccaggio di grano.<br><br><a href='https://goo.gl/maps/jBRtjKko1QS2' target='_blank'>Google Maps</a> or <a href='http://binged.it/1sARFp9' target='_blank'>Bing Maps</a><span style='font-size: 11px;'>  (Solo Desktop)</span>"
+                },
+                "location": {
+                    "name": "location",
+                    "lat": 41.781767,
+                    "lon": 12.259020,
+                    "zoom": 16,
+                    "line": false
+                },
+                "media": {
+                    "url": "<iframe width='100%' height='400px' src='https://www.thesphere.com/direct_embed/403033' class='sphere-direct_embed' type='text/html' frameborder=0 scrolling='no'  allowfullscreen='true' mozallowfullscreen='true' webkitallowfullscreen='true'></iframe>",
+                    "credit": "Stephen Kay / BSR & Portus Project",
+                    "caption": ""
+                }
+            },
+			{
+                "id": 18,
+                "text": {
+                    "headline": "Tra il Cantiere Navale Imperiale e il Palazzo Imperiale",
+                    "text": "Lasciamo il Cantiere Navale Imperiale e ci dirigiamo verso il Palazzo Imperiale. Il primo scorcio del grande bacino di Traiano, su cui si affacciava il Cantiere Navale, si vede attraverso gli alberi. Il bacino è un luogo idilliaco, che lo si intraveda tra gli alberi o che sia popolato dagli uccelli selvatici<br><br>Ma nel secondo secolo e oltre questo sarebbe stato riempito con le navi ormeggiate al centro e contro le banchine. L'acqua sarebbe stato vivo con 'accendini' - Piccola imbarcazione usata per trasportare merci e persone dalle navi marittime sulla riva.<br><br>Il bacino era c. 33ha in zona - circa 50 campi da calcio - e originariamente forse 5 metri di profondità.<br><br><a href='https://goo.gl/maps/Y2u3PXjH26p' target='_blank'>Google Maps</a> or <a href='http://binged.it/1sAR9r5' target='_blank'>Bing Maps</a><span style='font-size: 11px;'>  (Solo Desktop)</span>"
+                },
+                "location": {
+                    "name": "location",
+                    "lat": 41.781471,
+                    "lon": 12.258698,
+                    "zoom": 16,
+                    "line": false
+                },
+                "media": {
+                    "url": "",
+                    "credit": "Simon Keay / University of Southampton",
+                    "caption": ""
+                }
+            },
+			{
+                "id": 19,
+                "text": {
+                    "headline": "La Parte superiore del Palazzo",
+                    "text": "Stiamo camminando sopra la parte superiore del Palazzo Imperiale. Potete vedere una serie di grandi depressioni che ci indicano il punto in cui il secondo e qualche volta il terzo piano sono crollati nel seminterrato. Le zone accessibili del piano interrato sono state ricognite nel 1980 e dal Portus Project, utilizzando techniche digitali come la scansione laser.<br><br>Sulla sinistra, affacciate sul bacino di Traiano si trovano i magazzini sopravissuti, con I pozzi di luce intatti – si tratta dell'unico modo di portare la luce negli ambienti sotterranei.<br><br><a href='https://goo.gl/maps/AmkwV8foKdK2' target='_blank'>Google Maps</a> or <a href='http://binged.it/1sARb2n' target='_blank'>Bing Maps</a><span style='font-size: 11px;'>  (Solo Desktop)</span>"
+                },
+                "location": {
+                    "name": "location",
+                    "lat": 41.780967,
+                    "lon": 12.258355,
+                    "zoom": 16,
+                    "line": false
+                },
+                "media": {
+                    "url": "images/images_5/top_pal.jpg",
+                    "credit": "Hembo Pagi / University of Southampton",
+                    "caption": "Vista dei resti del Palazzo Imperiale mentre la ricognizione geofisica e’ intrapresa"
+                }
+            },
+			{
+                "id": 20,
+                "text": {
+                    "headline": "Il raccordo con i Magazzini",
+                    "text": "Alla fine del tracciato moderno si trova il raccordo tra il Palazzo Imperiale e i Grandi Magazzini di Settimio Severo. Ora ci troviamo al di sopra della Terrazza di Traiano e proseguiremo all’interno dell'edificio, passando accanto a quello che ,una volta, era un piccolo bagno del Palazzo Imperiale e attraverso dei depositi. Nessuna di queste aree è accessibile a causa delle norme sulla sicurezza nei cantieri.<br><br><a href='https://goo.gl/maps/AkLGRmeUL722' target='_blank'>Google Maps</a> or <a href='http://binged.it/1sAQYMw' target='_blank'>Bing Maps</a><span style='font-size: 11px;'>  (Solo Desktop)</span>"
+                },
+                "location": {
+                    "name": "location",
+                    "lat": 41.779943,
+                    "lon": 12.258226,
+                    "zoom": 16,
+                    "line": false
+                },
+                "media": {
+                    "url": "<iframe width='100%' height='400px' src='https://www.thesphere.com/direct_embed/416797' class='sphere-direct_embed' type='text/html' frameborder=0 scrolling='no'  allowfullscreen='true' mozallowfullscreen='true' webkitallowfullscreen='true'></iframe>",
+                    "credit": "Stephen Kay / BSR & Portus Project",
+                    "caption": "Panorama a 360° dell’incrocio tra il Palazzo Imperiale e I Grandi Magazzini di Settimio Severo"
+                }
+            },
+			{
+                "id": 21,
+                "text": {
+                    "headline": "Grandi Magazzini di Settimio Severo",
+                    "text": "Ci troviamo in un passaggio al piano terra dei Grandi Magazzini di Settimio Severo.<br/><br/>I Grandi Magazzini di Settimio Severo formano un grande complesso, dizionalmente identificato come un magazzino costituito da almeno due piani e situato in modo da affacciarsi sul bacino del porto a sud, il bacino di Traiano a est e il bacino di Claudio a nord.<br/><br/>Era un grande struttura in cemento, a forma di L, con la facciata in mattoni, e che presentava due ali di camere che si affacciavano su uno spazio aperto verso il canale che conduce al bacino traianeo.<br/><br/>L'edificio era stato identificato come un magazzino di epoca severiana (horreum), ma uno studio più recente dei bolli laterizi indica una data Antonina.<br><br><a href='https://goo.gl/maps/q1VzJXDeJKK2' target='_blank'>Google Maps</a> or <a href='http://binged.it/1sAQ56F' target='_blank'>Bing Maps</a><span style='font-size: 11px;'>  (Solo Desktop)</span>"
+                },
+                "location": {
+                    "name": "location",
+                    "lat": 41.779502,
+                    "lon": 12.257330,
+                    "zoom": 16,
+                    "line": false
+                },
+                "media": {
+                    "url": "<iframe width='100%' height='400px' src='https://www.thesphere.com/direct_embed/402741' class='sphere-direct_embed' type='text/html' frameborder=0 scrolling='no'  allowfullscreen='true' mozallowfullscreen='true' webkitallowfullscreen='true'></iframe>",
+                    "credit": "Stephen Kay / BSR & Portus Project",
+                    "caption": "Panorama a 360° tra i resti dei Grandi Magazzini di Settimio Severo"
+                }
+            },
+			{
+                "id": 22,
+                "text": {
+                    "headline": "I Depositi",
+                    "text": "Alla nostra destra si può vedere la differenza tra la superficie del terreno moderna e quella di epoca romana in questa parte del sito. Al di là delle pareti del magazzino si trovava una grande piazza aperta, utilizzatat presumibilmente per la gestione del flusso delle merci tra le navi e i magazzini. Possiamo immaginare questa zona come un’area affollata da persone provenienti da tutto il mondo romano.<br><br><a href='https://goo.gl/maps/bMRQguwpdQu' target='_blank'>Google Maps</a> or <a href='http://binged.it/1sAQvKo' target='_blank'>Bing Maps</a><span style='font-size: 11px;'>  (Solo Desktop)</span>"
+                },
+                "location": {
+                    "name": "location",
+                    "lat": 41.779383,
+                    "lon": 12.258505,
+                    "zoom": 16,
+                    "line": false
+                },
+                "media": {
+                    "url": "<iframe width='100%' height='400px' src='https://www.thesphere.com/direct_embed/397447' class='sphere-direct_embed' type='text/html' frameborder=0 scrolling='no'  allowfullscreen='true' mozallowfullscreen='true' webkitallowfullscreen='true'></iframe>",
+                    "credit": "Stephen Kay / BSR & Portus Project",
+                    "caption": "Panorama a 360° all’interno di una delle stanze usate come deposito nei Grandi Magazzini di Settimio Severo"
+                }
+            },
+			{
+                "id": 23,
+                "text": {
+                    "headline": "Veduta del Bacino",
+                    "text": "Passiamo ora salire in cima ai magazzini ricostruiti per avere la  vista migliore del Bacino di Traiano. La rampa moderna rispecchia quella romana, con i blocchi di originali alla base ad indicare la posizione delle soglie con le porte in legno. Le merci venivano trasportate e spinte su queste rampe con dei carri, forse fino al terzo piano, sopra di noi.<br><br>Dalla parte opposta del bacino a quella in cui ci troviamo ora si trovava un tempio. Le evidenze disponibili sono limitate a suggeriscono che fosse destinato al culto dell'Imperatore, insieme ad una serie di divinità tra cui 'Liber Pater'.<br><br><a href='https://goo.gl/maps/25bHeEHW1au' target='_blank'>Google Maps</a> or <a href='http://binged.it/1sAQtSM' target='_blank'>Bing Maps</a><span style='font-size: 11px;'>  (Solo Desktop)</span>"
+                },
+                "location": {
+                    "name": "location",
+                    "lat": 41.779095,
+                    "lon": 12.258784,
+                    "zoom": 16,
+                    "line": false
+                },
+                "media": {
+                    "url": "<iframe width='100%' height='400px' src='https://www.thesphere.com/direct_embed/406068' class='sphere-direct_embed' type='text/html' frameborder=0 scrolling='no'  allowfullscreen='true' mozallowfullscreen='true' webkitallowfullscreen='true'></iframe>",
+                    "credit": "Stephen Kay / BSR & Portus Project",
+                    "caption": "Panorama a 360° guardano il Bacino di Traiano"
+                }
+            },
+			{
+                "id": 24,
+                "text": {
+                    "headline": "L'Ingresso all’Esagono",
+                    "text": "Ora citroviamo nell’area che avrebbe segnato il passaggio dall’ingresso del canale che abbiamo attraversato in precedenza, tra i magazzini traianei e la Lanterna, al bacino di Traiano.<br><br><a href='https://goo.gl/maps/LMXbaaWVYCU2' target='_blank'>Google Maps</a> or <a href='http://binged.it/1sAR2vE' target='_blank'>Bing Maps</a><span style='font-size: 11px;'>  (Solo Desktop)</span>"
+                },
+                "location": {
+                    "name": "location",
+                    "lat": 41.778399,
+                    "lon": 12.259374,
+                    "zoom": 16,
+                    "line": false
+                },
+                "media": {
+                    "url": "images/images_5/basin_entrance.jpg",
+                    "credit": "Simon Keay / University of Southampton",
+                    "caption": "Vista del bacino di Traiano"
+                }
+            },
+			{
+                "id": 25,
+                "text": {
+                    "headline": "La Basilica Portuense",
+                    "text": "Il cambiamento significativo è avvenuto nel tardo IV d.C e all'inizio del V d.C., quando questa residenza è stata trasformata in una chiesa paleocristiana (basilica) di circa 37m di lunghezza e circa 20m di larghezza. È formata da una grande sala orientata nord/sud, da una navata centrale e due navate laterali con pavimenti a mosaico geometrici e figurati; a cui si accedeva attraverso un corridoio est-ovest. Questo edificio era quasi certamente sotto la giurisdizione del Vescovo di Portus - una figura che viene attestata per la prima volta nel 314 d.C.<br><br><a href='https://goo.gl/maps/UnC5aVDKEdu' target='_blank'>Google Maps</a> or <a href='http://binged.it/1sAQwOu' target='_blank'>Bing Maps</a><span style='font-size: 11px;'>  (Solo Desktop)</span>"
+                },
+                "location": {
+                    "name": "location",
+                    "lat": 41.776379,
+                    "lon": 12.259841,
+                    "zoom": 16,
+                    "line": false
+                },
+                "media": {
+                    "url": "<iframe width='640px' height='auto' src='https://www.thesphere.com/direct_embed/412796' class='sphere-direct_embed' type='text/html' frameborder=0 scrolling='no'  allowfullscreen='true' mozallowfullscreen='true' webkitallowfullscreen='true'></iframe>",
+                    "credit": "Stephen Kay / BSR & Portus Project",
+                    "caption": "Panorama a 360° all’interno dei resti della Basilica"
+                }
+            },
+			{
+                "id": 26,
+                "text": {
+                    "headline": "Il Cimitero Moderno",
+                    "text": "Mentre camminiamo oltre al muro bianco del cimitero moderno di Fiumicino ,possiamo pensare alle sepolture che conosciamo risalenti al tempo dei romani a Portus.<br><br><a href='https://goo.gl/maps/Vk7aqu2pDBL2' target='_blank'>Google Maps</a> or <a href='http://binged.it/1sAQxSw' target='_blank'>Bing Maps</a><span style='font-size: 11px;'>  (Solo Desktop)</span>"
+                },
+                "location": {
+                    "name": "location",
+                    "lat": 41.775798,
+                    "lon": 12.258398,
+                    "zoom": 16,
+                    "line": false
+                },
+                "media": {
+                    "url": "",
+                    "credit": "",
+                    "caption": ""
+                }
+            },
+			{
+                "id": 27,
+                "text": {
+                    "headline": "L'Ingresso alla Darsena",
+                    "text": "Siamo giunti all'ingresso della Darsena. Negli gli ultimi minuti abbiamo seguito, a grosso modo, la linea corrispondente a un'altra arteria vitale: il Canale Trasversale, che collegava l'interno del bacino di Claudio e la Darsena con il Canale di Fiumicino – conosciuta anche come la Fossa Traiana.<br><br>Da questo punto possiamo anche vedere il limite orientale dei magazzini traianei, le scalinate e i grandi blocchi per l’ormeggio.<br><br><a href='https://goo.gl/maps/n8DEso2pGBN2' target='_blank'>Google Maps</a> or <a href='http://binged.it/wVJDZzu7hMx' target='_blank'>Bing Maps</a><span style='font-size: 11px;'>  (Solo Desktop)</span>"
+                },
+                "location": {
+                    "name": "location",
+                    "lat": 41.777262,
+                    "lon": 12.257529,
+                    "zoom": 16,
+                    "line": false
+                },
+                "media": {
+                    "url": "<iframe src='http://www.thesphere.com/direct_embed/406063' width='640px' height='auto' class='sphere-direct_embed' type='text/html' frameborder=0 scrolling='no'>",
+                    "credit": "Stephen Kay / BSR & Portus Project",
+                    "caption": "Panorama 360° dall’ingresso alla Darsena"
+                }
+            },
+			{
+                "id": 28,
+                "text": {
+                    "headline": "Il Casale",
+                    "text": "Al termine di questo tour passiamo vicino a una trincea di scavo che mostra una piccola sezione del molo su cui si trovano la Grandi Magazzini di Settimio Severo.<br><br>Stiamo attraversando nuovamente l’acqua, fino ad arrivare sulla banchina nel cuore di questo vasto complesso portuale. Speriamo che questa introduzione a Portus ti sia piaciuta. Il sito stesso si estende in tutte le direzioni e puoi farti un'idea del paesaggio, di tutti gli altri edifici e dei resti archeologici tramite il nostro sito web o seguendo il nostro corso online gratuito.<br><br><a href='https://goo.gl/maps/5dbNoErJMDD2' target='_blank'>Google Maps</a> or <a href='http://binged.it/1tkQ471' target='_blank'>Bing Maps</a><span style='font-size: 11px;'>  (Solo Desktop)</span>"
+                },
+                "location": {
+                    "name": "location",
+                    "lat": 41.778895,
+                    "lon": 12.257561,
+                    "zoom": 16,
+                    "line": false
+                },
+                "media": {
+                    "url": "images/images_5/casale.jpg",
+                    "credit": "Daniel Gonzales",
+                    "caption": "Vista del Casale venendo dalla Darsena"
+                }
+            }	
+        ]
+    }
+}

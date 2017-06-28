@@ -1,0 +1,178 @@
+{
+    "timeline":  
+  	{
+        "headline":"The ‘discovery’, early knowledge of Portus and ongoing work",
+        "text":"This tour introduces you to the history of research at the site. Like so many archaeological sites in Rome and its surrounding countryside, there is a very long history of antiquarian interest and research in the Classical past. While their paintings, engravings and descriptions are often regarded as having only marginal importance today when compared to modern scientific approaches to archaeology, this is very much mistaken.",
+        "type":"default",
+		"asset":
+        {
+            "media":"",
+            "credit":"",
+            "caption":""
+        },
+		"date": [
+            {
+                "startDate":"1500",
+                "headline":"The medieval, antiquarian and modern periods",
+                "text":"This period sees the port gradually disappear from view, with many of its once great buildings falling into disrepair, before being demolished and collapsing into ruin. The site was subsequently extensively robbed so that its construction materials could be re-used in buildings in the vicinity and at Rome.<br/><br/>Notwithstanding this, recent excavations have provided evidence that some of the buildings at the port were still standing to some degree and were the object of sporadic occupation during the 13<sup>th</sup> and 14<sup>th</sup> centuries<br/><br/>Despite this gradual disappearance of much of the site from view, much remained standing above ground as late as the 16<sup>th</sup> century, with progressively less in later periods. Early engravings and paintings give us an idea of how the site looked from this time onwards, and provide invaluable details about buildings that now only survive below ground.<br/><br/>It is clear that some of the buildings that were still standing above ground in the 17<sup>th</sup> and 18<sup>th</sup> centuries were visited by travellers.  But it was really not until the 19th century that the site became the object of sustained antiquarian and archaeological interest.",
+                "type":"default",
+                "asset":
+                {
+                    "media":"images/images_6/torlonia.jpg",
+                    "credit":"Simon Keay / University of Southampton",
+                    "caption":"Plaster cast of the Torlonia Relief"
+                }
+            },
+            {
+                "startDate":"1550",
+                "headline":"S. Hippolito",
+                "text":"An early Medieval church that developed within the small Roman settlement on the south side of the Tiber in the Isola Sacra. It still stands today, with the remains of the early church visible next to the later church.",
+                "asset":
+                {
+                    "media":"images/images_6/sant_hippolito.jpg",
+                    "credit":"<a href='http://www.portusproject.org'>Portus Project</a>",
+                    "caption":"Site of Early Christian church at Sant Ippolito"
+                }
+            },
+            {
+                "startDate":"1554",
+                "headline":"Work by Pirro Ligorio",
+                "text":"The site was first illustrated in the 16<sup>th</sup> century with the imaginative representations by Pirro Ligorio. His most famous image of the site was produced in 1554 and ‘reconstructed’ Portus.",
+                "asset":
+                {
+                    "media":"images/images_6/ligorio.jpg",
+                    "credit":"<a href='http://www.portusproject.org'>Portus Project</a>",
+                    "caption":""
+                }
+            },
+            {
+                "startDate":"1588",
+                "headline":"Work of Antonio Danti",
+                "text":"Antonio Danti (1588) produced two representations of Portus in 1588. These decorate the great Galleria Cartografica in the Vatican; one image shows a colour “aerial” view of the ruins while the other shows a reconstruction of how it might have looked in antiquity. While the former image is an important record of what was standing in the late 16<sup>th</sup> century, the latter and Ligorio’s reconstruction are valuable in telling us about contemporary attitudes to the Classical past.",
+                "asset":
+                {
+                    "media":"images/images_6/danti.jpg",
+                    "credit":"<a href='http://www.portusproject.org'>Portus Project</a>",
+                    "caption":""
+                }
+            },
+            {
+                "startDate":"1750",
+                "headline":"Sporadic work in 18th century",
+                "text":"Intermittent excavations at the site began in the late 18<sup>th</sup> century with a view to finding Roman works of art that now adorn the Vatican and elsewhere in Rome.",
+                "asset":
+                {
+                    "media":"",
+                    "credit":"",
+                    "caption":""
+                }
+            },
+            {
+                "startDate":"1820",
+                "headline":"19th century archaeological plans",
+                "text":"In 1820s, scholars like Antonio Nibby started producing the first scientific descriptions of the site, accompanied by reasoned “archaeological’ plans, notably that by Luigi Canina (1827) and the glorious colour paintings and reconstructions of the port by Pierre-Joseph Garrez (1831). Both of these studies contain precious details about a range of buildings that still influence our understanding of them today.",
+                "asset":
+                {
+                    "media":"images/images_6/canina.jpg",
+                    "credit":"<a href='http://www.portusproject.org'>Portus Project</a>",
+                    "caption":""
+                }
+            },
+            {
+                "startDate":"1868",
+                "headline":"Lanciani's Plan",
+                "text":"The best known early plan of Portus was that by Rodolfo Lanciani (1868) which builds upon earlier records, reports from workmen clearing parts of the site on behalf of Alessandro Torlonia and personal observations. It is hard to use, however, because it is represented as a reconstruction, making it difficult for us to known what was actually there and what was hypothesized.",
+                "asset":
+                {
+                    "media":"images/images_6/lanciani.jpg",
+                    "credit":"<a href='http://www.portusproject.org'>Portus Project</a>",
+                    "caption":""
+                }
+            },
+            {
+                "startDate":"1935",
+                "headline":"Gismondi's Plan",
+                "text":"Italo Gismondi produced a plan for Giuseppe Lugli (1935). Lugli was a well-known Italian archaeologist who undertook extensive research at the site, and took into account earlier studies by Lancani and Calza. The plans show what was visible to Lugli and Gismondi in the 1930s rather than attempting to put across interpretations. Their very valuable work has largely remained the standard plan of the core area of the port down until the 1980s.",
+                "asset":
+                {
+                    "media":"images/images_6/plastico.jpg",
+                    "credit":"<a href='http://www.portusproject.org'>Portus Project</a>",
+                    "caption":"Detail of the model of Portus created by Gismondi in the 1930s, and currently in the Museo at the Porta San Paolo, Rome"
+                }
+            },
+            {
+                "startDate":"1970",
+                "headline":"Testaguzza’s work",
+                "text":"Otello Testaguzza (1970) added important details about the Claudian port that had been uncovered during the building of the International Airport of Fiumicino in the 1960s. His plan adds these and other discoveries to Lugli’s plan.",
+                "asset":
+                {
+                    "media":"images/images_6/testaguzza.jpg",
+                    "credit":"<a href='http://www.portusproject.org'>Portus Project</a>",
+                    "caption":""
+                }
+            },
+            {
+                "startDate":"1980",
+                "headline":"Research and conservation by the Soprintendenza",
+                "text":"Since the 1960s and particularly the 1980s, the Soprintendenza Archaeologica di Ostia built upon this earlier work with detailed topographical surveys of different buildings and important conservation work. The current guardians of much of the site, the Soprintendenza Speciale per il Colosseo, il Museo Nazionale Romano e l’Area Archeologica di Roma (SSBAR), are continuing this work.",
+                "asset":
+                {
+                    "media":"images/images_6/palazzo_drawing.jpg",
+                    "credit":"<a href='http://www.portusproject.org'>Portus Project</a>",
+                    "caption":""
+                }
+            },
+            {
+                "startDate":"2005",
+                "headline":"Geophysical survey",
+                "text":"Geophysical survey is a technique that allows us to gain an impression of what lies beneath the soil and, at once, learn about the layout of many buried buildings at Portus. The publication in 2005 geophysical survey of Portus by Keay, Millett, Strutt and Paroli (2005) built upon the long and rich tradition of earlier research by revealing the evidence of hitherto unknown buried structures, enabling the key areas of the port, in particular that between the hexagonal basin and the Tiber, to be more clearly understood, including evidence of the line of an aqueduct, road and canal, warehouses and a river port. This work began in 1998, was completed in 2003 and was published in 2005.  It entailed a magnetometer study which systematically recorded localized magnetic anomalies relating to buried buildings to a depth of 1.2m. The survey covered 220 hectares.",
+                "asset":
+                {
+                    "media":"images/images_6/geophysics.jpg",
+                    "credit":"<a href='http://www.portusproject.org'>Portus Project</a>",
+                    "caption":"Results of geophysical survey that was conducted between 1998 and 2005."
+                }
+            },
+            {
+                "startDate":"2009",
+                "headline":"Portus Project",
+                "text":"This project (www.portusproject.org) represents an important research collaboration between the University of Southampton, the British School at Rome, the Soprintendenza Speciale per il Colosseo, il Museo Nazionale Romano e l’Area Archeologica di Roma and the University of Cambridge; it has also involved Cooperativa Parsifal (Roma) and a range of specialists from research institutions and universities in Italy, the UK, Spain, France and Belgium. In a first phase (2007-2011), work concentrated upon the excavation of the eastern side of the Palazzo Imperiale, while in a subsequent phase (2011-to the present day), attention has been focused upon the shipyard (navalia) and northern range of the Palazzo Imperiale. The Arts and Humanities Research Council (AHRC) of the UK and the SSBAR have made important financial contributions to this work.  An additional aspect of the work of the project has been to undertake geophysical survey of the Isola Sacra in conjunction with Paola Germoni (SSBAR) in order to better understand Portus’ relationship to Ostia.<br/><br/>Since 2013 the Portus Fieldschool has been hosted by the Portus Project in order to continue the excavations at the navalia and the Palazzo Imperiale in a teaching environment in a collaboration between the University of Southampton, the SSBAR (Angelo Pellegrino and Renato Sebastiani) and the British School at Rome.<br/><br/>The Portus Project initiative has adopted an inter-disciplinary approach to the study of Portus, with techniques ranging from field archaeology to computing, the physical anthropology and biological profiling of human skeletons, geo-archaeology and environmental analysis. The training of students in many of these and other techniques has been a key feature of the projects.",
+                "asset":
+                {
+                    "media":"",
+                    "credit":"",
+                    "caption":""
+                }
+            },
+            {
+                "startDate":"2015",
+                "headline":"The End of The Road",
+                "text":"So ends your introduction to the afterlife of Portus. You will agree that despite all of our collective endeavours, much remains to be learned about this site, and that this will make an important contribution to our understanding of Imperial Rome’s commercial relationship to the Mediterranean. It is to be hoped that you will find the time to actually visit the site, exploring the ruins yourself and enjoying its beautiful natural vegetation and wildlife.",
+                "asset":
+                {
+                    "media":"",
+                    "credit":"",
+                    "caption":""
+                }
+            }
+        ],
+         "era": [
+            {
+                "startDate":"1500",
+                "endDate":"1750",
+                "headline":"Medieval"
+            },
+            {
+                "startDate":"1750",
+                "endDate":"1935",
+                "headline":"Antiquarian"
+            },
+            {
+                "startDate":"1935",
+                "endDate":"2015",
+                "headline":"Professional" 
+            }
+
+        ]
+    }
+}

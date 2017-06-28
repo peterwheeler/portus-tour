@@ -8,46 +8,67 @@
     <meta name="apple-touch-fullscreen" content="yes">
     <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0">
     <meta name="robots" content="noindex,nofollow">
-    <link rel="shortcut icon" type="image/x-icon" href="favicon.png" />
+    <link rel="apple-touch-icon" sizes="57x57" href="/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
 
     <!-- HTML5 shim, for IE6-8 support of HTML elements-->
     <!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script><![endif]-->
     <!-- Modernizr, for IE6-8 support of HTML elements-->
     <!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script><![endif]-->
     
-    <!--*****CSS*****-->
-    <!-- Latest minified font-awesome & MaterialIcons -->
-    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <!-- Materialize -->
-    <link rel="stylesheet" type="text/css" href="/css/materialize/materialize.css">
-    
-    <!-- StoryMap & Timeline -->
-    <link rel="stylesheet" type="text/css" href="/js/timelineJS/css/timeline.css">
-    <link rel="stylesheet" type="text/css" href="/css/storymap.css?v1">
-    <link rel="stylesheet" type="text/css" href="/css/juxtapose/juxtapose.min.css">
-    
-    <!-- Site styling -->
-    <link rel="stylesheet" type="text/css" href="/css/site.css" />
-    <!--*****CSS*****-->
-    
     <!--*****webfonts*****-->
-
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,800">
     <!--*****webfonts*****-->
 
+    <!--*****CSS*****-->
+    <!-- Latest minified font-awesome -->
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+    <!-- Materialize -->
+    <!--build:css /css/materialize/materialize.min.css -->
+    <link rel="stylesheet" type="text/css" href="/css/materialize/materialize.css">
+    <!-- endbuild -->
+    
+    <!-- StoryMap, Timeline & Juxtapose-->
+    <!--build:css /css/knightlabs/knightlabs.min.css -->
+    <link rel="stylesheet" type="text/css" href="/css/storymap.css">
+    <link rel="stylesheet" type="text/css" href="/css/juxtapose.css">
+    <!-- endbuild -->
+    
+    <!-- Site styling -->
+    <!--build:css /css/style.min.css -->
+        <link rel="stylesheet" type="text/css" href="/css/site.css" />
+    <!-- endbuild -->
+    <!--*****CSS*****-->
+
     <!--*****JS Libraries*****-->
-    <!-- Latest minified version of jquery -->
+    <!-- Latest minified version of jquery & jqueryui -->
     <script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
-    <!-- Latest minified version of jqueryui -->
     <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+
     <!-- Materialize -->
     <script type="text/javascript" src="/js/materialize/materialize.min.js"></script>
 
     <!-- Minified angularJS -->
-    <!-- build:js scripts/angular.min.js -->
-    <script type="text/javascript" src="/js/angular/angular.min.js"></script>
+    <!-- build:js js/angular/angular.min.js -->
+    <script type="text/javascript" src="/js/angular/angular.js"></script>
     <script type="text/javascript" src="/js/angular/angular-route.min.js"></script>
     <script type="text/javascript" src="/js/angular/angular-animate.min.js"></script>
     <script type="text/javascript" src="/js/angular/angular-sanitize.min.js"></script>
@@ -56,9 +77,8 @@
     <script type="text/javascript" src="/js/angular/ui-bootstrap-tpls-0.11.2.min.js"></script>
     <script type="text/javascript" src="/js/angular/angular-translate.min.js"></script>
     <script type="text/javascript" src="/js/angular/angular-translate-loader-partial.min.js"></script>
-    <script type="text/javascript" src="/js/angular/ngRepeatOwlCarousel.min.js"></script>
-    <script type="text/javascript" src="js/angular/angulartics.min.js"></script>
-    <script type="text/javascript" src="js/angular/angulartics-ga.min.js"></script>
+    <script type="text/javascript" src="/js/angular/angulartics.min.js"></script>
+    <script type="text/javascript" src="/js/angular/angulartics-ga.min.js"></script>
     <!-- endbuild -->
 
     <script src="js/riveted/riveted.min.js"></script>
@@ -148,14 +168,17 @@
       })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
     </script>
     
-    <!-- timelineJS -->
+        <!-- Minified knightlabs -->
     <script type="text/javascript" src="/js/timelineJS/js/storyjs-embed.js"></script>
-    <!-- storymapJS -->
+    <!-- build:js js/knightlabs/knightlabs.min.js -->
     <script type="text/javascript" src="/js/storymapJS/storymap.js"></script>
-    <!-- juxtaposeJS -->
-    <script type="text/javascript" src="/js/juxtapose/juxtapose.js"></script>
-    <!-- angularJS application -->
+    <script type="text/javascript" src="/js/juxtaposeJS/juxtapose.js"></script>
+    <!-- endbuild -->
+
+    <!-- minified application -->
+    <!-- build:js js/application/app.min.js -->
     <script type="text/javascript" src="/js/application/app.js"></script>
+    <!-- endbuild -->
 </body>
 
 </html>

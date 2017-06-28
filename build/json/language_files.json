@@ -1,0 +1,29 @@
+{
+	"Periods": [
+		{
+			"en": "http://www.southampton.ac.uk/~pw8g08/portus_tour/tour-test/en/json/en/period_1.json",
+			"it": "http://www.southampton.ac.uk/~pw8g08/portus_tour/tour-test/en/json/it/period_1.json"
+		},
+		{
+			"en": "http://www.southampton.ac.uk/~pw8g08/portus_tour/tour-test/en/json/en/period_2.json",
+			"it": "http://www.southampton.ac.uk/~pw8g08/portus_tour/tour-test/en/json/it/period_2.json"
+		},
+		{
+			"en": "http://www.southampton.ac.uk/~pw8g08/portus_tour/tour-test/en/json/en/period_3.json",
+			"it": "http://www.southampton.ac.uk/~pw8g08/portus_tour/tour-test/en/json/it/period_3.json"
+		},
+		{
+			"en": "http://www.southampton.ac.uk/~pw8g08/portus_tour/tour-test/en/json/en/period_4.json",
+			"it": "http://www.southampton.ac.uk/~pw8g08/portus_tour/tour-test/en/json/it/period_4.json"
+		},
+		{
+			"en": "http://www.southampton.ac.uk/~pw8g08/portus_tour/tour-test/en/json/en/period_5.json",
+			"it": "http://www.southampton.ac.uk/~pw8g08/portus_tour/tour-test/en/json/it/period_5.json"
+		},
+		{
+			"en": "http://www.southampton.ac.uk/~pw8g08/portus_tour/tour-test/en/json/en/period_6.json",
+			"it": "http://www.southampton.ac.uk/~pw8g08/portus_tour/tour-test/en/json/it/period_6.json"
+		}
+	]
+}
+

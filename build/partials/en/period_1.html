@@ -1,0 +1,17 @@
+<head>
+    <title>Portus Tour - Claudian Period</title>
+</head>
+<div id="storymap_period_1" ng-animate>
+    <div class="shareButton">
+        <i class="fa fa-share-alt" data-target="copyPopup" onclick="currentSlide()"></i>
+    </div>
+    <div id="copyPopup" class="modal">
+        <div class="modal-content">
+            <p>Copy link to share this slide</p>
+            <input type="text" class="form-control" value="https://{{location}}{{urlBegin()}}/{{localizedPage(0)}}{{slideNo}}" aria-label="Share this link with {{location}}{{urlBegin()}}/{{localizedPage(0)}}?start_at_slide='{{slideNo}}'" autofocus="" onfocus="this.select();">
+        </div>
+        <div class="modal-footer">
+          <a ng-href="#" data-activites="modal-close" class="modal-action modal-close waves-effect waves-green btn-flat">Close</a>
+        </div>
+    </div>
+</div>

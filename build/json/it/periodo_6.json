@@ -1,0 +1,198 @@
+{
+    "timeline":  
+  	{
+        "headline":"La 'scoperta', le prime ricerche a Portus e I lavori in corso",
+        "text":"Questo tour vi introduce alla storia della ricerca sul sito di Portus. Come tanti altri siti archeologici di Roma e delle zone circostanti, troviamo una tradizione antiquaria e di ricerca nel passato classico motlo importante. É sbagliato considerare, come accade spesso oggigiorno, i dipinti, le incisioni e le descrizioni che sono state prodotte come di importanza marginale rispetto agli approcci scientifici moderni usati in archeologia",
+        "type":"default",
+		"asset":
+        {
+            "media":"",
+            "credit":"",
+            "caption":""
+        },
+		"date": [
+            {
+                "startDate":"1500",
+                "headline":"Il periodo medievale, quello antiquario e quello moderno",
+                "text":"Questo periodo vede la scomparsa graduale del porto, con molti dei suoi edifici che cadono in degrado, prima di essere demoliti e crollare.  Il sito è stato poi ampiamente derubato dei suoi materiali da costruzione che sono stati riutilizzati negli edifici nelle vicinanze e a Roma.<br/><br/>Nonostante questo, gli scavi recenti hanno dimostrato che alcuni degli edifici del porto erano ancora in piedi, in una certa misura, e sono stati oggetto di un’occupazione sporadica nel corso del XIII e XIV secolo.<br/><br/>Nonostante la scomparsa graduale di gran parte del sito, molte strutture erano ancora visibili nel XVI secolo, diminuendo nelle epoche successive. Le prime incisioni e I dipinti ci danno un'idea del sito da questo momento in poi, fornendoci informazioni preziose sugli edifici che oggi sono rintracciabili solo sotto terra.<br/><br/>Appare evidente che I viaggiatori hanno visitato alcuni degli edifici che erano ancora in piedi nel XVII e XVIII secolo. Ma è solo dal XIX secolo che il sito è diventato oggetto dell’interesse antiquario e archeologico.",
+                "type":"default",
+                "asset":
+                {
+                    "media":"images/images_6/torlonia.jpg",
+                    "credit":"Simon Keay / University of Southampton",
+                    "caption":""
+                }
+            },
+            {
+                "startDate":"1550",
+                "headline":"San Ippolito",
+                "text":"San Ippolito è la prima chiesa medievale che si è sviluppatoa all'interno del piccolo insediamento romano sul lato meridionale del Tevere, nell’Isola Sacra. I resti sono visibili accanto alla chiesa più tarda.",
+                "asset":
+                {
+                    "media":"images/images_6/sant_hippolito.jpg",
+                    "credit":"<a href='http://www.portusproject.org'>Portus Project</a>",
+                    "caption":"Site of Early Christian church at Sant Ippolito"
+                }
+            },
+            {
+                "startDate":"1554",
+                "headline":"Il lavoro di Pirro Ligorio",
+                "text":"Il sito è stato illustrato, per la prima volta, nel XVI secolo dalle rappresentazioni fantasiose di Pirro Ligorio. La sua immagine più famosa 'ricostruiva' Portus  ed è stata prodotta nel 1554.",
+                "asset":
+                {
+                    "media":"images/images_6/ligorio.jpg",
+                    "credit":"<a href='http://www.portusproject.org'>Portus Project</a>",
+                    "caption":""
+                }
+            },
+            {
+                "startDate":"1588",
+                "headline":"Opera di Antonio Danti",
+                "text":"Antonio Danti (1588) ha prodotto due rappresentazioni di Portus nel 1588, che decorano la grande Galleria Cartografica nel Vaticano. Una immagine mostra una veduta 'aerea' colorata delle rovine, mentre l'altra mostra una ricostruzione di come avrebbe potuto essere nell'antichità. Mentre la prima immagine è una testimonianza importante di ciò che era ancora in piedi alla fine del XVI secolo, la ricostruzione (insieme a quella di Ligorio) ci raccontana di atteggiamenti contemporanei riguardo al passato classico.",
+                "asset":
+                {
+                    "media":"images/images_6/danti.jpg",
+                    "credit":"<a href='http://www.portusproject.org'>Portus Project</a>",
+                    "caption":""
+                }
+            },
+            {
+                "startDate":"1750",
+                "headline":"I Lavori sporadici del XVII secolo",
+                "text":"Scavi intermittenti nel sito è iniziata nel tardo 18° secolo, al fine di trovare opere romane d'arte che ora adornano il Vaticano e altrove a Roma.",
+                "asset":
+                {
+                    "media":"",
+                    "credit":"",
+                    "caption":""
+                }
+            },
+            {
+                "startDate":"1820",
+                "headline":"Le piante archeologiche del XIX secolo",
+                "text":"Nel 1820, studiosi come Antonio Nibby hanno iniziato a produrre le prime descrizioni scientifiche del sito, accompagnate da piante 'archeologiche', importanti sono quelle di Luigi Canina (1827) e i dipinti a colori e le ricostruzioni del porto di Pierre-Joseph Garrez (1831 ). Entrambe le ricerche contengono dettagli preziosi su una serie di edifici che influenzano, ancora oggi, la nostra comprensione.",
+                "asset":
+                {
+                    "media":"images/images_6/canina.jpg",
+                    "credit":"<a href='http://www.portusproject.org'>Portus Project</a>",
+                    "caption":""
+                }
+            },
+            {
+                "startDate":"1868",
+                "headline":"La Pianta di Lanciani",
+                "text":"La pianta meglio conoscita di Portus è stata prodotta da Rodolfo Lanciani (1868), e si basa sulle documentazioni precedenti, sulle relazioni completate dagli operai che pulivano parti del sito per Alessandro Torlonia e su osservazioni personali. É difficile da usare, però, perché il sito è rappresentato come una ricostruzione, rendendo difficile la distinzione tra ciò che era presente e quello che è stato ipotizzato.",
+                "asset":
+                {
+                    "media":"images/images_6/lanciani.jpg",
+                    "credit":"<a href='http://www.portusproject.org'>Portus Project</a>",
+                    "caption":""
+                }
+            },
+            {
+                "startDate":"1935",
+                "headline":"La Pianta di Gismondi",
+                "text":"Italo Gismondi ha prodotto una pianta per Giuseppe Lugli nel 1935. Lugli era un noto archeologo italiano che ha intrapreso ricerche  approfondite presso il sito, prendendo in considerazione gli studi di Lanciani e Calza. Le piante mostrano ciò che era visibile a Lugli e a Gismondi nel 1930, piuttosto che fornire un’interpretazione. Il loro lavoro è stato considerato come la pianta standard della zona centrale del porto fino agli anni ’80.",
+                "asset":
+                {
+                    "media":"images/images_6/plastico.jpg",
+                    "credit":"<a href='http://www.portusproject.org'>Portus Project</a>",
+                    "caption":""
+                }
+            },
+            {
+                "startDate":"1970",
+                "headline":"Il Lavoro di Testaguzza",
+                "text":"Otello Testaguzza (1970) ha aggiunto dei dettagli importanti sul porto di Claudio, che era stato scoperto durante la costruzione dell'aeroporto internazionale di Fiumicino nel 1960. Il sua pianta aggiunge queste e altre scoperte alla pianta di Lugli.",
+                "asset":
+                {
+                    "media":"images/images_6/testaguzza.jpg",
+                    "credit":"<a href='http://www.portusproject.org'>Portus Project</a>",
+                    "caption":""
+                }
+            },
+            {
+                "startDate":"1980",
+                "headline":"La Ricerca e la Conservazione Eseguita dalla Soprintendenza",
+                "text":"Dal 1960 e in particolare negli anni ‘80, la Soprintendenza Archeologica di Ostia ha contribuito all’opera precedente con dei rilevamenti topografici dettagliati di diversi edifici e un importante lavoro di conservazione. I custodi di gran parte del sito, la Soprintendenza Speciale per il Colosseo, il Museo Nazionale Romano e l'Area Archeologica di Roma (SSBAR), stanno continuando questo lavoro.",
+                "asset":
+                {
+                    "media":"images/images_6/palazzo_drawing.jpg",
+                    "credit":"<a href='http://www.portusproject.org'>Portus Project</a>",
+                    "caption":""
+                }
+            },
+            {
+                "startDate":"2005",
+                "headline":"L’Indagine geofisica",
+                "text":"L’indagine geofisica è una tecnica che permette di capire cosa si trova nel sotto suolo e, allo stesso tempo, ci aiuta a conoscere la disposizione di molti edifici sepolti a Portus.  La pubblicazione dell'indagine geofisica di Portus di Keay, Millett, Strutt e Paroli (2005) si é basata sulla lunga e ricca tradizione delle ricerche precedenti, rivelando l'evidenza di strutture sepolte finora sconosciute. Tutto questo consente una conoscenza piú approfondita delle aree chiave del porto, in particolare tra il bacino esagonale e il Tevere, e prova la presenza di un acquedotto, di una strada e del canale, dei magazzini e di un porto fluviale. Questo lavoro è iniziato nel 1998  (completato nel 2003 e pubblicato nel 2005) e ha incluso uno studio con il magnetometro che ha registrato sistematicamente le anomalie magnetiche relative agli immobili interrati ad una profondità di 1,2 m. L'indagine ha riguardato 220 ettari.",
+                "asset":
+                {
+                    "media":"images/images_6/geophysics.jpg",
+                    "credit":"<a href='http://www.portusproject.org'>Portus Project</a>",
+                    "caption":""
+                }
+            },
+            {
+                "startDate":"2009",
+                "headline":"Il Portus Project",
+                "text":"Questo progetto (www.portusproject.org) rappresenta un importante collaborazione di ricerca tra l'Università di Southampton, la British School at Rome, la Soprintendenza Speciale per il Colosseo, il Museo Nazionale Romano e l'Area Archeologica di Roma e l'Università di Cambridge; e ha coinvolto anche la Cooperativa Parsifal (Roma) e una serie di specialisti provenienti dagli istituti di ricerca e da Università in Italia, Regno Unito, Spagna, Francia e Belgio. In una prima fase (2007-2011), il lavoro si è concentrato sulla scavo del lato orientale del Palazzo Imperiale, mentre in una fase successiva (2011-ad oggi), l'attenzione è stata rivolta al Cantiere Navale (navalia) e alla zona settentrionale del Palazzo Imperiale. Le Arti and Humanities Research Council (AHRC), del Regno Unito e la SSBAR hanno dato contributi finanziari importanti per questo lavoro di ricerca. In aggiunta, il progetto ha intrapreso l’indagine geofisica dell’Isola Sacra, in collaborazione con Paola Germoni (SSBAR), al fine di comprendere la relazione tra Portus e Ostia.<br/><br/>Dal 2013, il Portus Project ha opitato la Portus Fieldschool  al fine di continuare gli scavi del Navalia e del Palazzo Imperiale in un ambiente scolastico e tramite la collaborazione tra l'Università di Southampton, il SSBAR (Angelo Pellegrino e Renato Sebastiani) e la British School at Rome.<br/><br/>L'iniziativa del Portus Project ha adottato un approccio interdisciplinare allo studio di Portus, con tecniche che vanno dal campo dell’archeologia informatica, l'antropologia fisica e la profilazione biologica degli scheletri umani, fino alla geo-archeologia e all'analisi ambientale. La formazione degli studenti in molte di queste e altre tecniche è stata una componente fondamentale dei progetti intrapresi.",
+                "asset":
+                {
+                    "media":"",
+                    "credit":"",
+                    "caption":""
+                }
+            },
+            {
+                "startDate":"2015",
+                "headline":"La Fine della Strada",
+                "text":"Così si conclude l’introduzione alla vita dopo la morte di Portus. Sarai d'accordo che, nonostante i nostri sforzi collettivi, resta ancora molto da imparare su questo sito, e che tutto ció contribuirá enormemente alla comprensione della relazione commerciale tra Roma Imperiale il Mediterraneo. É auspicabile che troverai il tempo per visitare il sito in realtà, esplorare le rovine da solo e goderti la sua vegetazione naturale e la fauna selvatica.",
+                "asset":
+                {
+                    "media":"",
+                    "credit":"",
+                    "caption":""
+                }
+            }
+        ],
+         "era": [
+            {
+                "startDate":"41",
+                "endDate":"54",
+                "headline":"Claudio"
+            },
+            {
+                "startDate":"53",
+                "endDate":"117",
+                "headline":"Traiano"
+            },
+            {
+                "startDate":"193",
+                "endDate":"235",
+                "headline":"Severo"
+            },
+            {
+                "startDate":"300",
+                "endDate":"699",
+                "headline":"Quinta Al Settima"
+            },
+            {
+                "startDate":"1500",
+                "endDate":"1750",
+                "headline":"Medieval"
+            },
+            {
+                "startDate":"1750",
+                "endDate":"1935",
+                "headline":"Antiquarian"
+            },
+            {
+                "startDate":"1935",
+                "endDate":"2015",
+                "headline":"Professional" 
+            }
+
+        ]
+    }
+}

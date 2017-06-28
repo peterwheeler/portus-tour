@@ -1063,7 +1063,7 @@ new t1.o.Page(
 	}
 )];
 
-var app = angular.module('Map_View', ['ui.router', 'ui.bootstrap', 'pascalprecht.translate', 'ngSanitize', 'LocalStorageModule', 'ngAnimate', 'ocNgRepeat']);
+var app = angular.module('Map_View', ['ui.router', 'ui.bootstrap', 'pascalprecht.translate', 'ngSanitize', 'LocalStorageModule', 'ngAnimate']);
 
 app.config(function($stateProvider, $urlRouterProvider, $locationProvider) {
 
